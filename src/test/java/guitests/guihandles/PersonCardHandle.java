@@ -72,6 +72,9 @@ public class PersonCardHandle extends NodeHandle<Node> {
                 .collect(Collectors.toList());
     }
 
+    //@@author geezlouisee-reused
+    //Reused from https://github.com/se-edu/addressbook-level4/pull/798/commits/1ac2e7c5597cf328cc9c28d5d8e18db8dc1fc5a0
+    //with minor modifications
     public List<String> getTagStyleClasses(String tag) {
         return tagLabels
                 .stream()
@@ -81,6 +84,7 @@ public class PersonCardHandle extends NodeHandle<Node> {
                 .orElseThrow(() -> new
                         IllegalArgumentException("No such tag."));
     }
+    //@@author
 
     /**
      * Returns true if this handle contains {@code person}.

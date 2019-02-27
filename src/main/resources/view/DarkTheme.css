@@ -398,3 +398,8 @@
     -fx-text-fill: black;
     -fx-background-color: grey;
 }
+
+ #tags .purple {
+    -fx-text-fill: white;
+    -fx-background-color: #5a287a;
+}
