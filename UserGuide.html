@@ -29,7 +29,7 @@
 <li><a href="#clearing-all-entries-code-clear-code">3.14. Clearing all entries : <code>clear</code></a></li>
 <li><a href="#exiting-the-program-code-exit-code">3.15. Exiting the program : <code>exit</code></a></li>
 <li><a href="#saving-the-data">3.16. Saving the data</a></li>
-<li><a href="#establish-saving-patterns-based-on-records-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.17. Establish saving patterns based on records and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></li>
+<li><a href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.17. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></li>
 <li><a href="#suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code">3.18. Suggestions on how to save/Links to investment guide <code>[coming in v2.0]</code></a></li>
 <li><a href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.19. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></li>
 </ul>
@@ -227,7 +227,7 @@ Removes the description of entry at index 1</p>
 <div class="sect2">
 <h3 id="editing-entries-code-edit-code"><a class="link" href="#editing-entries-code-edit-code">3.9. Editing entries : <code>edit</code></a></h3>
 <div class="paragraph">
-<p>Edits an existing entry in the records.<br>
+<p>Edits an existing entry in the record.<br>
 <strong>Format</strong>: <code>edit INDEX [a/AMOUNT] [c/CATEGORY]</code></p>
 </div>
 <div class="sidebarblock">
@@ -235,7 +235,7 @@ Removes the description of entry at index 1</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Edits the entry at the specified <code>INDEX</code>. The index refers to the index number shown in the displayed person list. The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+<p>Edits the entry at the specified <code>INDEX</code>. The index refers to the index number shown in the displayed record list. The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
 </li>
 <li>
 <p>At least one of the optional fields must be provided.</p>
@@ -278,7 +278,7 @@ Returns an entry that has Transport as category and is entered on Wednesday</p>
 <div class="sect2">
 <h3 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">3.10. Deleting an entry: <code>delete</code></a></h3>
 <div class="paragraph">
-<p>Deletes an entry in the records.<br>
+<p>Deletes an entry in the record.<br>
 <strong>Format</strong>: <code>delete INDEX</code></p>
 </div>
 <div class="admonitionblock note">
@@ -408,13 +408,13 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <div class="sect2">
 <h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.16. Saving the data</a></h3>
 <div class="paragraph">
-<p>The finance records and allocated budget will be saved in the hard disk automatically after any command that changes the data. There is no need to save manually</p>
+<p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes the data. There is no need to save manually</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="establish-saving-patterns-based-on-records-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-records-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.17. Establish saving patterns based on records and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h3>
+<h3 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.17. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h3>
 <div class="paragraph">
-<p>The finance records for each month will be archived at the end of the month. This information will be used to derive the projected savings/expenses based on the typical spending pattern of the user.</p>
+<p>The finance record for each month will be archived at the end of the month. This information will be used to derive the projected savings/expenses based on the typical spending pattern of the user.</p>
 </div>
 </div>
 <div class="sect2">
@@ -440,7 +440,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 </div>
 <div class="paragraph">
 <p><strong>Q</strong>: Will the application support different currency?
-<strong>A</strong>: At the current version, the application is unable to support transactions records in different currency. User will need to calculate and input based on the local currency. This will be rectified in the subsequent version of our application.</p>
+<strong>A</strong>: At the current version, the application is unable to support transactions record in different currency. User will need to calculate and input based on the local currency. This will be rectified in the subsequent version of our application.</p>
 </div>
 </div>
 </div>
@@ -472,7 +472,7 @@ e.g. `allocate 100 transport</code></p>
 <p><strong>Listing all entries</strong>: <code>list</code></p>
 </li>
 <li>
-<p><strong>Showing summary of records</strong>: <code>summary</code></p>
+<p><strong>Showing summary of record</strong>: <code>summary</code></p>
 </li>
 <li>
 <p><strong>Editing an entry</strong>: <code>edit INDEX a/AMOUNT [c/CATEGORY]</code><br>
@@ -518,10 +518,10 @@ The amount of money for expenditure and budget</p>
 The listed item/activity tracked by the application. It generally consists of the amount, along with a category tag (if specified)</p>
 </li>
 <li>
-<p><strong>records</strong><br>
+<p><strong>record</strong><br>
 The list of all entries stored in the application</p>
 </li>
 </ul>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-08 07:35:30 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-11 18:30:15 UTC</div></div></div></body></html>
