@@ -3,8 +3,8 @@ package systemtests;
 import static seedu.finance.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.finance.logic.commands.CommandTestUtil.AMOUNT_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.AMOUNT_DESC_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_SHOPPING;
-import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_DINING;
+import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_FRIEND;
+import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_HUSBAND;
 import static seedu.finance.logic.commands.CommandTestUtil.DATE_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.DATE_DESC_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.INVALID_AMOUNT_DESC;
@@ -55,7 +55,7 @@ public class SpendCommandSystemTest extends FinanceTrackerSystemTest {
          */
         Record toSpend = AMY;
         String command = "   " + SpendCommand.COMMAND_WORD + "  " + NAME_DESC_AMY + "   " + AMOUNT_DESC_AMY + "   "
-                + DATE_DESC_AMY + "   " + CATEGORY_DESC_SHOPPING + " ";
+                + DATE_DESC_AMY + "   " + CATEGORY_DESC_FRIEND + " ";
         assertCommandSuccess(command, toSpend);
 
         /* Case: undo adding Amy to the list -> Amy deleted */
@@ -71,7 +71,7 @@ public class SpendCommandSystemTest extends FinanceTrackerSystemTest {
 
         /* Case: add a record with all fields same as another record in the finance tracker except name -> added */
         toSpend = new RecordBuilder(AMY).withName(VALID_NAME_BOB).build();
-        command = SpendCommand.COMMAND_WORD + NAME_DESC_BOB + AMOUNT_DESC_AMY + DATE_DESC_AMY + CATEGORY_DESC_SHOPPING;
+        command = SpendCommand.COMMAND_WORD + NAME_DESC_BOB + AMOUNT_DESC_AMY + DATE_DESC_AMY + CATEGORY_DESC_FRIEND;
         assertCommandSuccess(command, toSpend);
 
         /* Case: add a record with all fields same as another record in the finance tracker except amount and date
@@ -87,7 +87,7 @@ public class SpendCommandSystemTest extends FinanceTrackerSystemTest {
 
         /* Case: add a record with categories, command with parameters in random order -> added */
         toSpend = BOB;
-        command = SpendCommand.COMMAND_WORD + CATEGORY_DESC_SHOPPING + NAME_DESC_BOB + CATEGORY_DESC_DINING
+        command = SpendCommand.COMMAND_WORD + CATEGORY_DESC_FRIEND + NAME_DESC_BOB + CATEGORY_DESC_HUSBAND
                 + DATE_DESC_BOB + AMOUNT_DESC_BOB;
         assertCommandSuccess(command, toSpend);
 
