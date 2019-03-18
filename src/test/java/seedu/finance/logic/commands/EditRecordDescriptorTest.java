@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import static seedu.finance.logic.commands.CommandTestUtil.DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.DESC_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_DINING;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_FRIEND;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_DATE_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_NAME_BOB;
 
@@ -47,7 +47,7 @@ public class EditRecordDescriptorTest {
         assertFalse(DESC_AMY.equals(editedAmy));
 
         // different categories -> returns false
-        editedAmy = new EditRecordDescriptorBuilder(DESC_AMY).withCategories(VALID_CATEGORY_DINING).build();
+        editedAmy = new EditRecordDescriptorBuilder(DESC_AMY).withCategories(VALID_CATEGORY_FRIEND).build();
         assertFalse(DESC_AMY.equals(editedAmy));
     }
 }
