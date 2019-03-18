@@ -1,0 +1,1801 @@
+{
+  "authorDailyContributionsMap": {
+    "geezlouisee": [
+      {
+        "insertions": 68,
+        "deletions": 13,
+        "date": "2019-02-18",
+        "commitResults": [
+          {
+            "hash": "aeb2fa5de8ba1aa18593aaf450c03b1deffceed8",
+            "message": "Updated Developer Guide - Appendices A, B and C",
+            "insertions": 68,
+            "deletions": 13
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-19",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-22",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 185,
+        "deletions": 54,
+        "date": "2019-02-25",
+        "commitResults": [
+          {
+            "hash": "419a40a5af9131b638ca2a907476160a56601787",
+            "message": "Updated Developer Guide - User Stories Table",
+            "insertions": 23,
+            "deletions": 4
+          },
+          {
+            "hash": "d2c13fc0125739a7eed990becfd43b5bbbc6f7eb",
+            "message": "Updated Developer Guide - User Stories Table",
+            "insertions": 0,
+            "deletions": 21
+          },
+          {
+            "hash": "b31bd8faa7658795e0faa065a05c2f8fda5371e3",
+            "message": "Added colors for different tags",
+            "insertions": 141,
+            "deletions": 7
+          },
+          {
+            "hash": "8c2250d6ce6ce968ed7e6a2b4bc34e9af51d2b1d",
+            "message": "Made edits to DarkTheme.css",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "753070734e62cd169f7cd21ffc471fc50f2cb803",
+            "message": "Made edits to indentations",
+            "insertions": 4,
+            "deletions": 5
+          },
+          {
+            "hash": "57647b0266055853fe338637f1901d7365aaeb0b",
+            "message": "Edited indentation in PersonCard.java",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "78de7a96cdf13de072f4b38452466459291d50bb",
+            "message": "Edited indentation in GuiTestAssert.java",
+            "insertions": 15,
+            "deletions": 15
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 30,
+        "deletions": 16,
+        "date": "2019-02-27",
+        "commitResults": [
+          {
+            "hash": "f6ea30c0cfe0482b26d8adbbbf33e59f0e0ed69f",
+            "message": "Added more colors and edited GuiTestAssert.java accordingly",
+            "insertions": 14,
+            "deletions": 12
+          },
+          {
+            "hash": "8a713c9ce6cb61589cdb2f297bb72340fc2194cf",
+            "message": "Added credits to reused work",
+            "insertions": 9,
+            "deletions": 0
+          },
+          {
+            "hash": "5b217ba59b16fa0d6ed03579920f6d3593c597cb",
+            "message": "Edited credits to solve checkstyle errors",
+            "insertions": 6,
+            "deletions": 3
+          },
+          {
+            "hash": "30c2057f9015bb6a97f339fd963eb4adb5d212ef",
+            "message": "Edited PersonCardHandle.java to resolve compilation error",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 22,
+        "deletions": 4,
+        "date": "2019-02-28",
+        "commitResults": [
+          {
+            "hash": "a11cc777036ba6daff9138d07e508273f1eefe25",
+            "message": "Edited GuiTestAssert.java switch case",
+            "insertions": 21,
+            "deletions": 3
+          },
+          {
+            "hash": "7c5ca9a8cd70c3c4cc8d1cddf49b4b17a0bc36e0",
+            "message": "Edited GuiTestAssert.java switch case",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 454,
+        "deletions": 452,
+        "date": "2019-03-12",
+        "commitResults": [
+          {
+            "hash": "17b4e1d24fce9d757e04ad824158c2ca19ad0b5c",
+            "message": "Refactored Tags to Categories, edited tests accordingly",
+            "insertions": 436,
+            "deletions": 436
+          },
+          {
+            "hash": "d4889b9b665d63ef77ef802fb4e1e534969f6e30",
+            "message": "Attempt to resolve Checkstyle errors",
+            "insertions": 12,
+            "deletions": 10
+          },
+          {
+            "hash": "8aa27492f8df07ca7f04b735205b98efe8aaace5",
+            "message": "Attempt to resolve Checkstyle errors #2",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "902a52d58fbdaa66fbc1b68df698615face49e0e",
+            "message": "Resolve CheckStyleMain in EditCommand.java and SampleDataUtil.java",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "1285b91542c818ce586d409ff4fae1de10435ab3",
+            "message": "Resolve CheckStyleMain error attempt #4",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 79,
+        "deletions": 64,
+        "date": "2019-03-13",
+        "commitResults": [
+          {
+            "hash": "998ab196387cf1dbd5dfa974385b1200e7e5f6da",
+            "message": "Resolve CheckStyleMain error attempt #4",
+            "insertions": 7,
+            "deletions": 7
+          },
+          {
+            "hash": "ea2f9b66c0e8147f60b51c162b53191c98c36b2c",
+            "message": "Resolve CheckStyleTest errors for import statements and line length",
+            "insertions": 70,
+            "deletions": 55
+          },
+          {
+            "hash": "b40fca7735a6b5ab8c242ae41104f90c6c0ff4e3",
+            "message": "Resolve CheckStyleTest error for EditCommandParserTest.java",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-15",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 1013861,
+        "deletions": 548089,
+        "date": "2019-03-18",
+        "commitResults": [
+          {
+            "hash": "79d02954f1a1daad37241545c15206699cd0321b",
+            "message": "Configured names in config.json to fix duplicate names in RepoSense",
+            "insertions": 548089,
+            "deletions": 0
+          },
+          {
+            "hash": "97a31968e058235a75819e9050be85ffab13b134",
+            "message": "Removed RepoSense.jar since does not value add to code",
+            "insertions": 0,
+            "deletions": 548089
+          },
+          {
+            "hash": "6cdd80ee98f0f6696a82b435908431dd6e9dcdcc",
+            "message": "Added _response\\config.json to fix duplicate names in RepoSense",
+            "insertions": 465772,
+            "deletions": 0
+          }
+        ]
+      }
+    ],
+    "JeremyLoye": [
+      {
+        "insertions": 28,
+        "deletions": 35,
+        "date": "2019-02-18",
+        "commitResults": [
+          {
+            "hash": "0e6f16a2e34797dbcf69c2d05c5d6c7d95a43c64",
+            "message": "Updated AboutUs.adoc and ContactUs.adoc to reflect team",
+            "insertions": 25,
+            "deletions": 30
+          },
+          {
+            "hash": "e1b6f7da04a54353e3646d035f90e73d55a04a55",
+            "message": "Updated badges in README.adoc and changed title",
+            "insertions": 3,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-19",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-22",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-25",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 102,
+        "deletions": 0,
+        "date": "2019-02-27",
+        "commitResults": [
+          {
+            "hash": "a0fbc804cb5b939e725947f927b837ffef19a564",
+            "message": "Created Amount and Date classes for person fields",
+            "insertions": 102,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-28",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 142,
+        "deletions": 53,
+        "date": "2019-03-02",
+        "commitResults": [
+          {
+            "hash": "9ac177311aa195c66eb17ac71f828b453c6a5e39",
+            "message": "Added amount and date fields in instructions for add.",
+            "insertions": 3,
+            "deletions": 5
+          },
+          {
+            "hash": "158ccf0b5e8ad16d28c4773cc503ed05d1de66a7",
+            "message": "Implemented extra fields amount and date in add command with \"/s\" and \"/d\" prefix",
+            "insertions": 12,
+            "deletions": 2
+          },
+          {
+            "hash": "9ce851cada599faf750561bf65d72ba4923ad9b9",
+            "message": "minor edits",
+            "insertions": 39,
+            "deletions": 10
+          },
+          {
+            "hash": "59c5cf1ed263c62a4c7d22f06bb1c3d92de67b22",
+            "message": "Changed UI to reflect fields amount and date",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "98ccf5fa04126bd886fbfdbc6070d167a1587a35",
+            "message": "Added logic and changes to accomodate updated Person object with fields Amount and Date",
+            "insertions": 78,
+            "deletions": 26
+          },
+          {
+            "hash": "4d73a623862e3cb34e028128d4af4f5147fccd14",
+            "message": "Changed value field in Amount to String",
+            "insertions": 8,
+            "deletions": 8
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 600,
+        "deletions": 293,
+        "date": "2019-03-04",
+        "commitResults": [
+          {
+            "hash": "d901f9a2db5a33a131b90cd144acd129871c5fc9",
+            "message": "Modified test files to reflect changes in Person fields",
+            "insertions": 318,
+            "deletions": 216
+          },
+          {
+            "hash": "df2a31cff80439c146b1a86911bd5a5783f011da",
+            "message": "Checkstyle fixes",
+            "insertions": 106,
+            "deletions": 53
+          },
+          {
+            "hash": "c7a89da78e7891fba3bc42ad63bd3ea317fcccb0",
+            "message": "Checkstyle fixes",
+            "insertions": 165,
+            "deletions": 19
+          },
+          {
+            "hash": "b9a5a7f504de5f2378b1cbe8a18b6cb8de00ceee",
+            "message": "Checkstyle fixes",
+            "insertions": 11,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-03-05",
+        "commitResults": [
+          {
+            "hash": "ef5073f4b4a629d5510ee864a356a8760d594fe1",
+            "message": "Trigger Travis documentation regeneration",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 431,
+        "deletions": 1317,
+        "date": "2019-03-12",
+        "commitResults": [
+          {
+            "hash": "47240f490a7fb55d30659afd4abcf33fba55fcda",
+            "message": "Removed Address, Email and Phone fields",
+            "insertions": 317,
+            "deletions": 1174
+          },
+          {
+            "hash": "8c75c29f563116bfcaa7fe04614d946b892175c6",
+            "message": "Checkstyle fixes",
+            "insertions": 8,
+            "deletions": 7
+          },
+          {
+            "hash": "83fd237f7fd1da627e0e2f66f30a4289fd47079c",
+            "message": "Checkstyle fixes",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "91a030b565199b6d5c6f39229085eed27077c3aa",
+            "message": "Fixed failed test cases",
+            "insertions": 61,
+            "deletions": 76
+          },
+          {
+            "hash": "284d727915b55c30da1fbde7a4acb9b49e0e3f40",
+            "message": "Fixed Indentation errors",
+            "insertions": 27,
+            "deletions": 27
+          },
+          {
+            "hash": "d0b0f965436d2dbd2a11d261b401fdc41b7691d8",
+            "message": "Removed empty java files",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "bb412b6211a3b313ac0414092906d2c6485b5bdf",
+            "message": "Removed empty java files",
+            "insertions": 0,
+            "deletions": 0
+          },
+          {
+            "hash": "46b1dfe1a8e9243a6a75e372a0fa3b9b31a2216e",
+            "message": "Fixes for failed test cases",
+            "insertions": 16,
+            "deletions": 30
+          },
+          {
+            "hash": "e449d060272cc88106b8305a0844d1202dbda0f1",
+            "message": "Checkstyle Fixes",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "f4626c599ba5c867f5a212fb3b052fe8c8eab296",
+            "message": "Fixed Discrepancy in data",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-15",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-18",
+        "commitResults": []
+      }
+    ],
+    "Jackimaru96": [
+      {
+        "insertions": 117,
+        "deletions": 118,
+        "date": "2019-02-18",
+        "commitResults": [
+          {
+            "hash": "c7ff209a9395429b4910193b0b085436601a69db",
+            "message": "Updated UserGuide for In-Credit-Ble",
+            "insertions": 117,
+            "deletions": 118
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-19",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-22",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 137,
+        "deletions": 17,
+        "date": "2019-02-25",
+        "commitResults": [
+          {
+            "hash": "dd4f8e89477a89c2f0e0755d6d8ea7b750ed31ce",
+            "message": "Updated Use Cases (Appendix C)",
+            "insertions": 137,
+            "deletions": 17
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-27",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-28",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 554,
+        "deletions": 185,
+        "date": "2019-03-03",
+        "commitResults": [
+          {
+            "hash": "9747f896317d0347869d1fd972a78c2aa537dfdf",
+            "message": "Add new description prefix",
+            "insertions": 5,
+            "deletions": 1
+          },
+          {
+            "hash": "42307e51a99fe39b10d2415eab52212196054ad7",
+            "message": "Logic: \u0027description\u0027 command which does nothing",
+            "insertions": 117,
+            "deletions": 54
+          },
+          {
+            "hash": "7ed987dbe3f604566a8ef5376c02df61f6e909f8",
+            "message": "Logic: \u0027description\u0027 command takes in two parameters",
+            "insertions": 149,
+            "deletions": 6
+          },
+          {
+            "hash": "f6bde90eef6bb57c7fbf441a5104a2b3ebd529ca",
+            "message": "checkStyle edits",
+            "insertions": 65,
+            "deletions": 58
+          },
+          {
+            "hash": "8541a5b6befbc9c1f66e157d040e77c14ee98f92",
+            "message": "checkStyle edit",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "d3ef51a280dd64ca9ee8dff480fe4fa6d01e71bf",
+            "message": "UI: Add placeholder for description in PersonCard GUI",
+            "insertions": 8,
+            "deletions": 0
+          },
+          {
+            "hash": "d3fec9a853c5bd0f850ab0e90e08fd7e22788a7b",
+            "message": "Model: Add Description class",
+            "insertions": 81,
+            "deletions": 12
+          },
+          {
+            "hash": "0b5d7114565c2442a387e55ead1b439a84e9cfc7",
+            "message": "checkStyle edits: Description class",
+            "insertions": 15,
+            "deletions": 7
+          },
+          {
+            "hash": "d0fbd378c5658f94af5eb7d44a6ea836b4fae521",
+            "message": "Model: Modify \u0027Person\u0027 to support a \u0027Description\u0027 field",
+            "insertions": 34,
+            "deletions": 11
+          },
+          {
+            "hash": "c37ed6b7449a1fcd0912b6001bea6044b58eff4d",
+            "message": "checkStyle edits: Model: Modfy \u0027Person\u0027 to support a \u0027Description\u0027 field",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "b6d58a7c69c2b4ca248c336db74d9b45655f9b7d",
+            "message": "Bug fix",
+            "insertions": 3,
+            "deletions": 1
+          },
+          {
+            "hash": "389ee944643fb68374fb05d4fb3b61be56f053a5",
+            "message": "Add Description field to JsonAdaptedPerson class",
+            "insertions": 25,
+            "deletions": 6
+          },
+          {
+            "hash": "cd2f845f3e740d2ab4896a73e3e5bb7854166e33",
+            "message": "Bug fix: JsonAdaptedPerson class",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "342f76cd62b38216c97649febc169da3284a17d4",
+            "message": "Bug fix",
+            "insertions": 31,
+            "deletions": 9
+          },
+          {
+            "hash": "b8ebf067e51527c50feec32a65e08eed826655cf",
+            "message": "Bug fix",
+            "insertions": 1,
+            "deletions": 2
+          },
+          {
+            "hash": "39f4ef9fa36d9a41351e73298a4bca552973f5e8",
+            "message": "Bug fix",
+            "insertions": 15,
+            "deletions": 13
+          }
+        ]
+      },
+      {
+        "insertions": 226,
+        "deletions": 24,
+        "date": "2019-03-04",
+        "commitResults": [
+          {
+            "hash": "3938b56ce2e2c76714f7e74931a43d15d3f8ede7",
+            "message": "Bug fix: Unused import",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "a1abc10ec8fcdbf4160b9018e71009bf74f28afa",
+            "message": "Bug Fix: JsonSerializableAddressBookTest",
+            "insertions": 0,
+            "deletions": 3
+          },
+          {
+            "hash": "122f204dcd19a938190a3ba95bc09012be81ec83",
+            "message": "Bug fix: duplicatePersonAddressBook and invalidPersonAddressBook",
+            "insertions": 3,
+            "deletions": 0
+          },
+          {
+            "hash": "5e80585d50fd6173362e0a35eefdb198375414ec",
+            "message": "Bug fix: duplicatePersonAddressBook invalidPersonAddressBook syntax",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "3b776e6485b3f15d1367d6d610fbd24556f6bc41",
+            "message": "UI: Connect Description field to PersonCard",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "0fc7321295cdbe726cbcf5e09f524ab9290ce154",
+            "message": "Test fix",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "d8f11397d85f89553d52621b462c9dbcc9f24694",
+            "message": "Logic: implement DescriptionCommand execute() logic",
+            "insertions": 34,
+            "deletions": 2
+          },
+          {
+            "hash": "048f36562bc22f993ba4efec47c132493a965474",
+            "message": "Logic: Implement DescriptionCommand execute() logic with tests",
+            "insertions": 162,
+            "deletions": 7
+          },
+          {
+            "hash": "45388a676e45e5356e88bf7a27bb73a0a512b59f",
+            "message": "checkStyle edits",
+            "insertions": 4,
+            "deletions": 5
+          },
+          {
+            "hash": "cf5bfd8527aacea6cf2cfb7e928445e6f2d37dd7",
+            "message": "checkstyle edit: import statement",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "cecb2f9b41ad7b671d97025241bcfdd0af32ecae",
+            "message": "DescriptionCommand: Updated UserGuide",
+            "insertions": 16,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 1,
+        "date": "2019-03-08",
+        "commitResults": [
+          {
+            "hash": "5043c85b09ecc6525f49ab584e7fb472958b072b",
+            "message": "README: Removed `Learning Outcomes`",
+            "insertions": 0,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 78,
+        "deletions": 10,
+        "date": "2019-03-12",
+        "commitResults": [
+          {
+            "hash": "d29cdb148e1d8c5e9b9f6aa85e93b08356a11f6e",
+            "message": "Fixed syntax in UserGuide.adoc",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "635293c425c029a8eb6413bf612ebb7dd8ac83b6",
+            "message": "Syntax: Changed PREFIX and description of command",
+            "insertions": 4,
+            "deletions": 0
+          },
+          {
+            "hash": "917fc622e0714d1f6b2438cd4ebabdd6a7f1bed8",
+            "message": "Logic: Accept \u0027increase\u0027 but do nothing\u0027",
+            "insertions": 67,
+            "deletions": 7
+          },
+          {
+            "hash": "c1a94374f6d31cd688ada11a22911d8fa421bce3",
+            "message": "checkStyle edit: IncreaseCommand",
+            "insertions": 1,
+            "deletions": 0
+          },
+          {
+            "hash": "362bad3c36525806c577a7365728706779c4efa1",
+            "message": "checkStyle edit: IncreaseCommand",
+            "insertions": 4,
+            "deletions": 2
+          },
+          {
+            "hash": "5cbd9cda71fa18c79cd87ba52510a93495da353a",
+            "message": "checkStyle edit: added newline at EOF in IncreaseCommand",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 79,
+        "deletions": 12,
+        "date": "2019-03-14",
+        "commitResults": [
+          {
+            "hash": "8b72a0646f0a2f98013f7b67688e0ffdee582a36",
+            "message": "Logic: Teach app to accept `increase` with argument",
+            "insertions": 73,
+            "deletions": 6
+          },
+          {
+            "hash": "948ff7829972777a0d9e96ced76ed53fb55f1b56",
+            "message": "checkStyle fixes + collapse catch block",
+            "insertions": 6,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 66,
+        "deletions": 36,
+        "date": "2019-03-15",
+        "commitResults": [
+          {
+            "hash": "f4a21bbdb0618a60323106b5418368bab26d0a09",
+            "message": "Tests: IncreaseCommand",
+            "insertions": 65,
+            "deletions": 34
+          },
+          {
+            "hash": "bb092ffec1be75310f8ce11bde8ff9d5883f9306",
+            "message": "checkStyle edit: Removed unused import, trailing whitespace",
+            "insertions": 1,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-18",
+        "commitResults": []
+      }
+    ],
+    "eugeneyl": [
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-18",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-19",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-22",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 15,
+        "deletions": 10,
+        "date": "2019-02-25",
+        "commitResults": [
+          {
+            "hash": "ee0aeee7b71fe58020ed76097569261df5c0127d",
+            "message": "Updated README.adoc",
+            "insertions": 14,
+            "deletions": 9
+          },
+          {
+            "hash": "612e17964ec5e4969b5251cb042e50ea966b6aae",
+            "message": "Updated fig3 in DeveloperGuide.adoc",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 5,
+        "deletions": 5,
+        "date": "2019-02-27",
+        "commitResults": [
+          {
+            "hash": "3085edeab4e2130676027087ac7b0f91c83eed50",
+            "message": "Updated UI and Logic Component of developer guide (excl fig.6)",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "211cb9197221bd8640131b4cbf18452548cd74ff",
+            "message": "Updated Model Component of Developer Guide",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "6b50d88e9d251421adc17d2804dd5afbab1f0747",
+            "message": "Updated Storage Component of Developer Guide",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-28",
+        "commitResults": []
+      },
+      {
+        "insertions": 172,
+        "deletions": 172,
+        "date": "2019-03-01",
+        "commitResults": [
+          {
+            "hash": "6481a33e1f3a5c9538f6d4a73d0cf29a5e5675e0",
+            "message": "Change \u0027find\u0027 command to \u0027search\u0027 and \u0027add\u0027 command to \u0027spend\u0027 as per userguide",
+            "insertions": 139,
+            "deletions": 139
+          },
+          {
+            "hash": "13456e00ef8370b70c0bcd2a50f963d9f6f256d8",
+            "message": "Edited order of import in AddressBookParser",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "5482ac6ace693a52e510e65c05639357ff469ce4",
+            "message": "Minor bugfix",
+            "insertions": 25,
+            "deletions": 25
+          },
+          {
+            "hash": "a7dd79d4ba0fe532dbec329f6d62a7321fddb2ea",
+            "message": "Minor bugfix in testutil",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "e33ccb35589ec33f2d2835e897a6a0d1388a6749",
+            "message": "Reordered import lines by lexicographical order",
+            "insertions": 4,
+            "deletions": 4
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 2214,
+        "deletions": 2204,
+        "date": "2019-03-12",
+        "commitResults": [
+          {
+            "hash": "a1fd7d4a327ce56d84fbccd95bed3cabd4cd4b1d",
+            "message": "Change all instances of person to record",
+            "insertions": 2121,
+            "deletions": 2166
+          },
+          {
+            "hash": "372378cf4595c190c2966fe0269430f0da554cd2",
+            "message": "Undo unwanted changes in LICENSE, UserGuide and README",
+            "insertions": 12,
+            "deletions": 12
+          },
+          {
+            "hash": "b31d65f742a670e688700b43a7e29c735e0c29a0",
+            "message": "Checkstyle fixes",
+            "insertions": 29,
+            "deletions": 4
+          },
+          {
+            "hash": "78c74b71db138228dd78686eb0361ca09ca79b50",
+            "message": "Checkstyle fixes",
+            "insertions": 46,
+            "deletions": 16
+          },
+          {
+            "hash": "c3f9c3d23245989587a85acfbf95461b50414191",
+            "message": "Checkstyle fixes",
+            "insertions": 6,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-15",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-18",
+        "commitResults": []
+      }
+    ],
+    "kjiaxuan": [
+      {
+        "insertions": 63,
+        "deletions": 10,
+        "date": "2019-02-18",
+        "commitResults": [
+          {
+            "hash": "360efdbc2d6fe71d409088ecc3591ce4ec33a0ca",
+            "message": "Updated Non Functional Requirements",
+            "insertions": 5,
+            "deletions": 1
+          },
+          {
+            "hash": "7fd92fcc2ad6ddfa4f9a445c40c20009368e4032",
+            "message": "Updated glossary",
+            "insertions": 8,
+            "deletions": 2
+          },
+          {
+            "hash": "7b484a16fa3383bacb5a23adbab3b8420b715277",
+            "message": "Updated product survey",
+            "insertions": 48,
+            "deletions": 6
+          },
+          {
+            "hash": "359d79b40d9403edbe3b42fa63968a6e7baef629",
+            "message": "Made minor formatting changes",
+            "insertions": 2,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 277,
+        "date": "2019-02-19",
+        "commitResults": [
+          {
+            "hash": "aae3ea00666f6740e082502acc74305a011d9fb2",
+            "message": "Removed old Appendix A - Suggested Programming Tasks to Get Started",
+            "insertions": 0,
+            "deletions": 277
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 89,
+        "deletions": 0,
+        "date": "2019-02-22",
+        "commitResults": [
+          {
+            "hash": "361fca96d340f4aa06344e31153ea32370b5a90e",
+            "message": "Updated logic/commands to include alias function",
+            "insertions": 10,
+            "deletions": 0
+          },
+          {
+            "hash": "e79fa508bf8f456b44d189babf8bf2c15e2e8e5f",
+            "message": "Updated logic/parser to include alias function",
+            "insertions": 10,
+            "deletions": 0
+          },
+          {
+            "hash": "0492bd703b3ebad81ca5f2ce9b48c2797ec1ff1c",
+            "message": "Updated AddressBookParserTest.java to include alias tests",
+            "insertions": 69,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 114,
+        "deletions": 72,
+        "date": "2019-02-25",
+        "commitResults": [
+          {
+            "hash": "b391142f2b6367e7b4515f7b2f070007fe23bfba",
+            "message": "Adjusted indentations in AddressBookParser.java",
+            "insertions": 26,
+            "deletions": 27
+          },
+          {
+            "hash": "c69887bef72f4abaa7c3d27c6592f490db52ce72",
+            "message": "Updated indentations in AddressBookParser.java",
+            "insertions": 36,
+            "deletions": 36
+          },
+          {
+            "hash": "f2b377ba13037df57ed6fad3cd8c91426d2a0687",
+            "message": "Updated formatting in AddressBookParserTest.java",
+            "insertions": 3,
+            "deletions": 2
+          },
+          {
+            "hash": "0fa2dc98aedd61ea33012ec28b22c7088b272a1d",
+            "message": "Updated Logic component to add in more aliases",
+            "insertions": 46,
+            "deletions": 4
+          },
+          {
+            "hash": "3928995cb79b067409941e40228fabae3e2dc496",
+            "message": "debugged an error in AddressBookParserTest.java",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "03f24c5c1af2b5a74de473ff520f094d481e74e3",
+            "message": "Edited a method name in AddressBookParserTest.java",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "e06efd8c76bde407ee463ff3549e44011e9d00d3",
+            "message": "Updated AddressBookParser.java to support case sensitivity in command words",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-27",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-28",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 691,
+        "deletions": 673,
+        "date": "2019-03-12",
+        "commitResults": [
+          {
+            "hash": "cb71a91fa22cf65a5ae59fdfa563e8ef8503a291",
+            "message": "Minor edits",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "289798778b258f2c47f9fcb337c78527ff5ea1a5",
+            "message": "Included an introduction section",
+            "insertions": 19,
+            "deletions": 2
+          },
+          {
+            "hash": "6f4c6c3d23e0798ab6f5387e8576f9f422e17418",
+            "message": "Updated links in introduction",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "18d15dab535499f5d9e9a7870b0d5d7475bae5f5",
+            "message": "commons: renamed directories",
+            "insertions": 670,
+            "deletions": 669
+          }
+        ]
+      },
+      {
+        "insertions": 1480,
+        "deletions": 1467,
+        "date": "2019-03-13",
+        "commitResults": [
+          {
+            "hash": "446c11521d1a3c9e3430dc20c5da8a807c9ede6e",
+            "message": "logic: renamed directories",
+            "insertions": 171,
+            "deletions": 167
+          },
+          {
+            "hash": "66c8d5d7f4b3452b8ea676732d1bea3c34bcdec6",
+            "message": "model: renamed directories",
+            "insertions": 155,
+            "deletions": 156
+          },
+          {
+            "hash": "01ade8892b5da5cfc601eb20c9cb20f1528610f5",
+            "message": "storage: renamed directories",
+            "insertions": 65,
+            "deletions": 65
+          },
+          {
+            "hash": "409020b5663ae9288fb1518fe9da1a209e28c15f",
+            "message": "ui: renamed directories",
+            "insertions": 27,
+            "deletions": 27
+          },
+          {
+            "hash": "849a3df5a6e56f0f7c7a40e4fbb52bb158ecb091",
+            "message": "test/data and test/java/guitests: renamed directories",
+            "insertions": 76,
+            "deletions": 81
+          },
+          {
+            "hash": "65c2f68bde95cbd35aaf9874ffe78043202017bb",
+            "message": "test/..../commons: renamed directories",
+            "insertions": 21,
+            "deletions": 21
+          },
+          {
+            "hash": "6d2100c4a7d3de9043c1d4d6d83204756dc2c07d",
+            "message": "test/..../logic: Renamed directories",
+            "insertions": 375,
+            "deletions": 361
+          },
+          {
+            "hash": "345c22254f4d71c26ab422e878b2316e4b29eb87",
+            "message": "test/..../model: Renamed directories",
+            "insertions": 213,
+            "deletions": 213
+          },
+          {
+            "hash": "9133e444293eea0eca845b9d3de2b937308c3bf0",
+            "message": "test/..../storage: Renamed Directories",
+            "insertions": 67,
+            "deletions": 67
+          },
+          {
+            "hash": "777d3e5ec92a49e3319da5ef450f09a93f0319f5",
+            "message": "test/..../testutil: renamed directories",
+            "insertions": 17,
+            "deletions": 16
+          },
+          {
+            "hash": "0f0d600a4a9083e14ae031e21b59d56e635e5f17",
+            "message": "test/..../ui: renamed directories",
+            "insertions": 34,
+            "deletions": 34
+          },
+          {
+            "hash": "d86df3d5da6b1743b49230b7570b7a700ed26c88",
+            "message": "test/java/systemtests: Renamed directories",
+            "insertions": 255,
+            "deletions": 255
+          },
+          {
+            "hash": "5de1c5e4ebaa550a92a2fbb154d5fdd0f6e4a2f3",
+            "message": "test/resources/view/UiPartTest: Renamed directories",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "2a14f07be4afa760d53da3648c0e6ca74ea0a472",
+            "message": "renamed addressbook.log to financetracker.log",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 107,
+        "deletions": 76,
+        "date": "2019-03-14",
+        "commitResults": [
+          {
+            "hash": "1b34b093f615d31f2eec29f2dc141350e661d01c",
+            "message": "checkstyle fix",
+            "insertions": 17,
+            "deletions": 10
+          },
+          {
+            "hash": "11bfe3c69fdf27c2196217ae205ed3306d10990f",
+            "message": "checkStyleMain fix 1",
+            "insertions": 3,
+            "deletions": 3
+          },
+          {
+            "hash": "3cbd45a0ce3cee4badecd4ee081aab6d4b98c4f6",
+            "message": "checkStyleTest fix 1",
+            "insertions": 48,
+            "deletions": 25
+          },
+          {
+            "hash": "f51aacc0835ae3e48620ec482dad54afc843f6be",
+            "message": "FinanceTrackerTest: formatted import statements",
+            "insertions": 3,
+            "deletions": 4
+          },
+          {
+            "hash": "94e7c9496863724bf7e2422291704407d9ab0f98",
+            "message": "Updated person to record in fxml files",
+            "insertions": 33,
+            "deletions": 30
+          },
+          {
+            "hash": "ad868872685fc18adbf97504a2b509f1bc342e13",
+            "message": "Checkstyle fix",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "f7958d4389206f31842f5a921337298cde019f17",
+            "message": "resolve JsonSerializableFinanceTrackerTest error",
+            "insertions": 3,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-15",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-03-18",
+        "commitResults": []
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "geezlouisee": 466310,
+    "JeremyLoye": 583,
+    "Jackimaru96": 797,
+    "eugeneyl": 1589,
+    "kjiaxuan": 2355
+  },
+  "authorContributionVariance": {
+    "geezlouisee": 8.1220911E10,
+    "JeremyLoye": 123944.45,
+    "Jackimaru96": 21343.83,
+    "eugeneyl": 649803.4,
+    "kjiaxuan": 337923.28
+  },
+  "authorDisplayNameMap": {
+    "geezlouisee": "LOU ...ING",
+    "JeremyLoye": "LOY...EMY",
+    "Jackimaru96": "JAC...JIE",
+    "eugeneyl": "YON...ENE",
+    "kjiaxuan": "KOK ...UAN"
+  }
+}

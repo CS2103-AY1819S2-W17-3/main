@@ -1,14 +1,14 @@
 {
-  "dashboardGeneratedTime": "Mon Mar 18 22:09:04 SGT 2019",
+  "dashboardGeneratedTime": "Mon Mar 18 22:24:25 SGT 2019",
   "repos": [
     {
       "location": {
-        "location": "https://github.com/CS2103-AY1819S2-W17-3/main.git",
+        "location": "https://github.com/geezlouisee/main.git",
         "repoName": "main",
-        "organization": "CS2103-AY1819S2-W17-3"
+        "organization": "geezlouisee"
       },
       "branch": "master",
-      "displayName": "CS2103-AY1819S2-W17-3_main_master"
+      "displayName": "geezlouisee_main_master"
     }
   ]
 }
