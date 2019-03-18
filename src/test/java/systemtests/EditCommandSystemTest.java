@@ -5,8 +5,8 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import static seedu.finance.logic.commands.CommandTestUtil.AMOUNT_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.AMOUNT_DESC_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_FRIEND;
-import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_DINING;
+import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_SHOPPING;
 import static seedu.finance.logic.commands.CommandTestUtil.DATE_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.DATE_DESC_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.INVALID_AMOUNT_DESC;
@@ -15,7 +15,7 @@ import static seedu.finance.logic.commands.CommandTestUtil.INVALID_DATE_DESC;
 import static seedu.finance.logic.commands.CommandTestUtil.INVALID_NAME_DESC;
 import static seedu.finance.logic.commands.CommandTestUtil.NAME_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.NAME_DESC_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_SHOPPING;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_NAME_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_NAME_BOB;
 import static seedu.finance.logic.parser.CliSyntax.PREFIX_CATEGORY;
@@ -55,8 +55,8 @@ public class EditCommandSystemTest extends FinanceTrackerSystemTest {
          */
         Index index = INDEX_FIRST_RECORD;
         String command = " " + EditCommand.COMMAND_WORD + "  " + index.getOneBased() + "  " + NAME_DESC_BOB + "  "
-                + AMOUNT_DESC_BOB + " " + DATE_DESC_BOB + " " + CATEGORY_DESC_HUSBAND + " ";
-        Record editedRecord = new RecordBuilder(BOB).withCategories(VALID_CATEGORY_HUSBAND).build();
+                + AMOUNT_DESC_BOB + " " + DATE_DESC_BOB + " " + CATEGORY_DESC_SHOPPING + " ";
+        Record editedRecord = new RecordBuilder(BOB).withCategories(VALID_CATEGORY_SHOPPING).build();
         assertCommandSuccess(command, index, editedRecord);
 
         /* Case: undo editing the last record in the list -> last record restored */
@@ -72,7 +72,7 @@ public class EditCommandSystemTest extends FinanceTrackerSystemTest {
 
         /* Case: edit a record with new values same as existing values -> edited */
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_BOB + AMOUNT_DESC_BOB
-                + DATE_DESC_BOB + CATEGORY_DESC_FRIEND + CATEGORY_DESC_HUSBAND;
+                + DATE_DESC_BOB + CATEGORY_DESC_DINING + CATEGORY_DESC_SHOPPING;
         assertCommandSuccess(command, index, BOB);
 
         /* Case: edit a record with new values same as another record's values but with different name -> edited */
@@ -80,7 +80,7 @@ public class EditCommandSystemTest extends FinanceTrackerSystemTest {
         index = INDEX_SECOND_RECORD;
         assertNotEquals(getModel().getFilteredRecordList().get(index.getZeroBased()), BOB);
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_AMY
-                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_FRIEND + CATEGORY_DESC_HUSBAND;
+                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_DINING + CATEGORY_DESC_SHOPPING;
         editedRecord = new RecordBuilder(BOB).withName(VALID_NAME_AMY).build();
         assertCommandSuccess(command, index, editedRecord);
 
@@ -119,7 +119,7 @@ public class EditCommandSystemTest extends FinanceTrackerSystemTest {
         index = INDEX_FIRST_RECORD;
         selectRecord(index);
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_AMY
-                + AMOUNT_DESC_AMY + DATE_DESC_AMY + CATEGORY_DESC_FRIEND;
+                + AMOUNT_DESC_AMY + DATE_DESC_AMY + CATEGORY_DESC_DINING;
         // this can be misleading: card selection actually remains unchanged but the
         // browser's url is updated to reflect the new record's name
         assertCommandSuccess(command, index, AMY, index);
@@ -169,23 +169,23 @@ public class EditCommandSystemTest extends FinanceTrackerSystemTest {
         index = INDEX_FIRST_RECORD;
         assertFalse(getModel().getFilteredRecordList().get(index.getZeroBased()).equals(BOB));
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_BOB
-                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_FRIEND + CATEGORY_DESC_HUSBAND;
+                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_DINING + CATEGORY_DESC_SHOPPING;
         assertCommandFailure(command, EditCommand.MESSAGE_DUPLICATE_RECORD);
 
         /* Case: edit a record with new values same as another record's values but
                  with different categories -> rejected */
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_BOB
-                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_HUSBAND;
+                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_SHOPPING;
         assertCommandFailure(command, EditCommand.MESSAGE_DUPLICATE_RECORD);
 
         /* Case: edit a record with new values same as another record's values but with different amount -> rejected */
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_BOB
-                + AMOUNT_DESC_AMY + DATE_DESC_BOB + CATEGORY_DESC_FRIEND + CATEGORY_DESC_HUSBAND;
+                + AMOUNT_DESC_AMY + DATE_DESC_BOB + CATEGORY_DESC_DINING + CATEGORY_DESC_SHOPPING;
         assertCommandFailure(command, EditCommand.MESSAGE_DUPLICATE_RECORD);
 
         /* Case: edit a record with new values same as another record's values but with different date -> rejected */
         command = EditCommand.COMMAND_WORD + " " + index.getOneBased() + NAME_DESC_BOB
-                + AMOUNT_DESC_BOB + DATE_DESC_AMY + CATEGORY_DESC_FRIEND + CATEGORY_DESC_HUSBAND;
+                + AMOUNT_DESC_BOB + DATE_DESC_AMY + CATEGORY_DESC_DINING + CATEGORY_DESC_SHOPPING;
         assertCommandFailure(command, EditCommand.MESSAGE_DUPLICATE_RECORD);
     }
 

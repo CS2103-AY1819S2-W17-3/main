@@ -31,8 +31,8 @@ public class CommandTestUtil {
     public static final String VALID_AMOUNT_BOB = "123";
     public static final String VALID_DATE_AMY = "12/01/2005";
     public static final String VALID_DATE_BOB = "23/04/2014";
-    public static final String VALID_CATEGORY_HUSBAND = "husband";
-    public static final String VALID_CATEGORY_FRIEND = "friend";
+    public static final String VALID_CATEGORY_SHOPPING = "shopping";
+    public static final String VALID_CATEGORY_DINING = "dining";
     public static final String VALID_DESCRIPTION_AMY = "Birthday present for Amy";
     public static final String VALID_DESCRIPTION_BOB = "Birthday present for Bob";
 
@@ -42,15 +42,15 @@ public class CommandTestUtil {
     public static final String AMOUNT_DESC_BOB = " " + PREFIX_AMOUNT + VALID_AMOUNT_BOB;
     public static final String DATE_DESC_AMY = " " + PREFIX_DATE + VALID_DATE_AMY;
     public static final String DATE_DESC_BOB = " " + PREFIX_DATE + VALID_DATE_BOB;
-    public static final String CATEGORY_DESC_FRIEND = " " + PREFIX_CATEGORY + VALID_CATEGORY_FRIEND;
-    public static final String CATEGORY_DESC_HUSBAND = " " + PREFIX_CATEGORY + VALID_CATEGORY_HUSBAND;
+    public static final String CATEGORY_DESC_DINING = " " + PREFIX_CATEGORY + VALID_CATEGORY_DINING;
+    public static final String CATEGORY_DESC_SHOPPING = " " + PREFIX_CATEGORY + VALID_CATEGORY_SHOPPING;
 
     public static final String INVALID_NAME_DESC = " " + PREFIX_NAME + "James&"; // '&' not allowed in names
     public static final String INVALID_AMOUNT_DESC = " " + PREFIX_AMOUNT + "*2"; // "*" not allowed in amounts
     public static final String INVALID_DATE_DESC =
             " " + PREFIX_DATE + "29/29/2019"; // invalid date not allowed in dates
     public static final String INVALID_CATEGORY_DESC = " " + PREFIX_CATEGORY
-            + "hubby*"; // '*' not allowed in categories
+            + "shopping*"; // '*' not allowed in categories
 
     public static final String PREAMBLE_WHITESPACE = "\t  \r  \n";
     public static final String PREAMBLE_NON_EMPTY = "NonEmptyPreamble";
@@ -61,10 +61,10 @@ public class CommandTestUtil {
     static {
         DESC_AMY = new EditRecordDescriptorBuilder().withName(VALID_NAME_AMY)
                 .withAmount(VALID_AMOUNT_AMY).withDate(VALID_DATE_AMY)
-                .withCategories(VALID_CATEGORY_FRIEND).build();
+                .withCategories(VALID_CATEGORY_DINING).build();
         DESC_BOB = new EditRecordDescriptorBuilder().withName(VALID_NAME_BOB)
                 .withAmount(VALID_AMOUNT_BOB).withDate(VALID_DATE_BOB)
-                .withCategories(VALID_CATEGORY_HUSBAND, VALID_CATEGORY_FRIEND).build();
+                .withCategories(VALID_CATEGORY_SHOPPING, VALID_CATEGORY_DINING).build();
     }
 
     /**

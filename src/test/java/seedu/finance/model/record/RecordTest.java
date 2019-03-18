@@ -3,7 +3,7 @@ package seedu.finance.model.record;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_SHOPPING;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_DATE_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_NAME_BOB;
 import static seedu.finance.testutil.TypicalRecords.ALICE;
@@ -43,11 +43,11 @@ public class RecordTest {
         assertFalse(ALICE.isSameRecord(editedAlice));
 
         // same name, same amount, different attributes -> returns true
-        editedAlice = new RecordBuilder(ALICE).withDate(VALID_DATE_BOB).withCategories(VALID_CATEGORY_HUSBAND).build();
+        editedAlice = new RecordBuilder(ALICE).withDate(VALID_DATE_BOB).withCategories(VALID_CATEGORY_SHOPPING).build();
         assertTrue(ALICE.isSameRecord(editedAlice));
 
         // same name, same date, different attributes -> returns true
-        editedAlice = new RecordBuilder(ALICE).withAmount(VALID_AMOUNT_BOB).withCategories(VALID_CATEGORY_HUSBAND)
+        editedAlice = new RecordBuilder(ALICE).withAmount(VALID_AMOUNT_BOB).withCategories(VALID_CATEGORY_SHOPPING)
                 .build();
         assertTrue(ALICE.isSameRecord(editedAlice));
     }
@@ -83,7 +83,7 @@ public class RecordTest {
         assertFalse(ALICE.equals(editedAlice));
 
         // different categories -> returns false
-        editedAlice = new RecordBuilder(ALICE).withCategories(VALID_CATEGORY_HUSBAND).build();
+        editedAlice = new RecordBuilder(ALICE).withCategories(VALID_CATEGORY_SHOPPING).build();
         assertFalse(ALICE.equals(editedAlice));
     }
 }

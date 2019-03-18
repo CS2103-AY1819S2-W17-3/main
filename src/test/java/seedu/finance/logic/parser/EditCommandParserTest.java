@@ -3,8 +3,8 @@ package seedu.finance.logic.parser;
 import static seedu.finance.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.finance.logic.commands.CommandTestUtil.AMOUNT_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.AMOUNT_DESC_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_FRIEND;
-import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_DINING;
+import static seedu.finance.logic.commands.CommandTestUtil.CATEGORY_DESC_SHOPPING;
 import static seedu.finance.logic.commands.CommandTestUtil.DATE_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.DATE_DESC_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.INVALID_AMOUNT_DESC;
@@ -14,8 +14,8 @@ import static seedu.finance.logic.commands.CommandTestUtil.INVALID_NAME_DESC;
 import static seedu.finance.logic.commands.CommandTestUtil.NAME_DESC_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_FRIEND;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_DINING;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_SHOPPING;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_DATE_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_DATE_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_NAME_AMY;
@@ -87,12 +87,12 @@ public class EditCommandParserTest {
 
         // while parsing {@code PREFIX_CATEGORY} alone will reset the categories of the {@code Record} being edited,
         // parsing it together with a valid category results in error
-        assertParseFailure(parser, "1" + CATEGORY_DESC_FRIEND + CATEGORY_DESC_HUSBAND
+        assertParseFailure(parser, "1" + CATEGORY_DESC_DINING + CATEGORY_DESC_SHOPPING
                             + CATEGORY_EMPTY, Category.MESSAGE_CONSTRAINTS);
-        assertParseFailure(parser, "1" + CATEGORY_DESC_FRIEND + CATEGORY_EMPTY
-                            + CATEGORY_DESC_HUSBAND, Category.MESSAGE_CONSTRAINTS);
-        assertParseFailure(parser, "1" + CATEGORY_EMPTY + CATEGORY_DESC_FRIEND
-                            + CATEGORY_DESC_HUSBAND, Category.MESSAGE_CONSTRAINTS);
+        assertParseFailure(parser, "1" + CATEGORY_DESC_DINING + CATEGORY_EMPTY
+                            + CATEGORY_DESC_SHOPPING, Category.MESSAGE_CONSTRAINTS);
+        assertParseFailure(parser, "1" + CATEGORY_EMPTY + CATEGORY_DESC_DINING
+                            + CATEGORY_DESC_SHOPPING, Category.MESSAGE_CONSTRAINTS);
 
         // multiple invalid values, but only the first invalid value is captured
         assertParseFailure(parser, "1" + INVALID_NAME_DESC + INVALID_AMOUNT_DESC + VALID_AMOUNT_AMY
@@ -102,12 +102,12 @@ public class EditCommandParserTest {
     @Test
     public void parse_allFieldsSpecified_success() {
         Index targetIndex = INDEX_SECOND_RECORD;
-        String userInput = targetIndex.getOneBased() + AMOUNT_DESC_BOB + CATEGORY_DESC_HUSBAND
-                + DATE_DESC_AMY + NAME_DESC_AMY + CATEGORY_DESC_FRIEND;
+        String userInput = targetIndex.getOneBased() + AMOUNT_DESC_BOB + CATEGORY_DESC_SHOPPING
+                + DATE_DESC_AMY + NAME_DESC_AMY + CATEGORY_DESC_DINING;
 
         EditRecordDescriptor descriptor = new EditRecordDescriptorBuilder().withName(VALID_NAME_AMY)
                 .withAmount(VALID_AMOUNT_BOB).withDate(VALID_DATE_AMY)
-                .withCategories(VALID_CATEGORY_HUSBAND, VALID_CATEGORY_FRIEND)
+                .withCategories(VALID_CATEGORY_SHOPPING, VALID_CATEGORY_DINING)
                 .build();
         EditCommand expectedCommand = new EditCommand(targetIndex, descriptor);
 
@@ -148,8 +148,8 @@ public class EditCommandParserTest {
         assertParseSuccess(parser, userInput, expectedCommand);
 
         // categories
-        userInput = targetIndex.getOneBased() + CATEGORY_DESC_FRIEND;
-        descriptor = new EditRecordDescriptorBuilder().withCategories(VALID_CATEGORY_FRIEND).build();
+        userInput = targetIndex.getOneBased() + CATEGORY_DESC_DINING;
+        descriptor = new EditRecordDescriptorBuilder().withCategories(VALID_CATEGORY_DINING).build();
         expectedCommand = new EditCommand(targetIndex, descriptor);
         assertParseSuccess(parser, userInput, expectedCommand);
     }
@@ -158,11 +158,11 @@ public class EditCommandParserTest {
     public void parse_multipleRepeatedFields_acceptsLast() {
         Index targetIndex = INDEX_FIRST_RECORD;
         String userInput = targetIndex.getOneBased() + AMOUNT_DESC_AMY + DATE_DESC_AMY
-                + CATEGORY_DESC_FRIEND + AMOUNT_DESC_AMY + DATE_DESC_AMY + CATEGORY_DESC_FRIEND
-                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_HUSBAND;
+                + CATEGORY_DESC_DINING + AMOUNT_DESC_AMY + DATE_DESC_AMY + CATEGORY_DESC_DINING
+                + AMOUNT_DESC_BOB + DATE_DESC_BOB + CATEGORY_DESC_SHOPPING;
 
         EditRecordDescriptor descriptor = new EditRecordDescriptorBuilder().withAmount(VALID_AMOUNT_BOB)
-                .withDate(VALID_DATE_BOB).withCategories(VALID_CATEGORY_FRIEND, VALID_CATEGORY_HUSBAND)
+                .withDate(VALID_DATE_BOB).withCategories(VALID_CATEGORY_DINING, VALID_CATEGORY_SHOPPING)
                 .build();
         EditCommand expectedCommand = new EditCommand(targetIndex, descriptor);
 
