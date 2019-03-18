@@ -2,8 +2,8 @@ package seedu.finance.testutil;
 
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_FRIEND;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_SHOPPING;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_DINING;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_DATE_AMY;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_DATE_BOB;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_NAME_AMY;
@@ -44,9 +44,9 @@ public class TypicalRecords {
 
     // Manually added - Record's details found in {@code CommandTestUtil}
     public static final Record AMY = new RecordBuilder().withName(VALID_NAME_AMY).withAmount(VALID_AMOUNT_AMY)
-            .withDate(VALID_DATE_AMY).withCategories(VALID_CATEGORY_FRIEND).build();
+            .withDate(VALID_DATE_AMY).withCategories(VALID_CATEGORY_SHOPPING).build();
     public static final Record BOB = new RecordBuilder().withName(VALID_NAME_BOB).withAmount(VALID_AMOUNT_BOB)
-            .withDate(VALID_DATE_BOB).withCategories(VALID_CATEGORY_HUSBAND, VALID_CATEGORY_FRIEND)
+            .withDate(VALID_DATE_BOB).withCategories(VALID_CATEGORY_DINING, VALID_CATEGORY_SHOPPING)
             .build();
 
     public static final String KEYWORD_MATCHING_MEIER = "Meier"; // A keyword that matches MEIER

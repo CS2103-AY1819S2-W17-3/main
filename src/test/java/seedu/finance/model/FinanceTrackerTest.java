@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_DINING;
 import static seedu.finance.testutil.TypicalRecords.ALICE;
 import static seedu.finance.testutil.TypicalRecords.getTypicalFinanceTracker;
 
@@ -54,7 +54,7 @@ public class FinanceTrackerTest {
     public void resetData_withDuplicateRecords_throwsDuplicateRecordException() {
         // Two records with the same identity fields
         Record editedAlice = new RecordBuilder(ALICE).withAmount(VALID_AMOUNT_BOB)
-                .withCategories(VALID_CATEGORY_HUSBAND)
+                .withCategories(VALID_CATEGORY_DINING)
                 .build();
         List<Record> newRecords = Arrays.asList(ALICE, editedAlice);
         FinanceTrackerStub newData = new FinanceTrackerStub(newRecords);
@@ -84,7 +84,7 @@ public class FinanceTrackerTest {
     public void hasRecord_recordWithSameIdentityFieldsInFinanceTracker_returnsTrue() {
         financeTracker.addRecord(ALICE);
         Record editedAlice = new RecordBuilder(ALICE).withAmount(VALID_AMOUNT_BOB)
-                .withCategories(VALID_CATEGORY_HUSBAND).build();
+                .withCategories(VALID_CATEGORY_DINING).build();
         assertTrue(financeTracker.hasRecord(editedAlice));
     }
 

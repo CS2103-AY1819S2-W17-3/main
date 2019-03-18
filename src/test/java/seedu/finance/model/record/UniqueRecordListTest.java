@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static seedu.finance.logic.commands.CommandTestUtil.VALID_AMOUNT_BOB;
-import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_HUSBAND;
+import static seedu.finance.logic.commands.CommandTestUtil.VALID_CATEGORY_DINING;
 import static seedu.finance.testutil.TypicalRecords.ALICE;
 import static seedu.finance.testutil.TypicalRecords.BOB;
 
@@ -47,7 +47,7 @@ public class UniqueRecordListTest {
     public void contains_recordWithSameIdentityFieldsInList_returnsTrue() {
         uniqueRecordList.add(ALICE);
         Record editedAlice = new RecordBuilder(ALICE).withAmount(VALID_AMOUNT_BOB)
-                .withCategories(VALID_CATEGORY_HUSBAND)
+                .withCategories(VALID_CATEGORY_DINING)
                 .build();
         assertTrue(uniqueRecordList.contains(editedAlice));
     }
@@ -96,7 +96,7 @@ public class UniqueRecordListTest {
     public void setRecord_editedRecordHasSameIdentity_success() {
         uniqueRecordList.add(ALICE);
         Record editedAlice = new RecordBuilder(ALICE).withAmount(VALID_AMOUNT_BOB)
-                .withCategories(VALID_CATEGORY_HUSBAND)
+                .withCategories(VALID_CATEGORY_DINING)
                 .build();
         uniqueRecordList.setRecord(ALICE, editedAlice);
         UniqueRecordList expectedUniqueRecordList = new UniqueRecordList();
