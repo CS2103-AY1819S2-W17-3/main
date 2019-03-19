@@ -35,7 +35,7 @@
 <li><a href="#undo-redo-feature">4.3. Undo/Redo feature</a></li>
 <li><a href="#budget-management">4.4. Budget Management</a></li>
 <li><a href="#summary">4.5. Summary</a></li>
-<li><a href="#proposed-data-encryption">4.6. [Proposed] Data Encryption</a></li>
+<li><a href="#security-features">4.6. Security Features</a></li>
 <li><a href="#logging">4.7. Logging</a></li>
 <li><a href="#Implementation-Configuration">4.8. Configuration</a></li>
 </ul>
@@ -1074,9 +1074,71 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 </div>
 </div>
 <div class="sect2">
-<h3 id="proposed-data-encryption"><a class="link" href="#proposed-data-encryption">4.6. [Proposed] Data Encryption</a></h3>
+<h3 id="security-features"><a class="link" href="#security-features">4.6. Security Features</a></h3>
 <div class="paragraph">
-<p><em>{Explain here how the data encryption feature will be implemented}</em></p>
+<p>The In-Credit-Ble will ensure security of user data through the implementation of user profile system.</p>
+</div>
+<div class="paragraph">
+<p>The user profile system will allow for multiple users to use In-Credit-Ble on the same machine and keeps
+the data apart from each other. Users have the option of setting a password to protect their data from being
+viewed or altered by other users.</p>
+</div>
+<div class="sect3">
+<h4 id="to-be-implemented-4"><a class="link" href="#to-be-implemented-4">4.6.1. To be implemented</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>password</code> and <code>user</code> class to be created under <code>Model</code></p>
+</li>
+<li>
+<p><code>register</code> command to allow new users to register under <code>username</code></p>
+</li>
+<li>
+<p><code>setPassword</code> command to allow existing users to set a password for their profile. This command
+can also be used to reset existing passwords</p>
+</li>
+<li>
+<p><code>login</code> command to allow users who registered to login to their profile</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-consideration-4"><a class="link" href="#design-consideration-4">4.6.2. Design Consideration</a></h4>
+<div class="sect4">
+<h5 id="loading-different-user-data"><a class="link" href="#loading-different-user-data">Loading different user data</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (Proposed implementation)</strong>: Loading user data is done during initialisation of In-Credit-Ble</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Able to switch user profiles after In-Credit-Ble is loaded</p>
+</li>
+<li>
+<p>Cons: External changes to files after intialisation not reflected may be overwritten</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> User profile data only loaded when user logs in</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Unnecessary data not kept in memory so memory space is not wasted</p>
+</li>
+<li>
+<p>Cons: The <code>Logic</code> or <code>Model</code> component will have to depend on the <code>Storage</code> component as <code>login</code> command
+will require the <code>Storage</code> to load and return the user&#8217;s data</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -2317,4 +2379,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 14:55:17 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 14:58:48 UTC</div></div></div></body></html>
