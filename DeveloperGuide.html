@@ -1102,6 +1102,24 @@ can also be used to reset existing passwords</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>Given below is an example usage scenario and how the login system will behave at each step</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 1:</strong>. The user launches the application for the first time. <code>MainApp</code> class will load all xml files within the data
+folder according to the path in <code>UserPrefs</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 2a:</strong> User can then register using <code>register</code> with a <code>username</code> parameter. If users registered before
+they can skip this step and go to Step 2b instead.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 2b:</strong> User can <code>login</code> using their <code>username</code> if they have registered before</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 3:</strong> Users can set password using the <code>setPassword</code> command if they do not have password.
+They can also change their password using this command.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="design-consideration-4"><a class="link" href="#design-consideration-4">4.6.2. Design Consideration</a></h4>
@@ -2379,4 +2397,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 14:58:48 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 15:35:44 UTC</div></div></div></body></html>
