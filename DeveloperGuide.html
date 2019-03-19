@@ -30,10 +30,11 @@
 </li>
 <li><a href="#implementation">4. Implementation</a>
 <ul class="sectlevel2">
-<li><a href="#undo-redo-feature">4.1. Undo/Redo feature</a></li>
-<li><a href="#proposed-data-encryption">4.2. [Proposed] Data Encryption</a></li>
-<li><a href="#logging">4.3. Logging</a></li>
-<li><a href="#Implementation-Configuration">4.4. Configuration</a></li>
+<li><a href="#searching-by-tag-feature">4.1. Searching by tag feature</a></li>
+<li><a href="#undo-redo-feature">4.2. Undo/Redo feature</a></li>
+<li><a href="#proposed-data-encryption">4.3. [Proposed] Data Encryption</a></li>
+<li><a href="#logging">4.4. Logging</a></li>
+<li><a href="#Implementation-Configuration">4.5. Configuration</a></li>
 </ul>
 </li>
 <li><a href="#documentation">5. Documentation</a>
@@ -587,9 +588,85 @@ As a more OOP model, we can store a <code>Tag</code> list in <code>Address Book<
 <p>This section describes some noteworthy details on how certain features are implemented.</p>
 </div>
 <div class="sect2">
-<h3 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">4.1. Undo/Redo feature</a></h3>
+<h3 id="searching-by-tag-feature"><a class="link" href="#searching-by-tag-feature">4.1. Searching by tag feature</a></h3>
+<div class="paragraph">
+<p>This feature allows the user to filter out specific expenses by entering a certain tag (eg food).</p>
+</div>
+<div class="paragraph">
+<p>This implementation is under <code>Logic</code> and <code>Model</code> Component.</p>
+</div>
+<div class="paragraph">
+<p><em>Sequence diagram to be done soon</em></p>
+</div>
 <div class="sect3">
-<h4 id="current-implementation"><a class="link" href="#current-implementation">4.1.1. Current Implementation</a></h4>
+<h4 id="to-be-implemented"><a class="link" href="#to-be-implemented">4.1.1. To be implemented</a></h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>User enters command <code>findTag food</code>. The command is received by <code>FinanceTrackerParser</code>,
+which then creates a <code>FindTagCommandParser</code> Object and calls <code>FindCommandParser#parse()</code> method.</p>
+</li>
+<li>
+<p><code>FindTagCommandParser#parse()</code> method then calls <code>ParserUtil#ensureKeywordsAreValid()</code> method. If any
+of the keywords does not follow the correct format, <code>ParseException</code> will be thrown.</p>
+</li>
+<li>
+<p>A <code>FindTagCommand</code> Object is created and returned to the <code>LogicManager</code>.</p>
+</li>
+<li>
+<p><code>LogicManager</code> then calls <code>FindTagCommand#execute()</code>, which calls Mode#updateFilteredExpenseList() method
+to update a filterList based on the given predicate.</p>
+</li>
+<li>
+<p>Then the record list panel will show a set of records according to the keywords. A <code>CommandResult</code> is then created
+and returned to <code>Logic Manager</code>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-consideration"><a class="link" href="#design-consideration">4.1.2. Design Consideration</a></h4>
+<div class="paragraph">
+<p>This feature can be implemented in different ways in terms of how the records are found.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1</strong> : Check through all records and select those with the matched <code>tag</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement without changing original architecture.</p>
+</li>
+<li>
+<p>Cons: Slow. Tend to take a long time to search through large number of records.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2</strong> : Each time a new tag is created, create a new list. Each of these list will whole
+all the records of a particular tag.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Very efficient, each time the command is called, just need to retrieve the list of the wanted tag.</p>
+</li>
+<li>
+<p>Cons: Need to change the original architecture of storage to introduce storing of different list corresponding to
+each tag. Will take up more space if there is many different tags.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">4.2. Undo/Redo feature</a></h3>
+<div class="sect3">
+<h4 id="current-implementation"><a class="link" href="#current-implementation">4.2.1. Current Implementation</a></h4>
 <div class="paragraph">
 <p>The undo/redo mechanism is facilitated by <code>VersionedAddressBook</code>.
 It extends <code>AddressBook</code> with an undo/redo history, stored internally as an <code>addressBookStateList</code> and <code>currentStatePointer</code>.
@@ -719,7 +796,7 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 </div>
 </div>
 <div class="sect3">
-<h4 id="design-considerations"><a class="link" href="#design-considerations">4.1.2. Design Considerations</a></h4>
+<h4 id="design-considerations"><a class="link" href="#design-considerations">4.2.2. Design Considerations</a></h4>
 <div class="sect4">
 <h5 id="aspect-how-undo-redo-executes"><a class="link" href="#aspect-how-undo-redo-executes">Aspect: How undo &amp; redo executes</a></h5>
 <div class="ulist">
@@ -789,20 +866,20 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 </div>
 </div>
 <div class="sect2">
-<h3 id="proposed-data-encryption"><a class="link" href="#proposed-data-encryption">4.2. [Proposed] Data Encryption</a></h3>
+<h3 id="proposed-data-encryption"><a class="link" href="#proposed-data-encryption">4.3. [Proposed] Data Encryption</a></h3>
 <div class="paragraph">
 <p><em>{Explain here how the data encryption feature will be implemented}</em></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="logging"><a class="link" href="#logging">4.3. Logging</a></h3>
+<h3 id="logging"><a class="link" href="#logging">4.4. Logging</a></h3>
 <div class="paragraph">
 <p>We are using <code>java.util.logging</code> package for logging. The <code>LogsCenter</code> class is used to manage the logging levels and logging destinations.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.4, &#8220;Configuration&#8221;</a>)</p>
+<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.5, &#8220;Configuration&#8221;</a>)</p>
 </li>
 <li>
 <p>The <code>Logger</code> for a class can be obtained using <code>LogsCenter.getLogger(Class)</code> which will log messages according to the specified logging level</p>
@@ -833,7 +910,7 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 </div>
 </div>
 <div class="sect2">
-<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.4. Configuration</a></h3>
+<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.5. Configuration</a></h3>
 <div class="paragraph">
 <p>Certain properties of the application can be controlled (e.g user prefs file location, logging level) through the configuration file (default: <code>config.json</code>).</p>
 </div>
@@ -2032,4 +2109,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 03:35:26 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 09:38:54 UTC</div></div></div></body></html>
