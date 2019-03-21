@@ -13,25 +13,27 @@
 <li><a href="#quick-start">2. Quick Start</a></li>
 <li><a href="#Features">3. Features</a>
 <ul class="sectlevel2">
-<li><a href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></li>
-<li><a href="#set-a-budget-code-set-code">3.2. Set a budget: <code>set</code></a></li>
-<li><a href="#adding-an-expense-code-spend-code">3.3. Adding an expense : <code>spend</code></a></li>
-<li><a href="#increasing-budget-code-increase-code">3.4. Increasing budget: <code>increase</code></a></li>
-<li><a href="#allocate-budgeting-based-on-categories-code-allocate-code">3.5. Allocate budgeting based on categories: <code>allocate</code></a></li>
-<li><a href="#listing-all-entries-code-list-code">3.6. Listing all entries : <code>list</code></a></li>
-<li><a href="#showing-summary-of-records-code-summary-code">3.7. Showing summary of records : <code>summary</code></a></li>
-<li><a href="#editing-description-of-entries-code-description-code">3.8. Editing description of entries: <code>description</code></a></li>
-<li><a href="#editing-entries-code-edit-code">3.9. Editing entries : <code>edit</code></a></li>
+<li><a href="#viewing-help-code-help-code">3.1. Viewing help: <code>help</code></a></li>
+<li><a href="#setting-a-budget-code-set-code">3.2. Setting a budget: <code>set</code></a></li>
+<li><a href="#adding-an-expense-code-spend-code">3.3. Adding an expense: <code>spend</code></a></li>
+<li><a href="#increasing-the-budget-code-increase-code">3.4. Increasing the budget: <code>increase</code></a></li>
+<li><a href="#allocating-budget-based-on-categories-code-allocate-code">3.5. Allocating budget based on categories: <code>allocate</code></a></li>
+<li><a href="#listing-all-entries-code-list-code">3.6. Listing all entries: <code>list</code></a></li>
+<li><a href="#showing-summary-of-records-code-summary-code">3.7. Showing summary of records: <code>summary</code></a></li>
+<li><a href="#editing-an-entry-code-edit-code">3.8. Editing an entry: <code>edit</code></a></li>
+<li><a href="#locating-entry-based-on-name-category-code-search-code">3.9. Locating entry based on name/category: <code>search</code></a></li>
 <li><a href="#deleting-an-entry-code-delete-code">3.10. Deleting an entry: <code>delete</code></a></li>
 <li><a href="#listing-entered-commands-code-history-code">3.11. Listing entered commands: <code>history</code></a></li>
 <li><a href="#undoing-previous-command-code-undo-code">3.12. Undoing previous command : <code>undo</code></a></li>
 <li><a href="#redoing-the-previously-undone-command-code-redo-code">3.13. Redoing the previously undone command : <code>redo</code></a></li>
 <li><a href="#clearing-all-entries-code-clear-code">3.14. Clearing all entries : <code>clear</code></a></li>
 <li><a href="#exiting-the-program-code-exit-code">3.15. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">3.16. Saving the data</a></li>
-<li><a href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.17. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></li>
-<li><a href="#suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code">3.18. Suggestions on how to save/Links to investment guide <code>[coming in v2.0]</code></a></li>
-<li><a href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.19. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></li>
+<li><a href="#adding-a-description-to-an-entry-code-description-code">3.16. Adding a description to an entry: <code>description</code></a></li>
+<li><a href="#selecting-an-entry-code-select-code">3.17. Selecting an entry: <code>select</code></a></li>
+<li><a href="#saving-the-data">3.18. Saving the data</a></li>
+<li><a href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.19. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></li>
+<li><a href="#suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code">3.20. Suggestions on how to save/Links to investment guide <code>[coming in v2.0]</code></a></li>
+<li><a href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.21. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></li>
 </ul>
 </li>
 <li><a href="#faq">4. FAQ</a></li>
@@ -44,23 +46,34 @@
 <h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In-Credit-Ble will be your "one-stop shop" in managing and tracking your personal finances. Our user-friendly interface will make it easy for you to stick to your budget and be more aware of your spending habits. If you are a fast typer, or prefer to type over using your mouse and like to get things done efficiently, then this is the product just for you! In-Credit-Ble is designed for those who prefer to work with a <strong>Command Line Interface (CLI).</strong></p>
+<p>Welcome to the <em>In-Credit-Ble</em> User Guide! <em>In-Credit-Ble</em> is your "one-stop shop" in managing and tracking your
+personal finances. Our user-friendly interface will make it easy for you to stick to your budget and be more aware
+of your spending habits. If you are a <strong>fast typer</strong>, <strong>prefer to type</strong> over using your mouse and <strong>like to get things done
+efficiently</strong>, then this is the product just for you! <em>In-Credit-Ble</em> is designed for those who prefer to work with a
+<strong>Command Line Interface (CLI)</strong>.</p>
+</div>
+<div class="paragraph">
+<p>This user guide shows you how to get started using <em>In-Credit-Ble</em>. It also provides in-depth documentation on the
+different features and shows you how to perform basic <em>In-Credit-Ble</em> operations.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="quick-start"><a class="link" href="#quick-start">2. Quick Start</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Follow these steps to get <em>In-Credit-Ble</em> up and running on your computer in no time!</p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Ensure you have Java version <code>9</code> or later installed in your Computer.</p>
+<p>Ensure you have Java version <code>9</code> or later installed in your computer.</p>
 </li>
 <li>
-<p>Download the latest <code>increditble.jar</code> <a href="https://github.com/cs2103-ay1819s2-w17-3/main/releases">here</a>.</p>
+<p>Download the latest <code>increditble.jar</code> file <a href="https://github.com/cs2103-ay1819s2-w17-3/main/releases">here</a>.</p>
 </li>
 <li>
-<p>Copy the file to the folder you want to use as the home folder for your Address Book.</p>
+<p>Copy the file to the folder you want to use as the home folder for your finance tracker.</p>
 </li>
 <li>
 <p>Double-click the file to start the app. The GUI should appear in a few seconds.</p>
@@ -79,13 +92,13 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 <div class="ulist">
 <ul>
 <li>
-<p><strong><code>allocate</code></strong> : allocate budget to a certain category</p>
+<p><strong><code>allocate</code></strong> : allocates budget to a certain category</p>
 </li>
 <li>
-<p><strong><code>help</code></strong> : view command list and how to use them</p>
+<p><strong><code>help</code></strong> : opens the <em>In-Credit-Ble</em> user guide</p>
 </li>
 <li>
-<p><strong><code>set</code></strong> : set a budget</p>
+<p><strong><code>set</code></strong> : exits the application</p>
 </li>
 </ul>
 </div>
@@ -100,6 +113,10 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 <div class="sect1">
 <h2 id="Features"><a class="link" href="#Features">3. Features</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This section describes the various features <em>In-Credit-Ble</em> has to offer. Examples are also included to give you
+step-by-step instructions on how to use the different commands.</p>
+</div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
@@ -108,10 +125,12 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 <div class="ulist">
 <ul>
 <li>
-<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>set a/AMOUNT</code>, <code>AMOUNT</code> is a parameter which can be used as <code>set 200.00</code>.</p>
+<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>set $/AMOUNT</code>,
+<code>AMOUNT</code> is a parameter which can be used as <code>set $/200.00</code>.</p>
 </li>
 <li>
-<p>Items in square brackets are optional e.g <code>search KEYWORD [MORE_KEYWORDS]</code> can be used as <code>search John</code> or as <code>search John Williams</code>.</p>
+<p>Items in square brackets are optional e.g <code>search KEYWORD [MORE_KEYWORDS]</code> can be used as <code>search clothes</code> or as
+<code>search cake lunch</code>.</p>
 </li>
 <li>
 <p>Items with <code>…</code>​ after them can be used multiple times including zero times.</p>
@@ -121,129 +140,154 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </div>
 <div class="sect2">
-<h3 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></h3>
+<h3 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.1. Viewing help: <code>help</code></a></h3>
 <div class="paragraph">
-<p>Lists the commands that a user can enter to navigate the software<br>
-<strong>Format</strong>: <code>help</code></p>
+<p>Forgotten which commands to use? You can easily find the commands you need to navigate the software
+by using the following command:</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>help</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="set-a-budget-code-set-code"><a class="link" href="#set-a-budget-code-set-code">3.2. Set a budget: <code>set</code></a></h3>
+<h3 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">3.2. Setting a budget: <code>set</code></a></h3>
 <div class="paragraph">
-<p>Sets a budget for the month/week
-<strong>Format</strong>: <code>set a/AMOUNT</code></p>
+<p>This command enables you to set a fixed budget for a month/week. The command format is as follows:</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Format</strong>: <code>set $/AMOUNT</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>set a/500</code></p>
+<p><code>set $/500</code></p>
 </li>
 <li>
-<p><code>set a/500.50</code></p>
+<p><code>set $/500.50</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="adding-an-expense-code-spend-code"><a class="link" href="#adding-an-expense-code-spend-code">3.3. Adding an expense : <code>spend</code></a></h3>
+<h3 id="adding-an-expense-code-spend-code"><a class="link" href="#adding-an-expense-code-spend-code">3.3. Adding an expense: <code>spend</code></a></h3>
 <div class="paragraph">
-<p>Adds an expenditure to a given category in the expense tracker<br>
-<strong>Format</strong>: <code>spend a/AMOUNT c/CATEGORY</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="increasing-budget-code-increase-code"><a class="link" href="#increasing-budget-code-increase-code">3.4. Increasing budget: <code>increase</code></a></h3>
-<div class="paragraph">
-<p>Increases the budget limit for the month/week by the specified amount.<br>
-<strong>Format</strong>: <code>increase a/AMOUNT</code></p>
+<p>You can keep track of how much you have spent by adding an expense entry to <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Alias</strong>: <code>add</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT d/DATE [c/CATEGORY] &#8230;&#8203;</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>increase a/10.10</code></p>
+<p><code>spend n/cake $/5.50 d/15/03/2019 c/Food</code></p>
 </li>
 <li>
-<p><code>increase 100</code></p>
+<p><code>spend n/movie $/10 d/16/03/2019 c/Entertainment</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="allocate-budgeting-based-on-categories-code-allocate-code"><a class="link" href="#allocate-budgeting-based-on-categories-code-allocate-code">3.5. Allocate budgeting based on categories: <code>allocate</code></a></h3>
+<h3 id="increasing-the-budget-code-increase-code"><a class="link" href="#increasing-the-budget-code-increase-code">3.4. Increasing the budget: <code>increase</code></a></h3>
 <div class="paragraph">
-<p>To set the budget amount for a particular category<br>
-<strong>Format</strong>: <code>allocate a/AMOUNT c/CATEGORY</code></p>
+<p>With this command, you will be able to increase the budget limit for the month/week by the specified amount.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Format</strong>: <code>increase $/AMOUNT</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>allocate a/50 c/Dining</code><br>
-Allocates $50 of month/week&#8217;s budget to <code>Dining</code> category</p>
+<p><code>increase $/10.10</code></p>
 </li>
 <li>
-<p><code>allocate a/30.50 c/Shopping</code><br>
-Allocates $30.50 of month/week&#8217;s budget to <code>Shopping</code> category</p>
+<p><code>increase $/100</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="listing-all-entries-code-list-code"><a class="link" href="#listing-all-entries-code-list-code">3.6. Listing all entries : <code>list</code></a></h3>
+<h3 id="allocating-budget-based-on-categories-code-allocate-code"><a class="link" href="#allocating-budget-based-on-categories-code-allocate-code">3.5. Allocating budget based on categories: <code>allocate</code></a></h3>
 <div class="paragraph">
-<p>List all entries by user<br>
-<strong>Format</strong>: <code>list</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="showing-summary-of-records-code-summary-code"><a class="link" href="#showing-summary-of-records-code-summary-code">3.7. Showing summary of records : <code>summary</code></a></h3>
-<div class="paragraph">
-<p>Shows the summary of user&#8217;s previous expenditures, with statistics on how one&#8217;s spending habits are like in the different categories. It also displays the remaining budget amount for each category.<br>
-<strong>Format</strong>: <code>summary</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="editing-description-of-entries-code-description-code"><a class="link" href="#editing-description-of-entries-code-description-code">3.8. Editing description of entries: <code>description</code></a></h3>
-<div class="paragraph">
-<p>Edits the description of an existing entry in records.<br>
-<strong>Format</strong>: <code>description INDEX [d/DESCRIPTION]</code></p>
+<p>You can use this command to set a budget for a particular category that has already been created in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Format</strong>: <code>allocate $/AMOUNT c/CATEGORY</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>description 1 d/Father&#8217;s birthday present</code><br>
-Changes the description of entry at index 1 to "Father&#8217;s birthday present"</p>
+<p><code>allocate $/50 c/Dining</code></p>
 </li>
 <li>
-<p><code>description 1 d/</code><br>
-Removes the description of entry at index 1</p>
+<p><code>allocate $/100 c/Shopping</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="editing-entries-code-edit-code"><a class="link" href="#editing-entries-code-edit-code">3.9. Editing entries : <code>edit</code></a></h3>
+<h3 id="listing-all-entries-code-list-code"><a class="link" href="#listing-all-entries-code-list-code">3.6. Listing all entries: <code>list</code></a></h3>
+<div class="paragraph">
+<p>You can see all the entries you have entered with the list command.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>l</code>, <code>ls</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>list</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="showing-summary-of-records-code-summary-code"><a class="link" href="#showing-summary-of-records-code-summary-code">3.7. Showing summary of records: <code>summary</code></a></h3>
+<div class="paragraph">
+<p>Shows the summary of your previous expenditures, with statistics on how your spending habits are like in the
+different categories. It also displays the remaining budget amount for each category.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>summary</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">3.8. Editing an entry: <code>edit</code></a></h3>
 <div class="paragraph">
 <p>Edits an existing entry in the record.<br>
-<strong>Format</strong>: <code>edit INDEX [a/AMOUNT] [c/CATEGORY]</code></p>
+Index refers to the index number shown in the list.</p>
 </div>
-<div class="sidebarblock">
-<div class="content">
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>e</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY]</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="ulist">
 <ul>
 <li>
-<p>Edits the entry at the specified <code>INDEX</code>. The index refers to the index number shown in the displayed record list. The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+<p><code>INDEX</code> here refers to the index number shown in the displayed records.</p>
+</li>
+<li>
+<p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
 </li>
 <li>
 <p>At least one of the optional fields must be provided.</p>
@@ -253,32 +297,45 @@ Removes the description of entry at index 1</p>
 </li>
 </ul>
 </div>
-</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>search Transport Wednesday</code><br>
-Returns an entry that has Transport as category and is entered on Wednesday
-=== Locating entry based on category/date: <code>search</code></p>
+<p><code>edit 2 $/10.10</code></p>
+</li>
+<li>
+<p>`edit 1 n/burger c/Food</p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="locating-entry-based-on-name-category-code-search-code"><a class="link" href="#locating-entry-based-on-name-category-code-search-code">3.9. Locating entry based on name/category: <code>search</code></a></h3>
 <div class="paragraph">
-<p>Search for an entry using a category name or a date/day/week/month/year as keyword.
-<strong>Format</strong>: <code>search KEYWORD [KEYWORD]</code></p>
+<p>Search for an entry using a name or category as keyword.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Alias</strong>: <code>find</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>search KEYWORD [MORE_KEYWORDS]</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>search Transport Wednesday</code><br>
-Returns an entry that has Transport as category and is entered on Wednesday</p>
+<p><code>search Transport</code><br></p>
+</li>
+<li>
+<p><code>search cake bread Food</code></p>
 </li>
 </ul>
 </div>
@@ -286,8 +343,13 @@ Returns an entry that has Transport as category and is entered on Wednesday</p>
 <div class="sect2">
 <h3 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">3.10. Deleting an entry: <code>delete</code></a></h3>
 <div class="paragraph">
-<p>Deletes an entry in the record.<br>
-<strong>Format</strong>: <code>delete INDEX</code></p>
+<p>Deletes an entry in the record.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>d</code>, <code>del</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>delete INDEX</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -296,21 +358,27 @@ Returns an entry that has Transport as category and is entered on Wednesday</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-<div class="paragraph">
-<p><code>INDEX</code> here refers to the index number shown in the list</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>INDEX</code> here refers to the index number shown in the displayed records.</p>
+</li>
+<li>
+<p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Example</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>delete 2</code><br>
-Deletes the entry at index 2</p>
+<p><code>delete 2</code></p>
 </li>
 </ul>
 </div>
@@ -318,15 +386,25 @@ Deletes the entry at index 2</p>
 <div class="sect2">
 <h3 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.11. Listing entered commands: <code>history</code></a></h3>
 <div class="paragraph">
-<p>Lists all the commands user has entered in reverse chronological order<br>
-<strong>Format</strong>: <code>history</code></p>
+<p>List all the commands you have entered in reverse chronological order.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>h</code>, <code>hist</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>history</code></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.12. Undoing previous command : <code>undo</code></a></h3>
 <div class="paragraph">
-<p>Restores the address book to the state before the previous <em>undoable</em> command was executed.<br>
-<strong>Format</strong>: <code>undo</code></p>
+<p>Restores to the state before the previous <em>undoable</em> command was executed.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>u</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>undo</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -336,14 +414,22 @@ Deletes the entry at index 2</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Undoable commands: those commands that modify the address book&#8217;s content (<code>set</code>, <code>spend</code>, <code>increase</code>, <code>allocate</code>, <code>edit</code>, <code>delete</code>, <code>clear</code>).</p>
+<p><em>Undoable</em> commands:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>commands that modify the finance tracker&#8217;s content<br>
+(<code>set</code>, <code>spend</code>, <code>increase</code>, <code>allocate</code>, <code>edit</code>, <code>delete</code>, <code>clear</code>, `description).</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -370,11 +456,16 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 <div class="sect2">
 <h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.13. Redoing the previously undone command : <code>redo</code></a></h3>
 <div class="paragraph">
-<p>Reverses the most recent <code>undo</code> command.<br>
-<strong>Format</strong>: <code>redo</code></p>
+<p>Reverses the most recent <code>undo</code> command.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p><strong>Alias</strong>: <code>r</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>redo</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -402,39 +493,146 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <div class="sect2">
 <h3 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.14. Clearing all entries : <code>clear</code></a></h3>
 <div class="paragraph">
-<p>Clears all entries from the address book.<br>
-<strong>Format</strong>: <code>clear</code></p>
+<p>Deletes all the entries and reset budget to 0.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>c</code>, <code>clr</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>clear</code></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.15. Exiting the program : <code>exit</code></a></h3>
 <div class="paragraph">
-<p>Exits the program.<br>
-<strong>Format</strong>: <code>exit</code></p>
+<p>Exits the program.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>quit</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>exit</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.16. Saving the data</a></h3>
+<h3 id="adding-a-description-to-an-entry-code-description-code"><a class="link" href="#adding-a-description-to-an-entry-code-description-code">3.16. Adding a description to an entry: <code>description</code></a></h3>
 <div class="paragraph">
-<p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes the data. There is no need to save manually</p>
+<p>Adds a description to an existing entry in the records.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>descr</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>description INDEX [d/DESCRIPTION]</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><code>INDEX</code> here refers to the index number shown in the displayed records.</p>
+</li>
+<li>
+<p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>description 1 d/Father&#8217;s birthday present</code><br>
+Changes the description of entry at index 1 to "Father&#8217;s birthday present"</p>
+</li>
+<li>
+<p><code>description 1 d/</code><br>
+Removes the description of entry at index 1</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.17. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h3>
+<h3 id="selecting-an-entry-code-select-code"><a class="link" href="#selecting-an-entry-code-select-code">3.17. Selecting an entry: <code>select</code></a></h3>
 <div class="paragraph">
-<p>The finance record for each month will be archived at the end of the month. This information will be used to derive the projected savings/expenses based on the typical spending pattern of the user.</p>
+<p>Selects an existing entry in the records</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>s</code>, <code>sel</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>select INDEX</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><code>INDEX</code> here refers to the index number shown in the displayed records.</p>
+</li>
+<li>
+<p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>select 3</code></p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code"><a class="link" href="#suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code">3.18. Suggestions on how to save/Links to investment guide <code>[coming in v2.0]</code></a></h3>
+<h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.18. Saving the data</a></h3>
 <div class="paragraph">
-<p>The user will be able to list categories of financial articles that they are interested in (e.g. investment, stock market). Based on these categories, the application will use Google API to search for related articles for the user to view.</p>
+<p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes
+the data. There is no need to save manually.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.19. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></h3>
+<h3 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.19. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h3>
 <div class="paragraph">
-<p>The application will link up with secure methods of payment such as payLah, Visa/MasterCard, Amex or Paypal to allow transactions between users. By paying through this application, the transactions will be automatically updated on the records.</p>
+<p>The finance records for each month will be archived at the end of the month. This information will be used to derive
+the projected savings/expenses based on the typical spending pattern of the user.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code"><a class="link" href="#suggestions-on-how-to-save-links-to-investment-guide-code-coming-in-v2-0-code">3.20. Suggestions on how to save/Links to investment guide <code>[coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>The user will be able to list categories of financial articles that they are interested in
+(e.g. investment, stock market). Based on these categories, the application will use Google API to search for
+related articles for the user to view.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.21. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>The application will link up with secure methods of payment such as payLah, Visa/MasterCard, Amex or Paypal to allow
+transactions between users. By paying through this application, the transactions will be automatically updated
+on the records.</p>
 </div>
 </div>
 </div>
@@ -444,11 +642,14 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Q</strong>: How do I transfer my data to another Computer?<br>
-<strong>A</strong>: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous In-Credit-Ble folder.</p>
+<strong>A</strong>: Install the app in the other computer and overwrite the empty data file it creates with the file
+that contains the data of your previous <em>In-Credit-Ble</em> folder.</p>
 </div>
 <div class="paragraph">
-<p><strong>Q</strong>: Will the application support different currency?
-<strong>A</strong>: At the current version, the application is unable to support transactions record in different currency. User will need to calculate and input based on the local currency. This will be rectified in the subsequent version of our application.</p>
+<p><strong>Q</strong>: Will the application support different currency?<br>
+<strong>A</strong>: At the current version, the application is unable to support transactions record in different currency.
+User will need to calculate and input based on the local currency. This will be rectified in the subsequent version
+of our application.</p>
 </div>
 </div>
 </div>
@@ -461,52 +662,73 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <p><strong>Help</strong>: <code>help</code></p>
 </li>
 <li>
-<p><strong>Set Budget</strong>: <code>set a/AMOUNT</code><br>
-e.g. <code>set 500</code></p>
+<p><strong>Set Budget</strong>: <code>set $/AMOUNT</code><br>
+e.g. <code>set $/500</code></p>
 </li>
 <li>
-<p><strong>Add expense</strong>: <code>spend a/AMOUNT c/CATEGORY</code><br>
-e.g. <code>spend 5.1 food</code></p>
+<p><strong>Add expense</strong>: <code>spend n/NAME $/AMOUNT d/DATE [c/CATEGORY] &#8230;&#8203;</code><br>
+Alias: <code>add</code><br>
+e.g. <code>spend n/movie $/10 d/16/03/2019 c/Entertainment</code></p>
 </li>
 <li>
-<p><strong>Increase budget</strong>: <code>increase a/AMOUNT</code><br>
-e.g. <code>increase 10</code></p>
+<p><strong>Increase budget</strong>: <code>increase $/AMOUNT</code><br>
+e.g. <code>increase $/10.10</code></p>
 </li>
 <li>
-<p><strong>Allocate budgeting based on categories</strong>: <code>allocate a/AMOUNT c/CATEGORY'<br>
-e.g. `allocate 100 transport</code></p>
+<p><strong>Allocate budgeting based on categories</strong>: <code>allocate $/AMOUNT c/CATEGORY</code><br>
+e.g. <code>allocate $/100 c/Shopping</code></p>
 </li>
 <li>
-<p><strong>Listing all entries</strong>: <code>list</code></p>
+<p><strong>List all entries</strong>: <code>list</code><br>
+Alias: <code>l</code>, <code>ls</code></p>
 </li>
 <li>
-<p><strong>Showing summary of record</strong>: <code>summary</code></p>
+<p><strong>Show summary of record</strong>: <code>summary</code></p>
 </li>
 <li>
-<p><strong>Editing an entry</strong>: <code>edit INDEX a/AMOUNT [c/CATEGORY]</code><br>
-e.g. <code>edit 1 4.55 transport</code></p>
+<p><strong>Edit an entry</strong>: <code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY]</code><br>
+Alias: <code>e</code><br>
+e.g. <code>edit 1 n/burger c/Food</code></p>
 </li>
 <li>
-<p><strong>Locating entry based on category/date</strong>: <code>search KEYWORD [MORE_KEYWORDS]</code></p>
+<p><strong>Locate entry based on name/category</strong>: <code>search KEYWORD [MORE_KEYWORDS]</code><br>
+Alias: <code>find</code><br>
+e.g. <code>search cake break Food</code></p>
 </li>
 <li>
-<p><strong>Deleting an entry</strong>: <code>delete INDEX</code><br>
-e.g. <code>delete 1</code></p>
+<p><strong>Delete an entry</strong>: <code>delete INDEX</code><br>
+Alias: <code>d</code>, <code>del</code><br>
+e.g. <code>delete 2</code></p>
 </li>
 <li>
-<p><strong>Listing entered commands</strong>: <code>history</code></p>
+<p><strong>List entered commands</strong>: <code>history</code><br>
+Alias: <code>h</code>, <code>hist</code></p>
 </li>
 <li>
-<p><strong>Undoing previous command</strong>: <code>undo</code></p>
+<p><strong>Undo previous command</strong>: <code>undo</code><br>
+Alias: <code>u</code></p>
 </li>
 <li>
-<p><strong>Redoing previously undone command</strong>: <code>redo</code></p>
+<p><strong>Redo previously undone command</strong>: <code>redo</code><br>
+Alias: <code>r</code></p>
 </li>
 <li>
-<p><strong>Clearing all entries</strong>: <code>clear</code></p>
+<p><strong>Clear all entries</strong>: <code>clear</code><br>
+Alias: <code>c</code>, <code>clr</code></p>
 </li>
 <li>
-<p><strong>Exiting the program</strong>: <code>exit</code></p>
+<p><strong>Exit the program</strong>: <code>exit</code><br>
+Alias: <code>quit</code></p>
+</li>
+<li>
+<p><strong>Add a description to an entry</strong>: <code>description INDEX d/DESCRIPTION</code><br>
+Alias: <code>descr</code><br>
+e.g. <code>description 1 d/Father&#8217;s birthday present</code></p>
+</li>
+<li>
+<p><strong>Select an entry</strong>: <code>select INDEX</code><br>
+Alias: <code>s</code>, <code>sel</code><br>
+e.g. <code>select 3</code></p>
 </li>
 </ul>
 </div>
@@ -515,21 +737,22 @@ e.g. <code>delete 1</code></p>
 <div class="sect1">
 <h2 id="glossary"><a class="link" href="#glossary">6. Glossary</a></h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>amount</strong><br>
-The amount of money for expenditure and budget</p>
-</li>
-<li>
-<p><strong>entry</strong><br>
-The listed item/activity tracked by the application. It generally consists of the amount, along with a category tag (if specified)</p>
-</li>
-<li>
-<p><strong>record</strong><br>
-The list of all entries stored in the application</p>
-</li>
-</ul>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Amount</dt>
+<dd>
+<p>The amount of money for expenditure and budget</p>
+</dd>
+<dt class="hdlist1">Entry</dt>
+<dd>
+<p>A listed item/activity tracked by the application.  It generally consists of the name, amount and date along with a
+category tag (if specified)</p>
+</dd>
+<dt class="hdlist1">Records</dt>
+<dd>
+<p>The list of all entries stored in the application</p>
+</dd>
+</dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-19 15:40:18 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-03-21 15:52:24 UTC</div></div></div></body></html>
