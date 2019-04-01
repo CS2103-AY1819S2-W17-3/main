@@ -1,95 +1,193 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>In-Credit-Ble - User Guide</title><link rel="stylesheet" href="stylesheets/gh-pages.css">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>Jack Chen Yu Jie - Project Portfolio</title><link rel="stylesheet" href="../stylesheets/gh-pages.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>In-Credit-Ble - User Guide</h1></div><div id="content"><div id="preamble">
+<link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="../images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="../index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="../index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="../DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="../LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link active" href="../AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="../ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>Jack Chen Yu Jie - Project Portfolio</h1></div><div id="content"><div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>By: <code>Team W17-3</code>      Since: <code>March 2019</code>      Licence: <code>MIT</code></p>
-</div>
-</div>
-<div id="toc" class="toc">
-<div id="toctitle"></div>
-<ul class="sectlevel1">
-<li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#quick-start">2. Quick Start</a></li>
-<li><a href="#Features">3. Features</a>
-<ul class="sectlevel2">
-<li><a href="#budget-management">3.1. Budget Management</a>
-<ul class="sectlevel3">
-<li><a href="#setting-a-budget-code-set-code">3.1.1. Setting a budget: <code>set</code></a></li>
-<li><a href="#allocating-budget-based-on-categories-code-allocate-code">3.1.2. Allocating budget based on categories: <code>allocate</code></a></li>
-<li><a href="#increasing-the-budget-code-increase-code">3.1.3. Increasing the budget: <code>increase</code></a></li>
-</ul>
-</li>
-<li><a href="#expense-entry-management">3.2. Expense Entry Management</a>
-<ul class="sectlevel3">
-<li><a href="#adding-an-expense-code-spend-code">3.2.1. Adding an expense: <code>spend</code></a></li>
-<li><a href="#adding-a-description-to-an-entry-code-description-code">3.2.2. Adding a description to an entry: <code>description</code></a></li>
-<li><a href="#editing-an-entry-code-edit-code">3.2.3. Editing an entry: <code>edit</code></a></li>
-<li><a href="#selecting-an-entry-code-select-code">3.2.4. Selecting an entry: <code>select</code></a></li>
-<li><a href="#deleting-an-entry-code-delete-code">3.2.5. Deleting an entry: <code>delete</code></a></li>
-</ul>
-</li>
-<li><a href="#records-management">3.3. Records Management</a>
-<ul class="sectlevel3">
-<li><a href="#listing-all-entries-code-list-code">3.3.1. Listing all entries: <code>list</code></a></li>
-<li><a href="#locating-entry-based-on-name-category-code-search-code">3.3.2. Locating entry based on name/category: <code>search</code></a></li>
-<li><a href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">3.3.3. Sorting the entries according to name/amount/date/category: <code>sort</code></a></li>
-<li><a href="#reversing-the-entries-code-reverse-code">3.3.4. Reversing the entries: <code>reverse</code></a></li>
-<li><a href="#showing-summary-of-records-code-summary-code">3.3.5. Showing summary of records: <code>summary</code></a></li>
-</ul>
-</li>
-<li><a href="#miscellaneous">3.4. Miscellaneous</a>
-<ul class="sectlevel3">
-<li><a href="#viewing-help-code-help-code">3.4.1. Viewing help: <code>help</code></a></li>
-<li><a href="#undoing-previous-command-code-undo-code">3.4.2. Undoing previous command : <code>undo</code></a></li>
-<li><a href="#redoing-the-previously-undone-command-code-redo-code">3.4.3. Redoing the previously undone command : <code>redo</code></a></li>
-<li><a href="#changing-theme-of-application-code-theme-code">3.4.4. Changing theme of application: <code>theme</code></a></li>
-<li><a href="#listing-entered-commands-code-history-code">3.4.5. Listing entered commands: <code>history</code></a></li>
-<li><a href="#clearing-all-entries-code-clear-code">3.4.6. Clearing all entries : <code>clear</code></a></li>
-<li><a href="#exiting-the-program-code-exit-code">3.4.7. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">3.4.8. Saving the data</a></li>
-</ul>
-</li>
-<li><a href="#upcoming-features">3.5. Upcoming features</a>
-<ul class="sectlevel3">
-<li><a href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.5.1. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></li>
-<li><a href="#links-to-financial-articles-code-coming-in-v2-0-code">3.5.2. Links to financial articles <code>[coming in v2.0]</code></a></li>
-<li><a href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.5.3. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#faq">4. FAQ</a></li>
-<li><a href="#command-summary">5. Command Summary</a>
-<ul class="sectlevel2">
-<li><a href="#budget-management-2">5.1. Budget Management</a></li>
-<li><a href="#expense-entry-management-2">5.2. Expense Entry Management</a></li>
-<li><a href="#records-management-2">5.3. Records Management</a></li>
-<li><a href="#miscellaneous-2">5.4. Miscellaneous</a></li>
-</ul>
-</li>
-<li><a href="#glossary">6. Glossary</a></li>
-</ul>
-</div>
-</div>
-<div class="sect1">
-<h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Welcome to the <em>In-Credit-Ble</em> User Guide! <em>In-Credit-Ble</em> is your all-in-one application in managing and tracking your
-personal finances. Our user-friendly interface will make it easy for you to see how much you can safely spend within your budget and be more aware
-of your spending habits. If you are a <strong>fast typer</strong>, <strong>prefer to type</strong> over using your mouse and <strong>like to get things done
-efficiently</strong>, then this is the product just for you! <em>In-Credit-Ble</em> is designed for those who prefer to work with a
-<strong>Command Line Interface (CLI)</strong>.</p>
-</div>
-<div class="paragraph">
-<p>This user guide shows you how to get started using <em>In-Credit-Ble</em>. It also provides in-depth documentation on the
-different features and shows you how to perform basic <em>In-Credit-Ble</em> operations.</p>
+<div id="img-ProfilePhoto" class="dlist">
+<dl>
+<dt class="hdlist1">image</dt>
+<dd>
+<p>../images/jackimaru96.png</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="quick-start"><a class="link" href="#quick-start">2. Quick Start</a></h2>
+<h2 id="project-in-credit-ble-finance-tracker"><a class="link" href="#project-in-credit-ble-finance-tracker">PROJECT: In-Credit-Ble (Finance Tracker)</a></h2>
+<div class="sectionbody">
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> is a desktop Finance Tracker that is tailored to help users manage their finances
+and keep track of their budget in an easy and efficient manner. It is designed for those who
+prefer to work with a Command Line Interface (CLI), especially for those who prefer to type over
+using their mouse.</p>
+</div>
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> was developed by a team of five students from the National University of Singapore
+as part of a Software Engineering module (CS2103T).
+ We had to adapt to an existing codebase in Java and develop a functional product in a short
+ span of 13 weeks while learning new software engineering concepts. In this project portfolio,
+ I will be documenting my contributions to this project through the major and minor features implemented for <em>In-Credit-Ble</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="summary-of-contributions"><a class="link" href="#summary-of-contributions">Summary of Contributions</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Major enhancement</strong>: added <code>CategoryBudget</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>What it does</em></strong>: Allows user to set a budget for categories so as to keep track
+of the expenses for each category (such as <code>Food</code>, <code>Travel</code>, <code>Clothes</code>).
+It ensures that the sum of budget of each category does not exceed the total budget
+of the Finance Tracker.</p>
+</li>
+<li>
+<p><strong><em>Justification</em></strong>: This feature improves the product significantly and enhances user
+ability to manage their expenses according to categories. For a finance tracker, it is important
+as this will allow the user to categorise their spending to know which area he/she should
+start spending less and which category they are able to increase their spending.</p>
+</li>
+<li>
+<p>Highlights of feature:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This enhancement can be triggered using the <code>allocate</code> command. Each of the category
+budget is stored in the <code>TotalBudget</code> class which is implemented in the <code>Model</code> component.</p>
+</li>
+<li>
+<p>Each category budget will be displayed on the UI to show the user the current spending
+for that category over the total budget allocated for it.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Minor enhancement</strong>: Changing theme of application</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>What it does</em>: Allows user to change the colour theme of the application to pre-set themes
+such as <code>Dark</code>, <code>Light</code>, <code>Blue</code>, <code>Pink</code>.</p>
+</li>
+<li>
+<p><em>Justification</em>: This feature allows the user to have minor customisation of their In-Credit-Ble
+Finance Tracker Application</p>
+</li>
+<li>
+<p>Highlights of feature:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This feature can be triggered using the <code>theme</code> command. Triggering this command will result in
+the <code>UI</code> component changing its stylesheet to fit the pre-set themes indicated by the user.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Code contributed</strong>:
+<a href="https://tinyurl.com/Jackimaru96">Collated Code by RepoSense</a></p>
+</li>
+<li>
+<p><strong>Notable Contributions:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Project Management</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Manging Issue Tracker</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Added the necessary issue type labels as specified by course requirement.<br>
+(e.g. <code>type.Story</code>, <code>type.Enhancement</code>, <code>status.onGoing</code>, <code>status.Completed</code>, <code>priorityHigh</code>)</p>
+</li>
+<li>
+<p>Managed issue trackers: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/10">#10</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/11">#11</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/12">#12</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/13">#13</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/14">#14</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/50">#50</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/51">#51</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/52">#52</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/53">#53</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/54">#54</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/55">#55</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/56">#56</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/82">#82</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/97">#97</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/108">#108</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Community</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>PRs Reviews:
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/111">#111</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/58">#58</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/64">#64</a></p>
+</li>
+<li>
+<p>Forum Participation:
+<a href="https://github.com/nus-cs2103-AY1819S2/forum/issues/41">41</a>
+<a href="https://github.com/nus-cs2103-AY1819S2/forum/issues/54">54</a>
+<a href="https://github.com/nus-cs2103-AY1819S2/forum/issues/59">59</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="contributions-to-the-user-guide"><a class="link" href="#contributions-to-the-user-guide">Contributions to the User Guide</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Listed below are sections of my contribution to the User Guide, showcasing my ability in documenting
+ a user guide for end-users of our product.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="quick-start"><a class="link" href="#quick-start">Quick Start</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Follow these steps to get <em>In-Credit-Ble</em> up and running on your computer in no time!</p>
@@ -102,7 +200,7 @@ Java Development Kit
 <a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html">here</a></p>
 </li>
 <li>
-<p>Download the latest <code>increditble.jar</code> file <a href="https://github.com/cs2103-ay1819s2-w17-3/main/releases">here</a>.</p>
+<p>Download the latest <code>increditble.jar</code> file <a href="{repoURL}/releases">here</a>.</p>
 </li>
 <li>
 <p>Copy the file to the folder you want to use as the home folder for your finance tracker.</p>
@@ -111,7 +209,7 @@ Java Development Kit
 <p>Double-click the file to start the app. The GUI should appear in a few seconds as shown below.</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/startUi.png" alt="startUi" width="790">
+<img src="../images/startUi.png" alt="startUi" width="790">
 </div>
 </div>
 </li>
@@ -136,14 +234,14 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </li>
 <li>
-<p>Refer to <a href="#Features">Section 3, &#8220;Features&#8221;</a> for details of each command.</p>
+<p>Refer to <a href="#Features">Features</a> for details of each command.</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Features"><a class="link" href="#Features">3. Features</a></h2>
+<h2 id="Features"><a class="link" href="#Features">Features</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This section describes the various features <em>In-Credit-Ble</em> has to offer. Examples are also included to give you
@@ -172,9 +270,9 @@ step-by-step instructions on how to use the different commands.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="budget-management"><a class="link" href="#budget-management">3.1. Budget Management</a></h3>
+<h3 id="budget-management"><a class="link" href="#budget-management">Budget Management</a></h3>
 <div class="sect3">
-<h4 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">3.1.1. Setting a budget: <code>set</code></a></h4>
+<h4 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">Setting a budget: <code>set</code></a></h4>
 <div class="paragraph">
 <p>This command enables you to set a fixed budget for a month/week. The command format is as follows:</p>
 </div>
@@ -200,7 +298,7 @@ step-by-step instructions on how to use the different commands.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="allocating-budget-based-on-categories-code-allocate-code"><a class="link" href="#allocating-budget-based-on-categories-code-allocate-code">3.1.2. Allocating budget based on categories: <code>allocate</code></a></h4>
+<h4 id="allocating-budget-based-on-categories-code-allocate-code"><a class="link" href="#allocating-budget-based-on-categories-code-allocate-code">Allocating budget based on categories: <code>allocate</code></a></h4>
 <div class="paragraph">
 <p>You can use this command to set a budget for a category in <em>In-Credit-Ble</em> Finance Tracker.<br></p>
 </div>
@@ -268,7 +366,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 </div>
 </div>
 <div class="sect3">
-<h4 id="increasing-the-budget-code-increase-code"><a class="link" href="#increasing-the-budget-code-increase-code">3.1.3. Increasing the budget: <code>increase</code></a></h4>
+<h4 id="increasing-the-budget-code-increase-code"><a class="link" href="#increasing-the-budget-code-increase-code">Increasing the budget: <code>increase</code></a></h4>
 <div class="paragraph">
 <p>You can increase your budget limit for the month/week by the specified amount.</p>
 </div>
@@ -295,9 +393,9 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 </div>
 </div>
 <div class="sect2">
-<h3 id="expense-entry-management"><a class="link" href="#expense-entry-management">3.2. Expense Entry Management</a></h3>
+<h3 id="expense-entry-management"><a class="link" href="#expense-entry-management">Expense Entry Management</a></h3>
 <div class="sect3">
-<h4 id="adding-an-expense-code-spend-code"><a class="link" href="#adding-an-expense-code-spend-code">3.2.1. Adding an expense: <code>spend</code></a></h4>
+<h4 id="adding-an-expense-code-spend-code"><a class="link" href="#adding-an-expense-code-spend-code">Adding an expense: <code>spend</code></a></h4>
 <div class="paragraph">
 <p>You can keep track of how much you have spent by adding an expense entry to <em>In-Credit-Ble</em>.</p>
 </div>
@@ -326,7 +424,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-a-description-to-an-entry-code-description-code"><a class="link" href="#adding-a-description-to-an-entry-code-description-code">3.2.2. Adding a description to an entry: <code>description</code></a></h4>
+<h4 id="adding-a-description-to-an-entry-code-description-code"><a class="link" href="#adding-a-description-to-an-entry-code-description-code">Adding a description to an entry: <code>description</code></a></h4>
 <div class="paragraph">
 <p>You can add a description to an existing entry in the records to remember details of the amount spent.</p>
 </div>
@@ -378,7 +476,7 @@ Removes the description of entry at index 1</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">3.2.3. Editing an entry: <code>edit</code></a></h4>
+<h4 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">Editing an entry: <code>edit</code></a></h4>
 <div class="paragraph">
 <p>You can easily edit any part of an existing entry in the records.<br>
 Index refers to the index number shown in the list.</p>
@@ -435,7 +533,7 @@ Index refers to the index number shown in the list.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="selecting-an-entry-code-select-code"><a class="link" href="#selecting-an-entry-code-select-code">3.2.4. Selecting an entry: <code>select</code></a></h4>
+<h4 id="selecting-an-entry-code-select-code"><a class="link" href="#selecting-an-entry-code-select-code">Selecting an entry: <code>select</code></a></h4>
 <div class="paragraph">
 <p>You can select an existing entry in the records to view its details by specifying the entry&#8217;s index number.</p>
 </div>
@@ -482,7 +580,7 @@ Index refers to the index number shown in the list.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">3.2.5. Deleting an entry: <code>delete</code></a></h4>
+<h4 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">Deleting an entry: <code>delete</code></a></h4>
 <div class="paragraph">
 <p>You can delete an entry in the record by specifying the entry&#8217;s index number.
 Deleted entries can be recovered via the <code>undo</code> command.</p>
@@ -531,9 +629,9 @@ Deleted entries can be recovered via the <code>undo</code> command.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="records-management"><a class="link" href="#records-management">3.3. Records Management</a></h3>
+<h3 id="records-management"><a class="link" href="#records-management">Records Management</a></h3>
 <div class="sect3">
-<h4 id="listing-all-entries-code-list-code"><a class="link" href="#listing-all-entries-code-list-code">3.3.1. Listing all entries: <code>list</code></a></h4>
+<h4 id="listing-all-entries-code-list-code"><a class="link" href="#listing-all-entries-code-list-code">Listing all entries: <code>list</code></a></h4>
 <div class="paragraph">
 <p>You can see all the entries you have entered, as long as they are not deleted entries.</p>
 </div>
@@ -545,7 +643,7 @@ Deleted entries can be recovered via the <code>undo</code> command.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="locating-entry-based-on-name-category-code-search-code"><a class="link" href="#locating-entry-based-on-name-category-code-search-code">3.3.2. Locating entry based on name/category: <code>search</code></a></h4>
+<h4 id="locating-entry-based-on-name-category-code-search-code"><a class="link" href="#locating-entry-based-on-name-category-code-search-code">Locating entry based on name/category: <code>search</code></a></h4>
 <div class="paragraph">
 <p>You can easily search for an entry in the records using a name or category as keywords.</p>
 </div>
@@ -595,7 +693,7 @@ Deleted entries can be recovered via the <code>undo</code> command.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="sorting-the-entries-according-to-name-amount-date-category-code-sort-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">3.3.3. Sorting the entries according to name/amount/date/category: <code>sort</code></a></h4>
+<h4 id="sorting-the-entries-according-to-name-amount-date-category-code-sort-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">Sorting the entries according to name/amount/date/category: <code>sort</code></a></h4>
 <div class="paragraph">
 <p>You can choose to sort the list of entries by name, amount, date or category.</p>
 </div>
@@ -652,7 +750,7 @@ Sorts the list of records by category</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="reversing-the-entries-code-reverse-code"><a class="link" href="#reversing-the-entries-code-reverse-code">3.3.4. Reversing the entries: <code>reverse</code></a></h4>
+<h4 id="reversing-the-entries-code-reverse-code"><a class="link" href="#reversing-the-entries-code-reverse-code">Reversing the entries: <code>reverse</code></a></h4>
 <div class="paragraph">
 <p>You can also reverse the order of the list of entries in the records.</p>
 </div>
@@ -664,7 +762,7 @@ Sorts the list of records by category</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="showing-summary-of-records-code-summary-code"><a class="link" href="#showing-summary-of-records-code-summary-code">3.3.5. Showing summary of records: <code>summary</code></a></h4>
+<h4 id="showing-summary-of-records-code-summary-code"><a class="link" href="#showing-summary-of-records-code-summary-code">Showing summary of records: <code>summary</code></a></h4>
 <div class="paragraph">
 <p>You can see the summary of your previous expenditures, with an aster plot graph showing how your spending habits are like in the
 different categories. It also displays the remaining budget amount for each category.</p>
@@ -678,9 +776,9 @@ different categories. It also displays the remaining budget amount for each cate
 </div>
 </div>
 <div class="sect2">
-<h3 id="miscellaneous"><a class="link" href="#miscellaneous">3.4. Miscellaneous</a></h3>
+<h3 id="miscellaneous"><a class="link" href="#miscellaneous">Miscellaneous</a></h3>
 <div class="sect3">
-<h4 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.4.1. Viewing help: <code>help</code></a></h4>
+<h4 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">Viewing help: <code>help</code></a></h4>
 <div class="paragraph">
 <p>Forgotten which commands to use? You can easily find the commands you need to navigate the software
 by using the following command:</p>
@@ -690,7 +788,7 @@ by using the following command:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.4.2. Undoing previous command : <code>undo</code></a></h4>
+<h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">Undoing previous command : <code>undo</code></a></h4>
 <div class="paragraph">
 <p>You can restore the program to the state before the previous <em>undoable</em> command was executed.</p>
 </div>
@@ -750,7 +848,7 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 </div>
 </div>
 <div class="sect3">
-<h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.4.3. Redoing the previously undone command : <code>redo</code></a></h4>
+<h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">Redoing the previously undone command : <code>redo</code></a></h4>
 <div class="paragraph">
 <p>You can reverse the most recent <code>undo</code> command.</p>
 </div>
@@ -791,7 +889,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 </div>
 </div>
 <div class="sect3">
-<h4 id="changing-theme-of-application-code-theme-code"><a class="link" href="#changing-theme-of-application-code-theme-code">3.4.4. Changing theme of application: <code>theme</code></a></h4>
+<h4 id="changing-theme-of-application-code-theme-code"><a class="link" href="#changing-theme-of-application-code-theme-code">Changing theme of application: <code>theme</code></a></h4>
 <div class="paragraph">
 <p>You can change the theme of the application with pre-set colour themes specified.</p>
 </div>
@@ -850,7 +948,7 @@ image::themeMenuBar.png[width="300"]</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.4.5. Listing entered commands: <code>history</code></a></h4>
+<h4 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">Listing entered commands: <code>history</code></a></h4>
 <div class="paragraph">
 <p>You can list all the commands you have entered in reverse chronological order.</p>
 </div>
@@ -862,7 +960,7 @@ image::themeMenuBar.png[width="300"]</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.4.6. Clearing all entries : <code>clear</code></a></h4>
+<h4 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">Clearing all entries : <code>clear</code></a></h4>
 <div class="paragraph">
 <p>You can delete all existing entries in the records and reset your budget to $0.00.</p>
 </div>
@@ -874,7 +972,7 @@ image::themeMenuBar.png[width="300"]</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.4.7. Exiting the program : <code>exit</code></a></h4>
+<h4 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">Exiting the program : <code>exit</code></a></h4>
 <div class="paragraph">
 <p>You can quit the program at any point in time when you use this command.</p>
 </div>
@@ -886,7 +984,7 @@ image::themeMenuBar.png[width="300"]</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="saving-the-data"><a class="link" href="#saving-the-data">3.4.8. Saving the data</a></h4>
+<h4 id="saving-the-data"><a class="link" href="#saving-the-data">Saving the data</a></h4>
 <div class="paragraph">
 <p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes
 the data. There is no need for you to save manually.</p>
@@ -894,16 +992,16 @@ the data. There is no need for you to save manually.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="upcoming-features"><a class="link" href="#upcoming-features">3.5. Upcoming features</a></h3>
+<h3 id="upcoming-features"><a class="link" href="#upcoming-features">Upcoming features</a></h3>
 <div class="sect3">
-<h4 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.5.1. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h4>
+<h4 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p>Your monthly finance records will be archived at the end of the month. This information will be used to derive
 the projected savings and expenses based on your typical spending patterns.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="links-to-financial-articles-code-coming-in-v2-0-code"><a class="link" href="#links-to-financial-articles-code-coming-in-v2-0-code">3.5.2. Links to financial articles <code>[coming in v2.0]</code></a></h4>
+<h4 id="links-to-financial-articles-code-coming-in-v2-0-code"><a class="link" href="#links-to-financial-articles-code-coming-in-v2-0-code">Links to financial articles <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p>You will be able to list categories of financial articles that you are interested in
 (e.g. investment, stock market). Based on these categories, <em>In-Credit-Ble</em> will use Google API to search for
@@ -911,7 +1009,7 @@ related articles for you to view.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.5.3. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></h4>
+<h4 id="separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> will link up with secure methods of payment such as payLah, Visa/MasterCard, Amex or Paypal to allow
 tracking of your cashless transactions. By paying through _In-Credit-Ble, transactions will automatically be updated
@@ -922,7 +1020,7 @@ and recorded as entries.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="faq"><a class="link" href="#faq">4. FAQ</a></h2>
+<h2 id="faq"><a class="link" href="#faq">FAQ</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Q</strong>: How do I transfer my data to another Computer?</p>
@@ -944,10 +1042,10 @@ You will need to calculate and enter your input based on your local currency.</p
 </div>
 </div>
 <div class="sect1">
-<h2 id="command-summary"><a class="link" href="#command-summary">5. Command Summary</a></h2>
+<h2 id="command-summary"><a class="link" href="#command-summary">Command Summary</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="budget-management-2"><a class="link" href="#budget-management-2">5.1. Budget Management</a></h3>
+<h3 id="budget-management-2"><a class="link" href="#budget-management-2">Budget Management</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -986,7 +1084,7 @@ You will need to calculate and enter your input based on your local currency.</p
 </table>
 </div>
 <div class="sect2">
-<h3 id="expense-entry-management-2"><a class="link" href="#expense-entry-management-2">5.2. Expense Entry Management</a></h3>
+<h3 id="expense-entry-management-2"><a class="link" href="#expense-entry-management-2">Expense Entry Management</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1037,7 +1135,7 @@ You will need to calculate and enter your input based on your local currency.</p
 </table>
 </div>
 <div class="sect2">
-<h3 id="records-management-2"><a class="link" href="#records-management-2">5.3. Records Management</a></h3>
+<h3 id="records-management-2"><a class="link" href="#records-management-2">Records Management</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1088,7 +1186,7 @@ You will need to calculate and enter your input based on your local currency.</p
 </table>
 </div>
 <div class="sect2">
-<h3 id="miscellaneous-2"><a class="link" href="#miscellaneous-2">5.4. Miscellaneous</a></h3>
+<h3 id="miscellaneous-2"><a class="link" href="#miscellaneous-2">Miscellaneous</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1153,7 +1251,7 @@ You will need to calculate and enter your input based on your local currency.</p
 </div>
 </div>
 <div class="sect1">
-<h2 id="glossary"><a class="link" href="#glossary">6. Glossary</a></h2>
+<h2 id="glossary"><a class="link" href="#glossary">Glossary</a></h2>
 <div class="sectionbody">
 <div class="dlist">
 <dl>
@@ -1176,5 +1274,147 @@ compulsory category tag</p>
 </dd>
 </dl>
 </div>
+<div class="sect3">
+<h4 id="allocating-budget-based-on-categories-code-allocate-code-2"><a class="link" href="#allocating-budget-based-on-categories-code-allocate-code-2">Allocating budget based on categories: <code>allocate</code></a></h4>
+<div class="paragraph">
+<p>You can use this command to set a budget for a category in <em>In-Credit-Ble</em> Finance Tracker.<br></p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>allo</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>allocate $/AMOUNT c/CATEGORY</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>allocate $/50 c/Dining</code></p>
+</li>
+<li>
+<p><code>allocate $/100 c/CloThEs</code></p>
+</li>
+<li>
+<p><code>allocate $/100.10 c/FOOD</code></p>
+</li>
+<li>
+<p><code>allo $/123.10 c/GiRLfrIEND</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>If you provide multiple categories (e.g. <code>allocate $/50.00 c/Food c/Clothes</code>),
+only the last category you provided will be taken (in the previous e.g., the command will
+set budget for <code>Clothes</code> category.</p>
+</li>
+<li>
+<p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to the same
+category and will be shown with the first character in uppercase and the rest of the characters
+in lowercase (in the above example, it will be shown as <code>Clothes</code>)</p>
+</li>
+<li>
+<p>If a budget was previously set for the category, the old category budget will be replaced
+by the new <code>allocate</code> command</p>
+</li>
+<li>
+<p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
+and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="changing-theme-of-application-code-theme-code-2"><a class="link" href="#changing-theme-of-application-code-theme-code-2">Changing theme of application: <code>theme</code></a></h4>
+<div class="paragraph">
+<p>You can change the theme of the application with pre-set colour themes specified.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>colour</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>theme COLOURTHEME</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>theme DARK</code></p>
+</li>
+<li>
+<p><code>theme BlUE</code></p>
+</li>
+<li>
+<p><code>theme pink</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Valid themes include: <code>Dark</code>, <code>Light</code>, <code>Blue</code>, <code>Pink</code></p>
+</li>
+<li>
+<p>The theme name is case-insensitive (<code>BlUE</code>, <code>BLUE</code>, <code>blue</code> or <code>bLUE</code> etc. all refer
+to <code>Blue</code>)</p>
+</li>
+<li>
+<p>You can also change the theme of the application by choosing the theme under
+the menu bar.
+image::themeMenuBar.png[width="300"]</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Given below are sections I contributed to the Developer Guide, showcasing my ability to write technical documentation and the technical depth of my code contributions.</em></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 15:13:37 UTC</div></div></div></body></html>
