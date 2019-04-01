@@ -3,14 +3,14 @@
 <link rel="stylesheet" href="stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link active" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>In-Credit-Ble - Developer Guide</h1></div><div id="content"><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>By: <code>Team W17-3</code>      Since: <code>May 2019</code>      Licence: <code>MIT</code></p>
+<p>By: <code>Team W17-3</code>      Since: <code>March 2019</code>      Licence: <code>MIT</code></p>
 </div>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#setting-up">2. Setting up</a>
+<li><a href="#setting-up">2. Setting Up</a>
 <ul class="sectlevel2">
 <li><a href="#prerequisites">2.1. Prerequisites</a></li>
 <li><a href="#setting-up-the-project-in-your-computer">2.2. Setting up the project in your computer</a></li>
@@ -87,25 +87,25 @@
 <h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to <strong>In-Credit-Ble</strong>!</p>
+<p>Welcome to the <em>In-Credit-Ble</em> Developer Guide!</p>
 </div>
 <div class="paragraph">
-<p>In-Credit-Ble is a finance tracker application created to simplify the managing and tracking
-of the user’s personal finances. With In-Credit-Ble, users will be able to stick to their budget
+<p><em>In-Credit-Ble</em> is a finance tracker application created to simplify the managing and tracking
+of the user’s personal finances. With <em>In-Credit-Ble</em>, users will be able to stick to their budget
 and be more aware of their spending habits.</p>
 </div>
 <div class="paragraph">
-<p>This developer guide specifies the design and implementation of In-Credit-Ble. The intended audience of
+<p>This developer guide specifies the design and implementation of <em>In-Credit-Ble</em>. The intended audience of
 this document is the developers, designers and software testers of our application.</p>
 </div>
 <div class="paragraph">
-<p>Please continue on to the <a href="Setting up.html">Setting Up</a> section to get started. You can also read the <a href="AboutUs.html">AboutUs.adoc</a>
+<p>Please continue on to the <a href="#setting-up">Setting Up</a> section to get started. You can also read <a href="AboutUs.html">AboutUs.adoc</a>
 and <a href="ContactUs.html">ContactUs.adoc</a> for more information on how to contact us!</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="setting-up"><a class="link" href="#setting-up">2. Setting up</a></h2>
+<h2 id="setting-up"><a class="link" href="#setting-up">2. Setting Up</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="prerequisites"><a class="link" href="#prerequisites">2.1. Prerequisites</a></h3>
@@ -137,7 +137,7 @@ Windows developers are highly recommended to use JDK <code>9</code>.
 </td>
 <td class="content">
 IntelliJ by default has Gradle and JavaFx plugins installed.<br>
-Do not disable them. If you have disabled them, go to <code>File</code> &gt; <code>Settings</code> &gt; <code>Plugins</code> to re-enable them.
+Do not disable them. If you have disabled them, go to <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Settings</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Plugins</b></span> to re-enable them.
 </td>
 </tr>
 </table>
@@ -154,52 +154,52 @@ Do not disable them. If you have disabled them, go to <code>File</code> &gt; <co
 <p>Fork this repo, and clone the fork to your computer</p>
 </li>
 <li>
-<p>Open IntelliJ (if you are not in the welcome screen, click <code>File</code> &gt; <code>Close Project</code> to close the existing project dialog first)</p>
+<p>Open IntelliJ (if you are not in the welcome screen, click <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Close Project</b></span> to close the existing project dialog first)</p>
 </li>
 <li>
 <p>Set up the correct JDK version for Gradle</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Click <code>Configure</code> &gt; <code>Project Defaults</code> &gt; <code>Project Structure</code></p>
+<p>Click <span class="menuseq"><b class="menu">Configure</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Project Defaults</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Project Structure</b></span></p>
 </li>
 <li>
-<p>Click <code>New&#8230;&#8203;</code> and find the directory of the JDK</p>
+<p>Click <b class="button">New&#8230;&#8203;</b> and find the directory of the JDK</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Click <code>Import Project</code></p>
+<p>Click <b class="button">Import Project</b></p>
 </li>
 <li>
-<p>Locate the <code>build.gradle</code> file and select it. Click <code>OK</code></p>
+<p>Locate the <code>build.gradle</code> file and select it. Click <b class="button">OK</b></p>
 </li>
 <li>
-<p>Click <code>Open as Project</code></p>
+<p>Click <b class="button">Open as Project</b></p>
 </li>
 <li>
-<p>Click <code>OK</code> to accept the default settings</p>
+<p>Click <b class="button">OK</b> to accept the default settings</p>
 </li>
 <li>
 <p>Open a console and run the command <code>gradlew processResources</code> (Mac/Linux: <code>./gradlew processResources</code>). It should finish with the <code>BUILD SUCCESSFUL</code> message.<br>
 This will generate all resources required by the application and tests.</p>
 </li>
 <li>
-<p>Open <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/ui/MainWindow.java"><code>MainWindow.java</code></a> and check for any code errors</p>
+<p>Open <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/MainWindow.java"><code>MainWindow.java</code></a> and check for any code errors</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>Due to an ongoing <a href="https://youtrack.jetbrains.com/issue/IDEA-189060">issue</a> with some of the newer versions of IntelliJ, code errors may be detected even if the project can be built and run successfully</p>
 </li>
 <li>
-<p>To resolve this, place your cursor over any of the code section highlighted in red. Press <span class="keyseq"><kbd>ALT</kbd>+<kbd>ENTER</kbd></span>, and select <code>Add '--add-modules=&#8230;&#8203;' to module compiler options</code> for each error</p>
+<p>To resolve this, place your cursor over any of the code section highlighted in red. Press <span class="keyseq"><kbd>ALT</kbd>+<kbd>ENTER</kbd></span>, and select <b class="button">Add '--add-modules=&#8230;&#8203;' to module compiler options</b> for each error</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Repeat this for the test folder as well (e.g. check <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/test/java/seedu/address/ui/HelpWindowTest.java"><code>HelpWindowTest.java</code></a> for code errors, and if so, resolve it the same way)</p>
+<p>Repeat this for the test folder as well (e.g. check <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/test/java/seedu/finance/ui/HelpWindowTest.java"><code>HelpWindowTest.java</code></a> for code errors, and if so, resolve it the same way)</p>
 </li>
 </ol>
 </div>
@@ -209,7 +209,7 @@ This will generate all resources required by the application and tests.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Run the <code>seedu.finance.MainApp</code> and try a few commands</p>
+<p>Run <code>seedu.finance.MainApp</code> and try a few commands</p>
 </li>
 <li>
 <p><a href="#Testing">Run the tests</a> to ensure they all pass.</p>
@@ -227,20 +227,20 @@ This will generate all resources required by the application and tests.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Go to <code>File</code> &gt; <code>Settings&#8230;&#8203;</code> (Windows/Linux), or <code>IntelliJ IDEA</code> &gt; <code>Preferences&#8230;&#8203;</code> (macOS)</p>
+<p>Go to <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Settings&#8230;&#8203;</b></span> (Windows/Linux), or <span class="menuseq"><b class="menu">IntelliJ IDEA</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Preferences&#8230;&#8203;</b></span> (macOS)</p>
 </li>
 <li>
-<p>Select <code>Editor</code> &gt; <code>Code Style</code> &gt; <code>Java</code></p>
+<p>Select <span class="menuseq"><b class="menu">Editor</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Code Style</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Java</b></span></p>
 </li>
 <li>
-<p>Click on the <code>Imports</code> tab to set the order</p>
+<p>Click on the <b class="button">Imports</b> tab to set the order</p>
 <div class="ulist">
 <ul>
 <li>
-<p>For <code>Class count to use import with '*'</code> and <code>Names count to use static import with '*'</code>: Set to <code>999</code> to prevent IntelliJ from contracting the import statements</p>
+<p>For <b class="button">Class count to use import with '*'</b> and <b class="button">Names count to use static import with '*'</b>: Set to <code>999</code> to prevent IntelliJ from contracting the import statements</p>
 </li>
 <li>
-<p>For <code>Import Layout</code>: The order is <code>import static all other imports</code>, <code>import java.*</code>, <code>import javax.*</code>, <code>import org.*</code>, <code>import com.*</code>, <code>import all other imports</code>. Add a <code>&lt;blank line&gt;</code> between each <code>import</code></p>
+<p>For <b class="button">Import Layout</b>: The order is <code>import static all other imports</code>, <code>import java.*</code>, <code>import javax.*</code>, <code>import org.*</code>, <code>import com.*</code>, <code>import all other imports</code>. Add a <b class="button">&lt;blank line&gt;</b> between each <code>import</code></p>
 </li>
 </ul>
 </div>
@@ -254,18 +254,18 @@ This will generate all resources required by the application and tests.</p>
 <div class="sect3">
 <h4 id="updating-documentation-to-match-your-fork"><a class="link" href="#updating-documentation-to-match-your-fork">2.4.2. Updating documentation to match your fork</a></h4>
 <div class="paragraph">
-<p>After forking the repo, the documentation will still have the SE-EDU branding and refer to the <code>se-edu/addressbook-level4</code> repo.</p>
+<p>After forking the repo, the documentation will still refer to the <code>CS2103-AY1819S2-W17-3/main</code> repo.</p>
 </div>
 <div class="paragraph">
-<p>If you plan to develop this fork as a separate product (i.e. instead of contributing to <code>se-edu/addressbook-level4</code>), you should do the following:</p>
+<p>If you plan to develop this fork as a separate product (i.e. instead of contributing to <code>In-Credit-Ble</code>), you should do the following:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Configure the <a href="#Docs-SiteWideDocSettings">site-wide documentation settings</a> in <a href="https://github.com/se-edu/addressbook-level4/tree/master/build.gradle"><code>build.gradle</code></a>, such as the <code>site-name</code>, to suit your own project.</p>
+<p>Configure the <a href="#Docs-SiteWideDocSettings">site-wide documentation settings</a> in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/build.gradle"><code>build.gradle</code></a>, such as the <code>site-name</code>, to suit your own project.</p>
 </li>
 <li>
-<p>Replace the URL in the attribute <code>repoURL</code> in <a href="https://github.com/se-edu/addressbook-level4/tree/master/docs/DeveloperGuide.adoc"><code>DeveloperGuide.adoc</code></a> and <a href="https://github.com/se-edu/addressbook-level4/tree/master/docs/UserGuide.adoc"><code>UserGuide.adoc</code></a> with the URL of your fork.</p>
+<p>Replace the URL in the attribute <code>repoURL</code> in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/DeveloperGuide.adoc"><code>DeveloperGuide.adoc</code></a> and <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/UserGuide.adoc"><code>UserGuide.adoc</code></a> with the URL of your fork.</p>
 </li>
 </ol>
 </div>
@@ -337,7 +337,7 @@ Having both Travis and AppVeyor ensures your App works on both Unix-based platfo
 <div class="title">Figure 1. Architecture Diagram</div>
 </div>
 <div class="paragraph">
-<p>The <strong><em>Architecture Diagram</em></strong> given above explains the high-level design of the App. Given below is a quick overview of each component.</p>
+<p>The <strong><em>Architecture Diagram</em></strong> above explains the high-level design of <em>In-Credit-Ble</em>. Given below is a quick overview of each component.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -346,21 +346,22 @@ Having both Travis and AppVeyor ensures your App works on both Unix-based platfo
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-The <code>.pptx</code> files used to create diagrams in this document can be found in the <a href="https://github.com/se-edu/addressbook-level4/tree/master/docs/diagrams/">diagrams</a> folder. To update a diagram, modify the diagram in the pptx file, select the objects of the diagram, and choose <code>Save as picture</code>.
+The <code>.pptx</code> files used to create diagrams in this document can be found in the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/diagrams/">diagrams</a> folder.
+To update a diagram, modify the diagram in the pptx file, select the objects of the diagram, and choose <b class="button">Save as picture</b>.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p><code>Main</code> has only one class called <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/MainApp.java"><code>MainApp</code></a>. It is responsible for,</p>
+<p><code>Main</code> has only one class called <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/MainApp.java"><code>MainApp</code></a>. It is responsible for,</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>At app launch: Initializes the components in the correct sequence, and connects them up with each other.</p>
+<p>App launch: Initializes the components in the correct sequence, and connects them up with each other.</p>
 </li>
 <li>
-<p>At shut down: Shuts down the components and invokes cleanup method where necessary.</p>
+<p>App shut down: Shuts down the components and invokes cleanup method where necessary.</p>
 </li>
 </ul>
 </div>
@@ -408,7 +409,8 @@ The following class plays an important role at the architecture level:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>For example, the <code>Logic</code> component (see the class diagram given below) defines it&#8217;s API in the <code>Logic.java</code> interface and exposes its functionality using the <code>LogicManager.java</code> class.</p>
+<p>For example, the <code>Logic</code> component (see the class diagram given below) defines its API in the <code>Logic.java</code> interface and
+exposes its functionality using the <code>LogicManager.java</code> class.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -416,7 +418,7 @@ The following class plays an important role at the architecture level:</p>
 </div>
 <div class="title">Figure 2. Class Diagram of the Logic Component</div>
 </div>
-<h4 id="how-the-architecture-components-interact-with-each-other" class="discrete">How the architecture components interact with each other</h4>
+<h4 id="how-do-the-architecture-components-interact-with-each-other" class="discrete">How do the architecture components interact with each other?</h4>
 <div class="paragraph">
 <p>The <em>Sequence Diagram</em> below shows how the components interact with each other for the scenario where the user issues the command <code>delete 1</code>.</p>
 </div>
@@ -439,13 +441,15 @@ The following class plays an important role at the architecture level:</p>
 <div class="title">Figure 4. Structure of the UI Component</div>
 </div>
 <div class="paragraph">
-<p><strong>API</strong> : <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/ui/Ui.java"><code>Ui.java</code></a></p>
+<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/Ui.java"><code>Ui.java</code></a></p>
 </div>
 <div class="paragraph">
-<p>The UI consists of a <code>MainWindow</code> that is made up of parts e.g.<code>CommandBox</code>, <code>ResultDisplay</code>, <code>PersonListPanel</code>, <code>StatusBarFooter</code>, <code>BrowserPanel</code> etc. All these, including the <code>MainWindow</code>, inherit from the abstract <code>UiPart</code> class.</p>
+<p>The UI consists of a <code>MainWindow</code> that is made up of parts e.g.<code>CommandBox</code>, <code>ResultDisplay</code>, <code>RecordListPanel</code>,
+<code>StatusBarFooter</code>, <code>BrowserPanel</code> etc. All these, including the <code>MainWindow</code>, inherit from the abstract <code>UiPart</code> class.</p>
 </div>
 <div class="paragraph">
-<p>The <code>UI</code> component uses JavaFx UI framework. The layout of these UI parts are defined in matching <code>.fxml</code> files that are in the <code>src/main/resources/view</code> folder. For example, the layout of the <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/ui/MainWindow.java"><code>MainWindow</code></a> is specified in <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/resources/view/MainWindow.fxml"><code>MainWindow.fxml</code></a></p>
+<p>The <code>UI</code> component uses JavaFx UI framework. The layout of these UI parts are defined in matching <code>.fxml</code> files that are in the <code>src/main/resources/view</code> folder.
+For example, the layout of the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/MainWindow.java"><code>MainWindow</code></a> is specified in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/resources/view/MainWindow.fxml"><code>MainWindow.fxml</code></a></p>
 </div>
 <div class="paragraph">
 <p>The <code>UI</code> component,</p>
@@ -471,12 +475,12 @@ The following class plays an important role at the architecture level:</p>
 </div>
 <div class="paragraph">
 <p><strong>API</strong> :
-<a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/logic/Logic.java"><code>Logic.java</code></a></p>
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/logic/Logic.java"><code>Logic.java</code></a></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>Logic</code> uses the <code>FinanceLogParser</code> class to parse the user command.</p>
+<p><code>Logic</code> uses the <code>FinanceTrackerParser</code> class to parse the user command.</p>
 </li>
 <li>
 <p>This results in a <code>Command</code> object which is executed by the <code>LogicManager</code>.</p>
@@ -511,7 +515,7 @@ The following class plays an important role at the architecture level:</p>
 <div class="title">Figure 7. Structure of the Model Component</div>
 </div>
 <div class="paragraph">
-<p><strong>API</strong> : <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/model/Model.java"><code>Model.java</code></a></p>
+<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/model/Model.java"><code>Model.java</code></a></p>
 </div>
 <div class="paragraph">
 <p>The <code>Model</code>,</p>
@@ -522,7 +526,7 @@ The following class plays an important role at the architecture level:</p>
 <p>stores a <code>UserPref</code> object that represents the user&#8217;s preferences.</p>
 </li>
 <li>
-<p>stores the Finance Log data.</p>
+<p>stores the Finance Tracker data.</p>
 </li>
 <li>
 <p>exposes an unmodifiable <code>ObservableList&lt;Record&gt;</code> that can be 'observed' e.g. the UI can be bound to this list so that the UI automatically updates when the data in the list change.</p>
@@ -539,7 +543,9 @@ The following class plays an important role at the architecture level:</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-As a more OOP model, we can store a <code>Tag</code> list in <code>Address Book</code>, which <code>Person</code> can reference. This would allow <code>Address Book</code> to only require one <code>Tag</code> object per unique <code>Tag</code>, instead of each <code>Person</code> needing their own <code>Tag</code> object. An example of how such a model may look like is given below.<br>
+As a more OOP model, we can store a <code>Category</code> list in <code>Finance Tracker</code>, which <code>Record</code> can reference.
+This would allow <code>Finance Tracker</code> to only require one <code>Category</code> object per unique <code>Category</code>, instead of each <code>Record</code> needing their own <code>Category</code> object.
+An example of how such a model may look like is given below.<br>
 <br>
 <span class="image"><img src="images/ModelClassBetterOopDiagram.png" alt="ModelClassBetterOopDiagram" width="800"></span>
 </td>
@@ -556,7 +562,7 @@ As a more OOP model, we can store a <code>Tag</code> list in <code>Address Book<
 <div class="title">Figure 8. Structure of the Storage Component</div>
 </div>
 <div class="paragraph">
-<p><strong>API</strong> : <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/storage/Storage.java"><code>Storage.java</code></a></p>
+<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/storage/Storage.java"><code>Storage.java</code></a></p>
 </div>
 <div class="paragraph">
 <p>The <code>Storage</code> component,</p>
@@ -567,7 +573,7 @@ As a more OOP model, we can store a <code>Tag</code> list in <code>Address Book<
 <p>can save <code>UserPref</code> objects in json format and read it back.</p>
 </li>
 <li>
-<p>can save the Finance Log data in json format and read it back.</p>
+<p>can save the Finance Tracker data in json format and read it back.</p>
 </li>
 </ul>
 </div>
@@ -575,7 +581,7 @@ As a more OOP model, we can store a <code>Tag</code> list in <code>Address Book<
 <div class="sect2">
 <h3 id="Design-Commons"><a class="link" href="#Design-Commons">3.6. Common classes</a></h3>
 <div class="paragraph">
-<p>Classes used by multiple components are in the <code>seedu.addressbook.commons</code> package.</p>
+<p>Classes used by multiple components are in the <code>seedu.financetracker.commons</code> package.</p>
 </div>
 </div>
 </div>
@@ -584,7 +590,7 @@ As a more OOP model, we can store a <code>Tag</code> list in <code>Address Book<
 <h2 id="implementation"><a class="link" href="#implementation">4. Implementation</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This section describes some noteworthy details on how certain features are implemented.</p>
+<p>This section describes in detail the implementation of certain features in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="sect2">
 <h3 id="searching-by-tag-feature"><a class="link" href="#searching-by-tag-feature">4.1. Searching by tag feature</a></h3>
@@ -735,31 +741,32 @@ latest date will be at the bottom.</p></td>
 <div class="sect3">
 <h4 id="current-implementation-2"><a class="link" href="#current-implementation-2">4.3.1. Current Implementation</a></h4>
 <div class="paragraph">
-<p>The undo/redo mechanism is facilitated by <code>VersionedAddressBook</code>.
-It extends <code>AddressBook</code> with an undo/redo history, stored internally as an <code>addressBookStateList</code> and <code>currentStatePointer</code>.
+<p>The undo/redo mechanism is facilitated by <code>VersionedFinanceTracker</code>.
+It extends <code>FinanceTracker</code> with an undo/redo history, stored internally as a <code>FinanceTrackerStateList</code> and <code>currentStatePointer</code>.
 Additionally, it implements the following operations:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>VersionedAddressBook#commit()</code>&#8201;&#8212;&#8201;Saves the current address book state in its history.</p>
+<p><code>VersionedFinanceTracker#commit()</code>&#8201;&#8212;&#8201;Saves the current finance tracker state in its history.</p>
 </li>
 <li>
-<p><code>VersionedAddressBook#undo()</code>&#8201;&#8212;&#8201;Restores the previous address book state from its history.</p>
+<p><code>VersionedFinanceTracker#undo()</code>&#8201;&#8212;&#8201;Restores the previous finance tracker state from its history.</p>
 </li>
 <li>
-<p><code>VersionedAddressBook#redo()</code>&#8201;&#8212;&#8201;Restores a previously undone address book state from its history.</p>
+<p><code>VersionedFinanceTracker#redo()</code>&#8201;&#8212;&#8201;Restores a previously undone finance tracker state from its history.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>These operations are exposed in the <code>Model</code> interface as <code>Model#commitAddressBook()</code>, <code>Model#undoAddressBook()</code> and <code>Model#redoAddressBook()</code> respectively.</p>
+<p>These operations are exposed in the <code>Model</code> interface as <code>Model#commitFinanceTracker()</code>, <code>Model#undoFinanceTracker()</code> and <code>Model#redoFinanceTracker()</code> respectively.</p>
 </div>
 <div class="paragraph">
 <p>Given below is an example usage scenario and how the undo/redo mechanism behaves at each step.</p>
 </div>
 <div class="paragraph">
-<p>Step 1. The user launches the application for the first time. The <code>VersionedAddressBook</code> will be initialized with the initial address book state, and the <code>currentStatePointer</code> pointing to that single address book state.</p>
+<p><strong>Step 1.</strong><br>
+The user launches the application for the first time. The <code>VersionedFinanceTracker</code> will be initialized with the initial finance tracker state, and the <code>currentStatePointer</code> pointing to that single finance tracker state.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -767,7 +774,8 @@ Additionally, it implements the following operations:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Step 2. The user executes <code>delete 5</code> command to delete the 5th record in the address book. The <code>delete</code> command calls <code>Model#commitAddressBook()</code>, causing the modified state of the address book after the <code>delete 5</code> command executes to be saved in the <code>addressBookStateList</code>, and the <code>currentStatePointer</code> is shifted to the newly inserted address book state.</p>
+<p><strong>Step 2.</strong><br>
+The user executes <code>delete 5</code> command to delete the 5th record in the finance tracker. The <code>delete</code> command calls <code>Model#commitFinanceTracker()</code>, causing the modified state of the finance tracker after the <code>delete 5</code> command executes to be saved in the <code>financeTrackerStateList</code>, and the <code>currentStatePointer</code> is shifted to the newly inserted finance tracker state.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -775,7 +783,8 @@ Additionally, it implements the following operations:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Step 3. The user executes <code>add n/David &#8230;&#8203;</code> to add a new record. The <code>add</code> command also calls <code>Model#commitAddressBook()</code>, causing another modified address book state to be saved into the <code>addressBookStateList</code>.</p>
+<p><strong>Step 3.</strong><br>
+The user executes <code>spend n/burger &#8230;&#8203;</code> to add a new record. The <code>spend</code> command also calls <code>Model#commitFinanceTracker()</code>, causing another modified finance tracker state to be saved into the <code>financeTrackerStateList</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -789,13 +798,14 @@ Additionally, it implements the following operations:</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If a command fails its execution, it will not call <code>Model#commitAddressBook()</code>, so the address book state will not be saved into the <code>addressBookStateList</code>.
+If a command fails its execution, it will not call <code>Model#commitFinanceTracker()</code>, so the finance tracker state will not be saved into the <code>financeTrackerStateList</code>.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Step 4. The user now decides that adding the record was a mistake, and decides to undo that action by executing the <code>undo</code> command. The <code>undo</code> command will call <code>Model#undoAddressBook()</code>, which will shift the <code>currentStatePointer</code> once to the left, pointing it to the previous address book state, and restores the address book to that state.</p>
+<p><strong>Step 4.</strong><br>
+The user now decides that adding the record was a mistake, and decides to undo that action by executing the <code>undo</code> command. The <code>undo</code> command will call <code>Model#undoFinanceTracker()</code>, which will shift the <code>currentStatePointer</code> once to the left, pointing it to the previous finance tracker state, and restores the finance tracker to that state.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -809,7 +819,8 @@ If a command fails its execution, it will not call <code>Model#commitAddressBook
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If the <code>currentStatePointer</code> is at index 0, pointing to the initial address book state, then there are no previous address book states to restore. The <code>undo</code> command uses <code>Model#canUndoAddressBook()</code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo.
+If the <code>currentStatePointer</code> is at index 0, pointing to the initial finance tracker state, then there are no previous finance tracker states to restore.
+The <code>undo</code> command uses <code>Model#canUndoFinanceTracker()</code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo.
 </td>
 </tr>
 </table>
@@ -823,7 +834,7 @@ If the <code>currentStatePointer</code> is at index 0, pointing to the initial a
 </div>
 </div>
 <div class="paragraph">
-<p>The <code>redo</code> command does the opposite&#8201;&#8212;&#8201;it calls <code>Model#redoAddressBook()</code>, which shifts the <code>currentStatePointer</code> once to the right, pointing to the previously undone state, and restores the address book to that state.</p>
+<p>The <code>redo</code> command does the opposite&#8201;&#8212;&#8201;it calls <code>Model#redoFinanceTracker()</code>, which shifts the <code>currentStatePointer</code> once to the right, pointing to the previously undone state, and restores the finance tracker to that state.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -832,13 +843,14 @@ If the <code>currentStatePointer</code> is at index 0, pointing to the initial a
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If the <code>currentStatePointer</code> is at index <code>addressBookStateList.size() - 1</code>, pointing to the latest address book state, then there are no undone address book states to restore. The <code>redo</code> command uses <code>Model#canRedoAddressBook()</code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo.
+If the <code>currentStatePointer</code> is at index <code>financeTrackerStateList.size() - 1</code>, pointing to the latest finance tracker state, then there are no undone finance tracker states to restore. The <code>redo</code> command uses <code>Model#canRedoFinanceTracker()</code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Step 5. The user then decides to execute the command <code>list</code>. Commands that do not modify the address book, such as <code>list</code>, will usually not call <code>Model#commitAddressBook()</code>, <code>Model#undoAddressBook()</code> or <code>Model#redoAddressBook()</code>. Thus, the <code>addressBookStateList</code> remains unchanged.</p>
+<p><strong>Step 5.</strong><br>
+The user then decides to execute the command <code>list</code>. Commands that do not modify the finance tracker, such as <code>list</code>, will usually not call <code>Model#commitFinanceTracker()</code>, <code>Model#undoFinanceTracker()</code> or <code>Model#redoFinanceTracker()</code>. Thus, the <code>financeTrackerStateList</code> remains unchanged.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -846,7 +858,8 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 </div>
 </div>
 <div class="paragraph">
-<p>Step 6. The user executes <code>clear</code>, which calls <code>Model#commitAddressBook()</code>. Since the <code>currentStatePointer</code> is not pointing at the end of the <code>addressBookStateList</code>, all address book states after the <code>currentStatePointer</code> will be purged. We designed it this way because it no longer makes sense to redo the <code>add n/David &#8230;&#8203;</code> command. This is the behavior that most modern desktop applications follow.</p>
+<p><strong>Step 6.</strong><br>
+The user executes <code>clear</code>, which calls <code>Model#commitFinanceTracker()</code>. Since the <code>currentStatePointer</code> is not pointing at the end of the <code>financeTrackerStateList</code>, all finance tracker states after the <code>currentStatePointer</code> will be purged. We designed it this way because it no longer makes sense to redo the <code>spend n/burger &#8230;&#8203;</code> command. This is the behavior that most modern desktop applications follow.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -869,7 +882,7 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Saves the entire address book.</p>
+<p><strong>Alternative 1 (current choice):</strong> Saves the entire finance tracker.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -902,14 +915,14 @@ If the <code>currentStatePointer</code> is at index <code>addressBookStateList.s
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Use a list to store the history of address book states.</p>
+<p><strong>Alternative 1 (current choice):</strong> Use a list to store the history of finance tracker states.</p>
 <div class="ulist">
 <ul>
 <li>
 <p>Pros: Easy for new Computer Science student undergraduates to understand, who are likely to be the new incoming developers of our project.</p>
 </li>
 <li>
-<p>Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both <code>HistoryManager</code> and <code>VersionedAddressBook</code>.</p>
+<p>Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both <code>HistoryManager</code> and <code>VersionedFinanceTracker</code>.</p>
 </li>
 </ul>
 </div>
@@ -1186,7 +1199,7 @@ will require the <code>Storage</code> to load and return the user&#8217;s data</
 <p><code>WARNING</code> : Can continue, but with caution</p>
 </li>
 <li>
-<p><code>INFO</code> : Information showing the noteworthy actions by the App</p>
+<p><code>INFO</code> : Information showing noteworthy actions by the application</p>
 </li>
 <li>
 <p><code>FINE</code> : Details that is not usually noteworthy but may be useful in debugging e.g. print the actual list instead of just its size</p>
@@ -1267,7 +1280,7 @@ Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows y
 <div class="sect2">
 <h3 id="Docs-SiteWideDocSettings"><a class="link" href="#Docs-SiteWideDocSettings">5.4. Site-wide Documentation Settings</a></h3>
 <div class="paragraph">
-<p>The <a href="https://github.com/se-edu/addressbook-level4/tree/master/build.gradle"><code>build.gradle</code></a> file specifies some project-specific <a href="https://asciidoctor.org/docs/user-manual/#attributes">asciidoc attributes</a> which affects how all documentation files within this project are rendered.</p>
+<p>The <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/build.gradle"><code>build.gradle</code></a> file specifies some project-specific <a href="https://asciidoctor.org/docs/user-manual/#attributes">asciidoc attributes</a> which affects how all documentation files within this project are rendered.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1383,11 +1396,11 @@ One of: <code>UserGuide</code>, <code>DeveloperGuide</code>, <code>LearningOutco
 <div class="sect2">
 <h3 id="site-template"><a class="link" href="#site-template">5.6. Site Template</a></h3>
 <div class="paragraph">
-<p>The files in <a href="https://github.com/se-edu/addressbook-level4/tree/master/docs/stylesheets"><code>docs/stylesheets</code></a> are the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS stylesheets</a> of the site.
+<p>The files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/stylesheets"><code>docs/stylesheets</code></a> are the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS stylesheets</a> of the site.
 You can modify them to change some properties of the site&#8217;s design.</p>
 </div>
 <div class="paragraph">
-<p>The files in <a href="https://github.com/se-edu/addressbook-level4/tree/master/docs/templates"><code>docs/templates</code></a> controls the rendering of <code>.adoc</code> files into HTML5.
+<p>The files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/templates"><code>docs/templates</code></a> controls the rendering of <code>.adoc</code> files into HTML5.
 These template files are written in a mixture of <a href="https://www.ruby-lang.org">Ruby</a> and <a href="http://slim-lang.com">Slim</a>.</p>
 </div>
 <div class="admonitionblock warning">
@@ -1398,9 +1411,8 @@ These template files are written in a mixture of <a href="https://www.ruby-lang.
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Modifying the template files in <a href="https://github.com/se-edu/addressbook-level4/tree/master/docs/templates"><code>docs/templates</code></a> requires some knowledge and experience with Ruby and Asciidoctor&#8217;s API.
-You should only modify them if you need greater control over the site&#8217;s layout than what stylesheets can provide.
-The SE-EDU team does not provide support for modified template files.</p>
+<p>Modifying the template files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/templates"><code>docs/templates</code></a> requires some knowledge and experience with Ruby and Asciidoctor&#8217;s API.
+You should only modify them if you need greater control over the site&#8217;s layout than what stylesheets can provide.</p>
 </div>
 </td>
 </tr>
@@ -1569,7 +1581,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Update the version number in <a href="https://github.com/se-edu/addressbook-level4/tree/master/src/main/java/seedu/address/MainApp.java"><code>MainApp.java</code></a>.</p>
+<p>Update the version number in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/address/MainApp.java"><code>MainApp.java</code></a>.</p>
 </li>
 <li>
 <p>Generate a JAR file <a href="UsingGradle.html#creating-the-jar-file">using Gradle</a>.</p>
@@ -1586,7 +1598,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="sect2">
 <h3 id="managing-dependencies"><a class="link" href="#managing-dependencies">7.6. Managing Dependencies</a></h3>
 <div class="paragraph">
-<p>A project often depends on third-party libraries. For example, Address Book depends on the <a href="https://github.com/FasterXML/jackson">Jackson library</a> for JSON parsing. Managing these <em>dependencies</em> can be automated using Gradle. For example, Gradle can download the dependencies automatically, which is better than these alternatives:</p>
+<p>A project often depends on third-party libraries. For example, <em>In-Credit-Ble</em> depends on the <a href="https://github.com/FasterXML/jackson">Jackson library</a> for JSON parsing. Managing these <em>dependencies</em> can be automated using Gradle. For example, Gradle can download the dependencies automatically, which is better than these alternatives:</p>
 </div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
@@ -1613,7 +1625,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <p>has a need to manage a significant amount of expenses/finances</p>
 </li>
 <li>
-<p>has a need to be more aware of their spending habits/patterns</p>
+<p>has a need to be more aware of his/her spending habits/patterns</p>
 </li>
 <li>
 <p>can type fast</p>
@@ -1657,7 +1669,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">new user</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">see usage instructions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">refer to instructions when I forget how to use the App</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">refer to it when I forget how to use the application</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
@@ -1675,7 +1687,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">delete an entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">remove entries that is no longer needed anymore</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">remove an entry that is no longer needed anymore</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
@@ -1745,7 +1757,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <h2 id="use-cases"><a class="link" href="#use-cases">Appendix C: Use Cases</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>(For all use cases below, the <strong>System</strong> is the <code>In-Credit-Ble</code> and the <strong>User</strong> is the <code>user</code>, unless specified otherwise)</p>
+<p>(For all use cases below, the <strong>System</strong> is <code>In-Credit-Ble</code> and the <strong>User</strong> is the <code>user</code>, unless specified otherwise)</p>
 </div>
 <h3 id="use-case-setting-a-budget-for-the-month" class="discrete">Use case: Setting a budget for the month</h3>
 <div class="paragraph">
@@ -1754,10 +1766,10 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to set a budget for the current month</p>
+<p><em>User</em> requests to set a budget for the current month</p>
 </li>
 <li>
-<p>System displays current budget amount for the month</p>
+<p><em>System</em> displays current budget amount for the month</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -1770,12 +1782,58 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>2a. With addition of expense entries, System updates the remaining amount in the current month&#8217;s budget</p>
+<p>2a. With addition of expense entries, <em>System</em> updates the remaining amount in the current month&#8217;s budget</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
 </li>
 </ul>
+</div>
+<h3 id="use-case-allocate-budget-to-a-category" class="discrete">Use case: Allocate budget to a category</h3>
+<div class="paragraph">
+<p><strong>MSS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em>User</em> requests to list summary of budget based on category</p>
+</li>
+<li>
+<p><em>System</em> shows a summary of budget based on category</p>
+</li>
+<li>
+<p><em>User</em> requests to allocate a certain amount to a category</p>
+</li>
+<li>
+<p><em>System</em> allocates the user input amount to the given category</p>
+<div class="paragraph">
+<p>Use case ends.</p>
+</div>
+</li>
+</ol>
+</div>
+<h3 id="use-case-increasing-budget-for-the-month" class="discrete">Use case: Increasing budget for the month</h3>
+<div class="paragraph">
+<p><strong>MSS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em>User</em> requests to list entries</p>
+</li>
+<li>
+<p><em>System</em> shows a list of expense entries</p>
+</li>
+<li>
+<p><em>User</em> requests to increase budget for the month (can be associated with a category)</p>
+</li>
+<li>
+<p><em>System</em> will increase the budget for the month (that is associated with category input)</p>
+<div class="paragraph">
+<p>Use case ends.</p>
+</div>
+</li>
+</ol>
 </div>
 <h3 id="use-case-add-expense-entry" class="discrete">Use case: Add expense entry</h3>
 <div class="paragraph">
@@ -1784,16 +1842,16 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to list entries</p>
+<p><em>User</em> requests to list entries</p>
 </li>
 <li>
-<p>System shows a list of expense entries</p>
+<p><em>System</em> shows a list of expense entries</p>
 </li>
 <li>
-<p>User requests to add a specific expense entry in the list</p>
+<p><em>User</em> requests to add a specific expense entry in the list</p>
 </li>
 <li>
-<p>System adds the expense entry</p>
+<p><em>System</em> adds the expense entry</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -1806,11 +1864,11 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3a. The given index is invalid.</p>
+<p>3a. Some fields are missing.</p>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3a1. System shows an error message.</p>
+<p>3a1. <em>System</em> shows an error message.</p>
 <div class="paragraph">
 <p>Use case resumes at step 2.</p>
 </div>
@@ -1820,52 +1878,6 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 </li>
 </ul>
 </div>
-<h3 id="use-case-increasing-budget-for-the-month" class="discrete">Use case: Increasing budget for the month</h3>
-<div class="paragraph">
-<p><strong>MSS</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>User requests to list entries</p>
-</li>
-<li>
-<p>System shows a list of expense entries</p>
-</li>
-<li>
-<p>User requests to increase budget for the month (can be associated with a category)</p>
-</li>
-<li>
-<p>System will increase the budget for the month (that is associated with category input)</p>
-<div class="paragraph">
-<p>Use case ends.</p>
-</div>
-</li>
-</ol>
-</div>
-<h3 id="use-case-allocate-budget-to-a-category" class="discrete">Use case: Allocate budget to a category</h3>
-<div class="paragraph">
-<p><strong>MSS</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>User requests to list summary of budget based on category</p>
-</li>
-<li>
-<p>System shows a summary of budget based on category</p>
-</li>
-<li>
-<p>User requests to allocate a certain amount to a category</p>
-</li>
-<li>
-<p>System allocates the user input amount to the given category</p>
-<div class="paragraph">
-<p>Use case ends.</p>
-</div>
-</li>
-</ol>
-</div>
 <h3 id="use-case-editing-an-expense-entry" class="discrete">Use case: Editing an expense entry</h3>
 <div class="paragraph">
 <p><strong>MSS</strong></p>
@@ -1873,16 +1885,16 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to list expense entries</p>
+<p><em>User</em> requests to list expense entries</p>
 </li>
 <li>
-<p>System shows a list of expense entries</p>
+<p><em>System</em> shows a list of expense entries</p>
 </li>
 <li>
-<p>User requests to edit a specific expense entry in the list</p>
+<p><em>User</em> requests to edit a specific expense entry in the list</p>
 </li>
 <li>
-<p>System updates the expense entry as well as the budget summary accordingly</p>
+<p><em>System</em> updates the expense entry as well as the budget summary accordingly</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -1909,7 +1921,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3a1. System shows an error message.</p>
+<p>3a1. <em>System</em> shows an error message.</p>
 <div class="paragraph">
 <p>Use case resumes at step 2.</p>
 </div>
@@ -1926,16 +1938,16 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to list expense entries</p>
+<p><em>User</em> requests to list expense entries</p>
 </li>
 <li>
-<p>System shows a list of expense entries</p>
+<p><em>System</em> shows a list of expense entries</p>
 </li>
 <li>
-<p>User requests to delete a specific expense entry in the list</p>
+<p><em>User</em> requests to delete a specific expense entry in the list</p>
 </li>
 <li>
-<p>System deletes the entry</p>
+<p><em>System</em> deletes the entry</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -1958,7 +1970,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3a1. System shows an error message.</p>
+<p>3a1. <em>System</em> shows an error message.</p>
 <div class="paragraph">
 <p>Use case resumes at step 2.</p>
 </div>
@@ -1975,10 +1987,10 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to list history of entered commands</p>
+<p><em>User</em> requests to list history of entered commands</p>
 </li>
 <li>
-<p>System shows history of commands in reverse chronological order (latest command first)</p>
+<p><em>System</em> shows history of commands in reverse chronological order (latest command first)</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -2005,10 +2017,10 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to undo previous command</p>
+<p><em>User</em> requests to undo previous command</p>
 </li>
 <li>
-<p>System undo previous command and updates budget accordingly</p>
+<p><em>System</em> undo previous command and updates budget accordingly</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -2023,7 +2035,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <li>
 <p>1a. There was no previous command</p>
 <div class="paragraph">
-<p>Use case ends with message to let user know there is no previous command</p>
+<p>Use case ends with message to let <em>User</em> know there is no previous command</p>
 </div>
 </li>
 </ul>
@@ -2035,10 +2047,10 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to redo previous undone command</p>
+<p><em>User</em> requests to redo previous undone command</p>
 </li>
 <li>
-<p>System redo previous undone command and updates budget accordingly</p>
+<p><em>System</em> redo previous undone command and updates budget accordingly</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -2053,7 +2065,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <li>
 <p>1a. There was no previous undone command</p>
 <div class="paragraph">
-<p>Use case ends with message to let user know there is no previous undone command</p>
+<p>Use case ends with message to let <em>User</em> know there is no previous undone command</p>
 </div>
 </li>
 </ul>
@@ -2065,10 +2077,10 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to clear all entries</p>
+<p><em>User</em> requests to clear all entries</p>
 </li>
 <li>
-<p>System clears all entries and updates the budget accordingly</p>
+<p><em>System</em> clears all entries and updates the budget accordingly</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -2081,9 +2093,9 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>1a. There are no entries in the System</p>
+<p>1a. There are no entries in the <em>System</em></p>
 <div class="paragraph">
-<p>Use case ends with message to let user know there are no entries in System</p>
+<p>Use case ends with message to let <em>User</em> know there are no entries in <em>System</em></p>
 </div>
 </li>
 </ul>
@@ -2102,7 +2114,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <p>Should work on both 32-bit and 64-bit environments.</p>
 </li>
 <li>
-<p>Should be able to hold up to 1000 expenditure people without a noticeable sluggishness in performance for typical usage.</p>
+<p>Should be able to hold up to 1000 expenditure records without a noticeable sluggishness in performance for typical usage.</p>
 </li>
 <li>
 <p>A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.</p>
@@ -2114,9 +2126,6 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <p>Responses by the system should be fast (~5 seconds).</p>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p><em>{More to be added}</em></p>
 </div>
 </div>
 </div>
@@ -2290,7 +2299,7 @@ category tag (if specified)</p>
 <h2 id="instructions-for-manual-testing"><a class="link" href="#instructions-for-manual-testing">Appendix G: Instructions for Manual Testing</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Given below are instructions to test the app manually.</p>
+<p>Given below are instructions to test the application manually.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2330,16 +2339,13 @@ Expected: Shows the GUI with a set of sample contacts. The window size may not b
 <p>Resize the window to an optimum size. Move the window to a different location. Close the window.</p>
 </li>
 <li>
-<p>Re-launch the app by double-clicking the jar file.<br>
+<p>Re-launch the application by double-clicking the jar file.<br>
 Expected: The most recent window size and location is retained.</p>
 </li>
 </ol>
 </div>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p><em>{ more test cases &#8230;&#8203; }</em></p>
 </div>
 </div>
 <div class="sect2">
@@ -2355,23 +2361,20 @@ Expected: The most recent window size and location is retained.</p>
 </li>
 <li>
 <p>Test case: <code>delete 1</code><br>
-Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated.</p>
+Expected: First record is deleted from the list. Details of the deleted record shown in the status message. Timestamp in the status bar is updated.</p>
 </li>
 <li>
 <p>Test case: <code>delete 0</code><br>
 Expected: No record is deleted. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
-<p>Other incorrect delete commands to try: <code>delete</code>, <code>delete x</code> (where x is larger than the list size) <em>{give more}</em><br>
+<p>Other incorrect delete commands to try: <code>delete</code>, <code>delete x</code> (where x is larger than the list size), <code>delete three</code><br>
 Expected: Similar to previous.</p>
 </li>
 </ol>
 </div>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p><em>{ more test cases &#8230;&#8203; }</em></p>
 </div>
 </div>
 <div class="sect2">
@@ -2390,9 +2393,6 @@ Expected: Similar to previous.</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p><em>{ more test cases &#8230;&#8203; }</em></p>
 </div>
 </div>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 10:59:18 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 12:58:36 UTC</div></div></div></body></html>
