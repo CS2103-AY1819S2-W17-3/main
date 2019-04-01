@@ -75,8 +75,8 @@
 <h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to the <em>In-Credit-Ble</em> User Guide! <em>In-Credit-Ble</em> is your "one-stop shop" in managing and tracking your
-personal finances. Our user-friendly interface will make it easy for you to stick to your budget and be more aware
+<p>Welcome to the <em>In-Credit-Ble</em> User Guide! <em>In-Credit-Ble</em> is your all-in-one application in managing and tracking your
+personal finances. Our user-friendly interface will make it easy for you to see how much you can safely spend within your budget and be more aware
 of your spending habits. If you are a <strong>fast typer</strong>, <strong>prefer to type</strong> over using your mouse and <strong>like to get things done
 efficiently</strong>, then this is the product just for you! <em>In-Credit-Ble</em> is designed for those who prefer to work with a
 <strong>Command Line Interface (CLI)</strong>.</p>
@@ -105,10 +105,10 @@ different features and shows you how to perform basic <em>In-Credit-Ble</em> ope
 <p>Copy the file to the folder you want to use as the home folder for your finance tracker.</p>
 </li>
 <li>
-<p>Double-click the file to start the app. The GUI should appear in a few seconds.</p>
+<p>Double-click the file to start the app. The GUI should appear in a few seconds as shown below.</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/Ui.png" alt="Ui" width="790">
+<img src="images/startUi.png" alt="startUi" width="790">
 </div>
 </div>
 </li>
@@ -217,7 +217,7 @@ step-by-step instructions on how to use the different commands.</p>
 <div class="sect3">
 <h4 id="increasing-the-budget-code-increase-code"><a class="link" href="#increasing-the-budget-code-increase-code">3.1.3. Increasing the budget: <code>increase</code></a></h4>
 <div class="paragraph">
-<p>With this command, you will be able to increase the budget limit for the month/week by the specified amount.</p>
+<p>You can increase your budget limit for the month/week by the specified amount.</p>
 </div>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>increase $/AMOUNT</code></p>
@@ -267,7 +267,7 @@ step-by-step instructions on how to use the different commands.</p>
 <div class="sect3">
 <h4 id="adding-a-description-to-an-entry-code-description-code"><a class="link" href="#adding-a-description-to-an-entry-code-description-code">3.2.2. Adding a description to an entry: <code>description</code></a></h4>
 <div class="paragraph">
-<p>Adds a description to an existing entry in the records.</p>
+<p>You can add a description to an existing entry in the records to remember details of the amount spent.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>descr</code></p>
@@ -315,7 +315,7 @@ Removes the description of entry at index 1</p>
 <div class="sect3">
 <h4 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">3.2.3. Editing an entry: <code>edit</code></a></h4>
 <div class="paragraph">
-<p>Edits an existing entry in the record.<br>
+<p>You can easily edit any part of an existing entry in the records.<br>
 Index refers to the index number shown in the list.</p>
 </div>
 <div class="paragraph">
@@ -368,7 +368,7 @@ Index refers to the index number shown in the list.</p>
 <div class="sect3">
 <h4 id="selecting-an-entry-code-select-code"><a class="link" href="#selecting-an-entry-code-select-code">3.2.4. Selecting an entry: <code>select</code></a></h4>
 <div class="paragraph">
-<p>Selects an existing entry in the records</p>
+<p>You can select an existing entry in the records to view its details by specifying the entry&#8217;s index number.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>s</code>, <code>sel</code></p>
@@ -411,7 +411,8 @@ Index refers to the index number shown in the list.</p>
 <div class="sect3">
 <h4 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">3.2.5. Deleting an entry: <code>delete</code></a></h4>
 <div class="paragraph">
-<p>Deletes an entry in the record.</p>
+<p>You can delete an entry in the record by specifying the entry&#8217;s index number.
+Deleted entries can be recovered via the <code>undo</code> command.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>d</code>, <code>del</code></p>
@@ -457,7 +458,7 @@ Index refers to the index number shown in the list.</p>
 <div class="sect3">
 <h4 id="listing-all-entries-code-list-code"><a class="link" href="#listing-all-entries-code-list-code">3.3.1. Listing all entries: <code>list</code></a></h4>
 <div class="paragraph">
-<p>You can see all the entries you have entered with the list command.</p>
+<p>You can see all the entries you have entered, as long as they are not deleted entries.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>l</code>, <code>ls</code></p>
@@ -469,7 +470,7 @@ Index refers to the index number shown in the list.</p>
 <div class="sect3">
 <h4 id="locating-entry-based-on-name-category-code-search-code"><a class="link" href="#locating-entry-based-on-name-category-code-search-code">3.3.2. Locating entry based on name/category: <code>search</code></a></h4>
 <div class="paragraph">
-<p>Search for an entry using a name or category as keyword.</p>
+<p>You can easily search for an entry in the records using a name or category as keywords.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>find</code></p>
@@ -507,7 +508,7 @@ Index refers to the index number shown in the list.</p>
 <div class="sect3">
 <h4 id="sorting-the-entries-according-to-name-amount-date-category-code-sort-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">3.3.3. Sorting the entries according to name/amount/date/category: <code>sort</code></a></h4>
 <div class="paragraph">
-<p>You can choose to sort the entries by name, amount, date or category.</p>
+<p>You can choose to sort the list of entries by name, amount, date or category.</p>
 </div>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>sort FLAG</code></p>
@@ -560,7 +561,7 @@ Sorts the list of records by category</p>
 <div class="sect3">
 <h4 id="reversing-the-entries-code-reverse-code"><a class="link" href="#reversing-the-entries-code-reverse-code">3.3.4. Reversing the entries: <code>reverse</code></a></h4>
 <div class="paragraph">
-<p>Reverses the entries in the records.</p>
+<p>You can also reverse the order of the list of entries in the records.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>rev</code></p>
@@ -572,8 +573,11 @@ Sorts the list of records by category</p>
 <div class="sect3">
 <h4 id="showing-summary-of-records-code-summary-code"><a class="link" href="#showing-summary-of-records-code-summary-code">3.3.5. Showing summary of records: <code>summary</code></a></h4>
 <div class="paragraph">
-<p>Shows the summary of your previous expenditures, with statistics on how your spending habits are like in the
+<p>You can see the summary of your previous expenditures, with an aster plot graph showing how your spending habits are like in the
 different categories. It also displays the remaining budget amount for each category.</p>
+</div>
+<div class="paragraph">
+<p>Deleted entries are not included in the summary.</p>
 </div>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>summary</code></p>
@@ -595,7 +599,7 @@ by using the following command:</p>
 <div class="sect3">
 <h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.4.2. Undoing previous command : <code>undo</code></a></h4>
 <div class="paragraph">
-<p>Restores to the state before the previous <em>undoable</em> command was executed.</p>
+<p>You can restore the program to the state before the previous <em>undoable</em> command was executed.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>u</code></p>
@@ -653,7 +657,7 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 <div class="sect3">
 <h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.4.3. Redoing the previously undone command : <code>redo</code></a></h4>
 <div class="paragraph">
-<p>Reverses the most recent <code>undo</code> command.</p>
+<p>You can reverse the most recent <code>undo</code> command.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>r</code></p>
@@ -690,7 +694,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <div class="sect3">
 <h4 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.4.4. Listing entered commands: <code>history</code></a></h4>
 <div class="paragraph">
-<p>List all the commands you have entered in reverse chronological order.</p>
+<p>You can list all the commands you have entered in reverse chronological order.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>h</code>, <code>hist</code></p>
@@ -702,7 +706,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <div class="sect3">
 <h4 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.4.5. Clearing all entries : <code>clear</code></a></h4>
 <div class="paragraph">
-<p>Deletes all the entries and reset budget to 0.</p>
+<p>You can delete all existing entries in the records and reset your budget to $0.00.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>c</code>, <code>clr</code></p>
@@ -714,7 +718,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <div class="sect3">
 <h4 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.4.6. Exiting the program : <code>exit</code></a></h4>
 <div class="paragraph">
-<p>Exits the program.</p>
+<p>You can quit the program at any point in time when you use this command.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>quit</code></p>
@@ -727,7 +731,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <h4 id="saving-the-data"><a class="link" href="#saving-the-data">3.4.7. Saving the data</a></h4>
 <div class="paragraph">
 <p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes
-the data. There is no need to save manually.</p>
+the data. There is no need for you to save manually.</p>
 </div>
 </div>
 </div>
@@ -736,8 +740,8 @@ the data. There is no need to save manually.</p>
 <div class="sect3">
 <h4 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.5.1. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
-<p>The finance records for each month will be archived at the end of the month. This information will be used to derive
-the projected savings/expenses based on your typical spending patterns.</p>
+<p>Your monthly finance records will be archived at the end of the month. This information will be used to derive
+the projected savings and expenses based on your typical spending patterns.</p>
 </div>
 </div>
 <div class="sect3">
@@ -752,8 +756,8 @@ related articles for you to view.</p>
 <h4 id="separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.5.3. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> will link up with secure methods of payment such as payLah, Visa/MasterCard, Amex or Paypal to allow
-transactions between users. By paying through _In-Credit-Ble, transactions will automatically be updated
-onto the records.</p>
+tracking of your cashless transactions. By paying through _In-Credit-Ble, transactions will automatically be updated
+and recorded as entries.</p>
 </div>
 </div>
 </div>
@@ -766,7 +770,7 @@ onto the records.</p>
 <p><strong>Q</strong>: How do I transfer my data to another Computer?</p>
 </div>
 <div class="paragraph">
-<p><strong>A</strong>: Install the app in the other computer and overwrite the empty data file it creates with the file
+<p><strong>A</strong>: You can install the app in the other computer and overwrite the empty data file it creates with the file
 that contains the data of your previous <em>In-Credit-Ble</em> folder.</p>
 </div>
 <div class="paragraph">
@@ -774,8 +778,10 @@ that contains the data of your previous <em>In-Credit-Ble</em> folder.</p>
 </div>
 <div class="paragraph">
 <p><strong>A</strong>: At the current version, the application is unable to support transactions record in different currency.
-User will need to calculate and input based on the local currency. This will be rectified in the subsequent version
-of our application.</p>
+You will need to calculate and enter your input based on your local currency.</p>
+</div>
+<div class="paragraph">
+<p><em>In-Credit-Ble</em>  aims to support multi-currency transactions in <code>v2.0</code>.</p>
 </div>
 </div>
 </div>
@@ -784,111 +790,201 @@ of our application.</p>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="budget-management-2"><a class="link" href="#budget-management-2">5.1. Budget Management</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Set Budget</strong>: <code>set $/AMOUNT</code><br>
-e.g. <code>set $/500</code></p>
-</li>
-<li>
-<p><strong>Allocate budgeting based on categories</strong>: <code>allocate $/AMOUNT c/CATEGORY</code><br>
-e.g. <code>allocate $/100 c/Shopping</code></p>
-</li>
-<li>
-<p><strong>Increase budget</strong>: <code>increase $/AMOUNT</code><br>
-e.g. <code>increase $/10.10</code></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all" style="width: 59%;">
+<colgroup>
+<col style="width: 22%;">
+<col style="width: 23%;">
+<col style="width: 25%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Command Format</th>
+<th class="tableblock halign-left valign-top">Alias</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set Budget</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>set $/AMOUNT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>set $/500</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allocate budgeting based on categories</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allocate $/AMOUNT c/CATEGORY</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allocate $/100 c/Shopping</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Increase budget</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>increase $/AMOUNT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>increase $/10.10</code></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="expense-entry-management-2"><a class="link" href="#expense-entry-management-2">5.2. Expense Entry Management</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Add expense</strong>: <code>spend n/NAME $/AMOUNT d/DATE [c/CATEGORY] &#8230;&#8203;</code><br>
-Alias: <code>add</code><br>
-e.g. <code>spend n/movie $/10 d/16/03/2019 c/Entertainment</code></p>
-</li>
-<li>
-<p><strong>Add a description to an entry</strong>: <code>description INDEX d/DESCRIPTION</code><br>
-Alias: <code>descr</code><br>
-e.g. <code>description 1 d/Father&#8217;s birthday present</code></p>
-</li>
-<li>
-<p><strong>Edit an entry</strong>: <code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY]</code><br>
-Alias: <code>e</code><br>
-e.g. <code>edit 1 n/burger c/Food</code></p>
-</li>
-<li>
-<p><strong>Select an entry</strong>: <code>select INDEX</code><br>
-Alias: <code>s</code>, <code>sel</code><br>
-e.g. <code>select 3</code></p>
-</li>
-<li>
-<p><strong>Delete an entry</strong>: <code>delete INDEX</code><br>
-Alias: <code>d</code>, <code>del</code><br>
-e.g. <code>delete 2</code></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all" style="width: 59%;">
+<colgroup>
+<col style="width: 22%;">
+<col style="width: 23%;">
+<col style="width: 25%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Command Format</th>
+<th class="tableblock halign-left valign-top">Alias</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add expense</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/NAME $/AMOUNT d/DATE [c/CATEGORY] &#8230;&#8203;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>add</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/movie $/10 d/16/03/2019 c/Entertainment</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add a description to an entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description INDEX d/DESCRIPTION</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>descr</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description 1 d/Father&#8217;s birthday present</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit an entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit 1 n/burger c/Food</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select an entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>select INDEX</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>s</code>, <code>sel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>select 3</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delete an entry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delete INDEX</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>d</code>, <code>del</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delete 2</code></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="records-management-2"><a class="link" href="#records-management-2">5.3. Records Management</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>List all entries</strong>: <code>list</code><br>
-Alias: <code>l</code>, <code>ls</code></p>
-</li>
-<li>
-<p><strong>Locate entry based on name/category</strong>: <code>search KEYWORD [MORE_KEYWORDS]</code><br>
-Alias: <code>find</code><br>
-e.g. <code>search cake break Food</code></p>
-</li>
-<li>
-<p><strong>Sort the entries</strong>: <code>sort FLAG</code><br>
-e.g. <code>sort -name</code></p>
-</li>
-<li>
-<p><strong>Reverse all entries</strong>: <code>reverse</code><br>
-Alias: <code>rev</code></p>
-</li>
-<li>
-<p><strong>Show summary of record</strong>: <code>summary</code></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all" style="width: 59%;">
+<colgroup>
+<col style="width: 22%;">
+<col style="width: 23%;">
+<col style="width: 25%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Command Format</th>
+<th class="tableblock halign-left valign-top">Alias</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List all entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>list</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>l</code>, <code>ls</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Locate entry based on name/category</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>search KEYWORD [MORE_KEYWORDS]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>find</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>search cake break Food</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sort the entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort FLAG</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse all entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>reverse</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rev</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show summary of records</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>summary</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="miscellaneous-2"><a class="link" href="#miscellaneous-2">5.4. Miscellaneous</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Help</strong>: <code>help</code></p>
-</li>
-<li>
-<p><strong>Undo previous command</strong>: <code>undo</code><br>
-Alias: <code>u</code></p>
-</li>
-<li>
-<p><strong>Redo previously undone command</strong>: <code>redo</code><br>
-Alias: <code>r</code></p>
-</li>
-<li>
-<p><strong>List entered commands</strong>: <code>history</code><br>
-Alias: <code>h</code>, <code>hist</code></p>
-</li>
-<li>
-<p><strong>Clear all entries</strong>: <code>clear</code><br>
-Alias: <code>c</code>, <code>clr</code></p>
-</li>
-<li>
-<p><strong>Exit the program</strong>: <code>exit</code><br>
-Alias: <code>quit</code></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all" style="width: 59%;">
+<colgroup>
+<col style="width: 22%;">
+<col style="width: 23%;">
+<col style="width: 25%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Command Format</th>
+<th class="tableblock halign-left valign-top">Alias</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Help</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>help</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Undo previous command</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>undo</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>u</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redo previously undone command</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>redo</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>r</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List entered commands</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>history</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h</code>, <code>hist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear all entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>clear</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>c</code>, <code>clr</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exit the program</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>exit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -913,4 +1009,4 @@ category tag (if specified)</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 04:45:55 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 09:10:00 UTC</div></div></div></body></html>
