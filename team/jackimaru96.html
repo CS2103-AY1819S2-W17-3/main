@@ -403,7 +403,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <p><strong>Alias</strong>: <code>add</code></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT d/DATE [c/CATEGORY] &#8230;&#8203;</code></p>
+<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT d/DATE c/CATEGORY</code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -421,6 +421,35 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 </ul>
 </div>
 </div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>If you provide multiple categories (e.g. <code>spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</code>),
+only the last category you provided will be taken (in the previous e.g., the command will
+add expense for <code>Clothes</code> category.</p>
+</li>
+<li>
+<p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to the same
+category and will be shown with the first character in uppercase and the rest of the characters
+in lowercase (in the above example, it will be shown as <code>Clothes</code>)</p>
+</li>
+<li>
+<p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
+and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1417,4 +1446,4 @@ image::themeMenuBar.png[width="300"]</p>
 </tbody>
 </table>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 15:13:37 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-01 15:39:16 UTC</div></div></div></body></html>
