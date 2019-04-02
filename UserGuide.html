@@ -38,37 +38,9 @@
 <li><a href="#showing-summary-of-records-code-summary-code">3.3.5. Showing summary of records: <code>summary</code></a></li>
 </ul>
 </li>
-<li><a href="#miscellaneous">3.4. Miscellaneous</a>
-<ul class="sectlevel3">
-<li><a href="#viewing-help-code-help-code">3.4.1. Viewing help: <code>help</code></a></li>
-<li><a href="#undoing-previous-command-code-undo-code">3.4.2. Undoing previous command : <code>undo</code></a></li>
-<li><a href="#redoing-the-previously-undone-command-code-redo-code">3.4.3. Redoing the previously undone command : <code>redo</code></a></li>
-<li><a href="#changing-theme-of-application-code-theme-code">3.4.4. Changing theme of application: <code>theme</code></a></li>
-<li><a href="#listing-entered-commands-code-history-code">3.4.5. Listing entered commands: <code>history</code></a></li>
-<li><a href="#clearing-all-entries-code-clear-code">3.4.6. Clearing all entries : <code>clear</code></a></li>
-<li><a href="#exiting-the-program-code-exit-code">3.4.7. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">3.4.8. Saving the data</a></li>
+<li><a href="#miscellaneous">3.4. Miscellaneous</a></li>
 </ul>
 </li>
-<li><a href="#upcoming-features">3.5. Upcoming features</a>
-<ul class="sectlevel3">
-<li><a href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.5.1. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></li>
-<li><a href="#links-to-financial-articles-code-coming-in-v2-0-code">3.5.2. Links to financial articles <code>[coming in v2.0]</code></a></li>
-<li><a href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.5.3. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#faq">4. FAQ</a></li>
-<li><a href="#command-summary">5. Command Summary</a>
-<ul class="sectlevel2">
-<li><a href="#budget-management-2">5.1. Budget Management</a></li>
-<li><a href="#expense-entry-management-2">5.2. Expense Entry Management</a></li>
-<li><a href="#records-management-2">5.3. Records Management</a></li>
-<li><a href="#miscellaneous-2">5.4. Miscellaneous</a></li>
-</ul>
-</li>
-<li><a href="#glossary">6. Glossary</a></li>
 </ul>
 </div>
 </div>
@@ -176,7 +148,7 @@ step-by-step instructions on how to use the different commands.</p>
 <div class="sect3">
 <h4 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">3.1.1. Setting a budget: <code>set</code></a></h4>
 <div class="paragraph">
-<p>This command enables you to set a fixed budget for a month/week. The command format is as follows:</p>
+<p>This command enables you to set a fixed budget for a month/week (Time limit to be implemented). The current budget will be modified based on the transaction records. The command format is as follows:</p>
 </div>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>set $/AMOUNT</code></p>
@@ -712,8 +684,24 @@ different categories. It also displays the remaining budget amount for each cate
 </div>
 <div class="sect2">
 <h3 id="miscellaneous"><a class="link" href="#miscellaneous">3.4. Miscellaneous</a></h3>
-<div class="sect3">
-<h4 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.4.1. Viewing help: <code>help</code></a></h4>
+<div class="paragraph">
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+==== Changing FinanceTracker data storage location: <code>setfile</code>
+Want to maintain multiple users of the FinanceTracker? You can use this command to load FinanceTracker data from another file.
+The command will create a file if it does not already exist.</p>
+</div>
+<div class="paragraph">
+<p>File paths and extension should not be included in command.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>setfile f/finance</code></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; c957ac49f1728585d2b62881f4ce6605b84340c2
+==== Viewing help: <code>help</code></p>
+</div>
 <div class="paragraph">
 <p>Forgotten which commands to use? You can easily find the commands you need to navigate the software
 by using the following command:</p>
@@ -721,9 +709,9 @@ by using the following command:</p>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>help</code></p>
 </div>
+<div class="paragraph">
+<p>==== Undoing previous command : <code>undo</code></p>
 </div>
-<div class="sect3">
-<h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.4.2. Undoing previous command : <code>undo</code></a></h4>
 <div class="paragraph">
 <p>You can restore the program to the state before the previous <em>undoable</em> command was executed.</p>
 </div>
@@ -781,9 +769,9 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>==== Redoing the previously undone command : <code>redo</code></p>
 </div>
-<div class="sect3">
-<h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.4.3. Redoing the previously undone command : <code>redo</code></a></h4>
 <div class="paragraph">
 <p>You can reverse the most recent <code>undo</code> command.</p>
 </div>
@@ -822,9 +810,9 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 </div>
 </div>
 </div>
+<div class="paragraph">
+<p>==== Changing theme of application: <code>theme</code></p>
 </div>
-<div class="sect3">
-<h4 id="changing-theme-of-application-code-theme-code"><a class="link" href="#changing-theme-of-application-code-theme-code">3.4.4. Changing theme of application: <code>theme</code></a></h4>
 <div class="paragraph">
 <p>You can change the theme of the application with pre-set colour themes specified.</p>
 </div>
@@ -885,9 +873,9 @@ the menu bar.</p>
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>==== Listing entered commands: <code>history</code></p>
 </div>
-<div class="sect3">
-<h4 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.4.5. Listing entered commands: <code>history</code></a></h4>
 <div class="paragraph">
 <p>You can list all the commands you have entered in reverse chronological order.</p>
 </div>
@@ -897,9 +885,9 @@ the menu bar.</p>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>history</code></p>
 </div>
+<div class="paragraph">
+<p>==== Clearing all entries : <code>clear</code></p>
 </div>
-<div class="sect3">
-<h4 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.4.6. Clearing all entries : <code>clear</code></a></h4>
 <div class="paragraph">
 <p>You can delete all existing entries in the records and reset your budget to $0.00.</p>
 </div>
@@ -909,9 +897,9 @@ the menu bar.</p>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>clear</code></p>
 </div>
+<div class="paragraph">
+<p>==== Exiting the program : <code>exit</code></p>
 </div>
-<div class="sect3">
-<h4 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.4.7. Exiting the program : <code>exit</code></a></h4>
 <div class="paragraph">
 <p>You can quit the program at any point in time when you use this command.</p>
 </div>
@@ -921,46 +909,42 @@ the menu bar.</p>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>exit</code></p>
 </div>
+<div class="paragraph">
+<p>==== Saving the data</p>
 </div>
-<div class="sect3">
-<h4 id="saving-the-data"><a class="link" href="#saving-the-data">3.4.8. Saving the data</a></h4>
 <div class="paragraph">
 <p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes
 the data. There is no need for you to save manually.</p>
 </div>
+<div class="paragraph">
+<p>=== Upcoming features</p>
 </div>
+<div class="paragraph">
+<p>==== Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></p>
 </div>
-<div class="sect2">
-<h3 id="upcoming-features"><a class="link" href="#upcoming-features">3.5. Upcoming features</a></h3>
-<div class="sect3">
-<h4 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-coming-in-v2-0-code">3.5.1. Establish saving patterns based on record and derive projected savings/expenses in a time span <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p>Your monthly finance records will be archived at the end of the month. This information will be used to derive
 the projected savings and expenses based on your typical spending patterns.</p>
 </div>
+<div class="paragraph">
+<p>==== Links to financial articles <code>[coming in v2.0]</code></p>
 </div>
-<div class="sect3">
-<h4 id="links-to-financial-articles-code-coming-in-v2-0-code"><a class="link" href="#links-to-financial-articles-code-coming-in-v2-0-code">3.5.2. Links to financial articles <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p>You will be able to list categories of financial articles that you are interested in
 (e.g. investment, stock market). Based on these categories, <em>In-Credit-Ble</em> will use Google API to search for
 related articles for you to view.</p>
 </div>
+<div class="paragraph">
+<p>==== Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></p>
 </div>
-<div class="sect3">
-<h4 id="separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-paylah-code-coming-in-v2-0-code">3.5.3. Separate expenditures based on methods of payment (Cash, Visa, Paylah) <code>[coming in v2.0]</code></a></h4>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> will link up with secure methods of payment such as payLah, Visa/MasterCard, Amex or Paypal to allow
 tracking of your cashless transactions. By paying through _In-Credit-Ble, transactions will automatically be updated
 and recorded as entries.</p>
 </div>
+<div class="paragraph">
+<p>== FAQ</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="faq"><a class="link" href="#faq">4. FAQ</a></h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p><strong>Q</strong>: How do I transfer my data to another Computer?</p>
 </div>
@@ -978,13 +962,12 @@ You will need to calculate and enter your input based on your local currency.</p
 <div class="paragraph">
 <p><em>In-Credit-Ble</em>  aims to support multi-currency transactions in <code>v2.0</code>.</p>
 </div>
+<div class="paragraph">
+<p>== Command Summary</p>
 </div>
+<div class="paragraph">
+<p>=== Budget Management</p>
 </div>
-<div class="sect1">
-<h2 id="command-summary"><a class="link" href="#command-summary">5. Command Summary</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="budget-management-2"><a class="link" href="#budget-management-2">5.1. Budget Management</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1021,9 +1004,9 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>=== Expense Entry Management</p>
 </div>
-<div class="sect2">
-<h3 id="expense-entry-management-2"><a class="link" href="#expense-entry-management-2">5.2. Expense Entry Management</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1072,9 +1055,9 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>=== Records Management</p>
 </div>
-<div class="sect2">
-<h3 id="records-management-2"><a class="link" href="#records-management-2">5.3. Records Management</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1123,9 +1106,9 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>=== Miscellaneous</p>
 </div>
-<div class="sect2">
-<h3 id="miscellaneous-2"><a class="link" href="#miscellaneous-2">5.4. Miscellaneous</a></h3>
 <table class="tableblock frame-all grid-all" style="width: 59%;">
 <colgroup>
 <col style="width: 22%;">
@@ -1142,6 +1125,12 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set data file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setfile</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setfile f/finance</code></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Help</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>help</code></p></td>
@@ -1186,12 +1175,9 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>== Glossary</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="glossary"><a class="link" href="#glossary">6. Glossary</a></h2>
-<div class="sectionbody">
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Amount</dt>
@@ -1214,4 +1200,7 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-02 14:32:05 UTC</div></div></div></body></html>
+</div>
+</div>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-02 14:45:52 UTC</div></div></div></body></html>
