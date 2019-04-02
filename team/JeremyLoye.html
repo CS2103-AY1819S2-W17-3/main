@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>Jeremy Loye Hean Wei - Project Portfolio</title><link rel="stylesheet" href="../stylesheets/gh-pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="../images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="../index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="../index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="../DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="../LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link active" href="../AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="../ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>Jeremy Loye Hean Wei - Project Portfolio</h1></div><div id="content"><div class="sect1">
+<h2 id="project-in-credit-ble-finance-tracker"><a class="link" href="#project-in-credit-ble-finance-tracker">PROJECT: In-Credit-Ble (Finance Tracker)</a></h2>
+<div class="sectionbody">
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> is a desktop Finance Tracker that is tailored to help users manage their finances
+and keep track of their budget in an easy and efficient manner. It is designed for those who
+prefer to work with a Command Line Interface (CLI), especially for those who prefer to type over
+using their mouse.</p>
+</div>
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> was developed by a team of five students from the National University of Singapore
+as part of a Software Engineering module (CS2103T).
+ We had to adapt to an existing codebase in Java and develop a functional product in a short
+ span of 13 weeks while learning new software engineering concepts. In this project portfolio,
+ I will be documenting my contributions to this project through the major and minor features implemented for <em>In-Credit-Ble</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="summary-of-contributions"><a class="link" href="#summary-of-contributions">Summary of Contributions</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Major enhancement</strong>: added <code>Budget</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>What it does</em></strong>: Allows the user to set a Budget for the app. The user can set a budget to keep track
+of current expenditure and the amount of budget left deducting from the budget set.</p>
+</li>
+<li>
+<p><strong><em>Justification</em></strong>: This feature is an essential part of the utility of a FinanceTracker. Users want a FinanceTracker
+to keep track of their finances and set realistic budget targets for their expenditure.</p>
+</li>
+<li>
+<p>Highlights of feature:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This enhancement can be initially triggered using the <code>set</code> command and can be seen when editing records.
+Using the <code>set</code> command, users can set a budget for the app. Any spending records added afterwards will deduct
+automatically from the total budget. The UI will reflect each change in expenditure and reflect the appropriate
+budget left. This feature will take into account editing, adding and deleting of records.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Minor enhancement</strong>: Changing data files for different users through <code>setfile</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>What it does</em>: Allows the user or multiple users to change profiles on a single FinanceTracker without
+overriding each others' data.</p>
+</li>
+<li>
+<p><em>Justification</em>: It is limiting to just have one user profile when there could be multiple users of the
+same FinanceTracker app as multiple users cannot be tracked. A single user could want to maintain multiple
+FinanceTracker profiles (Record and Budget) for different purposes such as personal and business.</p>
+</li>
+<li>
+<p>Highlights of feature:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This feature is called by the <code>setfile</code> command. Using this command will cause the designated filename to
+load. If the file was not previously created, a default data set will be created.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Code contributed</strong>:
+<a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=JeremyLoye">Collated Code by RepoSense</a></p>
+</li>
+<li>
+<p><strong>Notable Contributions:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><em>Project Management</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Manging Issue Tracker</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Managed issue trackers: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/10">#10</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/38">#38</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/40">#40</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/42">#42</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/44">#44</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/45">#45</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/86">#86</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/126">#126</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><em>Community</em></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>PRs Reviews:
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/90">#90</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/92">#92</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/93">#93</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/104">#104</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/107">#107</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="contributions-to-the-user-guide"><a class="link" href="#contributions-to-the-user-guide">Contributions to the User Guide</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">_The next section will detail the User Guide we have updated from the original AddressBook User Guide.
+More specifically, it will detail the instructions I added for the features I have implemented.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">Setting a budget: <code>set</code></a></h4>
+<div class="paragraph">
+<p>This command enables you to set a fixed budget for a month/week (Time limit to be implemented). The current budget will be modified based on the transaction records. The command format is as follows:</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>set $/AMOUNT</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>set $/500</code></p>
+</li>
+<li>
+<p><code>set $/500.50</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="changing-financetracker-data-storage-location-code-setfile-code"><a class="link" href="#changing-financetracker-data-storage-location-code-setfile-code">Changing FinanceTracker data storage location: <code>setfile</code></a></h4>
+<div class="paragraph">
+<p>Want to maintain multiple users of the FinanceTracker? You can use this command to load FinanceTracker data from another file.
+The command will create a file if it does not already exist.</p>
+</div>
+<div class="paragraph">
+<p>File paths and extension should not be included in command.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>setfile f/finance</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>The following section will include the sections of my contribution to the Developer Guide.
+The developer guide is a piece of document that showcases my ability to write technical documentation as
+well as make the code easier to read and add enhancements to.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="setting-a-budget"><a class="link" href="#setting-a-budget">Setting a Budget</a></h4>
+<div class="paragraph">
+<p>This feature allows the particular user to set a budget for the FinanceTracker. The user
+may only set the budget once and increase or decrease it later.</p>
+</div>
+<div class="paragraph">
+<p>Given below is a sequence diagram and step by step explanation of how Finance Tracker
+creates a budget when the user sets a budget.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/SetCommandSequenceDiagram.png" alt="SetCommandSequenceDiagram" width="800">
+</div>
+<div class="title">Figure 1. Sequence diagram of user setting a budget</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The user enters a Set command (e.g. set $/120). The command is received by MainWindow and
+the method <code>LogicManager#execute()</code> is called. The argument of the command ($/120) is passed to
+<code>FinanceTrackerParser#parseCommand</code> method to handle.</p>
+</li>
+<li>
+<p>The <code>FinanceTrackerParser#parseCommand</code> creates a <code>SetCommandParser</code> object and passes the command
+arguments into <code>SetCommandParser#parse()</code> method. The argument is checked to be in the correct format
+by <code>ParserUtil.parseAmount()</code> before <code>SetCommandParser#parse()</code> creates a <code>SetCommand</code> with the argument
+parsed into an amount passed in.</p>
+</li>
+<li>
+<p>The <code>SetCommand</code> object is passed back to <code>LogicManager#execute()</code> and it calls the <code>SetCommand#execute()</code>
+to excute the logic to create the budget. The method creates a <code>Budget</code> object with the amount and passes
+the budget object into the <code>Model</code> by calling <code>ModelManager#addBudget()</code>.</p>
+</li>
+<li>
+<p><code>ModelManager#addBudget()</code> calls <code>FinanceTracker#addBudget()</code> to set the Budget of the FinanceTracker for
+the current user of the app. <code>FinanceTracker#addBudget()</code> uses the <code>Budget#set()</code> method to set the Budget of
+the app using the amount put in the inital command before returning to the <code>SetCommand#execute()</code> in the <code>Logic</code>
+of the app.</p>
+</li>
+<li>
+<p><code>SetCommand#execute()</code> now creates a <code>CommandResult</code> object to convey a message to be pushed to the UI and user.
+The <code>commandresult</code> object created is passed back to <code>LogicManager#execute()</code> and then back to <code>MainWindow#executeCommand()</code>.</p>
+</li>
+<li>
+<p><code>MainWindow#executeCommand()</code> checks whether there is a need to update the budget in the UI by calling <code>commandResult#isChangeBudget()</code>
+and getting a <code>true</code> boolean return from the method for the set command. The <code>#handleChangeBudget()</code> within <code>MainWindow</code> is called
+since <code>MainWindow#executeCommand()</code> notes that budget is changed.</p>
+</li>
+<li>
+<p><code>MainWindow#handleChangeBudget()</code> calls <code>LogicManager#getBudget()</code> to get the current budget of the FinanceTracker. The budget is then
+passed as argument into the <code>BrowserPanel#updateBudget()</code> method which will reflect the budget set by the command in the UI. The current budget
+will be the same as the total budget when it is set.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h4>
+<div class="paragraph">
+<p>The logic for keeping track of budgets can be implemented in different ways for individual categories.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Solution 1</strong>: Keep a list of expenditure for individual categories and budget allocations in one Budget class.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easier to maintain one Budget object.</p>
+</li>
+<li>
+<p>Cons: Iterating through the list could be slow if there are a lot of categories. Lists could be confusing to maintain.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Solution 2</strong>: Create Budget classes to keep track of expenditure and budget for individual categories.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: More human readable to maintain Budget classes with names of categories.</p>
+</li>
+<li>
+<p>Cons: Budget classes for individual categories need to be iterated through to get totals leading to slow UI updates each time values are changed.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-02 16:04:01 UTC</div></div></div></body></html>
