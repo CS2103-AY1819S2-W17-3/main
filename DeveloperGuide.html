@@ -32,11 +32,12 @@
 <ul class="sectlevel2">
 <li><a href="#search-feature">4.1. Search feature</a></li>
 <li><a href="#sort-feature">4.2. Sort feature</a></li>
-<li><a href="#undo-redo-feature">4.3. Undo/Redo feature</a></li>
-<li><a href="#budget-management">4.4. Budget Management</a></li>
-<li><a href="#summary">4.5. Summary</a></li>
-<li><a href="#logging">4.6. Logging</a></li>
-<li><a href="#Implementation-Configuration">4.7. Configuration</a></li>
+<li><a href="#reverse-feature">4.3. Reverse feature</a></li>
+<li><a href="#undo-redo-feature">4.4. Undo/Redo feature</a></li>
+<li><a href="#budget-management">4.5. Budget Management</a></li>
+<li><a href="#summary">4.6. Summary</a></li>
+<li><a href="#logging">4.7. Logging</a></li>
+<li><a href="#Implementation-Configuration">4.8. Configuration</a></li>
 </ul>
 </li>
 <li><a href="#documentation">5. Documentation</a>
@@ -700,7 +701,93 @@ The sort mechanism allows users to view their expense records in a different way
 <div class="sect3">
 <h4 id="current-implementation-2"><a class="link" href="#current-implementation-2">4.2.1. Current Implementation</a></h4>
 <div class="paragraph">
-<p><strong><em>Details of implementation will be added next time.</em></strong></p>
+<p>The sort command uses comparators that implement java.util.Comparator interface to provide the comparison functions.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Sort feature</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Comparator used</th>
+<th class="tableblock halign-left valign-top">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordNameComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordAmountComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descending order</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordDateComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Most recent to least recent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -cat</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordCategoryComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Here is the list of operations involved in the execution of command, <code>sort -name</code>.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"sort -name"</em>)</code>.</p>
+</li>
+<li>
+<p><code>FinanceTracker#parseCommand(<em>"sort -name"</em>)</code> creates a new <code>SortCommandParser</code> object and calls <code>SortCommandParser#parse(<em>" -name"</em>)</code>.</p>
+</li>
+<li>
+<p><code>SortCommandParser#parse()</code> creates a new <code>RecordNameComparator()</code> object, <em>comparator</em> and passes it as a parameter into the <code>SortCommand</code> constructor.</p>
+</li>
+<li>
+<p>The <code>SortCommand</code> object, <em>s</em>, is then passed back to the <code>SortCommandParser</code>, <code>FinanceTrackerParser</code>, and finally back to the <code>LogicManager</code>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
+</div>
+<div class="title">Figure 10. Sequence Diagram of Sort Command I</div>
+</div>
+</li>
+<li>
+<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> then continues to call <code>SortCommand#execute()</code>.</p>
+</li>
+<li>
+<p><code>SortCommand#execute()</code> calls <code>Model#SortFilteredRecordList(<em>comparator</em>)</code>.</p>
+</li>
+<li>
+<p><code>Model#SortFilteredRecordList(<em>comparator</em>)</code> calls <code>FinanceTracker#sortRecordList(<em>comparator</em>)</code>.</p>
+</li>
+<li>
+<p><code>FinanceTracker#sortRecordList(<em>comparator</em>)</code> calls <code>UniqueRecordList#sortList(<em>comparator</em>)</code>.</p>
+</li>
+<li>
+<p><code>UniqueRecordList#sortList(<em>comparator</em>)</code> then uses <code>FXCollection</code>’s static method <code>sort()</code>  to sort the records.</p>
+</li>
+<li>
+<p><code>SortCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/SortSequenceDiagram2.png" alt="SortSequenceDiagram2" width="800">
+</div>
+<div class="title">Figure 11. Sequence Diagram of Sort Command II</div>
 </div>
 </div>
 <div class="sect3">
@@ -711,9 +798,66 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </div>
 <div class="sect2">
-<h3 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">4.3. Undo/Redo feature</a></h3>
+<h3 id="reverse-feature"><a class="link" href="#reverse-feature">4.3. Reverse feature</a></h3>
+<div class="paragraph">
+<p>The reverse feature allows users to reverse the list of entries displayed on the graphic user interface.
+The sort features are implemented with a default ordering.
+The reverse command provides a convenient way for users to sort their entries in reverse order.</p>
+</div>
 <div class="sect3">
 <h4 id="current-implementation-3"><a class="link" href="#current-implementation-3">4.3.1. Current Implementation</a></h4>
+<div class="paragraph">
+<p>This is how the reverse command is implemented:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>LogicManager#execute(<em>"reverse"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code>.</p>
+</li>
+<li>
+<p><code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code> creates a <code>ReverseCommand</code> object, <em>r</em>.</p>
+</li>
+<li>
+<p><em>r</em> is passed back to the <code>FinanceTrackerParser</code>, and then back to the <code>LogicManager</code>.</p>
+</li>
+<li>
+<p><code>LogicManager#execute(<em>"reverse"</em>)</code> then moves on to call <code>ReverseCommand#execute()</code>.</p>
+</li>
+<li>
+<p><code>ReverseCommand#execute()</code> calls <code>Model#reverseFilteredRecordList()</code>.</p>
+</li>
+<li>
+<p><code>Model#reverseFilteredRecordList()</code> calls <code>FinanceTracker#reverseRecordList()</code>.</p>
+</li>
+<li>
+<p><code>FinanceTracker#reverseRecordList()</code> calls <code>UniqueRecordList#reverseList()</code>.</p>
+</li>
+<li>
+<p><code>UniqueRecordList#reverseList()</code> uses <code>FXCollection</code>’s static method <code>reverse()</code> to reverse the list of records.</p>
+</li>
+<li>
+<p><code>ReverseCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ReverseSequenceDiagram.png" alt="ReverseSequenceDiagram" width="800">
+</div>
+<div class="title">Figure 12. Sequence Diagram of Reverse Command</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-considerations-2"><a class="link" href="#design-considerations-2">4.3.2. Design Considerations</a></h4>
+<div class="paragraph">
+<p><strong><em>Design considerations will be added next time.</em></strong></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">4.4. Undo/Redo feature</a></h3>
+<div class="sect3">
+<h4 id="current-implementation-4"><a class="link" href="#current-implementation-4">4.4.1. Current Implementation</a></h4>
 <div class="paragraph">
 <p>The undo/redo mechanism is facilitated by <code>VersionedFinanceTracker</code>.
 It extends <code>FinanceTracker</code> with an undo/redo history, stored internally as a <code>FinanceTrackerStateList</code> and <code>currentStatePointer</code>.
@@ -850,7 +994,7 @@ The user executes <code>clear</code>, which calls <code>Model#commitFinanceTrack
 </div>
 </div>
 <div class="sect3">
-<h4 id="design-considerations-2"><a class="link" href="#design-considerations-2">4.3.2. Design Considerations</a></h4>
+<h4 id="design-considerations-3"><a class="link" href="#design-considerations-3">4.4.2. Design Considerations</a></h4>
 <div class="sect4">
 <h5 id="aspect-how-undo-redo-executes"><a class="link" href="#aspect-how-undo-redo-executes">Aspect: How undo &amp; redo executes</a></h5>
 <div class="ulist">
@@ -920,7 +1064,7 @@ The user executes <code>clear</code>, which calls <code>Model#commitFinanceTrack
 </div>
 </div>
 <div class="sect2">
-<h3 id="budget-management"><a class="link" href="#budget-management">4.4. Budget Management</a></h3>
+<h3 id="budget-management"><a class="link" href="#budget-management">4.5. Budget Management</a></h3>
 <div class="paragraph">
 <p>This group of features allows the user to set a total budget and
 allocate a portion of the total budget to different categories.
@@ -940,7 +1084,7 @@ creates a budget when the user sets a budget.</p>
 <div class="content">
 <img src="images/SetCommandSequenceDiagram.png" alt="SetCommandSequenceDiagram" width="800">
 </div>
-<div class="title">Figure 10. Sequence diagram of user setting a budget</div>
+<div class="title">Figure 13. Sequence diagram of user setting a budget</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -983,7 +1127,7 @@ will be the same as the total budget when it is set.</p>
 </ol>
 </div>
 <div class="sect3">
-<h4 id="design-consideration-2"><a class="link" href="#design-consideration-2">4.4.1. Design Consideration</a></h4>
+<h4 id="design-consideration-2"><a class="link" href="#design-consideration-2">4.5.1. Design Consideration</a></h4>
 <div class="paragraph">
 <p>The logic for keeping track of budgets can be implemented in different ways for individual categories.</p>
 </div>
@@ -1019,7 +1163,7 @@ will be the same as the total budget when it is set.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="allocating-a-budget-to-category"><a class="link" href="#allocating-a-budget-to-category">4.4.2. Allocating a budget to category</a></h4>
+<h4 id="allocating-a-budget-to-category"><a class="link" href="#allocating-a-budget-to-category">4.5.2. Allocating a budget to category</a></h4>
 <div class="paragraph">
 <p>This feature allows user to set a category budget after the total budget is set</p>
 </div>
@@ -1031,7 +1175,7 @@ executes when a user sets a category budget.</p>
 <div class="content">
 <img src="images/AllocateSequenceDiagram.png" alt="AllocateSequenceDiagram">
 </div>
-<div class="title">Figure 11. Sequence diagram of user setting a category budget</div>
+<div class="title">Figure 14. Sequence diagram of user setting a category budget</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1114,7 +1258,7 @@ one command to allocate a fixed amount to the budget</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="to-be-implemented"><a class="link" href="#to-be-implemented">4.4.3. To be implemented</a></h4>
+<h4 id="to-be-implemented"><a class="link" href="#to-be-implemented">4.5.3. To be implemented</a></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1140,12 +1284,12 @@ one command to allocate a fixed amount to the budget</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="summary"><a class="link" href="#summary">4.5. Summary</a></h3>
+<h3 id="summary"><a class="link" href="#summary">4.6. Summary</a></h3>
 <div class="paragraph">
 <p>The summary feature shows an overview of your previous expenditures in an Aster Plot chart, which works similarly to a pie chart. Each sector of the chart represents a category. The radius of each sector indicates the total budget amount allocated for a particular category, while the coloured area of the sector denotes the amount spent for that category. This allows users to easily perceive whether their spending is within their budget for each category.</p>
 </div>
 <div class="sect3">
-<h4 id="implementation-2"><a class="link" href="#implementation-2">4.5.1. Implementation</a></h4>
+<h4 id="implementation-2"><a class="link" href="#implementation-2">4.6.1. Implementation</a></h4>
 <div class="paragraph">
 <p>The summary feature intends to use a D3.js graph to display the data. This will help contribute to the aesthetics and user-friendliness of displaying the data in In-Credit-Ble.
 The implementation of the Summary command can be divided into two phases – preparation and execution. Given below is an explanation of how the summary mechanism behaves at each phase, although it has not been fully implemented yet.</p>
@@ -1159,7 +1303,7 @@ The implementation of the Summary command can be divided into two phases – pre
 <div class="content">
 <img src="images/SummarySequenceDiagram.png" alt="SummarySequenceDiagram" width="800">
 </div>
-<div class="title">Figure 12. Sequence diagram of the preparation stage in the summary mechanism</div>
+<div class="title">Figure 15. Sequence diagram of the preparation stage in the summary mechanism</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1184,7 +1328,7 @@ The implementation of the Summary command can be divided into two phases – pre
 <div class="content">
 <img src="images/SummarySequenceDiagram2.png" alt="SummarySequenceDiagram2" width="800">
 </div>
-<div class="title">Figure 13. Sequence diagram of the execution stage in the summary mechanism</div>
+<div class="title">Figure 16. Sequence diagram of the execution stage in the summary mechanism</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1202,7 +1346,7 @@ The implementation of the Summary command can be divided into two phases – pre
 </div>
 </div>
 <div class="sect3">
-<h4 id="design-consideration-4"><a class="link" href="#design-consideration-4">4.5.2. Design Consideration</a></h4>
+<h4 id="design-consideration-4"><a class="link" href="#design-consideration-4">4.6.2. Design Consideration</a></h4>
 <div class="sect4">
 <h5 id="aspect-representation-for-summary-of-expenditure"><a class="link" href="#aspect-representation-for-summary-of-expenditure">Aspect: Representation for Summary of Expenditure</a></h5>
 <div class="paragraph">
@@ -1212,7 +1356,7 @@ The implementation of the Summary command can be divided into two phases – pre
 <div class="content">
 <img src="images/asterPlot.png" alt="asterPlot" width="400">
 </div>
-<div class="title">Figure 14. Example of Aster Plot Graph</div>
+<div class="title">Figure 17. Example of Aster Plot Graph</div>
 </div>
 <div class="paragraph">
 <p>Initially, we were considering using a pie chart instead. However, using an aster plot graph will be more effective in showing the user what is the remaining budget amount for each category.</p>
@@ -1221,14 +1365,14 @@ The implementation of the Summary command can be divided into two phases – pre
 </div>
 </div>
 <div class="sect2">
-<h3 id="logging"><a class="link" href="#logging">4.6. Logging</a></h3>
+<h3 id="logging"><a class="link" href="#logging">4.7. Logging</a></h3>
 <div class="paragraph">
 <p>We are using <code>java.util.logging</code> package for logging. The <code>LogsCenter</code> class is used to manage the logging levels and logging destinations.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.7, &#8220;Configuration&#8221;</a>)</p>
+<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.8, &#8220;Configuration&#8221;</a>)</p>
 </li>
 <li>
 <p>The <code>Logger</code> for a class can be obtained using <code>LogsCenter.getLogger(Class)</code> which will log messages according to the specified logging level</p>
@@ -1259,7 +1403,7 @@ The implementation of the Summary command can be divided into two phases – pre
 </div>
 </div>
 <div class="sect2">
-<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.7. Configuration</a></h3>
+<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.8. Configuration</a></h3>
 <div class="paragraph">
 <p>Certain properties of the application can be controlled (e.g user prefs file location, logging level) through the configuration file (default: <code>config.json</code>).</p>
 </div>
@@ -1325,7 +1469,7 @@ Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows y
 <div class="content">
 <img src="images/chrome_save_as_pdf.png" alt="chrome save as pdf" width="300">
 </div>
-<div class="title">Figure 15. Saving documentation as PDF files in Chrome</div>
+<div class="title">Figure 18. Saving documentation as PDF files in Chrome</div>
 </div>
 </div>
 <div class="sect2">
@@ -1346,7 +1490,7 @@ Attributes left unset in the <code>build.gradle</code> file will use their <stro
 </table>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. List of site-wide attributes</caption>
+<caption class="title">Table 2. List of site-wide attributes</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -1408,7 +1552,7 @@ Attributes left unset in <code>.adoc</code> files will use their <strong>default
 </table>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 2. List of per-file attributes, excluding Asciidoctor&#8217;s built-in attributes</caption>
+<caption class="title">Table 3. List of per-file attributes, excluding Asciidoctor&#8217;s built-in attributes</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -2446,4 +2590,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-02 15:09:57 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-02 15:20:57 UTC</div></div></div></body></html>
