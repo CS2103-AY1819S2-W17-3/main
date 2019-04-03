@@ -306,7 +306,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <p><strong>Alias</strong>: <code>add</code></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT d/DATE c/CATEGORY</code></p>
+<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT d/DATE c/CATEGORY r/DESCRIPTION</code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -316,10 +316,10 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <div class="ulist">
 <ul>
 <li>
-<p><code>spend n/cake $/5.50 d/15/03/2019 c/Food</code></p>
+<p><code>spend n/cake $/5.50 d/15/03/2019 c/Food r/Birthday celebration</code></p>
 </li>
 <li>
-<p><code>spend n/movie $/10 d/16/03/2019 c/Entertainment</code></p>
+<p><code>spend n/movie $/10 d/16/03/2019 c/Entertainment r/Avengers: End Game</code></p>
 </li>
 </ul>
 </div>
@@ -347,6 +347,9 @@ in lowercase (in the above example, it will be shown as <code>Clothes</code>)</p
 <li>
 <p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
 and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code></p>
+</li>
+<li>
+<p>If no date is inputted, current local date will be used instead.</p>
 </li>
 </ul>
 </div>
@@ -1056,13 +1059,14 @@ You will need to calculate and enter your input based on your local currency.</p
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Add expense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/NAME $/AMOUNT d/DATE [c/CATEGORY] &#8230;&#8203;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/NAME $/AMOUNT [d/DATE] [c/CATEGORY] &#8230;&#8203; [r/Description]</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>add</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/movie $/10 d/16/03/2019 c/Entertainment</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/movie $/10
+  d/16/03/2019 c/Entertainment r/Avengers: Endgame</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Add a description to an entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description INDEX d/DESCRIPTION</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description INDEX r/DESCRIPTION</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>descr</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>description 1 d/Father&#8217;s birthday present</code></p></td>
 </tr>
@@ -1234,4 +1238,4 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-02 16:08:26 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-03 09:34:56 UTC</div></div></div></body></html>
