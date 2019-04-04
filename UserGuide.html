@@ -17,7 +17,6 @@
 <ul class="sectlevel3">
 <li><a href="#setting-a-budget-code-set-code">3.1.1. Setting a budget: <code>set</code></a></li>
 <li><a href="#allocating-budget-based-on-categories-code-allocate-code">3.1.2. Allocating budget based on categories: <code>allocate</code></a></li>
-<li><a href="#increasing-the-budget-code-increase-code">3.1.3. Increasing the budget: <code>increase</code></a></li>
 </ul>
 </li>
 <li><a href="#expense-entry-management">3.2. Expense Entry Management</a>
@@ -25,8 +24,7 @@
 <li><a href="#adding-an-expense-code-spend-code">3.2.1. Adding an expense: <code>spend</code></a></li>
 <li><a href="#adding-a-description-to-an-entry-code-description-code">3.2.2. Adding a description to an entry: <code>description</code></a></li>
 <li><a href="#editing-an-entry-code-edit-code">3.2.3. Editing an entry: <code>edit</code></a></li>
-<li><a href="#selecting-an-entry-code-select-code">3.2.4. Selecting an entry: <code>select</code></a></li>
-<li><a href="#deleting-an-entry-code-delete-code">3.2.5. Deleting an entry: <code>delete</code></a></li>
+<li><a href="#deleting-an-entry-code-delete-code">3.2.4. Deleting an entry: <code>delete</code></a></li>
 </ul>
 </li>
 <li><a href="#records-management">3.3. Records Management</a>
@@ -103,7 +101,7 @@ Java Development Kit
 <a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html">here</a></p>
 </li>
 <li>
-<p>Download the latest <code>financetracker.jar</code> file <a href="https://github.com/cs2103-ay1819s2-w17-3/main/releases">here</a>.</p>
+<p>Download the latest <code>In-Credit-Ble.jar</code> file <a href="https://github.com/cs2103-ay1819s2-w17-3/main/releases">here</a>.</p>
 </li>
 <li>
 <p>Copy the file to the folder you want to use as the home folder for your finance tracker.</p>
@@ -268,32 +266,6 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="increasing-the-budget-code-increase-code"><a class="link" href="#increasing-the-budget-code-increase-code">3.1.3. Increasing the budget: <code>increase</code></a></h4>
-<div class="paragraph">
-<p>You can increase your budget limit for the month/week by the specified amount.</p>
-</div>
-<div class="paragraph">
-<p><strong>Format</strong>: <code>increase $/AMOUNT</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p><strong>Examples</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>increase $/10.10</code></p>
-</li>
-<li>
-<p><code>increase $/100</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="expense-entry-management"><a class="link" href="#expense-entry-management">3.2. Expense Entry Management</a></h3>
@@ -306,7 +278,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <p><strong>Alias</strong>: <code>add</code></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT d/DATE c/CATEGORY r/DESCRIPTION</code></p>
+<p><strong>Format</strong>: <code>spend n/NAME $/AMOUNT [d/DATE] c/CATEGORY [r/DESCRIPTION]</code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -336,8 +308,8 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <ul>
 <li>
 <p>If you provide multiple categories (e.g. <code>spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</code>),
-only the last category you provided will be taken (in the previous e.g., the command will
-add expense for <code>Clothes</code> category.</p>
+only the last category you provided will be taken. (In the previous e.g., the command will
+add expense for <code>Clothes</code> category.)</p>
 </li>
 <li>
 <p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to the same
@@ -351,6 +323,9 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <li>
 <p>If no date is inputted, current local date will be used instead.</p>
 </li>
+<li>
+<p>Order of the different parameters does not matter.</p>
+</li>
 </ul>
 </div>
 </td>
@@ -361,13 +336,13 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <div class="sect3">
 <h4 id="adding-a-description-to-an-entry-code-description-code"><a class="link" href="#adding-a-description-to-an-entry-code-description-code">3.2.2. Adding a description to an entry: <code>description</code></a></h4>
 <div class="paragraph">
-<p>You can add a description to an existing entry in the records to remember details of the amount spent.</p>
+<p>You can add a description to an existing entry in the records to include details about that particular transactions.</p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>descr</code></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>description INDEX [d/DESCRIPTION]</code></p>
+<p><strong>Format</strong>: <code>description INDEX [r/DESCRIPTION]</code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -377,11 +352,11 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <div class="ulist">
 <ul>
 <li>
-<p><code>description 1 d/Father&#8217;s birthday present</code><br>
+<p><code>description 1 r/Father&#8217;s birthday present</code><br>
 Changes the description of entry at index 1 to "Father&#8217;s birthday present"</p>
 </li>
 <li>
-<p><code>description 1 d/</code><br>
+<p><code>description 1 r/</code><br>
 Removes the description of entry at index 1</p>
 </li>
 </ul>
@@ -402,6 +377,9 @@ Removes the description of entry at index 1</p>
 </li>
 <li>
 <p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+<li>
+<p><code>INDEX</code> must be within the total number of records that are displayed.</p>
 </li>
 </ul>
 </div>
@@ -455,7 +433,13 @@ Index refers to the index number shown in the list.</p>
 <p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
 </li>
 <li>
+<p><code>INDEX</code> must be within the total number of records that are displayed.</p>
+</li>
+<li>
 <p>At least one of the optional fields must be provided.</p>
+</li>
+<li>
+<p>Order of parameters inputted does not matter.</p>
 </li>
 <li>
 <p>Existing values will be updated to the input values.</p>
@@ -466,56 +450,13 @@ Index refers to the index number shown in the list.</p>
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="selecting-an-entry-code-select-code"><a class="link" href="#selecting-an-entry-code-select-code">3.2.4. Selecting an entry: <code>select</code></a></h4>
 <div class="paragraph">
-<p>You can select an existing entry in the records to view its details by specifying the entry&#8217;s index number.</p>
-</div>
-<div class="paragraph">
-<p><strong>Alias</strong>: <code>s</code>, <code>sel</code></p>
-</div>
-<div class="paragraph">
-<p><strong>Format</strong>: <code>select INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p><strong>Example</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>select 3</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><code>INDEX</code> here refers to the index number shown in the displayed records.</p>
-</li>
-<li>
-<p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-</table>
+<p>//// tag::select[]
+//// end::select[]</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">3.2.5. Deleting an entry: <code>delete</code></a></h4>
+<h4 id="deleting-an-entry-code-delete-code"><a class="link" href="#deleting-an-entry-code-delete-code">3.2.4. Deleting an entry: <code>delete</code></a></h4>
 <div class="paragraph">
 <p>You can delete an entry in the record by specifying the entry&#8217;s index number.
 Deleted entries can be recovered via the <code>undo</code> command.</p>
@@ -555,6 +496,9 @@ Deleted entries can be recovered via the <code>undo</code> command.</p>
 <li>
 <p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
 </li>
+<li>
+<p><code>INDEX</code> must be within the total number of records that are displayed.</p>
+</li>
 </ul>
 </div>
 </td>
@@ -569,6 +513,19 @@ Deleted entries can be recovered via the <code>undo</code> command.</p>
 <h4 id="listing-all-entries-code-list-code"><a class="link" href="#listing-all-entries-code-list-code">3.3.1. Listing all entries: <code>list</code></a></h4>
 <div class="paragraph">
 <p>You can see all the entries you have entered, as long as they are not deleted entries.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+This command can be used to reset
+the list after you filter the records using the <code>search</code> command.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>l</code>, <code>ls</code></p>
@@ -637,7 +594,7 @@ spent on all the results of the search will also be shown.</p>
 <p>You can choose to sort the list of entries by name, amount, date or category.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>sort FLAG [ORDER]</code></p>
+<p><strong>Format</strong>: <code>sort -FLAG [ORDER]</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -656,6 +613,16 @@ spent on all the results of the search will also be shown.</p>
 </li>
 <li>
 <p><code>[ORDER]</code> refers to either <code>-asc</code> or <code>-desc</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>-asc</code> for ascending order.</p>
+</li>
+<li>
+<p><code>-desc</code> for descending order.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p><code>[ORDER]</code> is optional. If not supplied, default ordering is implied.</p>
@@ -734,6 +701,18 @@ List will be sorted by name in reverse lexicographical order.
 </div>
 <div class="sect3">
 <h4 id="showing-summary-of-records-code-summary-code"><a class="link" href="#showing-summary-of-records-code-summary-code">3.3.5. Showing summary of records: <code>summary</code></a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This function is yet to be implemented. It will be implemented in v1.4.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>You can see the summary of your previous expenditures, with an aster plot graph showing how your spending habits are like in the
 different categories. It also displays the remaining budget amount for each category.</p>
@@ -751,14 +730,28 @@ different categories. It also displays the remaining budget amount for each cate
 <div class="sect3">
 <h4 id="changing-financetracker-data-storage-location-code-setfile-code"><a class="link" href="#changing-financetracker-data-storage-location-code-setfile-code">3.4.1. Changing FinanceTracker data storage location: <code>setfile</code></a></h4>
 <div class="paragraph">
-<p>Want to maintain multiple users of the FinanceTracker? You can use this command to load FinanceTracker data from another file.
-The command will create a file if it does not already exist.</p>
+<p>Want to maintain multiple users of the FinanceTracker? You can use this command to load a finance tracker profile from another file.
+If the file name does not exist, a new file will be created with an empty finance tracker profile.</p>
 </div>
 <div class="paragraph">
 <p>File paths and extension should not be included in command.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>setfile f/finance</code></p>
+<p><strong>Format</strong>: <code>setfile f/FILENAME</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>setfile f/JohnDoe</code></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -1062,12 +1055,6 @@ You will need to calculate and enter your input based on your local currency.</p
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>allo</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>allocate $/100 c/Shopping</code></p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Increase budget</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>increase $/AMOUNT</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>increase $/10.10</code></p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1091,7 +1078,7 @@ You will need to calculate and enter your input based on your local currency.</p
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Add expense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/NAME $/AMOUNT [d/DATE] [c/CATEGORY] &#8230;&#8203; [r/Description]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/NAME $/AMOUNT [d/DATE] c/CATEGORY &#8230;&#8203; [r/Description]</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>add</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>spend n/movie $/10
   d/16/03/2019 c/Entertainment r/Avengers: Endgame</code></p></td>
@@ -1149,13 +1136,13 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Locate entry based on name, category or date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>search -FLAG KEYWORD [MORE_KEYWORDS]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>search -FLAG* KEYWORD [MORE_KEYWORDS]</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>find</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>search -cat Food</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sort the entries</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort FLAG</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sort the entries based on name, category, date, amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -FLAG* [ORDER]**</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name</code></p></td>
 </tr>
@@ -1173,6 +1160,12 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>*Valid flags: <code>name</code>&#8594; Name; <code>cat</code> &#8594; Category; <code>date</code> &#8594; Date; <code>amount</code> &#8594; Amount;</p>
+</div>
+<div class="paragraph">
+<p>**Valid orders: <code>asc</code> &#8594; ascending order; <code>desc</code> &#8594; descending order</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="miscellaneous-2"><a class="link" href="#miscellaneous-2">5.4. Miscellaneous</a></h3>
@@ -1194,7 +1187,7 @@ You will need to calculate and enter your input based on your local currency.</p
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Set data file</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setfile</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setfile f/FILENAME</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>setfile f/finance</code></p></td>
 </tr>
@@ -1218,7 +1211,7 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Change colour theme of application</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>theme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>theme COLOURTHEME</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>colour</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">theme light</p></td>
 </tr>
@@ -1270,4 +1263,4 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-04 15:30:37 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-04 18:16:44 UTC</div></div></div></body></html>
