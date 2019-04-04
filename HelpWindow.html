@@ -637,7 +637,7 @@ spent on all the results of the search will also be shown.</p>
 <p>You can choose to sort the list of entries by name, amount, date or category.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>sort FLAG</code></p>
+<p><strong>Format</strong>: <code>sort FLAG [ORDER]</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -654,6 +654,12 @@ spent on all the results of the search will also be shown.</p>
 <li>
 <p>Only one flag should be provided.</p>
 </li>
+<li>
+<p><code>[ORDER]</code> refers to either <code>-asc</code> or <code>-desc</code>.</p>
+</li>
+<li>
+<p><code>[ORDER]</code> is optional. If not supplied, default ordering is implied.</p>
+</li>
 </ul>
 </div>
 </td>
@@ -663,25 +669,36 @@ spent on all the results of the search will also be shown.</p>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Examples</strong>:</p>
+<p><strong>Examples (default ordering)</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><code>sort -name</code>:<br>
-By default, sorts the list of records by name in lexicographical order</p>
+Sorts the list of records by name in lexicographical order (ascending order)</p>
 </li>
 <li>
 <p><code>sort -amount</code>:<br>
-By default, sorts the list of records by amount from largest to smallest</p>
+Sorts the list of records by amount from largest to smallest (descending order)</p>
 </li>
 <li>
 <p><code>sort -date</code>:<br>
-By default, sorts the list of records by date with the latest at the top</p>
+Sorts the list of records by date with the latest at the top (descending order)</p>
 </li>
 <li>
 <p><code>sort -cat</code>:<br>
-By default, sorts the list of records by category</p>
+Sorts the list of records by category in lexicographical order (ascending order)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>More examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sort -name -desc</code>:<br>
+Sorts list of records by name in reverse lexicographical order.</p>
 </li>
 </ul>
 </div>
@@ -694,8 +711,8 @@ By default, sorts the list of records by category</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-To sort the list in the reverse order, use the <code>reverse</code> command!<br>
-* <code>sort -name</code><br>
+To sort the list conveniently in the reverse order, use the <code>reverse</code> command!<br>
+<code>sort -name</code><br>
 <code>reverse</code><br>
 List will be sorted by name in reverse lexicographical order.
 </td>
@@ -1253,4 +1270,4 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-04 13:04:24 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-04 14:10:25 UTC</div></div></div></body></html>
