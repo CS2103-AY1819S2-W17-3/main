@@ -46,7 +46,7 @@ I have added to the user and developer guide in relation to these enhancements.<
 <div class="ulist">
 <ul>
 <li>
-<p>rephrase another day *</p>
+<p>rephrase another day, add in -asc and -desc stuff *</p>
 </li>
 </ul>
 </div>
@@ -95,23 +95,368 @@ The implementation was also challenging as it required changes to existing comma
 </div>
 <div class="sect2">
 <h3 id="code-contributed"><a class="link" href="#code-contributed">Code contributed</a></h3>
-
+<div class="paragraph">
+<p>Click <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=kjiaxuan">here</a> to see the code I contributed to the In-Credit-Ble project!</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="other-contributions"><a class="link" href="#other-contributions">Other contributions</a></h3>
-
+<div class="ulist">
+<ul>
+<li>
+<p>Enhancements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Added aliases for the earlier commands and allowed commands entered to be case-insensitive so that the software
+becomes more user-friendly and convenient to use.<br>
+(Pull Requests: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/15">#15</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/22">#22</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/71">#71</a>)</p>
+</li>
+<li>
+<p>Imported DateTimeFormatter and LocalDate into the project to make management of dates easier.<br>
+(Pull Requests: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/90">#90</a>)</p>
+</li>
+<li>
+<p>Worked on debugging the system tests and increased code coverage.<br>
+(Pull Requests: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/177">#177</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Updated and formatted parts of User Guide and Developer Guide.<br>
+(Pull Requests: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/88">#88</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/106">#106</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/110">#110</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Community:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>PRs reviewed: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/63">#63</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/64">#64</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/99">#99</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/121">#121</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="contributions-to-the-user-guide"><a class="link" href="#contributions-to-the-user-guide">Contributions to the User Guide</a></h2>
 <div class="sectionbody">
-
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>These are additions I made to the In-Credit-Ble User Guide for the <code>reverse</code> and <code>sort</code> features.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="sorting-the-entries-according-to-name-amount-date-category-code-sort-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">Sorting the entries according to name/amount/date/category: <code>sort</code></a></h4>
+<div class="paragraph">
+<p>You can choose to sort the list of entries by name, amount, date or category.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>sort -FLAG [ORDER]</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><code>FLAG</code> here refers to either <code>-name</code>, <code>-amount, `-date</code> or <code>-cat</code>.</p>
+</li>
+<li>
+<p>Only one flag should be provided.</p>
+</li>
+<li>
+<p><code>[ORDER]</code> refers to either <code>-asc</code> or <code>-desc</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>-asc</code> for ascending order.</p>
+</li>
+<li>
+<p><code>-desc</code> for descending order.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>[ORDER]</code> is optional. If not supplied, default ordering is implied.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples (default ordering)</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sort -name</code>:<br>
+Sorts the list of records by name in lexicographical order (ascending order)</p>
+</li>
+<li>
+<p><code>sort -amount</code>:<br>
+Sorts the list of records by amount from largest to smallest (descending order)</p>
+</li>
+<li>
+<p><code>sort -date</code>:<br>
+Sorts the list of records by date with the latest at the top (descending order)</p>
+</li>
+<li>
+<p><code>sort -cat</code>:<br>
+Sorts the list of records by category in lexicographical order (ascending order)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>More examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sort -name -desc</code>:<br>
+Sorts list of records by name in reverse lexicographical order.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+To sort the list conveniently in the reverse order, use the <code>reverse</code> command!<br>
+<code>sort -name</code><br>
+<code>reverse</code><br>
+List will be sorted by name in reverse lexicographical order.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="reversing-the-entries-code-reverse-code"><a class="link" href="#reversing-the-entries-code-reverse-code">Reversing the entries: <code>reverse</code></a></h4>
+<div class="paragraph">
+<p>You can also reverse the order of the list of entries in the records.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>rev</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: reverse</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
 <div class="sectionbody">
-
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>These are additions I made to the In-Credit-Ble Developer Guide for the <code>reverse</code> and <code>sort</code> features.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="sort-feature"><a class="link" href="#sort-feature">Sort feature</a></h3>
+<div class="paragraph">
+<p>By default, the list of entries is ordered according to the time the entry is entered into the application,
+where the entry entered first will be at the top of the list, and the entry entered last is at the bottom of the list.
+The sort mechanism allows users to view their expense records in a different way.</p>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-09 03:47:43 UTC</div></div></div></body></html>
+<div class="sect3">
+<h4 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h4>
+<div class="paragraph">
+<p>The sort command uses comparators that implement java.util.Comparator interface to provide the comparison functions.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Sort feature</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Comparator used</th>
+<th class="tableblock halign-left valign-top">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordNameComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordAmountComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descending order</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordDateComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Most recent to least recent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -cat</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordCategoryComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Here is the list of operations involved in the execution of command, <code>sort -name</code>.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"sort -name"</em>)</code>.</p>
+</li>
+<li>
+<p><code>FinanceTracker#parseCommand(<em>"sort -name"</em>)</code> creates a new <code>SortCommandParser</code> object and calls <code>SortCommandParser#parse(<em>" -name"</em>)</code>.</p>
+</li>
+<li>
+<p><code>SortCommandParser#parse()</code> creates a new <code>RecordNameComparator()</code> object, <em>comparator</em> and passes it as a parameter into the <code>SortCommand</code> constructor.</p>
+</li>
+<li>
+<p>The <code>SortCommand</code> object, <em>s</em>, is then passed back to the <code>SortCommandParser</code>, <code>FinanceTrackerParser</code>, and finally back to the <code>LogicManager</code>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
+</div>
+<div class="title">Figure 1. Sequence Diagram of Sort Command I</div>
+</div>
+</li>
+<li>
+<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> then continues to call <code>SortCommand#execute()</code>.</p>
+</li>
+<li>
+<p><code>SortCommand#execute()</code> calls <code>Model#SortFilteredRecordList(<em>comparator</em>)</code>.</p>
+</li>
+<li>
+<p><code>Model#SortFilteredRecordList(<em>comparator</em>)</code> calls <code>FinanceTracker#sortRecordList(<em>comparator</em>)</code>.</p>
+</li>
+<li>
+<p><code>FinanceTracker#sortRecordList(<em>comparator</em>)</code> calls <code>UniqueRecordList#sortList(<em>comparator</em>)</code>.</p>
+</li>
+<li>
+<p><code>UniqueRecordList#sortList(<em>comparator</em>)</code> then uses <code>FXCollection</code>’s static method <code>sort()</code>  to sort the records.</p>
+</li>
+<li>
+<p><code>SortCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/SortSequenceDiagram2.png" alt="SortSequenceDiagram2" width="800">
+</div>
+<div class="title">Figure 2. Sequence Diagram of Sort Command II</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-considerations"><a class="link" href="#design-considerations">Design Considerations</a></h4>
+<div class="paragraph">
+<p><strong><em>Design considerations will be added next time.</em></strong></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="reverse-feature"><a class="link" href="#reverse-feature">Reverse feature</a></h3>
+<div class="paragraph">
+<p>The reverse feature allows users to reverse the list of entries displayed on the graphic user interface.
+The sort features are implemented with a default ordering.
+The reverse command provides a convenient way for users to sort their entries in reverse order.</p>
+</div>
+<div class="sect3">
+<h4 id="current-implementation-2"><a class="link" href="#current-implementation-2">Current Implementation</a></h4>
+<div class="paragraph">
+<p>This is how the reverse command is implemented:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>LogicManager#execute(<em>"reverse"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code>.</p>
+</li>
+<li>
+<p><code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code> creates a <code>ReverseCommand</code> object, <em>r</em>.</p>
+</li>
+<li>
+<p><em>r</em> is passed back to the <code>FinanceTrackerParser</code>, and then back to the <code>LogicManager</code>.</p>
+</li>
+<li>
+<p><code>LogicManager#execute(<em>"reverse"</em>)</code> then moves on to call <code>ReverseCommand#execute()</code>.</p>
+</li>
+<li>
+<p><code>ReverseCommand#execute()</code> calls <code>Model#reverseFilteredRecordList()</code>.</p>
+</li>
+<li>
+<p><code>Model#reverseFilteredRecordList()</code> calls <code>FinanceTracker#reverseRecordList()</code>.</p>
+</li>
+<li>
+<p><code>FinanceTracker#reverseRecordList()</code> calls <code>UniqueRecordList#reverseList()</code>.</p>
+</li>
+<li>
+<p><code>UniqueRecordList#reverseList()</code> uses <code>FXCollection</code>’s static method <code>reverse()</code> to reverse the list of records.</p>
+</li>
+<li>
+<p><code>ReverseCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/ReverseSequenceDiagram.png" alt="ReverseSequenceDiagram" width="800">
+</div>
+<div class="title">Figure 3. Sequence Diagram of Reverse Command</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-considerations-2"><a class="link" href="#design-considerations-2">Design Considerations</a></h4>
+<div class="paragraph">
+<p><strong><em>Design considerations will be added next time.</em></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-09 14:24:54 UTC</div></div></div></body></html>
