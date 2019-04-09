@@ -14,10 +14,14 @@
 </div>
 </div>
 <div class="paragraph">
-<p>This page aims to showcase my contributions to the project<br>
-<strong>In-Credit-Ble</strong> under module <em>CS2103T</em>. It consists of an overview of the project
-and also summary of my contributions to the User Guide and Developer Guide for the
-features I developed for the project</p>
+<p>This page aims to showcase my contributions to the project
+<strong>In-Credit-Ble</strong> under module <em>CS2103T</em>. I will be giving you an introduction to <strong>In-Credit-Ble</strong>,
+followed by summarising my contributions. Lastly, I will be showing you the relevant sections of User Guide and
+Development Guide that I documented.  I hope that after reading through this page, you will have a better
+understanding of my contributions to this project.<br></p>
+</div>
+<div class="paragraph">
+<p>This project was developed with the following utilities:</p>
 </div>
 <div class="openblock">
 <div class="content">
@@ -68,12 +72,12 @@ prefer to work with a Command Line Interface (CLI), especially for those who pre
 using their mouse.</p>
 </div>
 <div class="paragraph">
-<p><em>In-Credit-Ble</em> was developed by a team of five students from the National University of Singapore
+<p><em>In-Credit-Ble</em> was developed by my team and I (a total of 5 students) from the National University of Singapore
 as part of a Software Engineering module (CS2103T). As part of the module requirement,
  we had to adapt to an existing codebase in Java and develop a functional product in a short
- span of 13 weeks while learning new software engineering concepts. We have opted for the option
- of morphing the existing application into another (from an Address Book to a Finance Tracker).
- In this project portfolio, I will be documenting my contributions to this project through the major
+ span of 13 weeks while learning new software engineering concepts. We have chosen to
+ morph the existing application into another (from an Address Book to a Finance Tracker).
+ In the following sections, I will be documenting my contributions to this project through the major
  and minor features implemented for <em>In-Credit-Ble</em>.</p>
 </div>
 </div>
@@ -81,6 +85,39 @@ as part of a Software Engineering module (CS2103T). As part of the module requir
 <div class="sect1">
 <h2 id="summary-of-contributions"><a class="link" href="#summary-of-contributions">Summary of Contributions</a></h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This section will give you a brief overview of my contributions to the project such as the features that I implemented
+as well as the other notable contributions in terms of <em>Project Management</em> and participating in forums.
+This section will be split into <strong>Major Enhancement</strong>, <strong>Minor Enhancements</strong> and <strong>Notable Contributions</strong> sub-sections.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>It would help you greatly to head on to our
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc">Developer Guide</a>
+and <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc">User Guide</a>
+to find out more about our application before reading on about my contributions to the project.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -97,7 +134,11 @@ of the Finance Tracker.</p>
 <p><strong><em>Justification</em></strong>: This feature improves the product significantly and enhances user
 ability to manage their expenses according to categories. For a finance tracker, it is important
 as this will allow the user to categorise their spending to know which area he/she should
-start spending less and which category they are able to increase their spending.</p>
+start spending less and which category they are able to increase their spending. It also requires
+integration of the <code>Logic</code>, <code>Model</code> and <code>UI</code> components of the project.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>Highlights of feature:</p>
@@ -110,17 +151,17 @@ budget is stored in the <code>TotalBudget</code> class which is implemented in t
 <li>
 <p>Each category budget will be displayed on the UI to show the user the current spending
 for that category over the total budget allocated for it.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Minor enhancement</strong>: Changing theme of application</p>
 <div class="ulist">
 <ul>
+<li>
+<p><strong>Minor enhancement</strong>: Changing theme of application</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p><em>What it does</em>: Allows user to change the colour theme of the application to pre-set themes
 such as <code>Dark</code>, <code>Light</code>, <code>Blue</code>, <code>Pink</code>.</p>
@@ -136,9 +177,6 @@ Finance Tracker Application</p>
 <li>
 <p>This feature can be triggered using the <code>theme</code> command. Triggering this command will result in
 the <code>UI</code> component changing its stylesheet to fit the pre-set themes indicated by the user.</p>
-</li>
-</ul>
-</div>
 </li>
 </ul>
 </div>
@@ -224,7 +262,9 @@ the <code>UI</code> component changing its stylesheet to fit the pre-set themes 
 <td class="tableblock halign-left valign-top"><p class="tableblock">The next section will include my contribution to the User Guide. It will showcase my ability
 in documenting a reader-friendly User Guide that is aimed at the end-users of <em>In-Credit-Ble</em>.
 It is important to be able to write a user-friendly guide that will allow the users to quickly grasp
-how to use our application.</p></td>
+how to use our application.<br></p>
+<p class="tableblock">To view the full User Guide, click
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc">here</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -401,7 +441,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <p>Valid themes include: <code>Dark</code>, <code>Light</code>, <code>Blue</code>, <code>Pink</code></p>
 </li>
 <li>
-<p>The theme name is case-insensitive (<code>BlUE</code>, <code>BLUE</code>, <code>blue</code> or <code>bLUEc</code> etc. all refer
+<p>The theme name is case-insensitive (<code>BlUE</code>, <code>BLUE</code>, <code>blue</code> or <code>bLUE</code> etc. all refer
 to <code>Blue</code>)</p>
 </li>
 <li>
@@ -437,7 +477,9 @@ the menu bar.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The following section will include the sections of my contribution to the Developer Guide.
 It showcases my ability to write technical documentation and the technical depth of my code contributions.
 This is important as in real-world software engineering projects, we are expected to work in team and being able to
-document Developer Guide well will allow colleagues or other developers to understand what we have coded better.</p></td>
+document Developer Guide well will allow colleagues or other developers to understand what we have coded better.<br></p>
+<p class="tableblock">To view the full Developer Guide, click
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc">here</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -507,7 +549,7 @@ allocated to a category and if so, adds the expenses to the new budget assigned 
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: User need to only make use of one command to control the budget of the category and will
+<p>Pros: User only needs to make use of one command to control the budget of the category and will
 not be confused with too many other commands</p>
 </li>
 <li>
@@ -537,4 +579,4 @@ one command to allocate a fixed amount to the budget</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-05 03:01:40 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-09 03:47:43 UTC</div></div></div></body></html>
