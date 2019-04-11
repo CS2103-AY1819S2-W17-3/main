@@ -1255,20 +1255,33 @@ if the category was not previously allocated with a budget</p>
 <p>This feature allows user to list the category budgets and the current spending in these
 categories after category budgets are allocated.</p>
 </div>
-<div class="paragraph">
-<p>Given below is a sequence diagram and step by step explanation of how Finance Tracker
-executes when a user executes the <code>show</code> command.</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="sect3">
+<h4 id="implementation"><a class="link" href="#implementation">3.11.4. Implementation</a></h4>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>TO BE UPDATED</p>
+<p>User enters command <code>show</code> in Command Box.</p>
 </li>
-</ul>
+<li>
+<p><code>ShowCategoryBudgetCommand#execute()</code> is executed and the method first checks whether there are any allocated category
+budgets</p>
+</li>
+<li>
+<p>If there are no allocated category budgets, a message will be printed in the ResultDisplay</p>
+</li>
+<li>
+<p>If there are allocated category budgets, <code>Model#getCatBudget()</code> is called to obtain the set of <code>CategoryBudget</code></p>
+</li>
+<li>
+<p>An <code>Iterator</code> is then used to iterate through the set of <code>CategoryBudgets</code> and the <code>currentSpending</code> is printed with
+the <code>totalBudget</code> allocated to the <code>CategoryBudget</code>.g</p>
+</li>
+</ol>
 </div>
 </div>
 <div class="sect3">
-<h4 id="to-be-implemented"><a class="link" href="#to-be-implemented">3.11.4. To be implemented</a></h4>
+<h4 id="to-be-implemented"><a class="link" href="#to-be-implemented">3.11.5. To be implemented</a></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1284,7 +1297,7 @@ executes when a user executes the <code>show</code> command.</p>
 <p>The summary feature shows an overview of your previous expenditures in an Aster Plot chart, which works similarly to a pie chart. Each sector of the chart represents a category. The radius of each sector indicates the total budget amount allocated for a particular category, while the coloured area of the sector denotes the amount spent for that category. This allows users to easily perceive whether their spending is within their budget for each category.</p>
 </div>
 <div class="sect3">
-<h4 id="implementation"><a class="link" href="#implementation">3.12.1. Implementation</a></h4>
+<h4 id="implementation-2"><a class="link" href="#implementation-2">3.12.1. Implementation</a></h4>
 <div class="paragraph">
 <p>The summary feature intends to use a D3.js graph to display the data. This will help contribute to the aesthetics and user-friendliness of displaying the data in In-Credit-Ble.
 The implementation of the Summary command can be divided into two phases – preparation and execution. Given below is an explanation of how the summary mechanism behaves at each phase, although it has not been fully implemented yet.</p>
@@ -2585,4 +2598,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-11 06:20:12 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-11 06:49:07 UTC</div></div></div></body></html>
