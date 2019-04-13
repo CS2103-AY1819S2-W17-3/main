@@ -8,7 +8,7 @@
 <div class="content">
 <div class="imageblock" style="float: left">
 <div class="content">
-<a class="image" href="https://github.com/Jackimaru96"><img src="../images/jackimaru96_pp.png" alt="120" width="120"></a>
+<img src="../images/jackimaru96_pp.png" alt="120" width="120">
 </div>
 </div>
 </div>
@@ -16,8 +16,8 @@
 <div class="paragraph">
 <p>This page aims to showcase my contributions to the project
 <strong>In-Credit-Ble</strong> under module <em>CS2103T</em>. I will be giving you an introduction to <strong>In-Credit-Ble</strong>,
-followed by summarising my contributions. Lastly, I will be showing you the relevant sections of User Guide and
-Development Guide that I documented.  I hope that after reading through this page, you will have a better
+followed by summarising my contributions. Lastly, I will be showing you the relevant sections of User Guide (UG) and
+Development Guide (DG) that I documented.  I hope that after reading through this page, you will have a better
 understanding of my contributions to this project.<br></p>
 </div>
 <div class="paragraph">
@@ -57,76 +57,6 @@ understanding of my contributions to this project.<br></p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="quick-start"><a class="link" href="#quick-start">Quick Start</a></h2>
-<div class="sectionbody">
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>This box will give you some tips to help you understand the feature or document better</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>This box will provide you with more information about the section</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>This box will appear when there are important information that you should take note of</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>This box will show you examples of how you can use the commands</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="acronyms-used-in-this-document"><a class="link" href="#acronyms-used-in-this-document">Acronyms used in this document</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>UG</strong>: User Guide</p>
-</li>
-<li>
-<p><strong>DG</strong>: Developer Guide</p>
-</li>
-<li>
-<p><strong>PR</strong>: Pull Request</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="project-in-credit-ble-finance-tracker"><a class="link" href="#project-in-credit-ble-finance-tracker">PROJECT: In-Credit-Ble (Finance Tracker)</a></h2>
 <div class="sectionbody">
 <hr>
@@ -141,14 +71,15 @@ and keep track of their budget in an <strong>easy and efficient</strong> manner.
 prefer to work with a Command Line Interface (CLI), especially for those who prefer to type over
 using their mouse.</p>
 </div>
-<div class="paragraph">
-<p><em>In-Credit-Ble</em> was developed by my team and I (a total of 5 students) from the National University of Singapore
-as part of a Software Engineering module (CS2103T). As part of the module requirement,
- we had to morph an existing application and develop a functional product in a short
- span of 13 weeks while learning new software engineering concepts. We have chosen to
- morph the existing application from an Address Book to a Finance Tracker.
- In the following sections, I will be summarising my contributions to this project through the major
- and minor features implemented for <em>In-Credit-Ble</em>.</p>
+<div class="literalblock">
+<div class="content">
+<pre>As part of the module requirement, my team and I (of 5 students from NUS)
+had to morph an existing application and develop a functional product in a short
+span of 13 weeks while learning new software engineering concepts. We have chosen to
+morph the existing application from an Address Book to a Finance Tracker.
+In the following sections, I will be summarising my contributions to this project through the major
+and minor features implemented for _In-Credit-Ble_.</pre>
+</div>
 </div>
 </div>
 </div>
@@ -161,8 +92,7 @@ as part of a Software Engineering module (CS2103T). As part of the module requir
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This section will give you a brief overview of my contributions to the project such as the features that I implemented
-as well as the other notable contributions in terms of <em>Project Management</em> and participating in forums.<br></p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This section will give you a brief overview of my contributions to the project.<br></p>
 <p class="tableblock">This section will be split into <strong>Major Enhancement</strong>, <strong>Minor Enhancements</strong> and <strong>Notable Contributions</strong> sub-sections.</p></td>
 </tr>
 </tbody>
@@ -200,15 +130,13 @@ of our User Guide for more information on how to do so.</p>
 <ul>
 <li>
 <p><strong><em>What it does</em></strong>: Allows user to set a budget for categories so as to keep track
-of the expenses for each category (such as <code>Food</code>, <code>Travel</code>, <code>Clothes</code>).
-It ensures that the sum of budget of each category does not exceed the total budget
-of the Finance Tracker.</p>
+of the expenses for each category (such as <code>Food</code>, <code>Travel</code>, <code>Clothes</code>).</p>
 </li>
 <li>
 <p><strong><em>Justification</em></strong>: This feature improves the product significantly and enhances user
-ability to manage their expenses according to categories. For a finance tracker, it is important
-as this will allow the user to categorise their spending to know which area he/she should
-start spending less and which category they are able to increase their spending. It also requires
+ability to manage their expenses according to categories. It allows users to categorise
+their spending to know which area he/she should
+start spending less. It also requires
 integration of the <code>Logic</code>, <code>Model</code> and <code>UI</code> components of the project.</p>
 </li>
 <li>
@@ -350,6 +278,8 @@ how to use our application.<br></p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="quick-start-and-graphical-user-interface"><a class="link" href="#quick-start-and-graphical-user-interface">Quick Start and Graphical User Interface</a></h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -359,13 +289,12 @@ how to use our application.<br></p></td>
 <td class="content">
 <div class="paragraph">
 <p>To allow users to get started with our application with ease, I&#8217;ve created the <code>Quick Start</code> and
-<code>Graphical User Interface Introduction</code> (GUI) sections. These two extracted sections from
-the User Guide shows how I am able to use diagrams
+<code>Graphical User Interface Introduction</code> (GUI) sections. This section shows how I am able to use diagrams
 to support my writing so that users can have visual aids to guide their understanding.<br></p>
 </div>
 <div class="paragraph">
 <p>Due to page limit constraints, I will only be listing the major portion of my contribution.
-To see the rest of the contributions I made to the UG, click the below link.</p>
+To see the rest of the contributions I made to the User Guide, click the below link.</p>
 </div>
 <div class="paragraph">
 <p>1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#quick-start">Quick Start</a><br></p>
@@ -373,6 +302,7 @@ To see the rest of the contributions I made to the UG, click the below link.</p>
 </td>
 </tr>
 </table>
+</div>
 </div>
 </div>
 </div>
@@ -384,13 +314,13 @@ To see the rest of the contributions I made to the UG, click the below link.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/GUI_Diagram.png" alt="GUI Diagram" width="300">
+<img src="../images/GUI_Diagram.png" alt="GUI Diagram" width="400">
 </div>
 <div class="title">Figure 1. Graphical User Interface (When starting up)</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/GUI_Diagram2.png" alt="GUI Diagram2" width="300">
+<img src="../images/GUI_Diagram2.png" alt="GUI Diagram2" width="400">
 </div>
 <div class="title">Figure 2. Graphical User Interface (Upon using <code>summary</code> command)</div>
 </div>
@@ -544,7 +474,7 @@ the amount you exceeded the budget set for yourself.</p>
 <h3 id="summary-panel"><a class="link" href="#summary-panel">Summary Panel</a></h3>
 <div class="imageblock">
 <div class="content">
-<img src="../images/summarypanel.png" alt="summarypanel" width="300">
+<img src="../images/summarypanel.png" alt="summarypanel" width="400">
 </div>
 <div class="title">Figure 9. Summary Panel: Shows you a pie chart illustration of your current expenses</div>
 </div>
@@ -561,7 +491,7 @@ To change back to the browser panel, simply type in the <code>summary</code> com
 <h3 id="command-box-and-result-display"><a class="link" href="#command-box-and-result-display">Command Box and Result Display</a></h3>
 <div class="imageblock">
 <div class="content">
-<img src="../images/commandbox_resultdisplay.png" alt="commandbox resultdisplay" width="300">
+<img src="../images/commandbox_resultdisplay.png" alt="commandbox resultdisplay" width="450">
 </div>
 <div class="title">Figure 10. Command Box and Result Display</div>
 </div>
@@ -590,6 +520,9 @@ This is where the allocated category budgets will be shown when <code>show</code
 The left side of the status footer bar shows the time and date of the last update to the finance tracker.
 The right side of the status footer bar shows where the storage file for the updated data is saved to.</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="code-allocate-code-code-show-code-and-code-theme-code-commands"><a class="link" href="#code-allocate-code-code-show-code-and-code-theme-code-commands"><code>Allocate</code>, <code>Show</code> and <code>Theme</code> Commands</a></h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -606,7 +539,7 @@ follow in a sequential manner.<br></p>
 </div>
 <div class="paragraph">
 <p>Due to page limit constraints, I will only be listing the major portion of my contribution.
-To see the rest of the contributions I made to the UG, click the below link.<br></p>
+To see the rest of the contributions I made to the User Guide, click the below link.<br></p>
 </div>
 <div class="paragraph">
 <p>1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#showing-allocated-budget-and-spending-in-categories-show"><code>show</code> command</a><br>
@@ -822,4 +755,4 @@ if the category was not previously allocated with a budget</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-12 09:01:53 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 05:06:11 UTC</div></div></div></body></html>
