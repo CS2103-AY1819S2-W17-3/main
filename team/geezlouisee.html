@@ -3,17 +3,43 @@
 <link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="../images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="../index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="../index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="../DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="../LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link active" href="../AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="../ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>Louise Lee - Project Portfolio</h1></div><div id="content"><div class="sect1">
 <h2 id="project-in-credit-ble"><a class="link" href="#project-in-credit-ble">PROJECT: In-Credit-Ble</a></h2>
 <div class="sectionbody">
-<hr>
+<div class="paragraph">
+<p>This is my project portfolio for <em>In-Credit-Ble</em>, a product that was developed as part of our Software Engineering module, CS2103T.</p>
+</div>
+<div class="paragraph">
+<p>In this portfolio, I will be showcasing a brief overview of my total contributions to the team project, followed by excerpts of my contributions to <em>In-Credit-Ble</em>’s User Guide and Developer Guide respectively. Through this project portfolio, I hope you will glean insights into my personal contributions to the development of <em>In-Credit-Ble</em>.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>In-Credit-Ble</em> is an expense tracker that is tailored to help users manage their finances and keep track of their budget in an easy and efficient manner. It is designed for those who prefer to work with a Command Line Interface (CLI), especially for those who prefer to type over using their mouse.</p>
+<p><em>In-Credit-Ble</em> is a finance tracker that is tailored to help users manage their personal finances in an easy and efficient manner. <em>In-Credit-Ble</em> helps the user to achieve their financial objectives by helping them to keep track of their expenditure and be more aware of their spending habits. The application is designed for those who prefer to type over using their mouse, with the main mode of navigation in this application being a Command Line Interface (CLI).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/Ui_2.png" alt="Ui 2">
+</div>
 </div>
 <div class="paragraph">
-<p><em>In-Credit-Ble</em> was developed by four friends and I, from the National University of Singapore. This product was developed as part of our Software Engineering module, CS2103T. We had to adapt to an existing codebase in Java and develop a functional product in a short span of 13 weeks. In this project portfolio, I will be documenting my personal contributions to this project.</p>
+<p>Some of its key features include, but not limited to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An intuitive and easy to use user interface that allows you to add new records fast.</p>
+</li>
+<li>
+<p>Able to sort your list of recorded expenses by name, amount, date or category</p>
+</li>
+<li>
+<p>View a summary of your expenditures by their categories, illustrated as a pie chart</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> was developed by four friends and I, from the National University of Singapore. We had to adapt to an existing codebase that was written in Java and develop a functional product in a short span of 13 weeks.</p>
 </div>
 </div>
 </div>
@@ -30,16 +56,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>What it does: Allows the user to view an overview of all their expenditures in a single graph. Each sector represents a category and gets “filled up” according to the percentage spent of the allocated budget for that particular sector.</p>
+<p>What it does: Allows the user to view an overview of all their expenditures in a specified report period, represented as a single pie chart. Each sector represents a category, labelled with the name and amount spent in that particular category.</p>
 </li>
 <li>
-<p>Justification: This feature improves the product significantly because a user will be able to see a quick overview of their spending in a pictorial form. This allows users to easily perceive whether their spending is within their budget for each category.</p>
+<p>Justification: This feature improves the product significantly because a user will be able to see a quick overview of their spending in a pictorial form. his allows users to easily identify which category they spend the most on and can afford to cut down on.</p>
 </li>
 <li>
-<p>Highlights: This enhancement required an in-depth analysis of design alternatives. The implementation was also quite challenging as it required linking to third party libraries.</p>
-</li>
-<li>
-<p>Credits: Usage of D3, a JavaScript library for data visualisations via HTML, SVG, and CSS.</p>
+<p>Highlights: You can specify the report period of which expenditures should be represented in the pie chart. Else, the default report period that will be shown is the expenditures of the user in the last 7 days.</p>
 </li>
 </ul>
 </div>
@@ -56,7 +79,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Helped to manage issue tracker (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/89">#89</a>)</p>
+<p>Helped to manage issue tracker (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/89">#89</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/179">#179</a>)</p>
 </li>
 </ul>
 </div>
@@ -76,10 +99,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Did cosmetic tweaks to existing contents of the User Guide: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/109">#109</a></p>
+<p>Did cosmetic tweaks to existing contents of the User Guide (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/109">#109</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/208">#208</a>)</p>
 </li>
 <li>
-<p>Did cosmetic tweaks to the Developer Guide (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/4">#4</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/8">#8</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/78">#78</a>)</p>
+<p>Did cosmetic tweaks to the Developer Guide (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/4">#4</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/8">#8</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/78">#78</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/125">#125</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/208">#208</a>)</p>
 </li>
 </ul>
 </div>
@@ -91,6 +114,9 @@
 <li>
 <p>PRs reviewed (with non-trivial review comments): <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/64">#64</a></p>
 </li>
+<li>
+<p>Activity in Forum (<a href="https://github.com/nus-cs2103-AY1819S2/forum/issues/65">#65</a>)</p>
+</li>
 </ul>
 </div>
 </li>
@@ -99,10 +125,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Integrated a third party library (d3.js) to the project (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/104">#104</a>)</p>
+<p>Configured project to link properly to RepoSense (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/70">#70</a>)</p>
 </li>
 <li>
-<p>Configured project to link properly to RepoSense (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/70">#70</a>)</p>
+<p>Configured project to link properly to Coveralls (<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/137">#137</a>, <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/138">#138</a>)</p>
 </li>
 </ul>
 </div>
@@ -123,7 +149,7 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>We had to update the original addressbook&#8217;s User Guide with instructions for the enhancements that we had added. The following is an excerpt from our In-Credit-Ble User Guide, showing additions that I have made for the <code>summary</code> feature.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>We had to update the original addressbook&#8217;s User Guide with instructions for the enhancements that we had added. The following is an excerpt from our In-Credit-Ble User Guide, showing additions that I have made for the <code>summary</code> feature and <code>Upcoming Features</code>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -132,10 +158,30 @@
 <div class="paragraph">
 <p>You can see the summary of your previous expenditures represented as a pie chart, with
 each sector representing a category. Each sector is labelled with name and total expenditure for the category,
-allowing you to have an overview of how your spending habit is like.</p>
+allowing you to have a clear overview of how your spending habit is like.</p>
 </div>
 <div class="paragraph">
-<p>You can also specify a report period.</p>
+<p>By default, <em>In-Credit-Ble</em> will display the browser panel when you first open the application.
+Entering the <code>summary</code> command in the command box will allow you to switch from the browser view mode to the summary view mode, as shown in the diagram below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/summaryUI.png" alt="summaryUI" width="800">
+</div>
+<div class="title">Figure 1. Summary panel is displayed when user enters the  <code>summary</code> command</div>
+</div>
+<div class="paragraph">
+<p>You can also specify a report period by stating the number of days or months via the <code>PERIOD_AMOUNT</code> and <code>PERIOD</code> parameters. However, these parameters are optional.</p>
+</div>
+<div class="paragraph">
+<p>To exit the summary view mode, simply type <code>summary</code> in the command box again.
+Your screen should change back to the browser view mode as shown in the diagram below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/summaryUI_2.png" alt="summaryUI 2" width="800">
+</div>
+<div class="title">Figure 2. Exits from summary view mode when user enters the  <code>summary</code> command again</div>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>overview</code></p>
@@ -159,7 +205,7 @@ allowing you to have an overview of how your spending habit is like.</p>
 <p>Deleted entries are not included in the summary.</p>
 </li>
 <li>
-<p>You may also type <code>summary</code> in the command box to exit the summary view mode or update the pie chart statistics</p>
+<p>Adding more entries while in the summary view mode will update the pie chart statistics automatically, as long as the expense falls within the specified report period</p>
 </li>
 </ul>
 </div>
@@ -190,17 +236,18 @@ Shows summary of expenses in the past 7 months</p>
 </div>
 </div>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-The implementation of this feature is still ongoing. It will be completed by v1.4.
-</td>
-</tr>
-</table>
+</div>
+<div class="sect2">
+<h3 id="upcoming-features"><a class="link" href="#upcoming-features">Upcoming Features</a></h3>
+<div class="sect3">
+<h4 id="login-feature-code-coming-in-v2-0-code"><a class="link" href="#login-feature-code-coming-in-v2-0-code">Login Feature <code>[coming in v2.0]</code></a></h4>
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> will implement a login feature so that your data and personal finance records will remain safe and secure.
+Your personal data will be encrypted and stored in your own account that can also be secured with a password.</p>
+</div>
+<div class="paragraph">
+<p>With this feature, multiple users will be able to use <em>In-Credit-Ble</em> on the same computer without being able to access or modify each other&#8217;s data.</p>
+</div>
 </div>
 </div>
 </div>
@@ -221,13 +268,15 @@ The implementation of this feature is still ongoing. It will be completed by v1.
 <div class="sect2">
 <h3 id="summary"><a class="link" href="#summary">Summary</a></h3>
 <div class="paragraph">
-<p>The summary feature shows an overview of your previous expenditures in an Aster Plot chart, which works similarly to a pie chart. Each sector of the chart represents a category. The radius of each sector indicates the total budget amount allocated for a particular category, while the coloured area of the sector denotes the amount spent for that category. This allows users to easily perceive whether their spending is within their budget for each category.</p>
+<p>The summary feature shows an overview of your previous expenditures in a pie chart. Each sector of the chart represents a category, labelled with the name and total expenditure for each category.</p>
+</div>
+<div class="paragraph">
+<p>You can also set a report period by indicating the number of days or months. Specifying a report period is optional. If no parameters are defined, data of expenditures in the past week (ie. the last 7 days) will be displayed in the pie chart by default.</p>
 </div>
 <div class="sect3">
 <h4 id="implementation"><a class="link" href="#implementation">Implementation</a></h4>
 <div class="paragraph">
-<p>The summary feature intends to use a D3.js graph to display the data. This will help contribute to the aesthetics and user-friendliness of displaying the data in In-Credit-Ble.
-The implementation of the Summary command can be divided into two phases – preparation and execution. Given below is an explanation of how the summary mechanism behaves at each phase, although it has not been fully implemented yet.</p>
+<p>The implementation of the Summary command can be divided into two phases – preparation and execution. Given below is an explanation of how the summary mechanism behaves at each phase.</p>
 </div>
 <div class="sect4">
 <h5 id="preparation"><a class="link" href="#preparation">Preparation</a></h5>
@@ -238,18 +287,21 @@ The implementation of the Summary command can be divided into two phases – pre
 <div class="content">
 <img src="../images/SummarySequenceDiagram.png" alt="SummarySequenceDiagram" width="800">
 </div>
-<div class="title">Figure 1. Sequence diagram of the preparation stage in the summary mechanism</div>
+<div class="title">Figure 3. Sequence diagram of the preparation stage in the summary mechanism</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User first enters the command <code>summary</code>. This command is received by <code>FinanceTrackerParser</code>, which  then calls <code>SummaryCommandParser#parse()</code> to create <code>SummaryCommand</code>.</p>
+<p>User first enters the command <code>summary #/7 p/d</code>. This command is received by <code>FinanceTrackerParser</code>, which then calls <code>SummaryCommandParser#parse()</code> to create <code>SummaryCommand</code>.</p>
 </li>
 <li>
-<p><code>SummaryCommand</code>  is then returned to <code>LogicManager</code>.</p>
+<p>If no parameters are provided by the user, <code>SummaryCommand#SummaryCommand()</code> is called to create <code>SummaryCommand</code> with the default parameters of ` periodAmount ` as <code>7</code> and <code>period</code> as <code>d</code>. Otherwise, <code>SummaryCommand#SummaryCommand(periodAmount, period)</code> is called to create <code>SummaryCommand</code> with the specified parameters.</p>
 </li>
 <li>
-<p><code>LogicManager</code> then calls <code>SummaryCommand#execute()</code>, which will then trigger the process of retrieving the data to be displayed.</p>
+<p><code>SummaryCommand</code> then checks if the parameters are valid. If any parameter is invalid, an exception will be thrown, and an error message will be shown to the user. Else, the parameters are stored in instance variables and <code>SummaryCommand</code> is returned to <code>LogicManager</code>.</p>
+</li>
+<li>
+<p><code>LogicManager</code> then calls <code>SummaryCommand#execute()</code>, which updates the variables <code>RecordSummaryPredicate</code>, <code>summaryPeriod</code> and <code>periodAmount</code> in <code>ModelManager</code>.</p>
 </li>
 </ol>
 </div>
@@ -257,24 +309,59 @@ The implementation of the Summary command can be divided into two phases – pre
 <div class="sect4">
 <h5 id="execution"><a class="link" href="#execution">Execution</a></h5>
 <div class="paragraph">
-<p>In the execution phase, the program accesses the <code>Budget</code> class to retrieve the data to be displayed. It will then finally map this data to graph the Aster Plot chart and display it. Below is the UML sequence diagram and a step-by-step explanation of the execution stage.</p>
+<p>In the execution phase, the program handles <code>ShowSummaryRequestEvent</code> posted by <code>SummaryCommand</code> to retrieve the data to be displayed. The data will be rendered as a JavaFX <code>PieChart</code> and then displayed. Below is the UML sequence diagram and a step-by-step explanation of the execution stage.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../images/SummarySequenceDiagram2.png" alt="SummarySequenceDiagram2" width="800">
 </div>
-<div class="title">Figure 2. Sequence diagram of the execution stage in the summary mechanism</div>
+<div class="title">Figure 4. Sequence diagram of the execution stage in the summary mechanism</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The`handleShowSummary` will be handled by <code>MainWindow#handleShowSummary()</code>, which will call <code>GraphPanel#execute()</code> and pass the data as parameters by calling <code>Logic#getTotalBudget()</code> and <code>Logic#getCategoryBudget()</code>.</p>
+<p>The`handleShowSummary` will be handled by <code>MainWindow#handleShowSummary()</code>, which will call <code>SummaryPanel#setData()</code> and pass the data as parameters by calling <code>Logic#getRecordSummary()</code>, <code>Logic#getSummaryPeriod()</code>  and <code>Logic#getPeriodAmount()</code>.</p>
 </li>
 <li>
-<p><code>Logic#getTotalBudget()</code> and <code>Logic#getCategoryBudget()</code> will get their respective data by calling the method of the same name in <code>Model</code>.</p>
+<p><code>Logic#getRecordSummary()</code> gets the filtered record list by calling <code>Model#getRecordSummary()</code>, which returns an unmodifiable ObservableList, only containing only expenses in the last 7 days.</p>
 </li>
 <li>
-<p>Once the parameters are passed into GraphPanel#execute(), StackPane#getData()#clear() is called to clear any display elements in StackPane. D3.js is used to render the charts.</p>
+<p><code>Logic#getRecordSummary()</code> then organises the data into a <code>LinkedHashMap&lt;String, Double&gt;</code>, where the key value pair represents category and cost.</p>
+</li>
+<li>
+<p><code>Logic#getSummaryPeriod()</code>  and <code>Logic#getPeriodAmount()</code> get their respective data by calling the method of the same name in <code>Model</code>.</p>
+</li>
+<li>
+<p>Once the parameters are passed into <code>SummaryPanel#setData()</code>, <code>StackPane#getChildren()#clear()</code> is called to clear any display elements in <code>StackPane</code>. JavaFX’s <code>PieChart</code> is then used to render the summary pie chart. There are two possible scenarios which could happen:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>If the data received is empty, a <code>Text</code> object is generated and <code>StackPane#getChildren()#add()</code> is called, which informs the user that there are no expenditures.</p>
+</li>
+<li>
+<p>Else, <code>SummaryPanel#setSummaryData()</code> will be called, which generates a Pie Chart and calls <code>StackPane#getChildren()#add()</code>, which adds it to <code>StackPane</code>. This is shown in the code snippet below:</p>
+<div class="literalblock">
+<div class="content">
+<pre>public void setSummaryData(LinkedHashMap&lt;String, Double&gt; summaryData) {
+        PieChart pieChart = new PieChart();
+        Set&lt;String&gt; keySet = summaryData.keySet();
+        for (String s : keySet) {
+            pieChart.getData().add(new PieChart.Data(s, summaryData.get(s)));
+        }
+        for (int i = 0; i &lt; pieChart.getData().size(); i++) {
+            PieChart.Data data = pieChart.getData().get(i);
+            data.getNode().getStyleClass().add(getPieChartColorStyleFor(data.getName()));
+            data.nameProperty().bind(Bindings.concat(data.getName(), " - $",
+                                    String.format("%.2f", data.getPieValue())));
+        }
+        pieChart.setLegendSide(Side.BOTTOM);
+        chartArea.getChildren().add(pieChart);
+}</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
 </li>
 </ol>
 </div>
@@ -284,17 +371,57 @@ The implementation of the Summary command can be divided into two phases – pre
 <h4 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h4>
 <div class="sect4">
 <h5 id="aspect-representation-for-summary-of-expenditure"><a class="link" href="#aspect-representation-for-summary-of-expenditure">Aspect: Representation for Summary of Expenditure</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice)</strong>: Represent summary of expenses using a pie chart</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/summaryPanel.png" alt="summaryPanel" width="600">
+</div>
+<div class="title">Figure 5. Current Implementation of Summary Panel using JavaFX&#8217;s <code>PieChart</code></div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Labels can act as a legend as well as there might be categories with similar colours. This will help the user to easily identify the expenditures in different categories.</p>
+</li>
+<li>
+<p>Cons: If there are too many categories, the labels may not show up as it will clash with the other labels. The data presented may also become too cluttered as well.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 2 (planned for <code>[v2.0]</code>)</strong>: Represent summary of expenses using an Aster Plot graph</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>An aster plot graph will be used to display the information in the main window. Using such a graph will allow for sufficient space should users decide to add more categories in the future. Hovering over the different sectors in the aster plot graph will display the corresponding category. If possible, the colours used for the category in the aster plot graph should be the same colour palette used for the category labels.</p>
+<p>In <code>v2.0</code> of <em>In-Credit-Ble</em>, the summary feature intends to use a D3.js Aster Plot graph to display the summary of expenditures instead of the current pie chart. This will help contribute to the aesthetics and user-friendliness of displaying the data in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../images/asterPlot.png" alt="asterPlot" width="400">
 </div>
-<div class="title">Figure 3. Example of Aster Plot Graph</div>
+<div class="title">Figure 6. Example of Aster Plot Graph</div>
 </div>
 <div class="paragraph">
-<p>Initially, we were considering using a pie chart instead. However, using an aster plot graph will be more effective in showing the user what is the remaining budget amount for each category.</p>
+<p>Each sector of the chart represents a category. The area of each sector indicates the total budget amount allocated for a particular category, while the coloured area of the sector denotes the amount spent for that category. On mouseover of each sector, a pop-up display of the category name and amount spent for each category will be shown. The colours used for the category in the aster plot graph should also correspond to the same colour palette used for the category labels.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: More effective in showing the user what is the remaining budget amount for each category. It also allows users to easily perceive whether their spending is within their budget for each category.</p>
+</li>
+<li>
+<p>Cons: Difficult to implement as it requires linking to D3, a third party JavaScript library for data visualisations via HTML, SVG, and CSS.</p>
+</li>
+</ul>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
@@ -450,12 +577,4 @@ The implementation of the Summary command can be divided into two phases – pre
 </tbody>
 </table>
 </div>
-</div>
-<div class="sect1">
-<h2 id="proposed-enhancement-additional-parameters-for-code-summary-code-feature-coming-in-v1-4"><a class="link" href="#proposed-enhancement-additional-parameters-for-code-summary-code-feature-coming-in-v1-4">[Proposed Enhancement] Additional parameters for <code>summary</code> feature (coming in v1.4)</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>I intend for the <code>summary</code> command to be able to accept parameters (ie. start and end date specified by the user). This will enable users to see their expenditures for each category within their specified duration. However, these parameters will be optional. If the user does not specify the start and end dates, the application will just reflect changes according to their total budget and expenditures.</p>
-</div>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 14:57:24 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 16:23:42 UTC</div></div></div></body></html>
