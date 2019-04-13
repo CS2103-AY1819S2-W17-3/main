@@ -49,14 +49,15 @@
 </li>
 <li><a href="#miscellaneous">4.4. Miscellaneous</a>
 <ul class="sectlevel3">
-<li><a href="#viewing-help-code-help-code">4.4.1. Viewing help: <code>help</code></a></li>
-<li><a href="#undoing-previous-command-code-undo-code">4.4.2. Undoing previous command : <code>undo</code></a></li>
-<li><a href="#redoing-the-previously-undone-command-code-redo-code">4.4.3. Redoing the previously undone command : <code>redo</code></a></li>
-<li><a href="#changing-theme-of-application-code-theme-code">4.4.4. Changing theme of application: <code>theme</code></a></li>
-<li><a href="#listing-entered-commands-code-history-code">4.4.5. Listing entered commands: <code>history</code></a></li>
-<li><a href="#clearing-all-entries-code-clear-code">4.4.6. Clearing all entries : <code>clear</code></a></li>
-<li><a href="#exiting-the-program-code-exit-code">4.4.7. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">4.4.8. Saving the data</a></li>
+<li><a href="#changing-financetracker-data-storage-location-code-setfile-code">4.4.1. Changing FinanceTracker data storage location: <code>setfile</code></a></li>
+<li><a href="#viewing-help-code-help-code">4.4.2. Viewing help: <code>help</code></a></li>
+<li><a href="#undoing-previous-command-code-undo-code">4.4.3. Undoing previous command : <code>undo</code></a></li>
+<li><a href="#redoing-the-previously-undone-command-code-redo-code">4.4.4. Redoing the previously undone command : <code>redo</code></a></li>
+<li><a href="#changing-theme-of-application-code-theme-code">4.4.5. Changing theme of application: <code>theme</code></a></li>
+<li><a href="#listing-entered-commands-code-history-code">4.4.6. Listing entered commands: <code>history</code></a></li>
+<li><a href="#clearing-all-entries-code-clear-code">4.4.7. Clearing all entries : <code>clear</code></a></li>
+<li><a href="#exiting-the-program-code-exit-code">4.4.8. Exiting the program : <code>exit</code></a></li>
+<li><a href="#saving-the-data">4.4.9. Saving the data</a></li>
 </ul>
 </li>
 <li><a href="#upcoming-features">4.5. Upcoming features</a>
@@ -422,7 +423,7 @@ step-by-step instructions on how to use the different commands.</p>
 <div class="sect3">
 <h4 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">4.1.1. Setting a budget: <code>set</code></a></h4>
 <div class="paragraph">
-<p>This command enables you to set a fixed budget for a month/week (Time limit to be implemented). The current budget will be modified based on the transaction records. The command format is as follows:</p>
+<p>You can use this command to set a budget for the current instance of <em>In-Credit-Ble</em> Finance Tracker.<br></p>
 </div>
 <div class="paragraph">
 <p><strong>Format</strong>: <code>set $/AMOUNT</code></p>
@@ -444,6 +445,43 @@ step-by-step instructions on how to use the different commands.</p>
 </div>
 </div>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The budget set must contain a valid amount. A valid amount is a positive number with
+0 or 2 decimal places.</p>
+</li>
+<li>
+<p>If you provide multiple amounts (e.g. <code>set $/30 $/50</code>), only the last amount you provided will
+be used to set the budget (<code>$/50</code> in the example). Only the last amount needs to be a valid
+amount (e.g. <code>set $/1a $/10</code> works while <code>set $/10 $/1a</code> does not).</p>
+</li>
+<li>
+<p>If a budget was previously set, the old budget will be overwritten by the new budget specified
+by the <code>set</code> command.</p>
+</li>
+<li>
+<p>The budget you set and current spending will be displayed in the <a href="#budget-panel">Section 3.3, &#8220;Budget Panel&#8221;</a>.</p>
+</li>
+<li>
+<p>Only one budget may be set for each instance of the Finance Tracker. The rationale is to keep the
+UI as clean as possible without extra panels for past budgets. You can either use <code>allocate</code> to set
+various category sub-budgets or create a new instance of he Finance Tracker with the <code>setfile</code> command
+detailed in <a href="#changing-financetracker-data-storage-location-code-setfile-code">Section 4.4.1, &#8220;Changing FinanceTracker data storage location: <code>setfile</code>&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -451,8 +489,19 @@ step-by-step instructions on how to use the different commands.</p>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<div class="paragraph">
-<p>If more than one parameter are given by user input, e.g. (<code>set $/500 $/400</code>), the latest parameter is taken.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Take note that you can spend over the budget set and set a budget lower than current spending. The
+ratianole is for you to be able to see how much you have exceeded your budget set to better plan your
+expenditure in the future since the App is unable to stop you from spending.</p>
+</li>
+<li>
+<p>The budget you set must be higher than or equal to the sum of the budgets allocated to individual
+category. The rationale is that it would be pointless to set an overall budget if individual category
+budgets are going to exceed it.</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
@@ -1119,7 +1168,72 @@ The implementation of this feature is still ongoing. It will be completed by v1.
 <div class="sect2">
 <h3 id="miscellaneous"><a class="link" href="#miscellaneous">4.4. Miscellaneous</a></h3>
 <div class="sect3">
-<h4 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">4.4.1. Viewing help: <code>help</code></a></h4>
+<h4 id="changing-financetracker-data-storage-location-code-setfile-code"><a class="link" href="#changing-financetracker-data-storage-location-code-setfile-code">4.4.1. Changing FinanceTracker data storage location: <code>setfile</code></a></h4>
+<div class="paragraph">
+<p>You can change the file used to store the data of the application. Essentially,
+you can maintain multiple sets of expenditure and budget data for multiple users
+or profiles.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>setfile f/FILENAME</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>setfile f/Daily Expenses</code></p>
+</li>
+<li>
+<p><code>setfile f/JohnDoe</code></p>
+</li>
+<li>
+<p><code>setfile f/Personal Finances.April.2019</code></p>
+</li>
+<li>
+<p><code>setfile f/Company June Petty Cash Finances</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The filename should not contain any file paths (e.g. /data/file) or extensions
+(e.g. file.json). The filename must also be 250 characters or lesser and should not
+contain any special characters or be left blank.</p>
+</li>
+<li>
+<p>If multiple filenames are provided (e.g. <code>setfile f/file1 f/file2</code>) only the last
+filename provided will be taken in as the filename (<code>file2</code> in this example).
+Only the last filename needs to be a valid filename
+(e.g. <code>setfile f/$file f/file</code> works while <code>set f/file f/$file</code> does not).</p>
+</li>
+<li>
+<p>If the file specified by the filename does not already exist, a new blank file
+will be created with no data in the Finance Tracker. Otherwise, the data stored
+in the file will be loaded into the Finance Tracker.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">4.4.2. Viewing help: <code>help</code></a></h4>
 <div class="paragraph">
 <p>Forgotten which commands to use? You can easily find the commands you need to navigate the software
 by using the following command:</p>
@@ -1129,7 +1243,7 @@ by using the following command:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">4.4.2. Undoing previous command : <code>undo</code></a></h4>
+<h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">4.4.3. Undoing previous command : <code>undo</code></a></h4>
 <div class="paragraph">
 <p>You can restore the program to the state before the previous <em>undoable</em> command was executed.</p>
 </div>
@@ -1181,7 +1295,8 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 <ul>
 <li>
 <p>commands that modify the finance tracker&#8217;s content<br>
-(<code>set</code>, <code>spend</code>, <code>increase</code>, <code>allocate</code>, <code>edit</code>, <code>delete</code>, <code>sort</code>, <code>clear</code>, <code>description</code>).</p>
+(<code>set</code>, <code>allocate</code>, <code>spend</code>, <code>edit</code>, <code>delete</code>,
+ <code>sort</code>, <code>reverse</code>, <code>setfile</code>, <code>clear</code>, <code>description</code>).</p>
 </li>
 </ul>
 </div>
@@ -1191,7 +1306,7 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 </div>
 </div>
 <div class="sect3">
-<h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">4.4.3. Redoing the previously undone command : <code>redo</code></a></h4>
+<h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">4.4.4. Redoing the previously undone command : <code>redo</code></a></h4>
 <div class="paragraph">
 <p>You can reverse the most recent <code>undo</code> command.</p>
 </div>
@@ -1232,7 +1347,7 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 </div>
 </div>
 <div class="sect3">
-<h4 id="changing-theme-of-application-code-theme-code"><a class="link" href="#changing-theme-of-application-code-theme-code">4.4.4. Changing theme of application: <code>theme</code></a></h4>
+<h4 id="changing-theme-of-application-code-theme-code"><a class="link" href="#changing-theme-of-application-code-theme-code">4.4.5. Changing theme of application: <code>theme</code></a></h4>
 <div class="paragraph">
 <p>You can change the theme of the application with pre-set colour themes specified.</p>
 </div>
@@ -1304,7 +1419,7 @@ the menu bar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">4.4.5. Listing entered commands: <code>history</code></a></h4>
+<h4 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">4.4.6. Listing entered commands: <code>history</code></a></h4>
 <div class="paragraph">
 <p>You can list all the commands you have entered in reverse chronological order.</p>
 </div>
@@ -1316,7 +1431,7 @@ the menu bar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">4.4.6. Clearing all entries : <code>clear</code></a></h4>
+<h4 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">4.4.7. Clearing all entries : <code>clear</code></a></h4>
 <div class="paragraph">
 <p>You can delete all existing entries in the records and reset your budget to $0.00.</p>
 </div>
@@ -1328,7 +1443,7 @@ the menu bar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">4.4.7. Exiting the program : <code>exit</code></a></h4>
+<h4 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">4.4.8. Exiting the program : <code>exit</code></a></h4>
 <div class="paragraph">
 <p>You can quit the program at any point in time when you use this command.</p>
 </div>
@@ -1340,7 +1455,7 @@ the menu bar.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="saving-the-data"><a class="link" href="#saving-the-data">4.4.8. Saving the data</a></h4>
+<h4 id="saving-the-data"><a class="link" href="#saving-the-data">4.4.9. Saving the data</a></h4>
 <div class="paragraph">
 <p>The finance record and allocated budget will be saved in the hard disk automatically after any command that changes
 the data. There is no need for you to save manually.</p>
@@ -1621,7 +1736,7 @@ Shows summary for past 5 days</p></td>
 <dl>
 <dt class="hdlist1">Amount</dt>
 <dd>
-<p>The amount of money for expenditure and budget</p>
+<p>The amount of money for expenditure and budget.</p>
 </dd>
 <dt class="hdlist1">Category</dt>
 <dd>
@@ -1634,9 +1749,9 @@ compulsory category tag</p>
 </dd>
 <dt class="hdlist1">Records</dt>
 <dd>
-<p>The list of all entries stored in the application</p>
+<p>The list of all entries stored in the application.</p>
 </dd>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 09:23:48 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 11:51:10 UTC</div></div></div></body></html>
