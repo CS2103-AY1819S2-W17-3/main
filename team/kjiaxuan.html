@@ -9,94 +9,86 @@
 <div class="sect1">
 <h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>rephrase another day *</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>This portfolio describes my contributions to a software engineering project called <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="paragraph">
-<p>My team and I were tasked with morphing a basic command line interface addressbook into something else for our Software Engineering project.
-We decided to morph it into a finance tracker, and named it In-Credit-Ble. This application allows users
-to set budgets and track their spendings through the command line interface.</p>
+<p><em>In-Credit-Ble</em> is a finance tracker application, morphed from an address book application, and created by 4 other friends and me.
+With <em>In-Credit-Ble</em>, you can set budgets, allocate budgets to categories, record your expenses etc.</p>
 </div>
 <div class="paragraph">
-<p>My role was to design and write the codes for the reverse and sort features.
-The following sections explain these enhancements in more detail, and also show the relevant sections
-I have added to the user and developer guide in relation to these enhancements.</p>
+<p>Abiding by the project constraints, <em>In-Credit-Ble</em> is designed for users who prefer typing over mouse/voice commands.
+All of <em>In-Credit-Ble</em>’s functions can be accomplished using the keyboard.</p>
 </div>
+<div class="paragraph">
+<p>In this project, I mainly worked on implementing <em>In-Credit-Ble</em>’s <code>sort</code> and <code>reverse</code> features.
+The following sections explain these enhancements in more detail, and also show the relevant sections I have added to <em>In-Credit-Ble</em>’s user and developer guide on these features.</p>
+</div>
+<div class="paragraph">
+<p>The figure below explains the symbols and formatting used in this document</p>
+</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Words in <code>UPPER_CASE</code> are parameters to be supplied by the user (e.g. <code>sort -NAME</code>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[ORDER]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Words in square brackets are optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`SortCommandParser#parse()</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>parse()</code> method in <code>SortCommandParser</code></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
 <h2 id="summary-of-contributions"><a class="link" href="#summary-of-contributions">Summary of contributions</a></h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>rephrase another day *</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
-<p>This section shows a summary of my coding, documentation, and other helpful contributions to the team project.</p>
+<p>This section contains a description of some enhancements I made, and a summary of my contributions.</p>
 </div>
 <div class="sect2">
 <h3 id="enhancement-added"><a class="link" href="#enhancement-added">Enhancement added</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p>rephrase another day, add in -asc and -desc stuff *</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
-<p>I added a reverse and sort feature into the software.</p>
+<p>I added a <code>sort</code> command and a <code>reverse</code> command in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>What they do:<br>
+<p><strong>What they do</strong>:<br>
 The <code>reverse</code> command allows users to reverse the list of entries displayed on the graphic user interface.
-The <code>sort</code> command allows users to sort the entries by name or category in alphabetical order,
-amount from largest to smallest and date from most recent to least recent
-(<code>sort -name</code>, <code>sort -cat</code>, <code>sort -amount</code> and <code>sort -date</code> ).</p>
+The <code>sort</code> command allows users to sort the entries by name, amount, date and category, in both ascending order and descending order.</p>
 </li>
 <li>
-<p>Justification:<br>
-Without the sort command, entries will be displayed in an order where the most recently entered entry is at the bottom of the list.
+<p><strong>Justification</strong>:<br>
+Without the <code>sort</code> command, entries will be displayed in an order where the most recently entered entry is at the bottom of the list.
 However, this may not be very helpful and user-friendly to the user. A user may want to sort the entries by amount,
-so that he/she can find out what he/she has been spending the most on.
-A user may also want to sort entries by name, date and category to make the list more organised.</p>
+so that he/she can find out what he/she has been spending the most on. A user may also want to sort entries by name, date and category to make the list more organised.<br>
+The <code>reverse</code> command will allow the user to reverse the list as a user may want to view the entries in the opposite order.
+For example, after sorting the entries by amount in descending order, a user may want the entries to be sorted by amount in ascending order next,
+and this can be achieved conveniently using the <code>reverse</code> command.</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The reverse command will allow the user to reverse the list. Since the 4 sort capabilities have a default ordering,
-a user may want to view the entries in the opposite way. For example, a user may want the entry with the smallest expense
-at the top of the list, or a user  may want the entries to be sorted in a way where the least recent expense is the top.
-The user can then execute the <code>reverse command</code> after the <code>sort -amount</code> command and <code>sort -date</code> command respectively.</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p>Highlights:</p>
+<p><strong>Highlights</strong>:<br>
+These enhancements work with existing commands such as <code>edit</code> and <code>delete</code>. When a list is sorted,
+it may be easier to find an entry (<em>In-Credit-Ble</em> has a <code>search</code> function too!).
+These enhancements are also compatible with <em>In-Credit-Ble</em>’s <code>undo</code> and <code>redo</code> functions.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>&#8201;&#8212;&#8201;not doneeee&#8201;&#8212;&#8201;</p>
-</div>
-<div class="paragraph">
-<p>This enhancement …<br>
-An in-depth analysis of design alternatives was necessary to …<br>
-The implementation was also challenging as it required changes to existing commands ….</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="code-contributed"><a class="link" href="#code-contributed">Code contributed</a></h3>
 <div class="paragraph">
-<p>Click <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=kjiaxuan">here</a> to see the code I contributed to the In-Credit-Ble project!</p>
+<p>Click <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=kjiaxuan">here</a> to see the code I contributed to the <em>In-Credit-Ble</em> project!</p>
 </div>
 </div>
 <div class="sect2">
@@ -159,16 +151,9 @@ becomes more user-friendly and convenient to use.<br>
 <div class="sect1">
 <h2 id="contributions-to-the-user-guide"><a class="link" href="#contributions-to-the-user-guide">Contributions to the User Guide</a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>These are additions I made to the In-Credit-Ble User Guide for the <code>reverse</code> and <code>sort</code> features.</em></p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>These are additions I made to <em>In-Credit-Ble</em>'s User Guide for the <code>reverse</code> and <code>sort</code> features.</p>
+</div>
 <div class="sect3">
 <h4 id="sorting-the-entries-according-to-name-amount-date-category-code-sort-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">Sorting the entries according to name/amount/date/category: <code>sort</code></a></h4>
 <div class="paragraph">
@@ -306,16 +291,9 @@ List will be sorted by name in reverse lexicographical order.
 <div class="sect1">
 <h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>These are additions I made to the In-Credit-Ble Developer Guide for the <code>reverse</code> and <code>sort</code> features.</em></p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>These are additions I made to <em>In-Credit-Ble</em>'s Developer Guide for the <code>reverse</code> and <code>sort</code> features.</p>
+</div>
 <div class="sect2">
 <h3 id="sort-feature"><a class="link" href="#sort-feature">Sort feature</a></h3>
 <div class="paragraph">
@@ -582,4 +560,4 @@ The reverse command provides a convenient way for users to sort their entries in
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 14:51:38 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 14:57:24 UTC</div></div></div></body></html>
