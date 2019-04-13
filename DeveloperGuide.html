@@ -77,8 +77,10 @@
 <li><a href="#instructions-for-manual-testing">Appendix G: Instructions for Manual Testing</a>
 <ul class="sectlevel2">
 <li><a href="#launch-and-shutdown">G.1. Launch and Shutdown</a></li>
-<li><a href="#deleting-a-record">G.2. Deleting a record</a></li>
-<li><a href="#saving-data">G.3. Saving data</a></li>
+<li><a href="#adding-an-expense">G.2. Adding an expense</a></li>
+<li><a href="#deleting-an-entry">G.3. Deleting an entry</a></li>
+<li><a href="#sorting-the-entries">G.4. Sorting the entries</a></li>
+<li><a href="#saving-data">G.5. Saving data</a></li>
 </ul>
 </li>
 </ul>
@@ -2657,11 +2659,11 @@ These instructions only provide a starting point for testers to work on; testers
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Download the jar file and copy into an empty folder</p>
+<p>Download the JAR file and copy into an empty folder</p>
 </li>
 <li>
-<p>Double-click the jar file<br>
-Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum.</p>
+<p>Double-click the JAR file<br>
+Expected: Shows the GUI with a set of sample records. The window size may not be optimum.</p>
 </li>
 </ol>
 </div>
@@ -2674,7 +2676,7 @@ Expected: Shows the GUI with a set of sample contacts. The window size may not b
 <p>Resize the window to an optimum size. Move the window to a different location. Close the window.</p>
 </li>
 <li>
-<p>Re-launch the application by double-clicking the jar file.<br>
+<p>Re-launch the application by double-clicking the JAR file.<br>
 Expected: The most recent window size and location is retained.</p>
 </li>
 </ol>
@@ -2684,23 +2686,61 @@ Expected: The most recent window size and location is retained.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deleting-a-record"><a class="link" href="#deleting-a-record">G.2. Deleting a record</a></h3>
+<h3 id="adding-an-expense"><a class="link" href="#adding-an-expense">G.2. Adding an expense</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Deleting a record while all records are listed</p>
+<p>Adding an entry no matter what is listed.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Prerequisites: List all records using the <code>list</code> command. Multiple records in the list.</p>
+<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food d/1/4/2019 r/Tasty</code><br>
+Expected: Entry is added to the back of the list. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</code><br>
+Expected: Entry is added to the back of the list. Category recorded down is Clothes. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food</code><br>
+Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>add n/Chicken Rice $/5.50 c/Food</code><br>
+Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>spend n/Chicken Rice $/5.50</code><br>
+Expected: No entry is added. Error details shown in the status message. Status bar remains the same.</p>
+</li>
+<li>
+<p>Other incorrect spend commands to try: <code>spend n/Chicken Rice c/Food</code>, <code>spend $.5.50 c/Food</code>, <code>spend n/Chicken Rice $/5.5 c/Food</code>, <code>spend n/Chicken Rice $/5.50 c/Food d/12/12/2045</code><br>
+Expected: Similar to previous</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deleting-an-entry"><a class="link" href="#deleting-an-entry">G.3. Deleting an entry</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deleting an entry while all entries are listed</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: List all entries using the <code>list</code> command. Multiple entries in the list.</p>
 </li>
 <li>
 <p>Test case: <code>delete 1</code><br>
-Expected: First record is deleted from the list. Details of the deleted record shown in the status message. Timestamp in the status bar is updated.</p>
+Expected: First entry is deleted from the list. Details of the deleted entry shown in the status message. Timestamp in the status bar is updated.</p>
 </li>
 <li>
 <p>Test case: <code>delete 0</code><br>
-Expected: No record is deleted. Error details shown in the status message. Status bar remains the same.</p>
+Expected: No entry is deleted. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
 <p>Other incorrect delete commands to try: <code>delete</code>, <code>delete x</code> (where x is larger than the list size), <code>delete three</code><br>
@@ -2713,7 +2753,74 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-data"><a class="link" href="#saving-data">G.3. Saving data</a></h3>
+<h3 id="sorting-the-entries"><a class="link" href="#sorting-the-entries">G.4. Sorting the entries</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Sort entries by name</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: List must have some entries in it.</p>
+</li>
+<li>
+<p>Test case: <code>sort -name</code><br>
+Expected: List is sorted by name in lexicographical order. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>sort -name -desc</code><br>
+Expected: List is sorted by name in reverse lexicographical order. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>sort -name -asc</code><br>
+Expected: List is sorted by name in lexicographical order. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>sort -asc -name</code><br>
+Expected: List will not be sorted. Error message is shown. Status bar remains the same.</p>
+</li>
+<li>
+<p>Other incorrect sort commands to try: <code>sort -desc -name</code>, <code>sort -name -inc</code>, <code>sort -name -asc a-z</code><br>
+Expected: Similar to previous.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Sort entries by amount</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: List must have some entries in it.</p>
+</li>
+<li>
+<p>Test case: <code>sort -amount</code><br>
+Expected: List is sorted by amount in descending order. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>sort -amount -asc</code><br>
+Expected: List is sorted by amount in ascending order. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>sort -amount -desc</code><br>
+Expected: List is sorted by amount in descending order. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>sort -asc -amount</code><br>
+Expected: List will not be sorted. Error message is shown. Status bar remains the same.</p>
+</li>
+<li>
+<p>Other incorrect sort commands to try: <code>sort -desc -amount</code>, <code>sort -amount -inc</code>, <code>sort -name -amount</code><br>
+Expected: Similar to previous.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="saving-data"><a class="link" href="#saving-data">G.5. Saving data</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2730,4 +2837,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 07:49:31 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-13 08:39:04 UTC</div></div></div></body></html>
