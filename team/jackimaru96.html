@@ -17,40 +17,7 @@
 <p>This page aims to showcase my contributions to the project
 <strong>In-Credit-Ble</strong> under module <em>CS2103T</em>. I will be giving you an introduction to <strong>In-Credit-Ble</strong>,
 followed by summarising my contributions. Lastly, I will be showing you the relevant sections of User Guide (UG) and
-Development Guide (DG) that I documented.  I hope that after reading through this page, you will have a better
-understanding of my contributions to this project.<br></p>
-</div>
-<div class="paragraph">
-<p>This project was developed with the following utilities:</p>
-</div>
-<div class="openblock">
-<div class="content">
-<div class="imageblock" style="float: left">
-<div class="content">
-<img src="../images/github_icon.png" alt="65" width="90">
-</div>
-</div>
-<div class="imageblock" style="float: left">
-<div class="content">
-<img src="../images/java.png" alt="70" width="90">
-</div>
-</div>
-<div class="imageblock" style="float: left">
-<div class="content">
-<img src="../images/junit5-logo.png" alt="66" width="90">
-</div>
-</div>
-<div class="imageblock" style="float: left">
-<div class="content">
-<img src="../images/json.png" alt="67" width="90">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/travis.png" alt="66" width="90">
-</div>
-</div>
-</div>
+Development Guide (DG) that I documented.</p>
 </div>
 </div>
 </div>
@@ -229,19 +196,8 @@ budget</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Added the necessary issue type labels as specified by course requirement.<br>
-(e.g. <code>type.Story</code>, <code>type.Enhancement</code>, <code>status.onGoing</code>, <code>status.Completed</code>, <code>priorityHigh</code>)</p>
-</li>
-<li>
-<p>Managed issue trackers:</p>
-<div class="ulist">
-<ul>
-<li>
 <p>To see the issue trackers I managed, click
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues?q=is%3Aissue+author%3AJackimaru96+is%3Aclosed">here!</a></p>
-</li>
-</ul>
-</div>
 </li>
 </ul>
 </div>
@@ -319,8 +275,7 @@ how to use our application.<br></p></td>
 <td class="content">
 <div class="paragraph">
 <p>To allow users to get started with our application with ease, I&#8217;ve created the <code>Quick Start</code> and
-<code>Graphical User Interface Introduction</code> (GUI) sections. This section shows how I am able to use diagrams
-to support my writing so that users can have visual aids to guide their understanding.<br></p>
+<code>Graphical User Interface Introduction</code> (GUI) sections.</p>
 </div>
 <div class="paragraph">
 <p>Due to page limit constraints, I will only be listing a part of the <code>Graphical User Interface Introduction</code>.
@@ -334,30 +289,15 @@ To see the rest of the contributions I made to the User Guide, click the below l
 </tr>
 </table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="records-list-panel"><a class="link" href="#records-list-panel">Records List Panel</a></h3>
 <div class="imageblock">
 <div class="content">
-<img src="../images/Record_List_Panel.png" alt="Record List Panel" width="200">
+<img src="../images/GUI_Diagram2.png" alt="GUI Diagram2" width="600">
 </div>
-<div class="title">Figure 1. Record List Panel: Shows a list of your expense records</div>
-</div>
-<div class="paragraph">
-<p>This element is denoted by the yellow box in Figures 2 and 3.</p>
+<div class="title">Figure 1. Graphical User Interface (Upon using <code>summary</code> command)</div>
 </div>
 <div class="paragraph">
-<p>In the Record List Panel, the list of all your expenditures are recorded here.
-This panel is scrollable to view all your expense records.</p>
-</div>
-<div class="paragraph">
-<p>To find specific records based on <code>name</code>, <code>category</code>, <code>amount</code> or <code>date</code>, use the <code>search</code> command.
-To list all your expense records again after searching for particular records,
-use the command <code>list</code></p>
-</div>
-<div class="paragraph">
-<p>Each record is tagged with an <strong>index number</strong> before the record name.
-The index is used in command such as <code>delete</code>, <code>edit</code> and <code>select</code></p>
+<p>There are a total of 7 elements in the Graphical User Interface in <em>In-Credit-Ble</em> Finance Tracker
+as denoted by the different coloured boxes above. The elements will be explained below.</p>
 </div>
 <hr>
 </div>
@@ -373,13 +313,11 @@ The index is used in command such as <code>delete</code>, <code>edit</code> and 
 <div class="paragraph">
 <p>The following sections extracted from the User Guide are the instructions to users on how to use the features that I have
 implemented for this project. It includes the <code>allocate</code>, <code>show</code> and <code>theme</code> commands.
-These three sections show my ability to describe the feature in simple terms that new users are able to comprehend.
-In addition, examples on how to use the commands are also included so that the users are able to
-follow in a sequential manner.<br></p>
+These three sections show my ability to describe the feature in simple terms that new users are able to comprehend.</p>
 </div>
 <div class="paragraph">
 <p>Due to page limit constraints, I will only be listing the major portion of my contribution.
-To see the rest of the contributions I made to the User Guide, click the below link.<br></p>
+To see the full sections, click the below link.<br></p>
 </div>
 <div class="paragraph">
 <p>1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#showing-allocated-budget-and-spending-in-categories-show"><code>show</code> command</a><br>
@@ -439,12 +377,10 @@ To see the rest of the contributions I made to the User Guide, click the below l
 <li>
 <p>If you provide multiple categories (e.g. <code>allocate $/50.00 c/Food c/Clothes</code>),
 only the last category you provided will be taken (in the previous e.g., the command will
-set budget for <code>Clothes</code> category. In addition, your last category must be of correct format (see below)</p>
+set budget for <code>Clothes</code> category. Your last category must be of correct format (see below)</p>
 </li>
 <li>
-<p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to the same
-category and will be shown with the first character in uppercase and the rest of the characters
-in lowercase (in the above example, it will be shown as <code>Clothes</code>)</p>
+<p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to <code>Clothes</code>)</p>
 </li>
 <li>
 <p>If a budget was previously set for the category, the old category budget will be replaced
@@ -480,15 +416,11 @@ command shown in the next command</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Take note that you can still spend over the category budget set. The rationale is for you to be able to see
-how much you have exceeded your budget allocated in that category so that you will be able to better plan your
-expenditure in the future. (For e.g. if you allocated $50.00 to <code>Clothes</code> and have yet to spend anything in the
-category, you can still spend more than $50.00 after setting the category budget)<br></p>
+<p>You can still spend over the category budget set, so as to see
+how much you have exceeded your budget allocated in that category.<br></p>
 </div>
 <div class="paragraph">
-<p>However, if you have already spent an amount in the category, but have yet to set a budget for the category, it would
-not make sense for you to set a budget smaller than the current spending in the category. Thus an error message will be
-shown in Result Display if you attempt to do so.</p>
+<p>You cannot set a budget smaller than the current spending in the category.</p>
 </div>
 </td>
 </tr>
@@ -534,7 +466,7 @@ The current spending will increase when records are added.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/budget_classdiagram.png" alt="budget classdiagram">
+<img src="../images/budget_classdiagram.png" alt="budget classdiagram" width="600">
 </div>
 <div class="title">Figure 2. Class Diagram for Budget</div>
 </div>
@@ -639,4 +571,4 @@ if the category was not previously allocated with a budget</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 10:48:26 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 11:43:07 UTC</div></div></div></body></html>
