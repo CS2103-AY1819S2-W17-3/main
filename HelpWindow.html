@@ -459,7 +459,7 @@ step-by-step instructions on how to use the different commands.</p>
 <ul>
 <li>
 <p>The budget set must contain a valid amount. A valid amount is a positive number with
-0 or 2 decimal places.</p>
+0 or 2 decimal places. Amount entered cannot be larger than 100000000.</p>
 </li>
 <li>
 <p>If you provide multiple amounts (e.g. <code>set $/30 $/50</code>), only the last amount you provided will
@@ -505,7 +505,7 @@ UI as clean as possible without extra panels for past budgets.</p>
 <ul>
 <li>
 <p>Take note that you can spend over the budget set and set a budget lower than current spending. The
-ratianole is for you to be able to see how much you have exceeded your budget set to better plan your
+rationale is for you to be able to see how much you have exceeded your budget set to better plan your
 expenditure in the future since the App is unable to stop you from spending.</p>
 </li>
 <li>
@@ -563,6 +563,9 @@ budgets are going to exceed it.</p>
 <td class="content">
 <div class="ulist">
 <ul>
+<li>
+<p>Amount entered cannot be larger than 100000000.</p>
+</li>
 <li>
 <p>If you provide multiple categories (e.g. <code>allocate $/50.00 c/Food c/Clothes</code>),
 only the last category you provided will be taken (in the previous e.g., the command will
@@ -772,7 +775,10 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <p>If no date is inputted, current local date will be used instead.</p>
 </li>
 <li>
-<p>Description is limited to 40 characters.</p>
+<p>Name, category and description inputs are limited to 40 characters each.</p>
+</li>
+<li>
+<p>Amount entered cannot be larger than 100000000.</p>
 </li>
 <li>
 <p>Order of the different parameters does not matter.</p>
@@ -859,6 +865,12 @@ Index refers to the index number shown in the list.</p>
 </li>
 <li>
 <p>At least one of the optional fields must be provided.</p>
+</li>
+<li>
+<p>Name, category and description inputs are limited to 40 characters each.</p>
+</li>
+<li>
+<p>Amount entered cannot be larger than 100000000.</p>
 </li>
 <li>
 <p>Date inputted cannot be a date later than the present date.</p>
@@ -1898,4 +1910,4 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 10:31:28 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 10:48:26 UTC</div></div></div></body></html>
