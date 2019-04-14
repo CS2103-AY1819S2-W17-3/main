@@ -2,14 +2,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="../images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="../index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="../index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="../DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="../LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link active" href="../AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="../ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>Eugene Yong - Project Portfolio</h1></div><div id="content"><div id="preamble">
 <div class="sectionbody">
+<div id="img-ProfilePhoto" class="imageblock" style="float: left">
+<div class="content">
+<img src="../images/eugeneyl.png" alt="eugeneyl" width="75">
+</div>
+</div>
 <div class="openblock">
 <div class="content">
 <div class="paragraph">
-<p>This page aims to showcase my contribution to the project <em>In-Credit-Ble</em> in tandem with the software engineering
+<p>This page aims to showcase my contribution to the project <em>In-Credit-Ble</em> done in tandem with the software engineering
 module (CS2103T). I will first give an introduction to <em>In-Credit-Ble</em>, followed by highlighting the key contributions
 that i have made in the application. Lastly, I will be including the relevant sections of the User Guide(UG) and
-Development Guide(DG) that I documented. I hope that this document will provide you with a better understanding of my
-contribution in <em>In-Credit-Ble</em>.</p>
+Development Guide(DG) that I documented.</p>
 </div>
 </div>
 </div>
@@ -27,13 +31,13 @@ contribution in <em>In-Credit-Ble</em>.</p>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> is a Finance Tracker created in order to assist fellow university students who have difficulty keeping
 track of their daily expenses due to the multitude of micro-transactions that they encounter in their daily life. By
-creating a finance tracker with an intuitive and easy-to-use User Interface, we hope to help these students by providing
-them with a hassle-free platform to manage their expenses.</p>
+creating a finance tracker with an intuitive and easy-to-use User Interface (UI), we hope to help these students by
+providing them with a hassle-free platform to manage their expenses.</p>
 </div>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> was developed by a team of five students from the National University of Singapore
-as part of a Software Engineering module (CS2103T). In a short span of 3 months, we have to understand the basic
-structure of a software and adapt the source code of a addressBook into our finance tracker application.
+as part of a Software Engineering module (CS2103T). In a short span of 3 months, we understood the basic
+structure of a software and adapted the source code of an address book into our finance tracker application.
 I will be documenting my contributions to this project through the major and minor features implemented for
 <em>In-Credit-Ble</em>.</p>
 </div>
@@ -55,21 +59,21 @@ I will be documenting my contributions to this project through the major and min
 <div class="sect2">
 <h3 id="features-enhancements"><a class="link" href="#features-enhancements">Features Enhancements</a></h3>
 <div class="sect3">
-<h4 id="major-enhancement-implemented-the-search-feature"><a class="link" href="#major-enhancement-implemented-the-search-feature">Major Enhancement: Implemented the search feature</a></h4>
+<h4 id="major-enhancement-implementation-of-the-search-feature"><a class="link" href="#major-enhancement-implementation-of-the-search-feature">Major Enhancement: Implementation of the search feature</a></h4>
 <div class="paragraph">
 <p>I added the ability to find records based on name, category or dates.</p>
 </div>
 <div class="paragraph">
-<p><strong>What it does</strong>: The <code>search</code> command allows the user to search for records based on keyword that correspond to the
-records' name, category or date depending on the flag that user input. The total sum of money spent on all the
-filtered results of the search is also displayed to allow user to know how much money he/ she has spent on a
+<p><strong>What it does</strong>: The <code>search</code> command allows the user to search for entries based on keyword that correspond to the
+entries' name, category or date depending on the user&#8217;s choice. The total sum of money spent on all the
+filtered entries of the search is also displayed to allow user to know how much money he/ she has spent on a
 particular type of transaction.</p>
 </div>
 <div class="paragraph">
-<p><strong>Justification</strong>: In the midst of numerous records that the user has recorded in the application, this function will
-allow the user to filter out certain transactions record that he/ she is interested in or want to review.
-Having the sum of money spent on these records will also allow the user to have a better understanding of his/ her
-transaction for a particular category, date or item.</p>
+<p><strong>Justification</strong>: In the midst of numerous entries that the user has recorded in the application, this function will
+allow the user to filter out certain transactions record that he/ she is interested in or wants to review.
+Having the total sum of money spent on these records will allow the user to have a better understanding of his/ her
+spending for a particular category, date or item.</p>
 </div>
 <div class="paragraph">
 <p><strong>Highlights</strong>: This enhancement can be triggered using the 'search' command. This feature is also expandable in
@@ -82,7 +86,7 @@ filtering out different kind of records by adding additional predicates in which
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Introduced the function to add, edit or delete the <code>description</code> parameter of the records using the already
+<p>Introduced the function to add, edit or delete the <code>description</code> parameter of the entries using the already
 implemented <code>edit</code> command.</p>
 <div class="ulist">
 <ul>
@@ -105,11 +109,11 @@ he/ she can input the description prefix with nothing after it.</p>
 </div>
 </li>
 <li>
-<p>Allow the <code>Spend</code> command to take in current date by default.</p>
+<p>Improved the <code>Spend</code> command to take in current date by default.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>What it does</strong>: If the user does not key in the <code>date</code> field in the spend function, the current date will
+<p><strong>What it does</strong>: If the user does not key in the <code>date</code> field when using the <code>spend</code> command, the current date will
 automatically be taken as the <code>date</code> instead.</p>
 </li>
 <li>
@@ -158,7 +162,7 @@ application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/mai
 <div class="ulist">
 <ul>
 <li>
-<p>Made edits to the user guide to ensure consistency between the application and the documentations. (Pull Request:
+<p>Edited the user guide to ensure consistency between the application and the documentations. (Pull Request:
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/146">#146</a>)</p>
 </li>
 <li>
@@ -210,16 +214,16 @@ application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/mai
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This next section will include my contribution to the User Guide. It showcases my ability in documenting a
-reader-friendly User Guide that is designed for new users of _In-Credit-Ble</em> to understand the functionality available
-in our application._</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This next section will include my contribution to the User Guide. This showcases my ability in documenting a
+reader-friendly User Guide that is designed for new users of _In-Credit-Ble</em> to understand the different functionality
+available in our application._</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>I contributed to the User Guide documenting the <code>search</code> and <code>edit</code> command. These portions highlights the functions,
-usage and other relevant information about the 2 commands. These portion highlights my ability to explain these features
-in ways that a new user will be able to grasps.</p>
+<p>I documented the <code>edit</code> and <code>search</code> command in the user guide. These portions highlights the functions,
+usage and other relevant information about the 2 commands and it is explained in ways that a new user will be able to
+grasps.</p>
 </div>
 <div class="sect2">
 <h3 id="1-description-of-search-command"><a class="link" href="#1-description-of-search-command">1) Description of Search Command</a></h3>
@@ -236,7 +240,8 @@ spent on all the results of the search will also be shown.</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Make use of the <code>list</code> command to show the full list of records again after filtering the records using the <code>search</code> command.
+Make use of the <code>list</code> command to show the full list of records again after filtering the records using the <code>search</code>
+command.
 </td>
 </tr>
 </table>
@@ -272,7 +277,7 @@ Make use of the <code>list</code> command to show the full list of records again
 <div class="title">Figure 1. Example of searching the a long list of records by the category "Accessories".</div>
 </div>
 <div class="paragraph">
-<p>The total amount of money spent on the searched record will also be shown in the result display.</p>
+<p>The total amount of money spent on the searched entries will also be shown in the result display.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -313,7 +318,7 @@ Make use of the <code>list</code> command to show the full list of records again
 <div class="sect3">
 <h4 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">Editing an entry: <code>edit</code></a></h4>
 <div class="paragraph">
-<p>You can easily edit any part of an existing records in <em>In-Credit-Ble</em>.<br>
+<p>You can easily edit any part of an existing entries in <em>In-Credit-Ble</em>.<br>
 Index refers to the index number shown in the list.</p>
 </div>
 <div class="paragraph">
@@ -343,7 +348,7 @@ Index refers to the index number shown in the list.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>You can remove the description of any records by giving inputting empty parameter.</p>
+<p>You can remove the description of any entries by inputting an empty parameter for description.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -361,7 +366,7 @@ Index refers to the index number shown in the list.</p>
 <div class="content">
 <img src="../images/RemoveDescriptionExample.png" alt="RemoveDescriptionExample" width="600">
 </div>
-<div class="title">Figure 3. Example of removing the description from a record</div>
+<div class="title">Figure 3. Example of removing the description from a entries</div>
 </div>
 </div>
 </div>
@@ -420,7 +425,7 @@ Index refers to the index number shown in the list.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Tis last section will include my contribution to the Developer Guide. It showcases my ability in writing a technical
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This last section will include my contribution to the Developer Guide. It showcases my ability in writing a technical
 documentation and also demonstrate the technical depth of my code contribution.</em></p></td>
 </tr>
 </tbody>
@@ -433,8 +438,8 @@ documentation and also demonstrate the technical depth of my code contribution.<
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I constructed the class diagrams for the different components of the <em>In-Credit-Ble</em> and explained the interaction within
-these components. This will allow developers who wish to contribute to our project to easily understand how our
+<td class="tableblock halign-left valign-top"><p class="tableblock">I constructed the class diagrams for the different components of the <em>In-Credit-Ble</em> and explained the interaction
+within these components. This will allow developers who wish to contribute to our project to easily understand how our
 application is designed. Due to page constraints, I will only be showing the edits that I made to the <code>Logic</code>
 and the <code>Model</code> component. To see the contributions I made in documenting the other components of the application,
 please visit the links below.</p>
@@ -517,10 +522,10 @@ that the UI automatically updates when the data in the list change.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I documented the design of <code>Search</code> command to give the readers a better understanding of how the <code>search</code> command is
-implemented and the interactions between the various components of the application in order for the <code>search</code> command
-to be executed. I also listed the design considerations of the <code>search</code> command so that the reader understands why
-the current implementation is chosen instead of the alternative.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I also documented the design of <code>Search</code> command to give the readers a better understanding of how the <code>search</code> command
+is implemented and the interactions between the various components of the application in order for the <code>search</code> command
+to be executed. I also listed the design considerations of the <code>search</code> command in order to explain why the current
+implementation is chosen instead of the alternative.</p></td>
 </tr>
 </tbody>
 </table>
@@ -669,4 +674,4 @@ that is inputted into the finance tracker.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 12:32:55 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:06:31 UTC</div></div></div></body></html>

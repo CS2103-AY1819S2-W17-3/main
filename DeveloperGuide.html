@@ -78,11 +78,14 @@
 <ul class="sectlevel2">
 <li><a href="#launch-and-shutdown">G.1. Launch and Shutdown</a></li>
 <li><a href="#setting-a-budget-2">G.2. Setting a budget</a></li>
-<li><a href="#adding-an-expense">G.3. Adding an expense</a></li>
-<li><a href="#allocating-category-budgets-and-showing-allocated-category-budgets">G.4. Allocating category budgets and showing allocated category budgets</a></li>
-<li><a href="#deleting-an-entry">G.5. Deleting an entry</a></li>
-<li><a href="#sorting-the-entries">G.6. Sorting the entries</a></li>
-<li><a href="#saving-data">G.7. Saving data</a></li>
+<li><a href="#allocating-category-budgets-and-showing-allocated-category-budgets">G.3. Allocating category budgets and showing allocated category budgets</a></li>
+<li><a href="#adding-an-expense">G.4. Adding an expense</a></li>
+<li><a href="#editing-an-expense">G.5. Editing an expense</a></li>
+<li><a href="#deleting-an-entry">G.6. Deleting an entry</a></li>
+<li><a href="#searching-an-entry">G.7. Searching an entry</a></li>
+<li><a href="#sorting-the-entries">G.8. Sorting the entries</a></li>
+<li><a href="#changing-the-finance-tracker-data-storage-location">G.9. Changing the Finance Tracker data storage location</a></li>
+<li><a href="#saving-data">G.10. Saving data</a></li>
 </ul>
 </li>
 </ul>
@@ -2907,7 +2910,7 @@ Expected: The budget is changed to $500.50. The Budget Panel and Browser Panel a
 </li>
 <li>
 <p>Test case: <code>set 500</code><br>
-Expected: The budget is not changed. Error details shown in the status message. Status barremains the same.</p>
+Expected: The budget is not changed. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
 <p>Test case: <code>set $/$500</code><br>
@@ -2928,46 +2931,7 @@ Expected: Similar to previous</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="adding-an-expense"><a class="link" href="#adding-an-expense">G.3. Adding an expense</a></h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Adding an entry no matter what is listed.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food d/1/4/2019 r/Tasty</code><br>
-Expected: Entry is added to the back of the list. Timestamp in the status bar is updated.</p>
-</li>
-<li>
-<p>Test case: <code>spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</code><br>
-Expected: Entry is added to the back of the list. Category recorded down is Clothes. Timestamp in the status bar is updated.</p>
-</li>
-<li>
-<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food</code><br>
-Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded. Timestamp in the status bar is updated.</p>
-</li>
-<li>
-<p>Test case: <code>add n/Chicken Rice $/5.50 c/Food</code><br>
-Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded. Timestamp in the status bar is updated.</p>
-</li>
-<li>
-<p>Test case: <code>spend n/Chicken Rice $/5.50</code><br>
-Expected: No entry is added. Error details shown in the status message. Status bar remains the same.</p>
-</li>
-<li>
-<p>Other incorrect spend commands to try: <code>spend n/Chicken Rice c/Food</code>, <code>spend $.5.50 c/Food</code>, <code>spend n/Chicken Rice $/5.5 c/Food</code>,
-<code>spend n/Chicken Rice $/5.50 c/Food d/12/12/2045</code>, <code>spend n/Chicken Rice $/$5.50 c/Food</code><br>
-   Expected: Similar to previous</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="allocating-category-budgets-and-showing-allocated-category-budgets"><a class="link" href="#allocating-category-budgets-and-showing-allocated-category-budgets">G.4. Allocating category budgets and showing allocated category budgets</a></h3>
+<h3 id="allocating-category-budgets-and-showing-allocated-category-budgets"><a class="link" href="#allocating-category-budgets-and-showing-allocated-category-budgets">G.3. Allocating category budgets and showing allocated category budgets</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3026,11 +2990,161 @@ Error details shown in status message.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deleting-an-entry"><a class="link" href="#deleting-an-entry">G.5. Deleting an entry</a></h3>
+<h3 id="adding-an-expense"><a class="link" href="#adding-an-expense">G.4. Adding an expense</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Deleting an entry while all entries are listed</p>
+<p>Adding an entry no matter what is listed.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food d/1/4/2019 r/Tasty</code><br>
+Expected: Entry is added to the back of the list. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</code><br>
+Expected: Entry is added to the back of the list. Category recorded down is Clothes. Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food</code><br>
+Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded.
+Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>add n/Chicken Rice $/5.50 c/Food</code><br>
+Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded.
+Timestamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>spend n/Chicken Rice $/5.50</code><br>
+Expected: No entry is added. Error details shown in the status message. Status bar remains the same.</p>
+</li>
+<li>
+<p>Other incorrect spend commands to try: <code>spend n/Chicken Rice c/Food</code>, <code>spend $.5.50 c/Food</code>, <code>spend n/Chicken Rice $/5.5 c/Food</code>,
+<code>spend n/Chicken Rice $/5.50 c/Food d/12/12/2045</code>, <code>spend n/Chicken Rice $/$5.50 c/Food</code><br>
+Expected: Similar to previous</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="editing-an-expense"><a class="link" href="#editing-an-expense">G.5. Editing an expense</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Edit an entry while all entries are listed</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: List all entries using the <code>list</code> command. The list must have some entries in it.</p>
+</li>
+<li>
+<p>Editing one parameter of an entry.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>edit 1 n/test</code><br>
+Expected: The name of the first entry is being changed to test. Time stamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 d/01/02/2003</code><br>
+Expected: The date of the first entry is being changed to 01/02/2003. Time stamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 $/100</code><br>
+Expected: The amount spent of the first entry is changed to $100. The budget shown in the budget panel and the
+browser panel is updated. Time stamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 c/Test.</code><br>
+Expected: The category of the first entry is changed to Test. Time stamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 r/Testing testing</code><br>
+Expected: The description of the first entry is changed to "Testing testing". Time stamp in the status bar is updated.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Editing more than one parameter of an entry</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>edit 1 n/test1 $/123</code><br>
+Expected: The first entry is being changed based on the command. The budget shown in the budget panel and the
+browser panel is updated. Time stamp in the status bar is updated.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 n/test2 $/1234 d/01/01/2001</code><br>
+Expected: Similar to previous.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 n/test3 $/12345 d/01/01/2002 c/Test1</code><br>
+Expected: Similar to previous.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 n/test4 $/123456 d/01/01/2003 c/Test2 r/Testing test</code><br>
+Expected: Similar to previous.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Removing description for an entry</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Prerequisites: The first entry of the list must have a description.</p>
+</li>
+<li>
+<p>Test case: <code>edit 1 r/</code>
+Expected: The description for the first entry is removed.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Invalid command due to index</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>edit 0 n/test</code>
+Expected: No entry is edited. Error details shown in the status message. Status bar remains the same.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Invalid command due to parameters</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>edit 1 $/test</code>
+Expected: No entry is added. Error details shown in the status message. Status bar remains the same.</p>
+</li>
+<li>
+<p>Other incorrect edit commands to try: <code>edit 1 d/01/01/2045</code>, <code>edit 1 $/$100</code>,
+<code>edit 1 r/12345678901234567890123456789012345678901</code>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deleting-an-entry"><a class="link" href="#deleting-an-entry">G.6. Deleting an entry</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Deleting an entry while all entries are listed.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -3055,7 +3169,119 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sorting-the-entries"><a class="link" href="#sorting-the-entries">G.6. Sorting the entries</a></h3>
+<h3 id="searching-an-entry"><a class="link" href="#searching-an-entry">G.7. Searching an entry</a></h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In order for the expected results of the test to be accurate, please input the following commands below to set up your
+finance tracker.<br>
+1. <code>clear</code><br>
+2. <code>spend n/Chicken Rice $/5.50 c/Food d/1/4/2019</code><br>
+3. <code>spend n/Chicken Rice $/5.50 c/Food d/2/4/2019</code><br>
+4. <code>spend n/Cupcakes $/2.50 c/Food d/2/4/2019</code><br>
+5. <code>spend n/Tshirt $/15 c/Clothes d/1/4/2019</code><br>
+6. <code>spend n/Jeans $/40 c/Clothes d/2/4/2019</code>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Searching for an entry or entries in a list.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: There must already be entries that are shown in the record list panel. Please set up the finance
+tracker as shown in the NOTE above.</p>
+</li>
+<li>
+<p>Search by name</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>search -name chicken rice</code><br>
+Expected: 2 records are shown in the records list panel. The result display shows that the total spent on the
+searched records is $11.00.</p>
+</li>
+<li>
+<p>Test case: <code>search -name chicken</code><br>
+Expected: Same as previous.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Search by category</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>search -cat clothes</code><br>
+Expected: 2 records are shown in the records list panel. The result display shows that the total spent on the
+searched records is $55.00.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Search by date</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>search -date 2/4/2019</code><br>
+Expected: 3 records are shown in the records list panel. The result display shows that the total spent on the
+searched records is $48.00.</p>
+</li>
+<li>
+<p>Test case: <code>search -date 5/4/2019</code><br>
+Expected: 0 records are shown in the records list panel. The result display shows that the total spent on the
+searched records is $0.00.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Search with no records shown</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>No matches in the keywords: <code>search -date 5/4/2019</code><br>
+Expected: 0 records are shown in the records list panel. The result display shows that the total spent on the
+searched records is $0.00.</p>
+</li>
+<li>
+<p>No parameters inputted after the search flag: <code>search -date</code><br>
+Expected: Same as previous.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Invalid search command</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Test case: <code>search -cat -date</code>
+Expected: Error message is shown. The records list panel remains the same.</p>
+</li>
+<li>
+<p>Other incorrect sort commands to try: <code>search -food</code>, <code>search -cat -food</code>, <code>search -cat -date -name</code>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sorting-the-entries"><a class="link" href="#sorting-the-entries">G.8. Sorting the entries</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3122,7 +3348,40 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-data"><a class="link" href="#saving-data">G.7. Saving data</a></h3>
+<h3 id="changing-the-finance-tracker-data-storage-location"><a class="link" href="#changing-the-finance-tracker-data-storage-location">G.9. Changing the Finance Tracker data storage location</a></h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In order to test this command, please take note the name of the json file you are currently on. The name of the file can
+be seen at the right side of the status bar. By default, the json file is "finance.json".
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Changing the file name</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Test case: <code>setfile f/testfile</code>
+Expected: A new finance tracker file will be created with no records in the records list and the budget will be shown
+as $0.00. You can type in the command <code>setfile f/finance</code>(or the name of the previous file) to retrieve the original
+finance tracker that you were previously on.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="saving-data"><a class="link" href="#saving-data">G.10. Saving data</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3139,4 +3398,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 12:32:55 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:06:31 UTC</div></div></div></body></html>
