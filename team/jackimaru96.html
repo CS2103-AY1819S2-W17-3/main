@@ -436,7 +436,7 @@ To see the rest of the contributions I made to the User Guide, click the below l
 <li>
 <p>If you provide multiple categories (e.g. <code>allocate $/50.00 c/Food c/Clothes</code>),
 only the last category you provided will be taken (in the previous e.g., the command will
-set budget for <code>Clothes</code> category.</p>
+set budget for <code>Clothes</code> category. In addition, your last category must be of correct format (see below)</p>
 </li>
 <li>
 <p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to the same
@@ -446,6 +446,14 @@ in lowercase (in the above example, it will be shown as <code>Clothes</code>)</p
 <li>
 <p>If a budget was previously set for the category, the old category budget will be replaced
 by the new <code>allocate</code> command</p>
+</li>
+<li>
+<p>The category budget that you allocate should be more than current spending in that category as it would not make
+sense to set a budget that is below the amount that you have already spent on that category.</p>
+<div class="paragraph">
+<p>For example, if you have spent $50.50 on the cateogry <code>Food</code>, you will receive an error message when you try to
+<code>allocate</code> $40.00 to the category <code>Food</code>.</p>
+</div>
 </li>
 <li>
 <p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
@@ -471,7 +479,13 @@ command shown in the next command</p>
 <div class="paragraph">
 <p>Take note that you can still spend over the category budget set. The rationale is for you to be able to see
 how much you have exceeded your budget allocated in that category so that you will be able to better plan your
-expenditure in the future.</p>
+expenditure in the future. (For e.g. if you allocated $50.00 to <code>Clothes</code> and have yet to spend anything in the
+category, you can still spend more than $50.00 after setting the category budget)<br></p>
+</div>
+<div class="paragraph">
+<p>However, if you have already spent an amount in the category, but have yet to set a budget for the category, it would
+not make sense for you to set a budget smaller than the current spending in the category. Thus an error message will be
+shown in Result Display if you attempt to do so.</p>
 </div>
 </td>
 </tr>
@@ -622,4 +636,4 @@ if the category was not previously allocated with a budget</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 09:19:22 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 10:22:53 UTC</div></div></div></body></html>
