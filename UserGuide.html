@@ -41,7 +41,7 @@
 <li><a href="#records-management">4.3. Records Management</a>
 <ul class="sectlevel3">
 <li><a href="#listing-all-entries-code-list-code">4.3.1. Listing all entries: <code>list</code></a></li>
-<li><a href="#locating-entry-based-on-name-category-code-search-code">4.3.2. Locating entry based on name/category: <code>search</code></a></li>
+<li><a href="#searching-an-entry-based-on-name-category-date-code-search-code">4.3.2. Searching an entry based on name/category/date: <code>search</code></a></li>
 <li><a href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">4.3.3. Sorting the entries according to name/amount/date/category: <code>sort</code></a></li>
 <li><a href="#reversing-the-entries-code-reverse-code">4.3.4. Reversing the entries: <code>reverse</code></a></li>
 <li><a href="#showing-summary-of-records-code-summary-code">4.3.5. Showing summary of records: <code>summary</code></a></li>
@@ -761,7 +761,7 @@ and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code><
 <div class="sect3">
 <h4 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">4.2.2. Editing an entry: <code>edit</code></a></h4>
 <div class="paragraph">
-<p>You can easily edit any part of an existing entry in the records.<br>
+<p>You can easily edit any part of an existing records in <em>In-Credit-Ble</em>.<br>
 Index refers to the index number shown in the list.</p>
 </div>
 <div class="paragraph">
@@ -783,7 +783,33 @@ Index refers to the index number shown in the list.</p>
 <li>
 <p><code>edit 1 n/burger c/Food</code></p>
 </li>
+<li>
+<p><code>edit 1 r/Best meal I have ever eaten</code></p>
+</li>
 </ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>You can remove the description of any records by giving inputting empty parameter.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Example of removing description</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>edit 1 r/</code></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/RemoveDescriptionExample.png" alt="RemoveDescriptionExample" width="600">
+</div>
+<div class="title">Figure 14. Example of removing the description from a record</div>
 </div>
 </div>
 </div>
@@ -809,7 +835,7 @@ Index refers to the index number shown in the list.</p>
 <p>At least one of the optional fields must be provided.</p>
 </li>
 <li>
-<p>Date cannot be a future date.</p>
+<p>Date inputted cannot be a date later than the present date.</p>
 </li>
 <li>
 <p>Order of parameters inputted does not matter.</p>
@@ -883,19 +909,6 @@ Deleted entries can be recovered via the <code>undo</code> command.</p>
 <div class="paragraph">
 <p>You can see all the entries you have entered, as long as they are not deleted entries.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-This command can be used to reset
-the list after you filter the records using the <code>search</code> command.
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>l</code>, <code>ls</code></p>
 </div>
@@ -904,10 +917,22 @@ the list after you filter the records using the <code>search</code> command.
 </div>
 </div>
 <div class="sect3">
-<h4 id="locating-entry-based-on-name-category-code-search-code"><a class="link" href="#locating-entry-based-on-name-category-code-search-code">4.3.2. Locating entry based on name/category: <code>search</code></a></h4>
+<h4 id="searching-an-entry-based-on-name-category-date-code-search-code"><a class="link" href="#searching-an-entry-based-on-name-category-date-code-search-code">4.3.2. Searching an entry based on name/category/date: <code>search</code></a></h4>
 <div class="paragraph">
 <p>You can easily search for entries in the records using a name, category or date as keywords. The total sum of money
 spent on all the results of the search will also be shown.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Make use of the <code>list</code> command to reset the records after you filter the records using the <code>search</code> command.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>find</code></p>
@@ -923,7 +948,7 @@ spent on all the results of the search will also be shown.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>search -cat Transport</code></p>
+<p><code>search -cat Accessories</code></p>
 </li>
 <li>
 <p><code>search -name cake bread</code></p>
@@ -932,6 +957,21 @@ spent on all the results of the search will also be shown.</p>
 <p><code>search -date 10/10/2001</code></p>
 </li>
 </ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/SearchByCategoryExample.png" alt="SearchByCategoryExample" width="600">
+</div>
+<div class="title">Figure 15. Example of searching the a long list of records by the category "Accessories".</div>
+</div>
+<div class="paragraph">
+<p>The total amount of money spent on the searched record will also be shown in the result display.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/TotalSpentInResultDisplay.png" alt="TotalSpentInResultDisplay" width="600">
+</div>
+<div class="title">Figure 16. Total spent on searched records shown in result display.</div>
 </div>
 </div>
 </div>
@@ -1035,7 +1075,7 @@ Sorts the list of records by category in lexicographical order (ascending order)
 <div class="content">
 <img src="images/sortExamples.png" alt="sortExamples" width="900">
 </div>
-<div class="title">Figure 14. Examples of <code>sort</code> command (default ordering)</div>
+<div class="title">Figure 17. Examples of <code>sort</code> command (default ordering)</div>
 </div>
 <div class="paragraph">
 <p><strong>More examples</strong>:</p>
@@ -1052,7 +1092,7 @@ Sorts list of records by name in reverse lexicographical order.</p>
 <div class="content">
 <img src="images/sortNameDescExample.png" alt="sortNameDescExample" width="300">
 </div>
-<div class="title">Figure 15. Name sorted in descending order</div>
+<div class="title">Figure 18. Name sorted in descending order</div>
 </div>
 </div>
 </div>
@@ -1088,7 +1128,7 @@ List will be sorted by name in reverse lexicographical order.
 <div class="content">
 <img src="images/reverseExample.png" alt="reverseExample" width="600">
 </div>
-<div class="title">Figure 16. Name sorted in descending order</div>
+<div class="title">Figure 19. Name sorted in descending order</div>
 </div>
 </div>
 <div class="sect3">
@@ -1106,7 +1146,7 @@ Entering the <code>summary</code> command in the command box will allow you to s
 <div class="content">
 <img src="images/summaryUI.png" alt="summaryUI" width="800">
 </div>
-<div class="title">Figure 17. Summary panel is displayed when user enters the  <code>summary</code> command</div>
+<div class="title">Figure 20. Summary panel is displayed when user enters the  <code>summary</code> command</div>
 </div>
 <div class="paragraph">
 <p>You can also specify a report period by stating the number of days or months via the <code>PERIOD_AMOUNT</code> and <code>PERIOD</code> parameters. However, these parameters are optional.</p>
@@ -1119,7 +1159,7 @@ Your screen should change back to the browser view mode as shown in the diagram 
 <div class="content">
 <img src="images/summaryUI_2.png" alt="summaryUI 2" width="800">
 </div>
-<div class="title">Figure 18. Exits from summary view mode when user enters the  <code>summary</code> command again</div>
+<div class="title">Figure 21. Exits from summary view mode when user enters the  <code>summary</code> command again</div>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>overview</code></p>
@@ -1422,7 +1462,7 @@ the menu bar.</p>
 <div class="content">
 <img src="images/themeMenuBar.png" alt="themeMenuBar">
 </div>
-<div class="title">Figure 19. Menu Bar with Theme tab</div>
+<div class="title">Figure 22. Menu Bar with Theme tab</div>
 </div>
 </td>
 </tr>
@@ -1772,4 +1812,4 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 05:24:43 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 05:42:31 UTC</div></div></div></body></html>

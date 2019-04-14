@@ -6,7 +6,10 @@
 <div class="content">
 <div class="paragraph">
 <p>This page aims to showcase my contribution to the project <em>In-Credit-Ble</em> in tandem with the software engineering
-module (CS2103T).</p>
+module (CS2103T). I will first give an introduction to <em>In-Credit-Ble</em>, followed by highlighting the key contributions
+that i have made in the application. Lastly, I will be including the relevant sections of the User Guide(UG) and
+Development Guide(DG) that I documented. I hope that this document will provide you with a better understanding of my
+contribution in <em>In-Credit-Ble</em>.</p>
 </div>
 </div>
 </div>
@@ -15,17 +18,17 @@ module (CS2103T).</p>
 <div class="sect1">
 <h2 id="project-in-credit-ble"><a class="link" href="#project-in-credit-ble">PROJECT: In-Credit-Ble</a></h2>
 <div class="sectionbody">
-<hr>
+
 </div>
 </div>
 <div class="sect1">
 <h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>In-Credit-Ble</em> is a Finance Tracker created in order to assist fellow students who have difficulty keeping track of
-their daily expenses due to the multitude of micro-transactions that they encounter in their daily life. By allowing
-users to easily record their transactions and navigate through their numerous expenses, we hope to help to provide our
-users with a hassle-free way of managing their expenses.</p>
+<p><em>In-Credit-Ble</em> is a Finance Tracker created in order to assist fellow university students who have difficulty keeping
+track of their daily expenses due to the multitude of micro-transactions that they encounter in their daily life. By
+creating a finance tracker with an intuitive and easy-to-use User Interface, we hope to help these students by providing
+them with a hassle-free platform to manage their expenses.</p>
 </div>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> was developed by a team of five students from the National University of Singapore
@@ -39,47 +42,113 @@ I will be documenting my contributions to this project through the major and min
 <div class="sect1">
 <h2 id="summary-of-contributions"><a class="link" href="#summary-of-contributions">Summary of Contributions</a></h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This section will provide a summary of my contributions to In-Credit-Ble.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="features-enhancements"><a class="link" href="#features-enhancements">Features Enhancements</a></h3>
+<div class="sect3">
+<h4 id="major-enhancement-implemented-the-search-feature"><a class="link" href="#major-enhancement-implemented-the-search-feature">Major Enhancement: Implemented the search feature</a></h4>
 <div class="paragraph">
-<p><strong>Enhancement Added</strong>: I added the ability to find records based on name, category or dates.</p>
+<p>I added the ability to find records based on name, category or dates.</p>
 </div>
 <div class="paragraph">
 <p><strong>What it does</strong>: The <code>search</code> command allows the user to search for records based on keyword that correspond to the
-records' name, category or date depending on the flag that user input. The sum of all results of the search is also
-displayed to allow user to know how much money he/she has spent on a particular type of transaction.</p>
+records' name, category or date depending on the flag that user input. The total sum of money spent on all the
+filtered results of the search is also displayed to allow user to know how much money he/ she has spent on a
+particular type of transaction.</p>
 </div>
 <div class="paragraph">
 <p><strong>Justification</strong>: In the midst of numerous records that the user has recorded in the application, this function will
-allow the user to filter out certain transactions record that he is interested in. Having the sum of these records will
-also allow the user to know how much money he/she has spent for either a particular category, date or item.</p>
+allow the user to filter out certain transactions record that he/ she is interested in or want to review.
+Having the sum of money spent on these records will also allow the user to have a better understanding of his/ her
+transaction for a particular category, date or item.</p>
 </div>
 <div class="paragraph">
 <p><strong>Highlights</strong>: This enhancement can be triggered using the 'search' command. This feature is also expandable in
-to filter out different kind of records by adding additional categories in which the user can search with.</p>
+filtering out different kind of records by adding additional predicates in which the user can search with.
+(Searching based on amount).</p>
 </div>
-<div class="paragraph">
-<p><strong>Code Contribution</strong> : Please click on this link
-to see a sample of my code: [<a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#search=eugeneyl">Functional Code</a>]</p>
 </div>
-<div class="paragraph">
-<p><strong>Other Contributions</strong>:</p>
-</div>
+<div class="sect3">
+<h4 id="minor-enhancement"><a class="link" href="#minor-enhancement">Minor Enhancement:</a></h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Introduced the function to add, edit or delete the <code>description</code> parameter of the records using the already
+implemented <code>edit</code> command.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Enhancement to existing Feature:</p>
+<p><strong>What it does</strong>: Allows user to make changes to the description of the any of the entries that he/ she has inputted
+into <em>In-Credit-Ble</em>.</p>
+</li>
+<li>
+<p><strong>Justification</strong>: This functionality allow the user to make any changes to the description easily, without having
+the need to create a new entry. Furthermore, being able to delete the description will allow the user to remove
+unnecessary information shown on the record card in <em>In-Credit-Ble</em> so that he/ she can view his/ her transaction
+easier.</p>
+</li>
+<li>
+<p>Highlights*: This enhancement can be triggered using the <code>edit</code> command. In order to make changes to the description,
+the user can add the necessary changes after the description prefix(<code>r/</code>). If the user wants to remove the description,
+he/ she can input the description prefix with nothing after it.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Allow the <code>Spend</code> command to take in current date by default.</p>
 <div class="ulist">
 <ul>
+<li>
+<p><strong>What it does</strong>: If the user does not key in the <code>date</code> field in the spend function, the current date will
+automatically be taken as the <code>date</code> instead.</p>
+</li>
+<li>
+<p><strong>Justification</strong>: Since a transaction will usually be inputted into <em>In-Credit_Ble</em> on the day of the transaction,
+having this function allow the user to key in one less parameter when recording his/ her numerous transactions, making
+it easier and enticing to record his/ her transactions.</p>
+</li>
+<li>
+<p>Highlights*: This enhancement can be triggered using the <code>spend</code> command. If the user did not include any date, by
+default the local current date will be taken.
+**</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="other-notable-contributions"><a class="link" href="#other-notable-contributions">Other Notable Contributions:</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Enhancements to existing features:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Updated the restrictions for <code>amount</code>, <code>date</code> to prevent the user from inputted an unwanted value for the
+2 fields by accident. (Pull request: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/64">#68</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/191">#191</a>)</p>
+</li>
 <li>
 <p>Changed all instances of person to record when adapting the address book application to the finance tracker
 application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/58">#58</a>)</p>
 </li>
 <li>
-<p>Set the restriction to the input that the <code>amount</code> class can take in.
-(Pull Request: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/64">#68</a>)</p>
-</li>
-<li>
-<p>Added the $ prefix to amount displayed on the record card. (Pull Request
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/95">#95</a>)</p>
+<p>Wrote the automated tests for the <code>set</code> command and added additional tests for <code>allocate</code> command.
+(Pull Request: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/194">#194</a>)</p>
 </li>
 </ul>
 </div>
@@ -89,12 +158,22 @@ application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/mai
 <div class="ulist">
 <ul>
 <li>
+<p>Made edits to the user guide to ensure consistency between the application and the documentations. (Pull Request:
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/146">#146</a>)</p>
+</li>
+<li>
 <p>Updated the application description in the ReadMe document so that users know what In-Credit-Ble is for.
 (Pull Request: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/9">#9</a>)</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
-<p>Created initial diagrams for the design of the applicatiion.
-(Pull Request: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/26">#26</a>)</p>
+<p>Issue Managements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Resolved issues surfaced by peers after testing the codes.</p>
 </li>
 </ul>
 </div>
@@ -104,12 +183,21 @@ application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/mai
 <div class="ulist">
 <ul>
 <li>
-<p>Reviewed Pull Requests:</p>
+<p>PR Reviews: To view the pull requests reviewed by me, click
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pulls?q=is%3Apr+reviewed-by%3Aeugeneyl+is%3Aclosed">here</a>.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="code-contribution"><a class="link" href="#code-contribution">Code Contribution</a></h3>
+<div class="paragraph">
+<p>Please click on this link to see the code that I contributed to In-Credit-Ble &#8594;
+<a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#search=eugeneyl">Code Contributions</a>.</p>
+</div>
 </div>
 </div>
 </div>
@@ -122,16 +210,36 @@ application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/mai
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Listed below are sections of my contribution to the User Guide of _In_Credit_Ble, showcasing my ability in documenting
- a user guide for end-users of our product.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This next section will include my contribution to the User Guide. It showcases my ability in documenting a
+reader-friendly User Guide that is designed for new users of _In-Credit-Ble</em> to understand the functionality available
+in our application._</p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>I contributed to the User Guide documenting the <code>search</code> and <code>edit</code> command. These portions highlights the functions,
+usage and other relevant information about the 2 commands. These portion highlights my ability to explain these features
+in ways that a new user will be able to grasps.</p>
+</div>
+<div class="sect2">
+<h3 id="1-description-of-search-command"><a class="link" href="#1-description-of-search-command">1) Description of Search Command</a></h3>
 <div class="sect3">
-<h4 id="locating-entry-based-on-name-category-code-search-code"><a class="link" href="#locating-entry-based-on-name-category-code-search-code">Locating entry based on name/category: <code>search</code></a></h4>
+<h4 id="searching-an-entry-based-on-name-category-date-code-search-code"><a class="link" href="#searching-an-entry-based-on-name-category-date-code-search-code">Searching an entry based on name/category/date: <code>search</code></a></h4>
 <div class="paragraph">
 <p>You can easily search for entries in the records using a name, category or date as keywords. The total sum of money
 spent on all the results of the search will also be shown.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Make use of the <code>list</code> command to reset the records after you filter the records using the <code>search</code> command.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code>find</code></p>
@@ -147,7 +255,7 @@ spent on all the results of the search will also be shown.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>search -cat Transport</code></p>
+<p><code>search -cat Accessories</code></p>
 </li>
 <li>
 <p><code>search -name cake bread</code></p>
@@ -156,6 +264,21 @@ spent on all the results of the search will also be shown.</p>
 <p><code>search -date 10/10/2001</code></p>
 </li>
 </ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/SearchByCategoryExample.png" alt="SearchByCategoryExample" width="600">
+</div>
+<div class="title">Figure 1. Example of searching the a long list of records by the category "Accessories".</div>
+</div>
+<div class="paragraph">
+<p>The total amount of money spent on the searched record will also be shown in the result display.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/TotalSpentInResultDisplay.png" alt="TotalSpentInResultDisplay" width="600">
+</div>
+<div class="title">Figure 2. Total spent on searched records shown in result display.</div>
 </div>
 </div>
 </div>
@@ -182,6 +305,102 @@ spent on all the results of the search will also be shown.</p>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="2-description-of-edit-command"><a class="link" href="#2-description-of-edit-command">2) Description of Edit Command</a></h3>
+<div class="sect3">
+<h4 id="editing-an-entry-code-edit-code"><a class="link" href="#editing-an-entry-code-edit-code">Editing an entry: <code>edit</code></a></h4>
+<div class="paragraph">
+<p>You can easily edit any part of an existing records in <em>In-Credit-Ble</em>.<br>
+Index refers to the index number shown in the list.</p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code>e</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY] [r/DESCRIPTION]</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>edit 2 $/10.10</code></p>
+</li>
+<li>
+<p><code>edit 1 n/burger c/Food</code></p>
+</li>
+<li>
+<p><code>edit 1 r/Best meal I have ever eaten</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>You can remove the description of any records by giving inputting empty parameter.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Example of removing description</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>edit 1 r/</code></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/RemoveDescriptionExample.png" alt="RemoveDescriptionExample" width="600">
+</div>
+<div class="title">Figure 3. Example of removing the description from a record</div>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><code>INDEX</code> here refers to the index number shown in the displayed records.</p>
+</li>
+<li>
+<p><code>INDEX</code> <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+<li>
+<p><code>INDEX</code> must be within the total number of records that are displayed.</p>
+</li>
+<li>
+<p>At least one of the optional fields must be provided.</p>
+</li>
+<li>
+<p>Date inputted cannot be a date later than the present date.</p>
+</li>
+<li>
+<p>Order of parameters inputted does not matter.</p>
+</li>
+<li>
+<p>Existing values will be updated to the input values.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="sect1">
 <h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
@@ -192,161 +411,37 @@ spent on all the results of the search will also be shown.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Given below are sections I contributed to the Developer Guide, showcasing my ability to write technical documentation
-and the technical depth of my code contributions.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Tis last section will include my contribution to the Developer Guide. It showcases my ability in writing a technical
+documentation and also demonstrate the technical depth of my code contribution.</em></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="design"><a class="link" href="#design">Design</a></h2>
-<div class="sectionbody">
 <div class="sect2">
-<h3 id="Design-Architecture"><a class="link" href="#Design-Architecture">Architecture</a></h3>
-<div class="imageblock">
-<div class="content">
-<img src="../images/Architecture.png" alt="Architecture" width="600">
-</div>
-<div class="title">Figure 1. Architecture Diagram</div>
-</div>
-<div class="paragraph">
-<p>The <strong><em>Architecture Diagram</em></strong> above explains the high-level design of <em>In-Credit-Ble</em>. Given below is a quick overview of each component.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
+<h3 id="application-design"><a class="link" href="#application-design">Application Design</a></h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-The <code>.pptx</code> files used to create diagrams in this document can be found in the <a href="{repoURL}/docs/diagrams/">diagrams</a> folder.
-To update a diagram, modify the diagram in the pptx file, select the objects of the diagram, and choose <b class="button">Save as picture</b>.
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I constructed the class diagrams for the different components of the <em>In-Credit-Ble</em> and explained the interaction within
+these components. This will allow developers who wish to contribute to our project to easily understand how our
+application is designed. Due to page constraints, I will only be showing the edits that I made to the <code>Logic</code>
+and the <code>Model</code> component. To see the contributions I made in documenting the other components of the application,
+please visit the links below.</p>
+<p class="tableblock">1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#Design-Ui">UI</a><br>
+2) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#Design-Storage">Storage</a></p></td>
 </tr>
+</tbody>
 </table>
-</div>
-<div class="paragraph">
-<p><code>Main</code> has only one class called <a href="{repoURL}/src/main/java/seedu/finance/MainApp.java"><code>MainApp</code></a>. It is responsible for,</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>App launch: Initializes the components in the correct sequence, and connects them up with each other.</p>
-</li>
-<li>
-<p>App shut down: Shuts down the components and invokes cleanup method where necessary.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><a href="#Design-Commons"><strong><code>Commons</code></strong></a> represents a collection of classes used by multiple other components.
-The following class plays an important role at the architecture level:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>LogsCenter</code> : Used by many classes to write log messages to the App&#8217;s log file.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The rest of the App consists of four components.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Design-Ui"><strong><code>UI</code></strong></a>: The UI of the App.</p>
-</li>
-<li>
-<p><a href="#Design-Logic"><strong><code>Logic</code></strong></a>: The command executor.</p>
-</li>
-<li>
-<p><a href="#Design-Model"><strong><code>Model</code></strong></a>: Holds the data of the App in-memory.</p>
-</li>
-<li>
-<p><a href="#Design-Storage"><strong><code>Storage</code></strong></a>: Reads data from, and writes data to, the hard disk.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Each of the four components</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Defines its <em>API</em> in an <code>interface</code> with the same name as the Component.</p>
-</li>
-<li>
-<p>Exposes its functionality using a <code>{Component Name}Manager</code> class.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>For example, the <code>Logic</code> component (see the class diagram given below) defines its API in the <code>Logic.java</code> interface and
-exposes its functionality using the <code>LogicManager.java</code> class.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/LogicClassDiagram.png" alt="LogicClassDiagram" width="800">
-</div>
-<div class="title">Figure 2. Class Diagram of the Logic Component</div>
-</div>
-<h4 id="how-do-the-architecture-components-interact-with-each-other" class="discrete">How do the architecture components interact with each other?</h4>
-<div class="paragraph">
-<p>The <em>Sequence Diagram</em> below shows how the components interact with each other for the scenario where the user issues the command <code>delete 1</code>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/SDforDeleteRecord.png" alt="SDforDeleteRecord" width="800">
-</div>
-<div class="title">Figure 3. Component interactions for <code>delete 1</code> command</div>
-</div>
-<div class="paragraph">
-<p>The sections below give more details of each component.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Design-Ui"><a class="link" href="#Design-Ui">UI component</a></h3>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UiClassDiagram.png" alt="UiClassDiagram" width="800">
-</div>
-<div class="title">Figure 4. Structure of the UI Component</div>
-</div>
-<div class="paragraph">
-<p><strong>API</strong> : <a href="{repoURL}/src/main/java/seedu/finance/ui/Ui.java"><code>Ui.java</code></a></p>
-</div>
-<div class="paragraph">
-<p>The UI consists of a <code>MainWindow</code> that is made up of parts e.g.<code>CommandBox</code>, <code>ResultDisplay</code>, <code>RecordListPanel</code>,
-<code>StatusBarFooter</code>, <code>BrowserPanel</code>, <code>BudgetPanel</code>, <code>SummaryPanel</code> etc. All these, including the <code>MainWindow</code>,
-inherit from the abstract <code>UiPart</code> class.</p>
-</div>
-<div class="paragraph">
-<p>The <code>UI</code> component uses JavaFx UI framework. The layout of these UI parts are defined in matching <code>.fxml</code> files that are in the <code>src/main/resources/view</code> folder.
-For example, the layout of the <a href="{repoURL}/src/main/java/seedu/finance/ui/MainWindow.java"><code>MainWindow</code></a> is specified in <a href="{repoURL}/src/main/resources/view/MainWindow.fxml"><code>MainWindow.fxml</code></a></p>
-</div>
-<div class="paragraph">
-<p>The <code>UI</code> component,</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Executes user commands using the <code>Logic</code> component.</p>
-</li>
-<li>
-<p>Listens for changes to <code>Model</code> data so that the UI can be updated with the modified data.</p>
-</li>
-</ul>
-</div>
 </div>
 <div class="sect2">
 <h3 id="Design-Logic"><a class="link" href="#Design-Logic">Logic component</a></h3>
 <div id="fig-LogicClassDiagram" class="imageblock">
 <div class="content">
-<img src="../images/LogicClassDiagram.png" alt="LogicClassDiagram" width="800">
+<img src="../images/LogicClassDiagram.png" alt="LogicClassDiagram" width="700">
 </div>
-<div class="title">Figure 5. Structure of the Logic Component</div>
+<div class="title">Figure 4. Structure of the Logic Component</div>
 </div>
 <div class="paragraph">
 <p><strong>API</strong> :
@@ -369,26 +464,17 @@ For example, the layout of the <a href="{repoURL}/src/main/java/seedu/finance/ui
 <li>
 <p>In addition, the <code>CommandResult</code> object can also instruct the <code>Ui</code> to perform certain actions, such as displaying
 help to the user.</p>
+<div id="Design-Model" class="paragraph">
+<p>=== Model component</p>
+</div>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>Given below is the Sequence Diagram for interactions within the <code>Logic</code> component for the <code>execute("delete 1")</code> API call.</p>
-</div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/DeletePersonSdForLogic.png" alt="DeletePersonSdForLogic" width="800">
+<img src="../images/ModelClassDiagram.png" alt="ModelClassDiagram" width="700">
 </div>
-<div class="title">Figure 6. Interactions Inside the Logic Component for the <code>delete 1</code> Command</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Design-Model"><a class="link" href="#Design-Model">Model component</a></h3>
-<div class="imageblock">
-<div class="content">
-<img src="../images/ModelClassDiagram.png" alt="ModelClassDiagram" width="800">
-</div>
-<div class="title">Figure 7. Structure of the Model Component</div>
+<div class="title">Figure 5. Structure of the Model Component</div>
 </div>
 <div class="paragraph">
 <p><strong>API</strong> : <a href="{repoURL}/src/main/java/seedu/finance/model/Model.java"><code>Model.java</code></a></p>
@@ -415,36 +501,23 @@ that the UI automatically updates when the data in the list change.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Design-Storage"><a class="link" href="#Design-Storage">Storage component</a></h3>
-<div class="imageblock">
-<div class="content">
-<img src="../images/StorageClassDiagram.png" alt="StorageClassDiagram" width="800">
-</div>
-<div class="title">Figure 8. Structure of the Storage Component</div>
-</div>
-<div class="paragraph">
-<p><strong>API</strong> : <a href="{repoURL}/src/main/java/seedu/finance/storage/Storage.java"><code>Storage.java</code></a></p>
-</div>
-<div class="paragraph">
-<p>The <code>Storage</code> component,</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>can save <code>UserPref</code> objects in json format and read it back.</p>
-</li>
-<li>
-<p>can save the Finance Tracker data in json format and read it back.</p>
-</li>
-</ul>
-</div>
+<h3 id="implementation-of-search-command"><a class="link" href="#implementation-of-search-command">Implementation of Search Command</a></h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I documented the design of <code>Search</code> command to give the readers a better understanding of how the <code>search</code> command is
+implemented and the interactions between the various components of the application in order for the <code>search</code> command
+to be executed. I also listed the design considerations of the <code>search</code> command so that the reader understands why
+the current implementation is chosen instead of the alternative.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
-<h3 id="Design-Commons"><a class="link" href="#Design-Commons">Common classes</a></h3>
-<div class="paragraph">
-<p>Classes used by multiple components are in the <code>seedu.financetracker.commons</code> package.
-=== Search feature</p>
-</div>
+<h3 id="search-feature"><a class="link" href="#search-feature">Search feature</a></h3>
 <div class="paragraph">
 <p>This feature allows the user to filter out specific expenses based on keywords that correspond to the name, category
 or date.</p>
@@ -452,23 +525,60 @@ or date.</p>
 <div class="paragraph">
 <p>This implementation is under <code>Logic</code> and <code>Model</code> Component.</p>
 </div>
+<div class="sect3">
+<h4 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h4>
+<div class="paragraph">
+<p>The sort command uses predicates that implement`java.util.Predicate` interface which will be used to filter the records
+that are inputted into the finance tracker. Each of these predicates contains a <code>List&lt;String&gt;</code> of keywords and a <code>test()</code>
+command that is used to test if a record satisfy the conditions set in the predicate. These predicates are found in the <code>Model</code> component.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Predicates implemented in <code>Model</code> component</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Types of predicate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Functions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CategoryContainsKeywordsPredicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records by a given category</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DateContainsKeywordsPredicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records by a given date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NameContainsKeywordPredicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records with names that matches a keyword</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Below is the UML sequence diagram and a step-by-step explanation of an example usage scenario.</p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../images/SearchCommandSequenceDiagram.png" alt="SearchCommandSequenceDiagram" width="800">
 </div>
-<div class="title">Figure 9. Sequence Diagram of Search Command</div>
+<div class="title">Figure 6. Sequence Diagram of Search Command</div>
 </div>
-<div class="sect3">
-<h4 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User enters command <code>search -FLAG food</code>. The command is received by <code>FinanceTrackerParser</code>,
-which then creates a <code>SearchCommandParser</code> Object and calls <code>SearchCommandParser#parse()</code> method.</p>
+<p>User enters a search command (eg.<code>search -cat food</code>). The command is received by the UI components and the method
+<code>LogicManger#execute()</code> is called.</p>
 </li>
 <li>
-<p>Depending on the <code>-FLAG</code> that is entered by the user, <code>SearchCommandParser</code> will create different predicates that
-correspond to the <code>-FLAG</code>.</p>
+<p>The command is received by <code>FinanceTrackerParser</code>, which then creates a
+<code>SearchCommandParser</code> Object and calls <code>SearchCommandParser#parse()</code> method.</p>
+</li>
+<li>
+<p>Depending on the <code>-FLAG</code> that is entered by the user, <code>SearchCommandParser</code> will create different predicates objects
+that correspond to the <code>-FLAG</code>.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -485,12 +595,12 @@ correspond to the <code>-FLAG</code>.</p>
 </li>
 <li>
 <p>A <code>SearchCommand</code> Object with the correct predicate Object as parameter is created and returned to the
-<code>LogicManager</code>.</p>
+<code>FinanceTrackerParser</code> and then to the <code>LogicManager</code>.</p>
 </li>
 <li>
-<p><code>LogicManager</code> then calls <code>SearchCommand#execute()</code>, which calls Model#updateFilteredExpenseList() method
-to update the predicate of FilterList&lt;Record&gt;. FilterList now contains a new set of records which is filtered by the
-new predicate.</p>
+<p><code>LogicManager</code> then calls <code>SearchCommand#execute()</code>, which calls <code>Model#updateFilteredExpenseList()</code> method
+to update the predicate of <code>FilterList&lt;Record&gt;</code>. `FilterList&lt;Record&gt; now contains a new set of records which is filtered
+by the new predicate.</p>
 </li>
 <li>
 <p><code>SearchCommand</code> then calls <code>getFilteredRecordList</code> method to access the filtered records in an
@@ -540,7 +650,14 @@ each tag. Will take up more space if there is many different tags.</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>We have implemented <strong>Alternative 1</strong> as we want the search function to be more dynamic and more generic to accept
+accept different kind of search in the future implementation. If we were to choose <strong>Alternative 2</strong>, the search
+conditions will only be restricted to category and date where it is likely for different records to have the same
+value (eg. same date or same category). However, it is not feasible to create a different list for every single name
+that is inputted into the finance tracker.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 05:24:43 UTC</div></div></div></body></html>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 05:42:31 UTC</div></div></div></body></html>
