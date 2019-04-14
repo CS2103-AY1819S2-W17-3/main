@@ -250,25 +250,25 @@ those skills in what I have written for the User Guide.</p></td>
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="setting-a-budget-code-set-code"><a class="link" href="#setting-a-budget-code-set-code">Setting a budget: <code>set</code></a></h4>
+<h4 id="setting-a-budget-code-span-class-fuchsia-set-span-code"><a class="link" href="#setting-a-budget-code-span-class-fuchsia-set-span-code">Setting a budget: <code><span class="fuchsia">set</span></code></a></h4>
 <div class="paragraph">
-<p>You can use this command to set a budget for the current instance of <em>In-Credit-Ble</em> Finance Tracker.<br></p>
+<p><span class="navy">You can use this command to set a budget for the current instance of <em>In-Credit-Ble</em> Finance Tracker.</span><br></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>set $/AMOUNT</code></p>
+<p><strong>Format</strong>: <code><span class="fuchsia">set $/AMOUNT</span></code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Examples</strong>:</p>
+<p><strong><span class="navy">Examples</span></strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>set $/500</code></p>
+<p><code><span class="fuchsia">set $/500</span></code></p>
 </li>
 <li>
-<p><code>set $/500.50</code></p>
+<p><code><span class="fuchsia">set $/500.50</span></code></p>
 </li>
 </ul>
 </div>
@@ -288,31 +288,31 @@ those skills in what I have written for the User Guide.</p></td>
 0 or 2 decimal places. Amount entered cannot be larger than 100000000.</p>
 </li>
 <li>
-<p>If you provide multiple amounts (e.g. <code>set $/30 $/50</code>), only the last amount you provided will
-be used to set the budget (<code>$/50</code> in the example). Only the last amount needs to be a valid
-amount (e.g. <code>set $/1a $/10</code> works while <code>set $/10 $/1a</code> does not).</p>
+<p>If you provide multiple amounts (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/30 $/50</span></code>), only the last amount you provided will
+be used to set the budget (<code><span class="fuchsia">$/50</span></code> in the example). Only the last amount needs to be a valid
+amount (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/1a $/10</span></code> works while <code><span class="fuchsia">set $/10 $/1a</span></code> does not).</p>
 </li>
 <li>
 <p>If a budget was previously set, the old budget will be overwritten by the new budget specified
-by the <code>set</code> command.</p>
+by the <code><span class="fuchsia">set</span></code> command.</p>
 </li>
 <li>
 <p>The budget you set and current spending will be displayed in the <a href="#Budget Panel">[Budget Panel]</a>.</p>
 </li>
 <li>
 <p>You can only work with one budget for each instance of Finance Tracker. You are able
-to adjust this budget using the <code>set</code> command again by indicating a different amount.</p>
+to adjust this budget using the <code><span class="fuchsia">set</span></code> command again by indicating a different amount.</p>
 </li>
 <li>
-<p>If you want to have a new budget for a different month, you can use the <code>setfile</code> command
-detailed in <a href="#changing-financetracker-data-storage-location-code-setfile-code">Changing FinanceTracker data storage location: <code>setfile</code></a>.</p>
+<p>If you want to have a new budget for a different month, you can use the <code><span class="fuchsia">setfile</span></code> command
+detailed in <a href="#changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code">Changing FinanceTracker data storage location: <code><span class="fuchsia">setfile</span></code></a>.</p>
 </li>
 <li>
 <p>The rationale is to keep the
 UI as clean as possible without extra panels for past budgets.</p>
 </li>
 <li>
-<p>You can use <code>allocate</code> to set various category sub-budgets for categories</p>
+<p>You can use <code><span class="fuchsia">allocate</span></code> to set various category sub-budgets for categories.</p>
 </li>
 </ul>
 </div>
@@ -347,9 +347,9 @@ budgets are going to exceed it.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="changing-financetracker-data-storage-location-code-setfile-code"><a class="link" href="#changing-financetracker-data-storage-location-code-setfile-code">Changing FinanceTracker data storage location: <code>setfile</code></a></h4>
+<h4 id="changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code"><a class="link" href="#changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code">Changing FinanceTracker data storage location: <code><span class="fuchsia">setfile</span></code></a></h4>
 <div class="paragraph">
-<p>You can change the file used to store the data of the application. Essentially,
+<p><span class="navy">You can change the file used to store the data of the application.</span> Essentially,
 you can maintain multiple sets of expenditure and budget data for multiple users
 or profiles.<br></p>
 </div>
@@ -358,26 +358,26 @@ or profiles.<br></p>
 for the user the manage their budget based on a time period his/her liking.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>setfile f/FILENAME</code></p>
+<p><strong>Format</strong>: <code><span class="fuchsia">setfile f/FILENAME</span></code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Examples</strong>:</p>
+<p><strong><span class="navy">Examples</span></strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>setfile f/Daily Expenses</code></p>
+<p><code><span class="fuchsia">setfile f/Daily Expenses</span></code></p>
 </li>
 <li>
-<p><code>setfile f/JohnDoe</code></p>
+<p><code><span class="fuchsia">setfile f/JohnDoe</span></code></p>
 </li>
 <li>
-<p><code>setfile f/Personal Finances.April.2019</code></p>
+<p><code><span class="fuchsia">setfile f/Personal Finances.April.2019</span></code></p>
 </li>
 <li>
-<p><code>setfile f/Company June Petty Cash Finances</code></p>
+<p><code><span class="fuchsia">setfile f/Company June Petty Cash Finances</span></code></p>
 </li>
 </ul>
 </div>
@@ -393,15 +393,15 @@ for the user the manage their budget based on a time period his/her liking.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The filename should not contain any file paths (e.g. /data/file) or extensions
-(e.g. file.json). The filename must also be 250 characters or lesser and should not
+<p>The filename should not contain any file paths (<span class="navy">e.g.</span> /data/file) or extensions
+(<span class="navy">e.g.</span> file.json). The filename must also be 250 characters or lesser and should not
 contain any special characters or be left blank.</p>
 </li>
 <li>
-<p>If multiple filenames are provided (e.g. <code>setfile f/file1 f/file2</code>) only the last
-filename provided will be taken in as the filename (<code>file2</code> in this example).
+<p>If multiple filenames are provided (<span class="navy">e.g.</span> <code><span class="fuchsia">setfile f/file1 f/file2</span></code>) only the last
+filename provided will be taken in as the filename (<code><span class="fuchsia">file2</span></code> in this example).
 Only the last filename needs to be a valid filename
-(e.g. <code>setfile f/$file f/file</code> works while <code>set f/file f/$file</code> does not).</p>
+(<span class="navy">e.g.</span> <code><span class="fuchsia">setfile f/$file f/file</span></code> works while <code><span class="fuchsia">set f/file f/$file</span></code> does not).</p>
 </li>
 <li>
 <p>If the file specified by the filename does not already exist, a new blank file
@@ -441,7 +441,7 @@ the budget again.</p>
 </div>
 <div class="paragraph">
 <p>Given below is a sequence diagram and step by step explanation of how Finance Tracker
-creates a budget when the user uses the <code>set</code> command to set a budget.</p>
+creates a budget when the user uses the <code><span class="fuchsia">set</span></code> command to set a budget.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -452,52 +452,51 @@ creates a budget when the user uses the <code>set</code> command to set a budget
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The user enters a Set command (e.g. set $/120). The command passed down and received by the <code>LogicManager</code>.</p>
+<p>The user enters a <code><span class="fuchsia">set command</span></code> (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/120</span></code>). The command is passed down and received by the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p>The <code>LogicManger</code> calls the <code>FinanceTrackerParser#ParseCommand()</code> method which creates a <code>SetCommandParser</code>
-object. The <code>FinanceTrackerParser#ParseCommand()</code> method then calls the <code>SetCommandParser#parse()</code> method,
+<p>The <code><span class="fuchsia">LogicManger</span></code> calls the <code><span class="fuchsia">FinanceTrackerParser#ParseCommand()</span></code> method which creates a <code><span class="fuchsia">SetCommandParser</span></code>
+object. The <code><span class="fuchsia">FinanceTrackerParser#ParseCommand()</span></code> method then calls the <code><span class="fuchsia">SetCommandParser#parse()</span></code> method,
 passing in the amount argument entered by the user ("120" in example).</p>
 </li>
 <li>
-<p><code>SetCommandParser#parse()</code> calls <code>ParserUtil#ParseAmount()</code> to handle the parsing of the amount. The method
+<p><code><span class="fuchsia">SetCommandParser#parse()</span></code> calls <code><span class="fuchsia">ParserUtil#ParseAmount()</span></code> to handle the parsing of the amount. The method
 checks if the argument is a valid amount value and throws an exception if it is not. If there are no exceptions,
-<code>ParserUtil#ParseAmount()</code> returns the processed amount string. <code>SetCommandParser#parse()</code> then creates a
-<code>SetCommand</code> with the processed amount ("120" in example) and the new <code>SetCommand</code> gets passed back to the
-<code>LogicManager</code>.</p>
+<code><span class="fuchsia">ParserUtil#ParseAmount()</span></code> returns the processed amount string. <code><span class="fuchsia">SetCommandParser#parse()</span></code> then creates a
+<code><span class="fuchsia">SetCommand</span></code> with the processed amount ("120" in example) and the new <code><span class="fuchsia">SetCommand</span></code> gets passed back to the
+<code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p>Now that the command is processed, <code>LogicManager#execute()</code> calls <code>SetCommand#execute()</code> to execute the command.
-<code>SetCommand#execute()</code> creates a new <code>Budget</code> object initialised with the amount (budget of 120 created in example).
-The <code>Budget</code> object (labelled p) is then passed to the <code>ModelManager</code> by the <code>ModelManager#addBudget()</code> method.</p>
+<p>Now that the command is processed, <code><span class="fuchsia">LogicManager#execute()</span></code> calls <code><span class="fuchsia">SetCommand#execute()</span></code> to execute the command.
+<code><span class="fuchsia">SetCommand#execute()</span></code> creates a new <code><span class="fuchsia">Budget</span></code> object initialised with the amount (budget of 120 created in example).
+The <code><span class="fuchsia">Budget</span></code> object (labelled p) is then passed to the <code><span class="fuchsia">ModelManager</span></code> by the <code><span class="fuchsia">ModelManager#addBudget()</span></code> method.</p>
 </li>
 <li>
-<p><code>ModelManager#addBudget()</code> calls <code>FinanceTracker#addBudget()</code> to update the budget of the current instance of the
-Finance Tracker. <code>FinanceTracker#addBudget()</code> updates the <code>TotalBudget</code> object field (labelled q) in <code>FinanceTracker</code>
-by calling <code>TotalBudget#updateBudget()</code> and passing the <code>Budget p</code> and the records stored in the <code>FinanceTracker</code>.</p>
+<p><code><span class="fuchsia">ModelManager#addBudget()</span></code> calls <code><span class="fuchsia">FinanceTracker#addBudget()</span></code> to update the budget of the current instance of the
+Finance Tracker. <code><span class="fuchsia">FinanceTracker#addBudget()</span></code> updates the <code><span class="fuchsia">TotalBudget</span></code> object field (labelled q) in <code><span class="fuchsia">FinanceTracker</span></code>
+by calling <code><span class="fuchsia">TotalBudget#updateBudget()</span></code> and passing the <code><span class="fuchsia">Budget p</span></code> and the records stored in the <code><span class="fuchsia">FinanceTracker</span></code>.</p>
 </li>
 <li>
-<p><code>TotalBudget#updateBudget()</code> first gets the budget data (totalBudget, currentBudget) from <code>Budget p</code> and sets it using
-<code>TotalBudget#set()</code> (total budget of app is now 120 in example). It then updates the current budget and spending based on
-the records that was stored and passed in by the <code>FinanceTracker</code>.</p>
+<p><code><span class="fuchsia">TotalBudget#updateBudget()</span></code> first gets the budget data (totalBudget, currentBudget) from <code><span class="fuchsia">Budget p</span></code> and sets it using
+<code><span class="fuchsia">TotalBudget#set()</span></code> (total budget of app is now 120 in example). It then updates the current budget and spending based on
+the records that was stored and passed in by the <code><span class="fuchsia">FinanceTracker</span></code>.</p>
 </li>
 <li>
-<p>Once <code>TotalBudget q</code> has finished updating, control is passed all the way back to <code>SetCommand#execute()</code> which will create
-a <code>CommandResult</code> (labelled result). The result is passed back to <code>LogicManager#execute</code> and all the way to the user to show
+<p>Once <code><span class="fuchsia">TotalBudget q</span></code> has finished updating, control is passed all the way back to <code><span class="fuchsia">SetCommand#execute()</span></code> which will create
+a <code><span class="fuchsia">CommandResult</span></code> (labelled result). The result is passed back to <code><span class="fuchsia">LogicManager#execute</span></code> and all the way to the user to show
 that the budget has been set (Budget set to 120 in example).</p>
 </li>
 <li>
 <p>Although not shown in the diagram, the UI is then updated with the new budget. The UI update of budget data will be
-covered in <a href="#Updating the UI with Budget Data">[Updating the UI with Budget Data]</a>.</p>
+covered in <span class="underline blue"><a href="#Updating the UI with Budget Data">[Updating the UI with Budget Data]</a></span>.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect3">
 <h4 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h4>
-<div class="paragraph">
-<p>Aspect: Updating budget data after Record updates</p>
-</div>
+<div class="sect4">
+<h5 id="aspect-updating-budget-data-after-record-updates"><a class="link" href="#aspect-updating-budget-data-after-record-updates">Aspect: Updating budget data after Record updates</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -534,7 +533,7 @@ user.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>To explain the update, an Activity Diagram accompanied with a step-by-step walk-through is proved. The Activity Diagram is modelled after <code>MainWindow#execute()</code> which calls the appropriate
+<p>To explain the update, an Activity Diagram accompanied with a step-by-step walk-through is proved. The Activity Diagram is modelled after <code><span class="fuchsia">MainWindow#execute()</span></code> which calls the appropriate
 methods to update the budget UI.</p>
 </div>
 <div class="imageblock">
@@ -546,53 +545,54 @@ methods to update the budget UI.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The command is first executed by the <code>LogicManager</code>. The execution of commands will update the budget data
+<p>The command is first executed by the <code><span class="fuchsia">LogicManager</span></code>. The execution of commands will update the budget data
 in the Finance Tracker as specified in previous sections. The success message of the command is then displayed to the user
 (Result of command that user typed).</p>
 </li>
 <li>
-<p>There is then a conditional check on whether the command has changed the budget data (Based on CommandResult
+<p>There is then a conditional check on whether the command has changed the budget data (Based on <code><span class="fuchsia">CommandResult</span></code>
 passed back from command execution). For brevity and based on the scope of the section, the other conditional checks
 for the command will be excluded.
-List of Commands that change budget: <code>spend</code>, <code>edit</code>, <code>delete</code>, <code>set</code>, <code>allocate</code>, <code>clear</code>, <code>setfile</code>, <code>undo</code>, <code>redo</code></p>
+List of Commands that change budget: <code><span class="fuchsia">spend</span></code>, <code><span class="fuchsia">edit</span></code>, <code><span class="fuchsia">delete</span></code>, <code><span class="fuchsia">set</span></code>, <code><span class="fuchsia">allocate</span></code>, <code><span class="fuchsia">clear</span></code>, <code><span class="fuchsia">setfile</span></code>, <code><span class="fuchsia">undo</span></code>, <code><span class="fuchsia">redo</span></code></p>
 </li>
 <li>
-<p>When it has been determined that the command has altered budget data, 3 components of the UI need to be updated before
-continuing. If you are unfamiliar with the components of the UI, refer to the
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#graphical-user-interface-introduction">Graphical User Interface</a> section of our User Guide.</p>
+<p>When it has been determined that the command has altered budget data, 3 components of the <code><span class="fuchsia">UI</span></code> need to be updated before
+continuing. If you are unfamiliar with the components of the <code><span class="fuchsia">UI</span></code>, refer to the
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#graphical-user-interface-introduction"><span class="blue">Graphical User Interface</span></a> section of our User Guide.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p><strong>BudgetPanel</strong>:
-The BudgetPanel consists of 2 sections, the Budget Bar and the text below the bar. The bar and text is updated with
-data retrieved from the <code>Logic</code> component of the App, with the changes to Budget Bar being animated. The colour of
+The <code><span class="fuchsia">BudgetPanel</span></code> consists of 2 sections, the Budget Bar and the text below the bar. The bar and text is updated with
+data retrieved from the <code><span class="fuchsia">Logic</span></code> component of the App, with the changes to Budget Bar being animated. The colour of
 the bar is then set based on the difference in current spending and total budget set (Red: Budget Exceeded, Yellow: Spending is
 &gt;= 80% of budget, Green: Spending is &lt;80% of budget).</p>
 </li>
 <li>
 <p><strong>Browser Panel</strong>:
-The BrowserPanel only contains text and is updated similar to the text in the BudgetPanel.</p>
+The <code><span class="fuchsia">BrowserPanel</span></code> only contains text and is updated similar to the text in the BudgetPanel.</p>
 </li>
 <li>
 <p><strong>Summary Panel</strong>:
-The SummaryPanel consists of a pie chart. If the updated budget data shows no expense recorded within the specified time period,
+The <code><span class="fuchsia">SummaryPanel</span></code> consists of a pie chart. If the updated budget data shows no expense recorded within the specified time period,
 text explaining that there is no recorded expenses is shown to the user instead. Else, the summary data is updated and the pie
-chart is edited to reflect changes in the expenditures. Refer to <a href="#Summary">[Summary]</a> for a more detailed explanation of the implementation
+chart is edited to reflect changes in the expenditures. Refer to <span class="underline blue"><a href="#Summary">[Summary]</a></span> for a more detailed explanation of the implementation
 of the feature.</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>After the UI is updated, there is another check to see if the command given was <code>summary</code>. If it was, the current Panel being
-displayed (BrowserPanel or SummaryPanel) is swapped to the other panel. Again, refer to the Summary section below for more implementation
+<p>After the <code><span class="fuchsia">UI</span></code> is updated, there is another check to see if the command given was <code><span class="fuchsia">summary</span></code>. If it was, the current Panel being
+displayed (<code><span class="fuchsia">BrowserPanel</span></code> or <code><span class="fuchsia">SummaryPanel</span></code>) is swapped to the other panel. Again, refer to the Summary section below for more implementation
 details.</p>
 </li>
 <li>
-<p>The method ends by returning the CommandResult that was returned from the execution of command to the MainApp.</p>
+<p>The method ends by returning the <code><span class="fuchsia">CommandResult</span></code> that was returned from the execution of command to the <code><span class="fuchsia">MainApp</span></code>.</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:06:31 UTC</div></div></div></body></html>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:57:36 UTC</div></div></div></body></html>

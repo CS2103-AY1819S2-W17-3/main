@@ -85,7 +85,6 @@
 <li><a href="#searching-an-entry">G.7. Searching an entry</a></li>
 <li><a href="#sorting-the-entries">G.8. Sorting the entries</a></li>
 <li><a href="#changing-the-finance-tracker-data-storage-location">G.9. Changing the Finance Tracker data storage location</a></li>
-<li><a href="#saving-data">G.10. Saving data</a></li>
 </ul>
 </li>
 </ul>
@@ -95,7 +94,7 @@
 <h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to the <em>In-Credit-Ble</em> Developer Guide!</p>
+<p><span class="blue">Welcome to the <em>In-Credit-Ble</em> Developer Guide!</span></p>
 </div>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> is a finance tracker application created to simplify the managing and tracking
@@ -107,8 +106,8 @@ and be more aware of their spending habits.</p>
 this document is the developers, designers and software testers of our application.</p>
 </div>
 <div class="paragraph">
-<p>Please continue on to the <a href="#setting-up">Setting Up</a> section to get started. You can also read <a href="AboutUs.html">AboutUs.adoc</a>
-and <a href="ContactUs.html">ContactUs.adoc</a> for more information on how to contact us!</p>
+<p>Please continue on to the <a href="#setting-up"><span class="underline blue">Setting Up</span></a> section to get started. You can also read <a href="AboutUs.html"><span class="blue">AboutUs.adoc</span></a>
+and <a href="ContactUs.html"><span class="blue">ContactUs.adoc</span></a> for more information on how to contact us!</p>
 </div>
 </div>
 </div>
@@ -120,7 +119,7 @@ and <a href="ContactUs.html">ContactUs.adoc</a> for more information on how to c
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>JDK <code>9</code></strong> or later</p>
+<p><strong>JDK <code><span class="fuchsia">9</span></code></strong> or later</p>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -128,8 +127,8 @@ and <a href="ContactUs.html">ContactUs.adoc</a> for more information on how to c
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-JDK <code>10</code> on Windows will fail to run tests in <a href="UsingGradle.html#Running-Tests">headless mode</a> due to a <a href="https://github.com/javafxports/openjdk-jfx/issues/66">JavaFX bug</a>.
-Windows developers are highly recommended to use JDK <code>9</code>.
+JDK <code><span class="fuchsia">10</span></code> on Windows will fail to run tests in <a href="UsingGradle.html#Running-Tests"><span class="blue">headless mode</span></a> due to a <a href="https://github.com/javafxports/openjdk-jfx/issues/66"><span class="blue">JavaFX bug</span></a>.
+Windows developers are highly recommended to use JDK <code><span class="fuchsia">9</span></code>.
 </td>
 </tr>
 </table>
@@ -181,7 +180,7 @@ Do not disable them. If you have disabled them, go to <span class="menuseq"><b c
 <p>Click <b class="button">Import Project</b></p>
 </li>
 <li>
-<p>Locate the <code>build.gradle</code> file and select it. Click <b class="button">OK</b></p>
+<p>Locate the <code><span class="fuchsia">build.gradle</span></code> file and select it. Click <b class="button">OK</b></p>
 </li>
 <li>
 <p>Click <b class="button">Open as Project</b></p>
@@ -190,24 +189,24 @@ Do not disable them. If you have disabled them, go to <span class="menuseq"><b c
 <p>Click <b class="button">OK</b> to accept the default settings</p>
 </li>
 <li>
-<p>Open a console and run the command <code>gradlew processResources</code> (Mac/Linux: <code>./gradlew processResources</code>). It should finish with the <code>BUILD SUCCESSFUL</code> message.<br>
+<p>Open a console and run the command <code><span class="fuchsia">gradlew processResources</span></code> (Mac/Linux: <code><span class="fuchsia">./gradlew processResources</span></code>). It should finish with the <code><span class="fuchsia">BUILD SUCCESSFUL</span></code> message.<br>
 This will generate all resources required by the application and tests.</p>
 </li>
 <li>
-<p>Open <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/MainWindow.java"><code>MainWindow.java</code></a> and check for any code errors</p>
+<p>Open <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/MainWindow.java"><code><span class="blue">MainWindow.java</span></code></a> and check for any code errors</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Due to an ongoing <a href="https://youtrack.jetbrains.com/issue/IDEA-189060">issue</a> with some of the newer versions of IntelliJ, code errors may be detected even if the project can be built and run successfully</p>
+<p>Due to an ongoing <a href="https://youtrack.jetbrains.com/issue/IDEA-189060"><span class="blue">issue</span></a> with some of the newer versions of IntelliJ, code errors may be detected even if the project can be built and run successfully</p>
 </li>
 <li>
-<p>To resolve this, place your cursor over any of the code section highlighted in red. Press <span class="keyseq"><kbd>ALT</kbd>+<kbd>ENTER</kbd></span>, and select <b class="button">Add '--add-modules=&#8230;&#8203;' to module compiler options</b> for each error</p>
+<p>To resolve this, place your cursor over any of the code section highlighted in <span class="red">red</span>. Press <span class="keyseq"><kbd>ALT</kbd>+<kbd>ENTER</kbd></span>, and select <b class="button">Add '--add-modules=&#8230;&#8203;' to module compiler options</b> for each error</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Repeat this for the test folder as well (e.g. check <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/test/java/seedu/finance/ui/HelpWindowTest.java"><code>HelpWindowTest.java</code></a> for code errors, and if so, resolve it the same way)</p>
+<p>Repeat this for the test folder as well (<span class="navy">e.g.</span> check <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/test/java/seedu/finance/ui/HelpWindowTest.java"><code><span class="blue">HelpWindowTest.java</span></code></a> for code errors, and if so, resolve it the same way)</p>
 </li>
 </ol>
 </div>
@@ -217,10 +216,10 @@ This will generate all resources required by the application and tests.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Run <code>seedu.finance.MainApp</code> and try a few commands</p>
+<p>Run <code><span class="fuchsia">seedu.finance.MainApp</span></code> and try a few commands</p>
 </li>
 <li>
-<p><a href="#Testing">Run the tests</a> to ensure they all pass.</p>
+<p><a href="#Testing"><span class="underline blue">Run the tests</span></a> to ensure they all pass.</p>
 </li>
 </ol>
 </div>
@@ -230,7 +229,7 @@ This will generate all resources required by the application and tests.</p>
 <div class="sect3">
 <h4 id="configuring-the-coding-style"><a class="link" href="#configuring-the-coding-style">2.4.1. Configuring the coding style</a></h4>
 <div class="paragraph">
-<p>This project follows <a href="https://github.com/oss-generic/process/blob/master/docs/CodingStandards.adoc">oss-generic coding standards</a>. IntelliJ&#8217;s default style is mostly compliant with ours but it uses a different import order from ours. To rectify,</p>
+<p>This project follows <a href="https://github.com/oss-generic/process/blob/master/docs/CodingStandards.adoc"><span class="blue">oss-generic coding standards</span></a>. IntelliJ&#8217;s default style is mostly compliant with ours but it uses a different import order from ours. To rectify,</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -245,10 +244,10 @@ This will generate all resources required by the application and tests.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>For <b class="button">Class count to use import with '*'</b> and <b class="button">Names count to use static import with '*'</b>: Set to <code>999</code> to prevent IntelliJ from contracting the import statements</p>
+<p>For <b class="button">Class count to use import with '*'</b> and <b class="button">Names count to use static import with '*'</b>: Set to <code><span class="fuchsia">999</span></code> to prevent IntelliJ from contracting the import statements</p>
 </li>
 <li>
-<p>For <b class="button">Import Layout</b>: The order is <code>import static all other imports</code>, <code>import java.*</code>, <code>import javax.*</code>, <code>import org.*</code>, <code>import com.*</code>, <code>import all other imports</code>. Add a <b class="button">&lt;blank line&gt;</b> between each <code>import</code></p>
+<p>For <b class="button">Import Layout</b>: The order is <code><span class="fuchsia">import static all other imports</span></code>, <code><span class="fuchsia">import java.*</span></code>, <code><span class="fuchsia">import javax.*</span></code>, <code><span class="fuchsia">import org.*</span></code>, <code><span class="fuchsia">import com.*</span></code>, <code><span class="fuchsia">import all other imports</span></code>. Add a <b class="button">&lt;blank line&gt;</b> between each <code><span class="fuchsia">import</span></code></p>
 </li>
 </ul>
 </div>
@@ -256,24 +255,24 @@ This will generate all resources required by the application and tests.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Optionally, you can follow the <a href="UsingCheckstyle.html">UsingCheckstyle.adoc</a> document to configure Intellij to check style-compliance as you write code.</p>
+<p>Optionally, you can follow the <a href="UsingCheckstyle.html"><span class="blue">UsingCheckstyle.adoc</span></a> document to configure Intellij to check style-compliance as you write code.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="updating-documentation-to-match-your-fork"><a class="link" href="#updating-documentation-to-match-your-fork">2.4.2. Updating documentation to match your fork</a></h4>
 <div class="paragraph">
-<p>After forking the repo, the documentation will still refer to the <code>CS2103-AY1819S2-W17-3/main</code> repo.</p>
+<p>After forking the repo, the documentation will still refer to the <code><span class="fuchsia">CS2103-AY1819S2-W17-3/main</span></code> repo.</p>
 </div>
 <div class="paragraph">
-<p>If you plan to develop this fork as a separate product (i.e. instead of contributing to <code>In-Credit-Ble</code>), you should do the following:</p>
+<p>If you plan to develop this fork as a separate product (i.e. instead of contributing to <code><span class="fuchsia">In-Credit-Ble</span></code>), you should do the following:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Configure the <a href="#Docs-SiteWideDocSettings">site-wide documentation settings</a> in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/build.gradle"><code>build.gradle</code></a>, such as the <code>site-name</code>, to suit your own project.</p>
+<p>Configure the <a href="#Docs-SiteWideDocSettings"><span class="underline blue">site-wide documentation settings</span></a> in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/build.gradle"><code><span class="blue">build.gradle</span></code></a>, such as the <code><span class="fuchsia">site-name</span></code>, to suit your own project.</p>
 </li>
 <li>
-<p>Replace the URL in the attribute <code>repoURL</code> in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/DeveloperGuide.adoc"><code>DeveloperGuide.adoc</code></a> and <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/UserGuide.adoc"><code>UserGuide.adoc</code></a> with the URL of your fork.</p>
+<p>Replace the URL in the attribute <code><span class="fuchsia">repoURL</span></code> in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/DeveloperGuide.adoc"><code><span class="blue">DeveloperGuide.adoc</span></code></a> and <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/UserGuide.adoc"><code><span class="blue">UserGuide.adoc</span></code></a> with the URL of your fork.</p>
 </li>
 </ol>
 </div>
@@ -281,10 +280,10 @@ This will generate all resources required by the application and tests.</p>
 <div class="sect3">
 <h4 id="setting-up-ci"><a class="link" href="#setting-up-ci">2.4.3. Setting up CI</a></h4>
 <div class="paragraph">
-<p>Set up Travis to perform Continuous Integration (CI) for your fork. See <a href="UsingTravis.html">UsingTravis.adoc</a> to learn how to set it up.</p>
+<p>Set up Travis to perform Continuous Integration (CI) for your fork. See <a href="UsingTravis.html"><span class="blue">UsingTravis.adoc</span></a> to learn how to set it up.</p>
 </div>
 <div class="paragraph">
-<p>After setting up Travis, you can optionally set up coverage reporting for your team fork (see <a href="UsingCoveralls.html">UsingCoveralls.adoc</a>).</p>
+<p>After setting up Travis, you can optionally set up coverage reporting for your team fork (see <a href="UsingCoveralls.html"><span class="blue">UsingCoveralls.adoc</span></a>).</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -299,7 +298,7 @@ Coverage reporting could be useful for a team repository that hosts the final ve
 </table>
 </div>
 <div class="paragraph">
-<p>Optionally, you can set up AppVeyor as a second CI (see <a href="UsingAppVeyor.html">UsingAppVeyor.adoc</a>).</p>
+<p>Optionally, you can set up AppVeyor as a second CI (see <a href="UsingAppVeyor.html"><span class="blue">UsingAppVeyor.adoc</span></a>).</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -322,10 +321,10 @@ Having both Travis and AppVeyor ensures your App works on both Unix-based platfo
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Get some sense of the overall design by reading <a href="#Design-Architecture">Section 3.1, &#8220;Architecture&#8221;</a>.</p>
+<p>Get some sense of the overall design by reading <span class="underline blue"><a href="#Design-Architecture">Section 3.1, &#8220;Architecture&#8221;</a></span>.</p>
 </li>
 <li>
-<p>Take a look at <a href="#GetStartedProgramming">Appendix A, <em>Product Scope</em></a>.</p>
+<p>Take a look at <span class="underline blue"><a href="#GetStartedProgramming">Appendix A, <em>Product Scope</em></a></span>.</p>
 </li>
 </ol>
 </div>
@@ -354,14 +353,14 @@ Having both Travis and AppVeyor ensures your App works on both Unix-based platfo
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-The <code>.pptx</code> files used to create diagrams in this document can be found in the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/diagrams/">diagrams</a> folder.
+The <code><span class="fuchsia">.pptx</span></code> files used to create diagrams in this document can be found in the link:https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/diagrams/<span class="[blue">diagrams</span>] folder.
 To update a diagram, modify the diagram in the pptx file, select the objects of the diagram, and choose <b class="button">Save as picture</b>.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p><code>Main</code> has only one class called <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/MainApp.java"><code>MainApp</code></a>. It is responsible for,</p>
+<p><code><span class="fuchsia">Main</span></code> has only one class called <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/MainApp.java"><code><span class="blue">MainApp</span></code></a>. It is responsible for,</p>
 </div>
 <div class="ulist">
 <ul>
@@ -374,13 +373,13 @@ To update a diagram, modify the diagram in the pptx file, select the objects of 
 </ul>
 </div>
 <div class="paragraph">
-<p><a href="#Design-Commons"><strong><code>Commons</code></strong></a> represents a collection of classes used by multiple other components.
+<p><a href="#Design-Commons"><strong><code><span class="underline blue">Commons</span></code></strong></a> represents a collection of classes used by multiple other components.
 The following class plays an important role at the architecture level:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>LogsCenter</code> : Used by many classes to write log messages to the App&#8217;s log file.</p>
+<p><code><span class="fuchsia">LogsCenter</span></code> : Used by many classes to write log messages to the App&#8217;s log file.</p>
 </li>
 </ul>
 </div>
@@ -390,16 +389,16 @@ The following class plays an important role at the architecture level:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Design-Ui"><strong><code>UI</code></strong></a>: The UI of the App.</p>
+<p><a href="#Design-Ui"><strong><code><span class="underline blue">UI</span></code></strong></a>: The UI of the App.</p>
 </li>
 <li>
-<p><a href="#Design-Logic"><strong><code>Logic</code></strong></a>: The command executor.</p>
+<p><a href="#Design-Logic"><strong><code><span class="underline blue">Logic</span></code></strong></a>: The command executor.</p>
 </li>
 <li>
-<p><a href="#Design-Model"><strong><code>Model</code></strong></a>: Holds the data of the App in-memory.</p>
+<p><a href="#Design-Model"><strong><code><span class="underline blue">Model</span></code></strong></a>: Holds the data of the App in-memory.</p>
 </li>
 <li>
-<p><a href="#Design-Storage"><strong><code>Storage</code></strong></a>: Reads data from, and writes data to, the hard disk.</p>
+<p><a href="#Design-Storage"><strong><code><span class="underline blue">Storage</span></code></strong></a>: Reads data from, and writes data to, the hard disk.</p>
 </li>
 </ul>
 </div>
@@ -409,16 +408,16 @@ The following class plays an important role at the architecture level:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Defines its <em>API</em> in an <code>interface</code> with the same name as the Component.</p>
+<p>Defines its <em>API</em> in an <code><span class="fuchsia">interface</span></code> with the same name as the Component.</p>
 </li>
 <li>
-<p>Exposes its functionality using a <code>{Component Name}Manager</code> class.</p>
+<p>Exposes its functionality using a <code><span class="fuchsia">{Component Name}Manager</span></code> class.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>For example, the <code>Logic</code> component (see the class diagram given below) defines its API in the <code>Logic.java</code> interface and
-exposes its functionality using the <code>LogicManager.java</code> class.</p>
+<p>For example, the <code><span class="fuchsia">Logic</span></code> component (see the class diagram given below) defines its API in the <code><span class="fuchsia">Logic.java</span></code> interface and
+exposes its functionality using the <code><span class="fuchsia">LogicManager.java</span></code> class.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -428,13 +427,13 @@ exposes its functionality using the <code>LogicManager.java</code> class.</p>
 </div>
 <h4 id="how-do-the-architecture-components-interact-with-each-other" class="discrete">How do the architecture components interact with each other?</h4>
 <div class="paragraph">
-<p>The <em>Sequence Diagram</em> below shows how the components interact with each other for the scenario where the user issues the command <code>delete 1</code>.</p>
+<p>The <em>Sequence Diagram</em> below shows how the components interact with each other for the scenario where the user issues the command <code><span class="fuchsia">delete 1</span></code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/SDforDeleteRecord.png" alt="SDforDeleteRecord" width="800">
 </div>
-<div class="title">Figure 3. Component interactions for <code>delete 1</code> command</div>
+<div class="title">Figure 3. Component interactions for <code><span class="fuchsia">delete 1</span></code> command</div>
 </div>
 <div class="paragraph">
 <p>The sections below give more details of each component.</p>
@@ -449,27 +448,27 @@ exposes its functionality using the <code>LogicManager.java</code> class.</p>
 <div class="title">Figure 4. Structure of the UI Component</div>
 </div>
 <div class="paragraph">
-<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/Ui.java"><code>Ui.java</code></a></p>
+<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/Ui.java"><code><span class="blue">Ui.java</span></code></a></p>
 </div>
 <div class="paragraph">
-<p>The UI consists of a <code>MainWindow</code> that is made up of parts e.g.<code>CommandBox</code>, <code>ResultDisplay</code>, <code>RecordListPanel</code>,
-<code>StatusBarFooter</code>, <code>BrowserPanel</code>, <code>BudgetPanel</code>, <code>SummaryPanel</code> etc. All these, including the <code>MainWindow</code>,
-inherit from the abstract <code>UiPart</code> class.</p>
+<p>The UI consists of a <code><span class="fuchsia">MainWindow</span></code> that is made up of parts <span class="navy">e.g.</span> <code><span class="fuchsia">CommandBox</span></code>, <code><span class="fuchsia">ResultDisplay</span></code>, <code><span class="fuchsia">RecordListPanel</span></code>,
+<code><span class="fuchsia">StatusBarFooter</span></code>, <code><span class="fuchsia">BrowserPanel</span></code>, <code><span class="fuchsia">BudgetPanel</span></code>, <code><span class="fuchsia">SummaryPanel</span></code> etc. All these, including the <code><span class="fuchsia">MainWindow</span></code>,
+inherit from the abstract <code><span class="fuchsia">UiPart</span></code> class.</p>
 </div>
 <div class="paragraph">
-<p>The <code>UI</code> component uses JavaFx UI framework. The layout of these UI parts are defined in matching <code>.fxml</code> files that are in the <code>src/main/resources/view</code> folder.
-For example, the layout of the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/MainWindow.java"><code>MainWindow</code></a> is specified in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/resources/view/MainWindow.fxml"><code>MainWindow.fxml</code></a></p>
+<p>The <code><span class="fuchsia">UI</span></code> component uses JavaFx UI framework. The layout of these UI parts are defined in matching <code><span class="fuchsia">.fxml</span></code> files that are in the <code><span class="fuchsia">src/main/resources/view</span></code> folder.
+For example, the layout of the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/ui/MainWindow.java"><code><span class="blue">MainWindow</span></code></a> is specified in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/resources/view/MainWindow.fxml"><code><span class="blue">MainWindow.fxml</span></code></a></p>
 </div>
 <div class="paragraph">
-<p>The <code>UI</code> component,</p>
+<p>The <code><span class="fuchsia">UI</span></code> component,</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Executes user commands using the <code>Logic</code> component.</p>
+<p>Executes user commands using the <code><span class="fuchsia">Logic</span></code> component.</p>
 </li>
 <li>
-<p>Listens for changes to <code>Model</code> data so that the UI can be updated with the modified data.</p>
+<p>Listens for changes to <code><span class="fuchsia">Model</span></code> data so that the UI can be updated with the modified data.</p>
 </li>
 </ul>
 </div>
@@ -484,26 +483,26 @@ For example, the layout of the <a href="https://github.com/CS2103-AY1819S2-W17-3
 </div>
 <div class="paragraph">
 <p><strong>API</strong> :
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/logic/Logic.java"><code>Logic.java</code></a></p>
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/logic/Logic.java"><code><span class="blue">Logic.java</span></code></a></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>Logic</code> uses the <code>FinanceTrackerParser</code> class to parse the user command.</p>
+<p><code><span class="fuchsia">Logic</span></code> uses the <code><span class="fuchsia">FinanceTrackerParser</span></code> class to parse the user command.</p>
 </li>
 <li>
-<p>This results in a <code>Command</code> object which is executed by the <code>LogicManager</code>.</p>
+<p>This results in a <code><span class="fuchsia">Command</span></code> object which is executed by the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p>The command execution can affect the <code>Model</code> (e.g. adding a record).</p>
+<p>The command execution can affect the <code><span class="fuchsia">Model</span></code> (<span class="navy">e.g.</span> adding a record).</p>
 </li>
 <li>
-<p>The result of the command execution is encapsulated as a <code>CommandResult</code> object which is passed back to the <code>Ui</code>.</p>
+<p>The result of the command execution is encapsulated as a <code><span class="fuchsia">CommandResult</span></code> object which is passed back to the <code><span class="fuchsia">Ui</span></code>.</p>
 </li>
 <li>
-<p>In addition, the <code>CommandResult</code> object can also instruct the <code>Ui</code> to perform certain actions, such as displaying
+<p>In addition, the <code><span class="fuchsia">CommandResult</span></code> object can also instruct the <code><span class="fuchsia">Ui</span></code> to perform certain actions, such as displaying
 help to the user.
-Given below is the Sequence Diagram for interactions within the <code>Logic</code> component for the <code>execute("delete 1")</code> API call.</p>
+Given below is the Sequence Diagram for interactions within the <code><span class="fuchsia">Logic</span></code> component for the <code><span class="fuchsia">execute("delete 1")</span></code> API call.</p>
 </li>
 </ol>
 </div>
@@ -511,7 +510,7 @@ Given below is the Sequence Diagram for interactions within the <code>Logic</cod
 <div class="content">
 <img src="images/DeletePersonSdForLogic.png" alt="DeletePersonSdForLogic" width="800">
 </div>
-<div class="title">Figure 6. Interactions Inside the Logic Component for the <code>delete 1</code> Command</div>
+<div class="title">Figure 6. Interactions Inside the Logic Component for the <code><span class="fuchsia">delete 1</span></code> Command</div>
 </div>
 </div>
 <div class="sect2">
@@ -523,21 +522,21 @@ Given below is the Sequence Diagram for interactions within the <code>Logic</cod
 <div class="title">Figure 7. Structure of the Model Component</div>
 </div>
 <div class="paragraph">
-<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/model/Model.java"><code>Model.java</code></a></p>
+<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/model/Model.java"><code><span class="blue">Model.java</span></code></a></p>
 </div>
 <div class="paragraph">
-<p>The <code>Model</code> component,</p>
+<p>The <code><span class="fuchsia">Model</span></code> component,</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>stores a <code>UserPref</code> object that represents the user&#8217;s preferences.</p>
+<p>stores a <code><span class="fuchsia">UserPref</span></code> object that represents the user&#8217;s preferences.</p>
 </li>
 <li>
 <p>stores the Finance Tracker data.</p>
 </li>
 <li>
-<p>exposes an unmodifiable <code>ObservableList&lt;Record&gt;</code> that can be 'observed' e.g. the UI can be bound to this list so
+<p>exposes an unmodifiable <code><span class="fuchsia">ObservableList&lt;Record&gt;</span></code> that can be 'observed' <span class="navy">e.g.</span> the UI can be bound to this list so
 that the UI automatically updates when the data in the list change.</p>
 </li>
 <li>
@@ -555,15 +554,15 @@ that the UI automatically updates when the data in the list change.</p>
 <div class="title">Figure 8. Structure of the Storage Component</div>
 </div>
 <div class="paragraph">
-<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/storage/Storage.java"><code>Storage.java</code></a></p>
+<p><strong>API</strong> : <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/finance/storage/Storage.java"><code><span class="blue">Storage.java</span></code></a></p>
 </div>
 <div class="paragraph">
-<p>The <code>Storage</code> component,</p>
+<p>The <code><span class="fuchsia">Storage</span></code> component,</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>can save <code>UserPref</code> objects in json format and read it back.</p>
+<p>can save <code><span class="fuchsia">UserPref</span></code> objects in json format and read it back.</p>
 </li>
 <li>
 <p>can save the Finance Tracker data in json format and read it back.</p>
@@ -574,7 +573,7 @@ that the UI automatically updates when the data in the list change.</p>
 <div class="sect2">
 <h3 id="Design-Commons"><a class="link" href="#Design-Commons">3.6. Common classes</a></h3>
 <div class="paragraph">
-<p>Classes used by multiple components are in the <code>seedu.financetracker.commons</code> package.</p>
+<p>Classes used by multiple components are in the <code><span class="fuchsia">seedu.financetracker.commons</span></code> package.</p>
 </div>
 </div>
 </div>
@@ -592,17 +591,17 @@ that the UI automatically updates when the data in the list change.</p>
 or date.</p>
 </div>
 <div class="paragraph">
-<p>This implementation is under <code>Logic</code> and <code>Model</code> Component.</p>
+<p>This implementation is under <code><span class="fuchsia">Logic</span></code> and <code><span class="fuchsia">Model</span></code> Component.</p>
 </div>
 <div class="sect3">
 <h4 id="current-implementation"><a class="link" href="#current-implementation">4.1.1. Current Implementation</a></h4>
 <div class="paragraph">
-<p>The sort command uses predicates that implement`java.util.Predicate` interface which will be used to filter the records
-that are inputted into the finance tracker. Each of these predicates contains a <code>List&lt;String&gt;</code> of keywords and a <code>test()</code>
-command that is used to test if a record satisfy the conditions set in the predicate. These predicates are found in the <code>Model</code> component.</p>
+<p>The search command uses predicates that implement <code><span class="fuchsia">java.util.Predicate</span></code> interface which will be used to filter the records
+that are inputted into the finance tracker. Each of these predicates contains a <code><span class="fuchsia">List&lt;String&gt;</span></code> of keywords and a <code><span class="fuchsia">test()</span></code>
+command that is used to test if a record satisfy the conditions set in the predicate. These predicates are found in the <code><span class="fuchsia">Model</span></code> component.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. Predicates implemented in <code>Model</code> component</caption>
+<caption class="title">Table 1. Predicates implemented in <code><span class="fuchsia">Model</span></code> component</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -613,15 +612,15 @@ command that is used to test if a record satisfy the conditions set in the predi
 <td class="tableblock halign-left valign-top"><p class="tableblock">Functions</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CategoryContainsKeywordsPredicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">CategoryContainsKeywordsPredicate</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records by a given category</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DateContainsKeywordsPredicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">DateContainsKeywordsPredicate</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records by a given date</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NameContainsKeywordPredicate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">NameContainsKeywordPredicate</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records with names that matches a keyword</p></td>
 </tr>
 </tbody>
@@ -638,46 +637,46 @@ command that is used to test if a record satisfy the conditions set in the predi
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User enters a search command (eg.<code>search -cat food</code>). The command is received by the UI components and the method
-<code>LogicManger#execute()</code> is called.</p>
+<p>User enters a search command (<span class="navy">eg.</span> <code><span class="fuchsia">search -cat food</span></code>). The command is received by the UI components and the method
+<code><span class="fuchsia">LogicManger#execute()</span></code> is called.</p>
 </li>
 <li>
-<p>The command is received by <code>FinanceTrackerParser</code>, which then creates a
-<code>SearchCommandParser</code> Object and calls <code>SearchCommandParser#parse()</code> method.</p>
+<p>The command is received by <code><span class="fuchsia">FinanceTrackerParser</span></code>, which then creates a
+<code><span class="fuchsia">SearchCommandParser</span></code> Object and calls <code><span class="fuchsia">SearchCommandParser#parse()</span></code> method.</p>
 </li>
 <li>
-<p>Depending on the <code>-FLAG</code> that is entered by the user, <code>SearchCommandParser</code> will create different predicates objects
-that correspond to the <code>-FLAG</code>.</p>
+<p>Depending on the <code><span class="fuchsia">-FLAG</span></code> that is entered by the user, <code><span class="fuchsia">SearchCommandParser</span></code> will create different predicates objects
+that correspond to the <code><span class="fuchsia">-FLAG</span></code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>If <code>-cat</code> is inputted, <code>CategoryContainsKeywordsPredicate</code> will be created.</p>
+<p>If <code><span class="fuchsia">-cat</span></code> is inputted, <code><span class="fuchsia">CategoryContainsKeywordsPredicate</span></code> will be created.</p>
 </li>
 <li>
-<p>If <code>-date</code> is inputted, <code>DateContainsKeywordPredicate</code> will be created.</p>
+<p>If <code><span class="fuchsia">-date</span></code> is inputted, <code><span class="fuchsia">DateContainsKeywordPredicate</span></code> will be created.</p>
 </li>
 <li>
-<p>If <code>-name</code> is inputted, <code>NameContainsKeywordPredicate</code> will be created.</p>
+<p>If <code><span class="fuchsia">-name</span></code> is inputted, <code><span class="fuchsia">NameContainsKeywordPredicate</span></code> will be created.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>A <code>SearchCommand</code> Object with the correct predicate Object as parameter is created and returned to the
-<code>FinanceTrackerParser</code> and then to the <code>LogicManager</code>.</p>
+<p>A <code><span class="fuchsia">SearchCommand</span></code> Object with the correct predicate Object as parameter is created and returned to the
+<code><span class="fuchsia">FinanceTrackerParser</span></code> and then to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p><code>LogicManager</code> then calls <code>SearchCommand#execute()</code>, which calls <code>Model#updateFilteredExpenseList()</code> method
-to update the predicate of <code>FilterList&lt;Record&gt;</code>. `FilterList&lt;Record&gt; now contains a new set of records which is filtered
+<p><code><span class="fuchsia">LogicManager</span></code> then calls <code><span class="fuchsia">SearchCommand#execute()</span></code>, which calls <code><span class="fuchsia">Model#updateFilteredExpenseList()</span></code> method
+to update the predicate of <code><span class="fuchsia">FilterList&lt;Record&gt;</span></code>. <code><span class="fuchsia">FilterList&lt;Record&gt;</span></code> now contains a new set of records which is filtered
 by the new predicate.</p>
 </li>
 <li>
-<p><code>SearchCommand</code> then calls <code>getFilteredRecordList</code> method to access the filtered records in an
-<code>ObservableList&lt;Record&gt;</code> in order to calculate the sum of the money that is spent in all the filtered records.</p>
+<p><code><span class="fuchsia">SearchCommand</span></code> then calls <code><span class="fuchsia">getFilteredRecordList</span></code> method to access the filtered records in an
+<code><span class="fuchsia">ObservableList&lt;Record&gt;</span></code> in order to calculate the sum of the money that is spent in all the filtered records.</p>
 </li>
 <li>
-<p>Then the record list panel will show a set of records according to the keywords. A <code>CommandResult</code> is then created
-and returned to <code>Logic Manager</code>.</p>
+<p>Then the record list panel will show a set of records according to the keywords. A <code><span class="fuchsia">CommandResult</span></code> is then created
+and returned to <code><span class="fuchsia">Logic Manager</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -738,7 +737,7 @@ The sort mechanism allows users to view their expense records in a different way
 <div class="sect3">
 <h4 id="current-implementation-2"><a class="link" href="#current-implementation-2">4.2.1. Current Implementation</a></h4>
 <div class="paragraph">
-<p>The sort command uses comparators that implement <code>java.util.Comparator</code> interface to provide the comparison functions.</p>
+<p>The sort command uses comparators that implement <code><span class="fuchsia">java.util.Comparator</span></code> interface to provide the comparison functions.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <caption class="title">Table 2. Sort commands (default ordering)</caption>
@@ -756,23 +755,23 @@ The sort mechanism allows users to view their expense records in a different way
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name</code>, <code>sort -name -asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordNameComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -name</span></code>, <code><span class="fuchsia">sort -name -asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordNameComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -amount</code>, <code>sort -amount -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordAmountComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -amount</span></code>, <code><span class="fuchsia">sort -amount -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordAmountComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Descending order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -date</code>, <code>sort -date -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordDateComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -date</span></code>, <code><span class="fuchsia">sort -date -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordDateComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse chronological order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -cat</code>, <code>sort -cat -asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordCategoryComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -cat</span></code>, <code><span class="fuchsia">sort -cat -asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordCategoryComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
 </tr>
 </tbody>
@@ -793,43 +792,43 @@ The sort mechanism allows users to view their expense records in a different way
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordNameComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -name -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordNameComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse lexicographical order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -amount - asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordAmountComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -amount - asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordAmountComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ascending order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -date - asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordDateComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -date - asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordDateComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Chronological order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -cat -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordCategoryComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -cat -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordCategoryComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse lexicographical order</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Here is the list of operations involved in the execution of command, <code>sort -name</code>.</p>
+<p>Here is the list of operations involved in the execution of command, <code><span class="fuchsia">sort -name</span></code>.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"sort -name"</em>)</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"sort -name"</em>)</span></code> calls <code><span class="fuchsia">FinanceTrackerParser#parseCommand(<em>"sort -name"</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTracker#parseCommand(<em>"sort -name"</em>)</code> creates a new <code>SortCommandParser</code> object and calls <code>SortCommandParser#parse(<em>" -name"</em>)</code>.</p>
+<p><code><span class="fuchsia">FinanceTracker#parseCommand(<em>"sort -name"</em>)</span></code> creates a new <code><span class="fuchsia">SortCommandParser</span></code> object and calls <code><span class="fuchsia">SortCommandParser#parse(<em>" -name"</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>SortCommandParser#parse()</code> creates a new <code>RecordNameComparator()</code> object, <em>comparator</em> and passes it as a parameter into the <code>SortCommand</code> constructor.</p>
+<p><code><span class="fuchsia">SortCommandParser#parse()</span></code> creates a new <code><span class="fuchsia">RecordNameComparator()</span></code> object, <em>comparator</em> and passes it as a parameter into the <code><span class="fuchsia">SortCommand</span></code> constructor.</p>
 </li>
 <li>
-<p>The <code>SortCommand</code> object, <em>s</em>, is then passed back to the <code>SortCommandParser</code>, <code>FinanceTrackerParser</code>, and finally back to the <code>LogicManager</code>.</p>
+<p>The <code><span class="fuchsia">SortCommand</span></code> object, <em>s</em>, is then passed back to the <code><span class="fuchsia">SortCommandParser</span></code>, <code><span class="fuchsia">FinanceTrackerParser</span></code>, and finally back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
@@ -838,22 +837,22 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </li>
 <li>
-<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> then continues to call <code>SortCommand#execute()</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"sort -name"</em>)</span></code> then continues to call <code><span class="fuchsia">SortCommand#execute()</span></code>.</p>
 </li>
 <li>
-<p><code>SortCommand#execute()</code> calls <code>Model#SortFilteredRecordList(<em>comparator</em>)</code>.</p>
+<p><code><span class="fuchsia">SortCommand#execute()</span></code> calls <code><span class="fuchsia">Model#SortFilteredRecordList(<em>comparator</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>Model#SortFilteredRecordList(<em>comparator</em>)</code> calls <code>FinanceTracker#sortRecordList(<em>comparator</em>)</code>.</p>
+<p><code><span class="fuchsia">Model#SortFilteredRecordList(<em>comparator</em>)</span></code> calls <code><span class="fuchsia">FinanceTracker#sortRecordList(<em>comparator</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTracker#sortRecordList(<em>comparator</em>)</code> calls <code>UniqueRecordList#sortList(<em>comparator</em>)</code>.</p>
+<p><code><span class="fuchsia">FinanceTracker#sortRecordList(<em>comparator</em>)</span></code> calls <code><span class="fuchsia">UniqueRecordList#sortList(<em>comparator</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>UniqueRecordList#sortList(<em>comparator</em>)</code> then uses <code>FXCollection</code>’s static method <code>sort()</code>  to sort the records.</p>
+<p><code><span class="fuchsia">UniqueRecordList#sortList(<em>comparator</em>)</span></code> then uses <code><span class="fuchsia">FXCollection</span></code>’s static method <code><span class="fuchsia">sort()</span></code>  to sort the records.</p>
 </li>
 <li>
-<p><code>SortCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+<p><code><span class="fuchsia">SortCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -871,7 +870,7 @@ The sort mechanism allows users to view their expense records in a different way
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Use the <code>Comparator</code> interface.</p>
+<p><strong>Alternative 1 (current choice):</strong> Use the <code><span class="fuchsia">Comparator</span></code> interface.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -881,17 +880,17 @@ The sort mechanism allows users to view their expense records in a different way
 <p>Pros 2: Allows an alternative ordering to be applied, does not have to be the natural ordering. Therefore, dates can be sorted in reverse chronological order, and amount in descending order.</p>
 </li>
 <li>
-<p>Cons: A new class that implements the interface <code>Comparator</code> needs to be created.</p>
+<p>Cons: A new class that implements the interface <code><span class="fuchsia">Comparator</span></code> needs to be created.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Use the <code>Comparable</code> interface.</p>
+<p><strong>Alternative 2:</strong> Use the <code><span class="fuchsia">Comparable</span></code> interface.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Type-safe with compiler as <code>Comparable#compareTo()</code> only accepts object of type <code>T</code>, instead of <code>java.lang.Object</code>.</p>
+<p>Pros: Type-safe with compiler as <code><span class="fuchsia">Comparable#compareTo()</span></code> only accepts object of type <code><span class="fuchsia">T</span></code>, instead of <code><span class="fuchsia">java.lang.Object</span></code>.</p>
 </li>
 <li>
 <p>Cons 1: There can only be one form or way of sorting the records.</p>
@@ -906,12 +905,12 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </div>
 <div class="sect4">
-<h5 id="aspect-how-sort-is-executed-when-code-order-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-e-g-code-sort-name-desc-code"><a class="link" href="#aspect-how-sort-is-executed-when-code-order-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-e-g-code-sort-name-desc-code">Aspect: How sort is executed when <code>[ORDER]</code> argument is supplied and specified order is opposite to that of default. (E.g. <code>sort -name -desc</code>)</a></h5>
+<h5 id="aspect-how-sort-is-executed-when-code-span-class-fuchsia-order-span-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-span-class-navy-e-g-span-code-span-class-fuchsia-sort-name-desc-span-code"><a class="link" href="#aspect-how-sort-is-executed-when-code-span-class-fuchsia-order-span-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-span-class-navy-e-g-span-code-span-class-fuchsia-sort-name-desc-span-code">Aspect: How sort is executed when <code><span class="fuchsia">[ORDER]</span></code> argument is supplied and specified order is opposite to that of default. (<span class="navy">E.g.</span> <code><span class="fuchsia">sort -name -desc</span></code>)</a></h5>
 <div class="ulist">
 <ul>
 <li>
 <p><strong>Alternative 1 (current choice):</strong> A new comparator that imposes the reverse ordering of one of the four defined comparator classes is created.<br>
-(<strong>E.g.</strong> To sort the list by name in reverse lexicographical order, a new comparator, <code>RecordNameComparator#reversed()</code> is created.)</p>
+(<strong><span class="navy">E.g.</span></strong> To sort the list by name in reverse lexicographical order, a new comparator, <code><span class="fuchsia">RecordNameComparator#reversed()</span></code> is created.)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -924,15 +923,15 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Reverse the list after sorting it using one of the four defined comparator classes.
-(<strong>E.g.</strong> Sort list using <code>RecordNameComparator</code>. Then use the <code>reverse</code> command to reverse the list.)</p>
+<p><strong>Alternative 2:</strong> Reverse the list after sorting it using one of the four defined comparator classes.<br>
+(<strong><span class="navy">E.g.</span></strong> Sort list using <code><span class="fuchsia">RecordNameComparator</span></code>. Then use the <code><span class="fuchsia">reverse</span></code> command to reverse the list.)</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: We can reuse what is already in the codebase (<code>reverse</code> command).</p>
+<p>Pros: We can reuse what is already in the codebase (<code><span class="fuchsia">reverse</span></code> command).</p>
 </li>
 <li>
-<p>Cons: Harder to implement, need to execute two commands internally when one command is entered in the <code>CommandBox</code>.</p>
+<p>Cons: Harder to implement, need to execute two commands internally when one command is entered in the <code><span class="fuchsia">CommandBox</span></code>.</p>
 </li>
 </ul>
 </div>
@@ -957,31 +956,31 @@ The reverse command provides a convenient way for users to sort their entries in
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>LogicManager#execute(<em>"reverse"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"reverse"</em>)</span></code> calls <code><span class="fuchsia">FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code> creates a <code>ReverseCommand</code> object, <em>r</em>.</p>
+<p><code><span class="fuchsia">FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</span></code> creates a <code><span class="fuchsia">ReverseCommand</span></code> object, <em>r</em>.</p>
 </li>
 <li>
-<p><em>r</em> is passed back to the <code>FinanceTrackerParser</code>, and then back to the <code>LogicManager</code>.</p>
+<p><em>r</em> is passed back to the <code><span class="fuchsia">FinanceTrackerParser</span></code>, and then back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p><code>LogicManager#execute(<em>"reverse"</em>)</code> then moves on to call <code>ReverseCommand#execute()</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"reverse"</em>)</span></code> then moves on to call <code><span class="fuchsia">ReverseCommand#execute()</span></code>.</p>
 </li>
 <li>
-<p><code>ReverseCommand#execute()</code> calls <code>Model#reverseFilteredRecordList()</code>.</p>
+<p><code><span class="fuchsia">ReverseCommand#execute()</span></code> calls <code><span class="fuchsia">Model#reverseFilteredRecordList()</span></code>.</p>
 </li>
 <li>
-<p><code>Model#reverseFilteredRecordList()</code> calls <code>FinanceTracker#reverseRecordList()</code>.</p>
+<p><code><span class="fuchsia">Model#reverseFilteredRecordList()</span></code> calls <code><span class="fuchsia">FinanceTracker#reverseRecordList()</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTracker#reverseRecordList()</code> calls <code>UniqueRecordList#reverseList()</code>.</p>
+<p><code><span class="fuchsia">FinanceTracker#reverseRecordList()</span></code> calls <code><span class="fuchsia">UniqueRecordList#reverseList()</span></code>.</p>
 </li>
 <li>
-<p><code>UniqueRecordList#reverseList()</code> uses <code>FXCollection</code>’s static method <code>reverse()</code> to reverse the list of records.</p>
+<p><code><span class="fuchsia">UniqueRecordList#reverseList()</span></code> uses <code><span class="fuchsia">FXCollection</span></code>’s static method <code><span class="fuchsia">reverse()</span></code> to reverse the list of records.</p>
 </li>
 <li>
-<p><code>ReverseCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+<p><code><span class="fuchsia">ReverseCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -998,32 +997,32 @@ The reverse command provides a convenient way for users to sort their entries in
 <div class="sect3">
 <h4 id="current-implementation-4"><a class="link" href="#current-implementation-4">4.4.1. Current Implementation</a></h4>
 <div class="paragraph">
-<p>The undo/redo mechanism is facilitated by <code>VersionedFinanceTracker</code>.
-It extends <code>FinanceTracker</code> with an undo/redo history, stored internally as a <code>FinanceTrackerStateList</code> and <code>currentStatePointer</code>.
+<p>The undo/redo mechanism is facilitated by <code><span class="fuchsia">VersionedFinanceTracker</span></code>.
+It extends <code><span class="fuchsia">FinanceTracker</span></code> with an undo/redo history, stored internally as a <code><span class="fuchsia">FinanceTrackerStateList</span></code> and <code><span class="fuchsia">currentStatePointer</span></code>.
 Additionally, it implements the following operations:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>VersionedFinanceTracker#commit()</code>&#8201;&#8212;&#8201;Saves the current finance tracker state in its history.</p>
+<p><code><span class="fuchsia">VersionedFinanceTracker#commit()</span></code>&#8201;&#8212;&#8201;Saves the current finance tracker state in its history.</p>
 </li>
 <li>
-<p><code>VersionedFinanceTracker#undo()</code>&#8201;&#8212;&#8201;Restores the previous finance tracker state from its history.</p>
+<p><code><span class="fuchsia">VersionedFinanceTracker#undo()</span></code>&#8201;&#8212;&#8201;Restores the previous finance tracker state from its history.</p>
 </li>
 <li>
-<p><code>VersionedFinanceTracker#redo()</code>&#8201;&#8212;&#8201;Restores a previously undone finance tracker state from its history.</p>
+<p><code><span class="fuchsia">VersionedFinanceTracker#redo()</span></code>&#8201;&#8212;&#8201;Restores a previously undone finance tracker state from its history.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>These operations are exposed in the <code>Model</code> interface as <code>Model#commitFinanceTracker()</code>, <code>Model#undoFinanceTracker()</code> and <code>Model#redoFinanceTracker()</code> respectively.</p>
+<p>These operations are exposed in the <code><span class="fuchsia">Model</span></code> interface as <code><span class="fuchsia">Model#commitFinanceTracker()</span></code>, <code><span class="fuchsia">Model#undoFinanceTracker()</span></code> and <code><span class="fuchsia">Model#redoFinanceTracker()</span></code> respectively.</p>
 </div>
 <div class="paragraph">
 <p>Given below is an example usage scenario and how the undo/redo mechanism behaves at each step.</p>
 </div>
 <div class="paragraph">
 <p><strong>Step 1.</strong><br>
-The user launches the application for the first time. The <code>VersionedFinanceTracker</code> will be initialized with the initial finance tracker state, and the <code>currentStatePointer</code> pointing to that single finance tracker state.</p>
+The user launches the application for the first time. The <code><span class="fuchsia">VersionedFinanceTracker</span></code> will be initialized with the initial finance tracker state, and the <code><span class="fuchsia">currentStatePointer</span></code> pointing to that single finance tracker state.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1032,7 +1031,7 @@ The user launches the application for the first time. The <code>VersionedFinance
 </div>
 <div class="paragraph">
 <p><strong>Step 2.</strong><br>
-The user executes <code>delete 5</code> command to delete the 5th record in the finance tracker. The <code>delete</code> command calls <code>Model#commitFinanceTracker()</code>, causing the modified state of the finance tracker after the <code>delete 5</code> command executes to be saved in the <code>financeTrackerStateList</code>, and the <code>currentStatePointer</code> is shifted to the newly inserted finance tracker state.</p>
+The user executes <code><span class="fuchsia">delete 5</span></code> command to delete the 5th record in the finance tracker. The <code><span class="fuchsia">delete</span></code> command calls <code><span class="fuchsia">Model#commitFinanceTracker()</span></code>, causing the modified state of the finance tracker after the <code><span class="fuchsia">delete 5</span></code> command executes to be saved in the <code><span class="fuchsia">financeTrackerStateList</span></code>, and the <code><span class="fuchsia">currentStatePointer</span></code> is shifted to the newly inserted finance tracker state.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1041,7 +1040,7 @@ The user executes <code>delete 5</code> command to delete the 5th record in the 
 </div>
 <div class="paragraph">
 <p><strong>Step 3.</strong><br>
-The user executes <code>spend n/burger &#8230;&#8203;</code> to add a new record. The <code>spend</code> command also calls <code>Model#commitFinanceTracker()</code>, causing another modified finance tracker state to be saved into the <code>financeTrackerStateList</code>.</p>
+The user executes <code><span class="fuchsia">spend n/burger &#8230;&#8203;</span></code> to add a new record. The <code><span class="fuchsia">spend</span></code> command also calls <code><span class="fuchsia">Model#commitFinanceTracker()</span></code>, causing another modified finance tracker state to be saved into the <code><span class="fuchsia">financeTrackerStateList</span></code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1055,14 +1054,14 @@ The user executes <code>spend n/burger &#8230;&#8203;</code> to add a new record
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If a command fails its execution, it will not call <code>Model#commitFinanceTracker()</code>, so the finance tracker state will not be saved into the <code>financeTrackerStateList</code>.
+If a command fails its execution, it will not call <code><span class="fuchsia">Model#commitFinanceTracker()</span></code>, so the finance tracker state will not be saved into the <code><span class="fuchsia">financeTrackerStateList</span></code>.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
 <p><strong>Step 4.</strong><br>
-The user now decides that adding the record was a mistake, and decides to undo that action by executing the <code>undo</code> command. The <code>undo</code> command will call <code>Model#undoFinanceTracker()</code>, which will shift the <code>currentStatePointer</code> once to the left, pointing it to the previous finance tracker state, and restores the finance tracker to that state.</p>
+The user now decides that adding the record was a mistake, and decides to undo that action by executing the <code><span class="fuchsia">undo</span></code> command. The <code><span class="fuchsia">undo</span></code> command will call <code><span class="fuchsia">Model#undoFinanceTracker()</span></code>, which will shift the <code><span class="fuchsia">currentStatePointer</span></code> once to the left, pointing it to the previous finance tracker state, and restores the finance tracker to that state.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1076,8 +1075,8 @@ The user now decides that adding the record was a mistake, and decides to undo t
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If the <code>currentStatePointer</code> is at index 0, pointing to the initial finance tracker state, then there are no previous finance tracker states to restore.
-The <code>undo</code> command uses <code>Model#canUndoFinanceTracker()</code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo.
+If the <code><span class="fuchsia">currentStatePointer</span></code> is at index 0, pointing to the initial finance tracker state, then there are no previous finance tracker states to restore.
+The <code><span class="fuchsia">undo</span></code> command uses <code><span class="fuchsia">Model#canUndoFinanceTracker()</span></code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo.
 </td>
 </tr>
 </table>
@@ -1091,7 +1090,7 @@ The <code>undo</code> command uses <code>Model#canUndoFinanceTracker()</code> to
 </div>
 </div>
 <div class="paragraph">
-<p>The <code>redo</code> command does the opposite&#8201;&#8212;&#8201;it calls <code>Model#redoFinanceTracker()</code>, which shifts the <code>currentStatePointer</code> once to the right, pointing to the previously undone state, and restores the finance tracker to that state.</p>
+<p>The <code><span class="fuchsia">redo</span></code> command does the opposite&#8201;&#8212;&#8201;it calls <code><span class="fuchsia">Model#redoFinanceTracker()</span></code>, which shifts the <code><span class="fuchsia">currentStatePointer</span></code> once to the right, pointing to the previously undone state, and restores the finance tracker to that state.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1100,14 +1099,14 @@ The <code>undo</code> command uses <code>Model#canUndoFinanceTracker()</code> to
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If the <code>currentStatePointer</code> is at index <code>financeTrackerStateList.size() - 1</code>, pointing to the latest finance tracker state, then there are no undone finance tracker states to restore. The <code>redo</code> command uses <code>Model#canRedoFinanceTracker()</code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo.
+If the <code><span class="fuchsia">currentStatePointer</span></code> is at index <code><span class="fuchsia">financeTrackerStateList.size() - 1</span></code>, pointing to the latest finance tracker state, then there are no undone finance tracker states to restore. The <code><span class="fuchsia">redo</span></code> command uses <code><span class="fuchsia">Model#canRedoFinanceTracker()</span></code> to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
 <p><strong>Step 5.</strong><br>
-The user then decides to execute the command <code>list</code>. Commands that do not modify the finance tracker, such as <code>list</code>, will usually not call <code>Model#commitFinanceTracker()</code>, <code>Model#undoFinanceTracker()</code> or <code>Model#redoFinanceTracker()</code>. Thus, the <code>financeTrackerStateList</code> remains unchanged.</p>
+The user then decides to execute the command <code><span class="fuchsia">list</span></code>. Commands that do not modify the finance tracker, such as <code><span class="fuchsia">list</span></code>, will usually not call <code><span class="fuchsia">Model#commitFinanceTracker()</span></code>, <code><span class="fuchsia">Model#undoFinanceTracker()</span></code> or <code><span class="fuchsia">Model#redoFinanceTracker()</span></code>. Thus, the <code><span class="fuchsia">financeTrackerStateList</span></code> remains unchanged.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1116,7 +1115,7 @@ The user then decides to execute the command <code>list</code>. Commands that do
 </div>
 <div class="paragraph">
 <p><strong>Step 6.</strong><br>
-The user executes <code>clear</code>, which calls <code>Model#commitFinanceTracker()</code>. Since the <code>currentStatePointer</code> is not pointing at the end of the <code>financeTrackerStateList</code>, all finance tracker states after the <code>currentStatePointer</code> will be purged. We designed it this way because it no longer makes sense to redo the <code>spend n/burger &#8230;&#8203;</code> command. This is the behavior that most modern desktop applications follow.</p>
+The user executes <code><span class="fuchsia">clear</span></code>, which calls <code><span class="fuchsia">Model#commitFinanceTracker()</span></code>. Since the <code><span class="fuchsia">currentStatePointer</span></code> is not pointing at the end of the <code><span class="fuchsia">financeTrackerStateList</span></code>, all finance tracker states after the <code><span class="fuchsia">currentStatePointer</span></code> will be purged. We designed it this way because it no longer makes sense to redo the <code><span class="fuchsia">spend n/burger &#8230;&#8203;</span></code> command. This is the behavior that most modern desktop applications follow.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1156,7 +1155,7 @@ The user executes <code>clear</code>, which calls <code>Model#commitFinanceTrack
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Will use less memory (e.g. for <code>delete</code>, just save the record being deleted).</p>
+<p>Pros: Will use less memory (<span class="navy">e.g.</span> for <code><span class="fuchsia">delete</span></code>, just save the record being deleted).</p>
 </li>
 <li>
 <p>Cons: We must ensure that the implementation of each individual command are correct.</p>
@@ -1179,20 +1178,20 @@ The user executes <code>clear</code>, which calls <code>Model#commitFinanceTrack
 <p>Pros: Easy for new Computer Science student undergraduates to understand, who are likely to be the new incoming developers of our project.</p>
 </li>
 <li>
-<p>Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both <code>HistoryManager</code> and <code>VersionedFinanceTracker</code>.</p>
+<p>Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both <code><span class="fuchsia">HistoryManager</span></code> and <code><span class="fuchsia">VersionedFinanceTracker</span></code>.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Use <code>HistoryManager</code> for undo/redo</p>
+<p><strong>Alternative 2:</strong> Use <code><span class="fuchsia">HistoryManager</span></code> for undo/redo</p>
 <div class="ulist">
 <ul>
 <li>
 <p>Pros: We do not need to maintain a separate list, and just reuse what is already in the codebase.</p>
 </li>
 <li>
-<p>Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as <code>HistoryManager</code> now needs to do two different things.</p>
+<p>Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as <code><span class="fuchsia">HistoryManager</span></code> now needs to do two different things.</p>
 </li>
 </ul>
 </div>
@@ -1210,10 +1209,10 @@ allocate a portion of the total budget to different categories.
 The current spending will increase when records are added.</p>
 </div>
 <div class="paragraph">
-<p>This implementation is under <code>Logic</code>, <code>Model</code>, <code>Storage</code> and <code>UI</code> Component.</p>
+<p>This implementation is under <code><span class="fuchsia">Logic</span></code>, <code><span class="fuchsia">Model</span></code>, <code><span class="fuchsia">Storage</span></code> and <code><span class="fuchsia">UI</span></code> Component.</p>
 </div>
 <div class="paragraph">
-<p>The classes associated with Budget is shown in the class diagram below:</p>
+<p>The classes associated with <code><span class="fuchsia">Budget</span></code> are shown in the class diagram below:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1222,12 +1221,12 @@ The current spending will increase when records are added.</p>
 <div class="title">Figure 13. Class Diagram for Budget</div>
 </div>
 <div class="paragraph">
-<p>The above diagram shows the structure of the classes associated with <code>Budget</code>.
-<code>TotalBudget</code> and <code>CategoryBudget</code> are sub-classes of <code>Budget</code> and <code>TotalBudget</code> can contain
-any number of <code>CategoryBudget</code>.</p>
+<p>The above diagram shows the structure of the classes associated with <code><span class="fuchsia">Budget</span></code>.
+<code><span class="fuchsia">TotalBudget</span></code> and <code><span class="fuchsia">CategoryBudget</span></code> are sub-classes of <code><span class="fuchsia">Budget</span></code> and <code><span class="fuchsia">TotalBudget</span></code> can contain
+any number of <code><span class="fuchsia">CategoryBudget</span></code>.</p>
 </div>
 <div class="paragraph">
-<p>As seen in the class diagram, the <code>CategoryBudget</code> in <code>TotalBudget</code> is kept in a <code>HashSet</code>.</p>
+<p>As seen in the class diagram, the <code><span class="fuchsia">CategoryBudget</span></code> in <code><span class="fuchsia">TotalBudget</span></code> is kept in a <code><span class="fuchsia">HashSet</span></code>.</p>
 </div>
 <div class="sect3">
 <h4 id="setting-a-budget"><a class="link" href="#setting-a-budget">4.5.1. Setting a Budget</a></h4>
@@ -1237,7 +1236,7 @@ the budget again.</p>
 </div>
 <div class="paragraph">
 <p>Given below is a sequence diagram and step by step explanation of how Finance Tracker
-creates a budget when the user uses the <code>set</code> command to set a budget.</p>
+creates a budget when the user uses the <code><span class="fuchsia">set</span></code> command to set a budget.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1248,52 +1247,51 @@ creates a budget when the user uses the <code>set</code> command to set a budget
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The user enters a Set command (e.g. set $/120). The command passed down and received by the <code>LogicManager</code>.</p>
+<p>The user enters a <code><span class="fuchsia">set command</span></code> (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/120</span></code>). The command is passed down and received by the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p>The <code>LogicManger</code> calls the <code>FinanceTrackerParser#ParseCommand()</code> method which creates a <code>SetCommandParser</code>
-object. The <code>FinanceTrackerParser#ParseCommand()</code> method then calls the <code>SetCommandParser#parse()</code> method,
+<p>The <code><span class="fuchsia">LogicManger</span></code> calls the <code><span class="fuchsia">FinanceTrackerParser#ParseCommand()</span></code> method which creates a <code><span class="fuchsia">SetCommandParser</span></code>
+object. The <code><span class="fuchsia">FinanceTrackerParser#ParseCommand()</span></code> method then calls the <code><span class="fuchsia">SetCommandParser#parse()</span></code> method,
 passing in the amount argument entered by the user ("120" in example).</p>
 </li>
 <li>
-<p><code>SetCommandParser#parse()</code> calls <code>ParserUtil#ParseAmount()</code> to handle the parsing of the amount. The method
+<p><code><span class="fuchsia">SetCommandParser#parse()</span></code> calls <code><span class="fuchsia">ParserUtil#ParseAmount()</span></code> to handle the parsing of the amount. The method
 checks if the argument is a valid amount value and throws an exception if it is not. If there are no exceptions,
-<code>ParserUtil#ParseAmount()</code> returns the processed amount string. <code>SetCommandParser#parse()</code> then creates a
-<code>SetCommand</code> with the processed amount ("120" in example) and the new <code>SetCommand</code> gets passed back to the
-<code>LogicManager</code>.</p>
+<code><span class="fuchsia">ParserUtil#ParseAmount()</span></code> returns the processed amount string. <code><span class="fuchsia">SetCommandParser#parse()</span></code> then creates a
+<code><span class="fuchsia">SetCommand</span></code> with the processed amount ("120" in example) and the new <code><span class="fuchsia">SetCommand</span></code> gets passed back to the
+<code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p>Now that the command is processed, <code>LogicManager#execute()</code> calls <code>SetCommand#execute()</code> to execute the command.
-<code>SetCommand#execute()</code> creates a new <code>Budget</code> object initialised with the amount (budget of 120 created in example).
-The <code>Budget</code> object (labelled p) is then passed to the <code>ModelManager</code> by the <code>ModelManager#addBudget()</code> method.</p>
+<p>Now that the command is processed, <code><span class="fuchsia">LogicManager#execute()</span></code> calls <code><span class="fuchsia">SetCommand#execute()</span></code> to execute the command.
+<code><span class="fuchsia">SetCommand#execute()</span></code> creates a new <code><span class="fuchsia">Budget</span></code> object initialised with the amount (budget of 120 created in example).
+The <code><span class="fuchsia">Budget</span></code> object (labelled p) is then passed to the <code><span class="fuchsia">ModelManager</span></code> by the <code><span class="fuchsia">ModelManager#addBudget()</span></code> method.</p>
 </li>
 <li>
-<p><code>ModelManager#addBudget()</code> calls <code>FinanceTracker#addBudget()</code> to update the budget of the current instance of the
-Finance Tracker. <code>FinanceTracker#addBudget()</code> updates the <code>TotalBudget</code> object field (labelled q) in <code>FinanceTracker</code>
-by calling <code>TotalBudget#updateBudget()</code> and passing the <code>Budget p</code> and the records stored in the <code>FinanceTracker</code>.</p>
+<p><code><span class="fuchsia">ModelManager#addBudget()</span></code> calls <code><span class="fuchsia">FinanceTracker#addBudget()</span></code> to update the budget of the current instance of the
+Finance Tracker. <code><span class="fuchsia">FinanceTracker#addBudget()</span></code> updates the <code><span class="fuchsia">TotalBudget</span></code> object field (labelled q) in <code><span class="fuchsia">FinanceTracker</span></code>
+by calling <code><span class="fuchsia">TotalBudget#updateBudget()</span></code> and passing the <code><span class="fuchsia">Budget p</span></code> and the records stored in the <code><span class="fuchsia">FinanceTracker</span></code>.</p>
 </li>
 <li>
-<p><code>TotalBudget#updateBudget()</code> first gets the budget data (totalBudget, currentBudget) from <code>Budget p</code> and sets it using
-<code>TotalBudget#set()</code> (total budget of app is now 120 in example). It then updates the current budget and spending based on
-the records that was stored and passed in by the <code>FinanceTracker</code>.</p>
+<p><code><span class="fuchsia">TotalBudget#updateBudget()</span></code> first gets the budget data (totalBudget, currentBudget) from <code><span class="fuchsia">Budget p</span></code> and sets it using
+<code><span class="fuchsia">TotalBudget#set()</span></code> (total budget of app is now 120 in example). It then updates the current budget and spending based on
+the records that was stored and passed in by the <code><span class="fuchsia">FinanceTracker</span></code>.</p>
 </li>
 <li>
-<p>Once <code>TotalBudget q</code> has finished updating, control is passed all the way back to <code>SetCommand#execute()</code> which will create
-a <code>CommandResult</code> (labelled result). The result is passed back to <code>LogicManager#execute</code> and all the way to the user to show
+<p>Once <code><span class="fuchsia">TotalBudget q</span></code> has finished updating, control is passed all the way back to <code><span class="fuchsia">SetCommand#execute()</span></code> which will create
+a <code><span class="fuchsia">CommandResult</span></code> (labelled result). The result is passed back to <code><span class="fuchsia">LogicManager#execute</span></code> and all the way to the user to show
 that the budget has been set (Budget set to 120 in example).</p>
 </li>
 <li>
 <p>Although not shown in the diagram, the UI is then updated with the new budget. The UI update of budget data will be
-covered in <a href="#updating-the-ui-with-budget-data">Section 4.5.6, &#8220;Updating the UI with Budget Data&#8221;</a>.</p>
+covered in <span class="underline blue"><a href="#updating-the-ui-with-budget-data">Section 4.5.7, &#8220;Updating the UI with Budget Data&#8221;</a></span>.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect3">
 <h4 id="design-consideration-2"><a class="link" href="#design-consideration-2">4.5.2. Design Consideration</a></h4>
-<div class="paragraph">
-<p>Aspect: Updating budget data after Record updates</p>
-</div>
+<div class="sect4">
+<h5 id="aspect-updating-budget-data-after-record-updates"><a class="link" href="#aspect-updating-budget-data-after-record-updates">Aspect: Updating budget data after Record updates</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1326,6 +1324,7 @@ iterating through changed record list.</p>
 </ul>
 </div>
 </div>
+</div>
 <div class="sect3">
 <h4 id="allocating-a-budget-to-category"><a class="link" href="#allocating-a-budget-to-category">4.5.3. Allocating a budget to category</a></h4>
 <div class="paragraph">
@@ -1344,51 +1343,51 @@ executes when a user sets a category budget.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User enters command <code>allocate $/10 c/Food</code>. The command is received by <code>FinanceBookParser</code></p>
+<p>User enters command <code><span class="fuchsia">allocate $/10 c/Food</span></code>. The command is received by <code><span class="fuchsia">FinanceTrackerParser</span></code></p>
 </li>
 <li>
-<p>FinanceTrackerParser will then create a <code>AllocateCommandParser</code> Object
-and calls <code>AllocateCommandParser#parse()</code> method</p>
+<p><code><span class="fuchsia">FinanceTrackerParser</span></code> will then create a <code><span class="fuchsia">AllocateCommandParser</span></code> Object
+and calls <code><span class="fuchsia">AllocateCommandParser#parse()</span></code> method</p>
 </li>
 <li>
-<p><code>AllocateCommandParser#parse()</code> method calls <code>ArgumentTokenizer#tokenize()</code> method to tokenize
-the user input String into arguments and prefixes in an <code>ArgumentMultimap</code> Object.</p>
+<p><code><span class="fuchsia">AllocateCommandParser#parse()</span></code> method calls <code><span class="fuchsia">ArgumentTokenizer#tokenize()</span></code> method to tokenize
+the user input String into arguments and prefixes in an <code><span class="fuchsia">ArgumentMultimap</span></code> Object.</p>
 </li>
 <li>
-<p><code>AllocateCommandParser#parse()</code> method then calls another method within the same class
-<code>AllocateCommandParser#arePrefixesPresent()</code> to check if there are any missing prefixes.
-If there are missing prefixes, <code>ParseException</code> will be thrown</p>
+<p><code><span class="fuchsia">AllocateCommandParser#parse()</span></code> method then calls another method within the same class
+<code><span class="fuchsia">AllocateCommandParser#arePrefixesPresent()</span></code> to check if there are any missing prefixes.
+If there are missing prefixes, <code><span class="fuchsia">ParseException</span></code> will be thrown</p>
 </li>
 <li>
-<p>If no exceptions are thrown from the step 4, a new AllocateCommand object is created
+<p>If no exceptions are thrown from the step 4, a new <code><span class="fuchsia">AllocateCommand</span></code> object is created
 with the given arguments.</p>
 </li>
 <li>
-<p>Control is returned to LogicManager which then calls <code>AllocateCommand#execute()</code> method.</p>
+<p>Control is returned to <code><span class="fuchsia">LogicManager</span></code> which then calls <code><span class="fuchsia">AllocateCommand#execute()</span></code> method.</p>
 </li>
 <li>
-<p><code>AllocateCommand#execute()</code> calls <code>ModelManager#addCategoryBudget()</code> method and control
-is transferred to <code>ModelManager</code> which is in the <code>Model</code> Component.</p>
+<p><code><span class="fuchsia">AllocateCommand#execute()</span></code> calls <code><span class="fuchsia">ModelManager#addCategoryBudget()</span></code> method and control
+is transferred to <code><span class="fuchsia">ModelManager</span></code> which is in the <code><span class="fuchsia">Model</span></code> Component.</p>
 </li>
 <li>
-<p><code>ModelManager#addCategoryBudget()</code> then calls <code>FinanceTracker#addCategoryBudget()</code> which then
-calls <code>TotalBudget#setNewCategoryBudget()</code></p>
+<p><code><span class="fuchsia">ModelManager#addCategoryBudget()</span></code> then calls <code><span class="fuchsia">FinanceTracker#addCategoryBudget()</span></code> which then
+calls <code><span class="fuchsia">TotalBudget#setNewCategoryBudget()</span></code>.</p>
 </li>
 <li>
-<p><code>TotalBudget#setNewCategoryBudget()</code> takes into account if there are any previous budget
+<p><code><span class="fuchsia">TotalBudget#setNewCategoryBudget()</span></code> takes into account if there are any previous budget
 allocated to a category and if so, adds the expenses to the new budget assigned to the category</p>
 </li>
 </ol>
 </div>
-<div class="sect4">
-<h5 id="design-consideration-3"><a class="link" href="#design-consideration-3">Design consideration</a></h5>
-<div class="paragraph">
-<p>Aspect: allocating Category Budget</p>
 </div>
+<div class="sect3">
+<h4 id="design-consideration-3"><a class="link" href="#design-consideration-3">4.5.4. Design consideration</a></h4>
+<div class="sect4">
+<h5 id="aspect-allocating-category-budget"><a class="link" href="#aspect-allocating-category-budget">Aspect: allocating Category Budget</a></h5>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice)</strong>: Allocating Category Budget is done with only one command <code>allocate</code></p>
+<p><strong>Alternative 1 (current choice)</strong>: Allocating Category Budget is done with only one command <code><span class="fuchsia">allocate</span></code></p>
 <div class="ulist">
 <ul>
 <li>
@@ -1403,7 +1402,7 @@ allocated to the same category, it should be reflected accordingly.</p>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2</strong>: Have two other commands <code>increaseCatBudget</code> and <code>decreaseCatBudget</code> to allow user
+<p><strong>Alternative 2</strong>: Have two other commands <code><span class="fuchsia">increaseCatBudget</span></code> and <code><span class="fuchsia">decreaseCatBudget</span></code> to allow user
 to control the budget of the category</p>
 <div class="ulist">
 <ul>
@@ -1422,45 +1421,45 @@ if the category was not previously allocated with a budget</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="listing-category-budgets-allocated"><a class="link" href="#listing-category-budgets-allocated">4.5.4. Listing Category Budgets allocated</a></h4>
+<h4 id="listing-category-budgets-allocated"><a class="link" href="#listing-category-budgets-allocated">4.5.5. Listing Category Budgets allocated</a></h4>
 <div class="paragraph">
 <p>This feature allows user to list the category budgets and the current spending in these
 categories after category budgets are allocated.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="implementation-2"><a class="link" href="#implementation-2">4.5.5. Implementation</a></h4>
+<h4 id="implementation-2"><a class="link" href="#implementation-2">4.5.6. Implementation</a></h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User enters command <code>show</code> in Command Box.</p>
+<p>User enters command <code><span class="fuchsia">show</span></code> in Command Box.</p>
 </li>
 <li>
-<p><code>ShowCategoryBudgetCommand#execute()</code> is executed and the method first checks whether there are any allocated category
+<p><code><span class="fuchsia">ShowCategoryBudgetCommand#execute()</span></code> is executed and the method first checks whether there are any allocated category
 budgets</p>
 </li>
 <li>
 <p>If there are no allocated category budgets, a message will be printed in the ResultDisplay</p>
 </li>
 <li>
-<p>If there are allocated category budgets, <code>Model#getCatBudget()</code> is called to obtain the set of <code>CategoryBudget</code></p>
+<p>If there are allocated category budgets, <code><span class="fuchsia">Model#getCatBudget()</span></code> is called to obtain the set of <code><span class="fuchsia">CategoryBudget</span></code></p>
 </li>
 <li>
-<p>An <code>Iterator</code> is then used to iterate through the set of <code>CategoryBudgets</code> and the <code>currentSpending</code> is printed with
-the <code>totalBudget</code> allocated to the <code>CategoryBudget</code>.</p>
+<p>An <code><span class="fuchsia">Iterator</span></code> is then used to iterate through the set of <code><span class="fuchsia">CategoryBudgets</span></code> and the <code><span class="fuchsia">currentSpending</span></code> is printed with
+the <code><span class="fuchsia">totalBudget</span></code> allocated to the <code><span class="fuchsia">CategoryBudget</span></code>.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect3">
-<h4 id="updating-the-ui-with-budget-data"><a class="link" href="#updating-the-ui-with-budget-data">4.5.6. Updating the UI with Budget Data</a></h4>
+<h4 id="updating-the-ui-with-budget-data"><a class="link" href="#updating-the-ui-with-budget-data">4.5.7. Updating the UI with Budget Data</a></h4>
 <div class="paragraph">
 <p>Previous sections have covered how the budget of the Finance Tracker is updated within the App. This section aims
 to give a overview of the logic for updating the User Interface of the App to reflect the budget updates to the
 user.</p>
 </div>
 <div class="paragraph">
-<p>To explain the update, an Activity Diagram accompanied with a step-by-step walk-through is proved. The Activity Diagram is modelled after <code>MainWindow#execute()</code> which calls the appropriate
+<p>To explain the update, an Activity Diagram accompanied with a step-by-step walk-through is proved. The Activity Diagram is modelled after <code><span class="fuchsia">MainWindow#execute()</span></code> which calls the appropriate
 methods to update the budget UI.</p>
 </div>
 <div class="imageblock">
@@ -1472,50 +1471,50 @@ methods to update the budget UI.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The command is first executed by the <code>LogicManager</code>. The execution of commands will update the budget data
+<p>The command is first executed by the <code><span class="fuchsia">LogicManager</span></code>. The execution of commands will update the budget data
 in the Finance Tracker as specified in previous sections. The success message of the command is then displayed to the user
 (Result of command that user typed).</p>
 </li>
 <li>
-<p>There is then a conditional check on whether the command has changed the budget data (Based on CommandResult
+<p>There is then a conditional check on whether the command has changed the budget data (Based on <code><span class="fuchsia">CommandResult</span></code>
 passed back from command execution). For brevity and based on the scope of the section, the other conditional checks
 for the command will be excluded.
-List of Commands that change budget: <code>spend</code>, <code>edit</code>, <code>delete</code>, <code>set</code>, <code>allocate</code>, <code>clear</code>, <code>setfile</code>, <code>undo</code>, <code>redo</code></p>
+List of Commands that change budget: <code><span class="fuchsia">spend</span></code>, <code><span class="fuchsia">edit</span></code>, <code><span class="fuchsia">delete</span></code>, <code><span class="fuchsia">set</span></code>, <code><span class="fuchsia">allocate</span></code>, <code><span class="fuchsia">clear</span></code>, <code><span class="fuchsia">setfile</span></code>, <code><span class="fuchsia">undo</span></code>, <code><span class="fuchsia">redo</span></code></p>
 </li>
 <li>
-<p>When it has been determined that the command has altered budget data, 3 components of the UI need to be updated before
-continuing. If you are unfamiliar with the components of the UI, refer to the
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#graphical-user-interface-introduction">Graphical User Interface</a> section of our User Guide.</p>
+<p>When it has been determined that the command has altered budget data, 3 components of the <code><span class="fuchsia">UI</span></code> need to be updated before
+continuing. If you are unfamiliar with the components of the <code><span class="fuchsia">UI</span></code>, refer to the
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#graphical-user-interface-introduction"><span class="blue">Graphical User Interface</span></a> section of our User Guide.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p><strong>BudgetPanel</strong>:
-The BudgetPanel consists of 2 sections, the Budget Bar and the text below the bar. The bar and text is updated with
-data retrieved from the <code>Logic</code> component of the App, with the changes to Budget Bar being animated. The colour of
+The <code><span class="fuchsia">BudgetPanel</span></code> consists of 2 sections, the Budget Bar and the text below the bar. The bar and text is updated with
+data retrieved from the <code><span class="fuchsia">Logic</span></code> component of the App, with the changes to Budget Bar being animated. The colour of
 the bar is then set based on the difference in current spending and total budget set (Red: Budget Exceeded, Yellow: Spending is
 &gt;= 80% of budget, Green: Spending is &lt;80% of budget).</p>
 </li>
 <li>
 <p><strong>Browser Panel</strong>:
-The BrowserPanel only contains text and is updated similar to the text in the BudgetPanel.</p>
+The <code><span class="fuchsia">BrowserPanel</span></code> only contains text and is updated similar to the text in the BudgetPanel.</p>
 </li>
 <li>
 <p><strong>Summary Panel</strong>:
-The SummaryPanel consists of a pie chart. If the updated budget data shows no expense recorded within the specified time period,
+The <code><span class="fuchsia">SummaryPanel</span></code> consists of a pie chart. If the updated budget data shows no expense recorded within the specified time period,
 text explaining that there is no recorded expenses is shown to the user instead. Else, the summary data is updated and the pie
-chart is edited to reflect changes in the expenditures. Refer to <a href="#summary">Section 4.6, &#8220;Summary&#8221;</a> for a more detailed explanation of the implementation
+chart is edited to reflect changes in the expenditures. Refer to <span class="underline blue"><a href="#summary">Section 4.6, &#8220;Summary&#8221;</a></span> for a more detailed explanation of the implementation
 of the feature.</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>After the UI is updated, there is another check to see if the command given was <code>summary</code>. If it was, the current Panel being
-displayed (BrowserPanel or SummaryPanel) is swapped to the other panel. Again, refer to the Summary section below for more implementation
+<p>After the <code><span class="fuchsia">UI</span></code> is updated, there is another check to see if the command given was <code><span class="fuchsia">summary</span></code>. If it was, the current Panel being
+displayed (<code><span class="fuchsia">BrowserPanel</span></code> or <code><span class="fuchsia">SummaryPanel</span></code>) is swapped to the other panel. Again, refer to the Summary section below for more implementation
 details.</p>
 </li>
 <li>
-<p>The method ends by returning the CommandResult that was returned from the execution of command to the MainApp.</p>
+<p>The method ends by returning the <code><span class="fuchsia">CommandResult</span></code> that was returned from the execution of command to the <code><span class="fuchsia">MainApp</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -1524,15 +1523,15 @@ details.</p>
 <div class="sect2">
 <h3 id="summary"><a class="link" href="#summary">4.6. Summary</a></h3>
 <div class="paragraph">
-<p>The summary feature shows an overview of your previous expenditures in a pie chart. Each sector of the chart represents a category, labelled with the name and total expenditure for each category.</p>
+<p>The <code><span class="fuchsia">summary</span></code> feature shows an overview of your previous expenditures in a pie chart. Each sector of the chart represents a category, labelled with the name and total expenditure for each category.</p>
 </div>
 <div class="paragraph">
-<p>You can also set a report period by indicating the number of days or months. Specifying a report period is optional. If no parameters are defined, data of expenditures in the past week (ie. the last 7 days) will be displayed in the pie chart by default.</p>
+<p>You can also set a report period by indicating the number of days or months. Specifying a report period is optional. If no parameters are defined, data of expenditures in the past week (ie. the last <code><span class="fuchsia">7</span></code> days) will be displayed in the pie chart by default.</p>
 </div>
 <div class="sect3">
 <h4 id="implementation-3"><a class="link" href="#implementation-3">4.6.1. Implementation</a></h4>
 <div class="paragraph">
-<p>The implementation of the Summary command can be divided into two phases – preparation and execution. Given below is an explanation of how the summary mechanism behaves at each phase.</p>
+<p>The implementation of the <code><span class="fuchsia">Summary</span></code> command can be divided into two phases – preparation and execution. Given below is an explanation of how the summary mechanism behaves at each phase.</p>
 </div>
 <div class="sect4">
 <h5 id="preparation"><a class="link" href="#preparation">Preparation</a></h5>
@@ -1548,16 +1547,16 @@ details.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User first enters the command <code>summary #/7 p/d</code>. This command is received by <code>FinanceTrackerParser</code>, which then calls <code>SummaryCommandParser#parse()</code> to create <code>SummaryCommand</code>.</p>
+<p>User first enters the command <code><span class="fuchsia">summary #/7 p/d</span></code>. This command is received by <code><span class="fuchsia">FinanceTrackerParser</span></code>, which then calls <code><span class="fuchsia">SummaryCommandParser#parse()</span></code> to create <code><span class="fuchsia">SummaryCommand</span></code>.</p>
 </li>
 <li>
-<p>If no parameters are provided by the user, <code>SummaryCommand#SummaryCommand()</code> is called to create <code>SummaryCommand</code> with the default parameters of ` periodAmount ` as <code>7</code> and <code>period</code> as <code>d</code>. Otherwise, <code>SummaryCommand#SummaryCommand(periodAmount, period)</code> is called to create <code>SummaryCommand</code> with the specified parameters.</p>
+<p>If no parameters are provided by the user, <code><span class="fuchsia">SummaryCommand#SummaryCommand()</span></code> is called to create <code><span class="fuchsia">SummaryCommand</span></code> with the default parameters of <code><span class="fuchsia">periodAmount</span></code> as <code><span class="fuchsia">7</span></code> and <code><span class="fuchsia">period</span></code> as <code><span class="fuchsia">d</span></code>. Otherwise, <code><span class="fuchsia">SummaryCommand#SummaryCommand(periodAmount, period)</span></code> is called to create <code><span class="fuchsia">SummaryCommand</span></code> with the specified parameters.</p>
 </li>
 <li>
-<p><code>SummaryCommand</code> then checks if the parameters are valid. If any parameter is invalid, an exception will be thrown, and an error message will be shown to the user. Else, the parameters are stored in instance variables and <code>SummaryCommand</code> is returned to <code>LogicManager</code>.</p>
+<p><code><span class="fuchsia">SummaryCommand</span></code> then checks if the parameters are valid. If any parameter is invalid, an exception will be thrown, and an error message will be shown to the user. Else, the parameters are stored in instance variables and <code><span class="fuchsia">SummaryCommand</span></code> is returned to <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p><code>LogicManager</code> then calls <code>SummaryCommand#execute()</code>, which updates the variables <code>RecordSummaryPredicate</code>, <code>summaryPeriod</code> and <code>periodAmount</code> in <code>ModelManager</code>.</p>
+<p><code><span class="fuchsia">LogicManager</span></code> then calls <code><span class="fuchsia">SummaryCommand#execute()</span></code>, which updates the variables <code><span class="fuchsia">RecordSummaryPredicate</span></code>, <code><span class="fuchsia">summaryPeriod</span></code> and <code><span class="fuchsia">periodAmount</span></code> in <code><span class="fuchsia">ModelManager</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -1565,7 +1564,7 @@ details.</p>
 <div class="sect4">
 <h5 id="execution"><a class="link" href="#execution">Execution</a></h5>
 <div class="paragraph">
-<p>In the execution phase, the program handles <code>ShowSummaryRequestEvent</code> posted by <code>SummaryCommand</code> to retrieve the data to be displayed. The data will be rendered as a JavaFX <code>PieChart</code> and then displayed. Below is the UML sequence diagram and a step-by-step explanation of the execution stage.</p>
+<p>In the execution phase, the program handles <code><span class="fuchsia">ShowSummaryRequestEvent</span></code> posted by <code><span class="fuchsia">SummaryCommand</span></code> to retrieve the data to be displayed. The data will be rendered as a JavaFX <code><span class="fuchsia">PieChart</span></code> and then displayed. Below is the UML sequence diagram and a step-by-step explanation of the execution stage.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1576,26 +1575,26 @@ details.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The`handleShowSummary` will be handled by <code>MainWindow#handleShowSummary()</code>, which will call <code>SummaryPanel#setData()</code> and pass the data as parameters by calling <code>Logic#getRecordSummary()</code>, <code>Logic#getSummaryPeriod()</code>  and <code>Logic#getPeriodAmount()</code>.</p>
+<p>The <code><span class="fuchsia">handleShowSummary</span></code> will be handled by <code><span class="fuchsia">MainWindow#handleShowSummary()</span></code>, which will call <code><span class="fuchsia">SummaryPanel#setData()</span></code> and pass the data as parameters by calling <code><span class="fuchsia">Logic#getRecordSummary()</span></code>, <code><span class="fuchsia">Logic#getSummaryPeriod()</span></code>  and <code><span class="fuchsia">Logic#getPeriodAmount()</span></code>.</p>
 </li>
 <li>
-<p><code>Logic#getRecordSummary()</code> gets the filtered record list by calling <code>Model#getRecordSummary()</code>, which returns an unmodifiable ObservableList, only containing only expenses in the last 7 days.</p>
+<p><code><span class="fuchsia">Logic#getRecordSummary()</span></code> gets the filtered record list by calling <code><span class="fuchsia">Model#getRecordSummary()</span></code>, which returns an unmodifiable <code><span class="fuchsia">ObservableList</span></code>, containing only expenses in the last 7 days.</p>
 </li>
 <li>
-<p><code>Logic#getRecordSummary()</code> then organises the data into a <code>LinkedHashMap&lt;String, Double&gt;</code>, where the key value pair represents category and cost.</p>
+<p><code><span class="fuchsia">Logic#getRecordSummary()</span></code> then organises the data into a <code><span class="fuchsia">LinkedHashMap&lt;String, Double&gt;</span></code>, where the key value pair represents category and cost.</p>
 </li>
 <li>
-<p><code>Logic#getSummaryPeriod()</code>  and <code>Logic#getPeriodAmount()</code> get their respective data by calling the method of the same name in <code>Model</code>.</p>
+<p><code><span class="fuchsia">Logic#getSummaryPeriod()</span></code>  and <code><span class="fuchsia">Logic#getPeriodAmount()</span></code> get their respective data by calling the method of the same name in <code>Model</code>.</p>
 </li>
 <li>
-<p>Once the parameters are passed into <code>SummaryPanel#setData()</code>, <code>StackPane#getChildren()#clear()</code> is called to clear any display elements in <code>StackPane</code>. JavaFX’s <code>PieChart</code> is then used to render the summary pie chart. There are two possible scenarios which could happen:</p>
+<p>Once the parameters are passed into <code><span class="fuchsia">SummaryPanel#setData()</span></code>, <code><span class="fuchsia">StackPane#getChildren()#clear()</span></code> is called to clear any display elements in <code><span class="fuchsia">StackPane</span></code>. JavaFX’s <code><span class="fuchsia">PieChart</span></code> is then used to render the summary pie chart. There are two possible scenarios which could happen:</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>If the data received is empty, a <code>Text</code> object is generated and <code>StackPane#getChildren()#add()</code> is called, which informs the user that there are no expenditures.</p>
+<p>If the data received is empty, a <code><span class="fuchsia">Text</span></code> object is generated and <code><span class="fuchsia">StackPane#getChildren()#add()</span></code> is called, which informs the user that there are no expenditures.</p>
 </li>
 <li>
-<p>Else, <code>SummaryPanel#setSummaryData()</code> will be called, which generates a Pie Chart and calls <code>StackPane#getChildren()#add()</code>, which adds it to <code>StackPane</code>. This is shown in the code snippet below:</p>
+<p>Else, <code><span class="fuchsia">SummaryPanel#setSummaryData()</span></code> will be called, which generates a Pie Chart and calls <code><span class="fuchsia">StackPane#getChildren()#add()</span></code>, which adds it to <code><span class="fuchsia">StackPane</span></code>. This is shown in the code snippet below:</p>
 <div class="literalblock">
 <div class="content">
 <pre>public void setSummaryData(LinkedHashMap&lt;String, Double&gt; summaryData) {
@@ -1638,7 +1637,7 @@ details.</p>
 <div class="content">
 <img src="images/summaryPanel.png" alt="summaryPanel" width="600">
 </div>
-<div class="title">Figure 19. Current Implementation of Summary Panel using JavaFX&#8217;s <code>PieChart</code></div>
+<div class="title">Figure 19. Current Implementation of Summary Panel using JavaFX&#8217;s <code><span class="fuchsia">PieChart</span></code></div>
 </div>
 <div class="ulist">
 <ul>
@@ -1650,7 +1649,7 @@ details.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 2 (planned for <code>[v2.0]</code>)</strong>: Represent summary of expenses using an Aster Plot graph</p>
+<p><strong>Alternative 2 (planned for <code><span class="green">[v2.0]</span></code>)</strong>: Represent summary of expenses using an Aster Plot graph</p>
 </li>
 </ul>
 </div>
@@ -1658,7 +1657,7 @@ details.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>In <code>v2.0</code> of <em>In-Credit-Ble</em>, the summary feature intends to use a D3.js Aster Plot graph to display the summary of expenditures instead of the current pie chart. This will help contribute to the aesthetics and user-friendliness of displaying the data in <em>In-Credit-Ble</em>.</p>
+<p>In <code><span class="green">v2.0</span></code> of <em>In-Credit-Ble</em>, the summary feature intends to use a <span class="fuchsia">D3.js Aster Plot</span> graph to display the summary of expenditures instead of the current pie chart. This will help contribute to the aesthetics and user-friendliness of displaying the data in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1685,7 +1684,7 @@ details.</p>
 <div class="sect2">
 <h3 id="theme"><a class="link" href="#theme">4.7. Theme</a></h3>
 <div class="paragraph">
-<p>The <code>theme</code> feature allows users to change the colour theme of the application to provide
+<p>The <code><span class="fuchsia">theme</span></code> feature allows users to change the colour theme of the application to provide
 them with some customisation.</p>
 </div>
 <div class="sect3">
@@ -1693,20 +1692,20 @@ them with some customisation.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User enters command <code>theme COLOUR</code> in Command Box, where <code>COLOUR</code> is either <code>dark</code>, <code>light</code>, <code>blue</code> or <code>pink</code></p>
+<p>User enters command <code><span class="fuchsia">theme COLOUR</span></code> in Command Box, where <code><span class="fuchsia">COLOUR</span></code> is either <code><span class="fuchsia">dark</span></code>, <code><span class="fuchsia">light</span></code>, <code><span class="fuchsia">blue</span></code> or <code><span class="fuchsia">pink</span></code></p>
 </li>
 <li>
-<p><code>ThemeCommand#formatTheme()</code> is executed to change the user input of COLOUR to a word that has
+<p><code><span class="fuchsia">ThemeCommand#formatTheme()</span></code> is executed to change the user input of <code><span class="fuchsia">COLOUR</span></code> to a word that has
 first character in uppercase and the rest of the characters in lowercase.</p>
 </li>
 <li>
-<p><code>ThemeCommand#isValidTheme()</code> is then used to check if the COLOUR is one of the four specified above.</p>
+<p><code><span class="fuchsia">ThemeCommand#isValidTheme()</span></code> is then used to check if the <code><span class="fuchsia">COLOUR</span></code> is one of the four specified above.</p>
 </li>
 <li>
-<p><code>ThemeCommand</code> then returns a <code>CommandResult</code> that sets the boolean field <code>changeTheme</code> to true</p>
+<p><code><span class="fuchsia">ThemeCommand</span></code> then returns a <code><span class="fuchsia">CommandResult</span></code> that sets the boolean field <code><span class="fuchsia">changeTheme</span></code> to true</p>
 </li>
 <li>
-<p><code>MainWindow#handleSwitchTheme()</code> is then executed to call the appropriate method to switch the theme of the application
+<p><code><span class="fuchsia">MainWindow#handleSwitchTheme()</span></code> is then executed to call the appropriate method to switch the theme of the application
 to the user-specified input</p>
 </li>
 </ol>
@@ -1716,18 +1715,18 @@ to the user-specified input</p>
 <div class="sect2">
 <h3 id="logging"><a class="link" href="#logging">4.8. Logging</a></h3>
 <div class="paragraph">
-<p>We are using <code>java.util.logging</code> package for logging. The <code>LogsCenter</code> class is used to manage the logging levels and logging destinations.</p>
+<p>We are using <code><span class="fuchsia">java.util.logging</span></code> package for logging. The <code><span class="fuchsia">LogsCenter</span></code> class is used to manage the logging levels and logging destinations.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.9, &#8220;Configuration&#8221;</a>)</p>
+<p>The logging level can be controlled using the <code><span class="fuchsia">logLevel</span></code> setting in the configuration file (See <span class="underline blue"><a href="#Implementation-Configuration">Section 4.9, &#8220;Configuration&#8221;</a></span>)</p>
 </li>
 <li>
-<p>The <code>Logger</code> for a class can be obtained using <code>LogsCenter.getLogger(Class)</code> which will log messages according to the specified logging level</p>
+<p>The <code><span class="fuchsia">Logger</span></code> for a class can be obtained using <code><span class="fuchsia">LogsCenter.getLogger(Class)</span></code> which will log messages according to the specified logging level</p>
 </li>
 <li>
-<p>Currently log messages are output through: <code>Console</code> and to a <code>.log</code> file.</p>
+<p>Currently log messages are output through: <code><span class="fuchsia">Console</span></code> and to a <code><span class="fuchsia">.log</span></code> file.</p>
 </li>
 </ul>
 </div>
@@ -1737,16 +1736,16 @@ to the user-specified input</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>SEVERE</code> : Critical problem detected which may possibly cause the termination of the application</p>
+<p><code><span class="fuchsia">SEVERE</span></code> : Critical problem detected which may possibly cause the termination of the application</p>
 </li>
 <li>
-<p><code>WARNING</code> : Can continue, but with caution</p>
+<p><code><span class="fuchsia">WARNING</span></code> : Can continue, but with caution</p>
 </li>
 <li>
-<p><code>INFO</code> : Information showing noteworthy actions by the application</p>
+<p><code><span class="fuchsia">INFO</span></code> : Information showing noteworthy actions by the application</p>
 </li>
 <li>
-<p><code>FINE</code> : Details that is not usually noteworthy but may be useful in debugging e.g. print the actual list instead of just its size</p>
+<p><code><span class="fuchsia">FINE</span></code> : Details that is not usually noteworthy but may be useful in debugging <span class="navy">e.g.</span> print the actual list instead of just its size</p>
 </li>
 </ul>
 </div>
@@ -1754,7 +1753,7 @@ to the user-specified input</p>
 <div class="sect2">
 <h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.9. Configuration</a></h3>
 <div class="paragraph">
-<p>Certain properties of the application can be controlled (e.g user prefs file location, logging level) through the configuration file (default: <code>config.json</code>).</p>
+<p>Certain properties of the application can be controlled (<span class="navy">e.g.</span> user prefs file location, logging level) through the configuration file (default: <code><span class="fuchsia">config.json</span></code>).</p>
 </div>
 </div>
 </div>
@@ -1780,20 +1779,20 @@ We chose asciidoc over Markdown because asciidoc, although a bit more complex th
 <div class="sect2">
 <h3 id="editing-documentation"><a class="link" href="#editing-documentation">5.1. Editing Documentation</a></h3>
 <div class="paragraph">
-<p>See <a href="UsingGradle.html#rendering-asciidoc-files">UsingGradle.adoc</a> to learn how to render <code>.adoc</code> files locally to preview the end result of your edits.
-Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows you to preview the changes you have made to your <code>.adoc</code> files in real-time.</p>
+<p>See <a href="UsingGradle.html#rendering-asciidoc-files"><span class="blue">UsingGradle.adoc</span></a> to learn how to render <code><span class="fuchsia">.adoc</span></code> files locally to preview the end result of your edits.
+Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows you to preview the changes you have made to your <code><span class="fuchsia">.adoc</span></code> files in real-time.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="publishing-documentation"><a class="link" href="#publishing-documentation">5.2. Publishing Documentation</a></h3>
 <div class="paragraph">
-<p>See <a href="UsingTravis.html#deploying-github-pages">UsingTravis.adoc</a> to learn how to deploy GitHub Pages using Travis.</p>
+<p>See <a href="UsingTravis.html#deploying-github-pages"><span class="blue">UsingTravis.adoc</span></a> to learn how to deploy GitHub Pages using Travis.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="converting-documentation-to-pdf-format"><a class="link" href="#converting-documentation-to-pdf-format">5.3. Converting Documentation to PDF format</a></h3>
 <div class="paragraph">
-<p>We use <a href="https://www.google.com/chrome/browser/desktop/">Google Chrome</a> for converting documentation to PDF format, as Chrome&#8217;s PDF engine preserves hyperlinks used in webpages.</p>
+<p>We use <a href="https://www.google.com/chrome/browser/desktop"><span class="blue">Google Chrome</span></a> for converting documentation to PDF format, as Chrome&#8217;s PDF engine preserves hyperlinks used in webpages.</p>
 </div>
 <div class="paragraph">
 <p>Here are the steps to convert the project documentation files to PDF format.</p>
@@ -1801,16 +1800,16 @@ Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows y
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Follow the instructions in <a href="UsingGradle.html#rendering-asciidoc-files">UsingGradle.adoc</a> to convert the AsciiDoc files in the <code>docs/</code> directory to HTML format.</p>
+<p>Follow the instructions in <a href="UsingGradle.html#rendering-asciidoc-files"><span class="blue">UsingGradle.adoc</span></a> to convert the AsciiDoc files in the <code><span class="fuchsia">docs/</span></code> directory to HTML format.</p>
 </li>
 <li>
-<p>Go to your generated HTML files in the <code>build/docs</code> folder, right click on them and select <code>Open with</code> &#8594; <code>Google Chrome</code>.</p>
+<p>Go to your generated HTML files in the <code><span class="fuchsia">build/docs</span></code> folder, right click on them and select <span class="menuseq"><b class="menu">Open With</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Google Chrome</b></span>.</p>
 </li>
 <li>
-<p>Within Chrome, click on the <code>Print</code> option in Chrome&#8217;s menu.</p>
+<p>Within Chrome, click on the <b class="button">Print</b> option in Chrome&#8217;s menu.</p>
 </li>
 <li>
-<p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.</p>
+<p>Set the destination to <b class="button">Save as PDF</b>, then click <b class="button">Save</b> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.</p>
 </li>
 </ol>
 </div>
@@ -1824,7 +1823,7 @@ Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows y
 <div class="sect2">
 <h3 id="Docs-SiteWideDocSettings"><a class="link" href="#Docs-SiteWideDocSettings">5.4. Site-wide Documentation Settings</a></h3>
 <div class="paragraph">
-<p>The <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/build.gradle"><code>build.gradle</code></a> file specifies some project-specific <a href="https://asciidoctor.org/docs/user-manual/#attributes">asciidoc attributes</a> which affects how all documentation files within this project are rendered.</p>
+<p>The <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/build.gradle"><code><span class="blue">build.gradle</span></code></a> file specifies some project-specific <a href="https://asciidoctor.org/docs/user-manual/#attributes"> <em class="blue">asciidoc attributes</em></a> which affects how all documentation files within this project are rendered.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1833,7 +1832,7 @@ Alternatively, you can download the AsciiDoc plugin for IntelliJ, which allows y
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Attributes left unset in the <code>build.gradle</code> file will use their <strong>default value</strong>, if any.
+Attributes left unset in the <code><span class="fuchsia">build.gradle</span></code> file will use their <strong>default value</strong>, if any.
 </td>
 </tr>
 </table>
@@ -1854,7 +1853,7 @@ Attributes left unset in the <code>build.gradle</code> file will use their <stro
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>site-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">site-name</span></code></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>The name of the website.
 If set, the name will be displayed near the top of the page.</p>
@@ -1862,15 +1861,15 @@ If set, the name will be displayed near the top of the page.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>not set</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>site-githuburl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">site-githuburl</span></code></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
-<p>URL to the site&#8217;s repository on <a href="https://github.com">GitHub</a>.
+<p>URL to the site&#8217;s repository on <a href="https://github.com"><span class="blue">GitHub</span></a>.
 Setting this will add a "View on GitHub" link in the navigation bar.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>not set</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>site-seedu</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">site-seedu</span></code></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Define this attribute if the project is an official SE-EDU project.
 This will render the SE-EDU navigation bar at the top of the page, and add some SE-EDU-specific navigation items.</p>
@@ -1883,10 +1882,10 @@ This will render the SE-EDU navigation bar at the top of the page, and add some 
 <div class="sect2">
 <h3 id="Docs-PerFileDocSettings"><a class="link" href="#Docs-PerFileDocSettings">5.5. Per-file Documentation Settings</a></h3>
 <div class="paragraph">
-<p>Each <code>.adoc</code> file may also specify some file-specific <a href="https://asciidoctor.org/docs/user-manual/#attributes">asciidoc attributes</a> which affects how the file is rendered.</p>
+<p>Each <code><span class="fuchsia">.adoc</span></code> file may also specify some file-specific <a href="https://asciidoctor.org/docs/user-manual/#attributes"><em class="blue">asciidoc attributes</em></a> which affects how the file is rendered.</p>
 </div>
 <div class="paragraph">
-<p>Asciidoctor&#8217;s <a href="https://asciidoctor.org/docs/user-manual/#builtin-attributes">built-in attributes</a> may be specified and used as well.</p>
+<p>Asciidoctor&#8217;s <a href="https://asciidoctor.org/docs/user-manual/#builtin-attributes"><em class="blue">built-in attributes</em></a> may be specified and used as well.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1895,7 +1894,7 @@ This will render the SE-EDU navigation bar at the top of the page, and add some 
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Attributes left unset in <code>.adoc</code> files will use their <strong>default value</strong>, if any.
+Attributes left unset in <code><span class="fuchsia">.adoc</span></code> files will use their <strong>default value</strong>, if any.
 </td>
 </tr>
 </table>
@@ -1916,11 +1915,11 @@ Attributes left unset in <code>.adoc</code> files will use their <strong>default
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>site-section</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">site-section</span></code></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Site section that the document belongs to.
 This will cause the associated item in the navigation bar to be highlighted.
-One of: <code>UserGuide</code>, <code>DeveloperGuide</code>, <code>LearningOutcomes</code>*, <code>AboutUs</code>, <code>ContactUs</code></p>
+One of: <code><span class="fuchsia">UserGuide</span></code>, <code><span class="fuchsia">DeveloperGuide</span></code>, <code><span class="fuchsia">LearningOutcomes</span></code>*, <code><span class="fuchsia">AboutUs</span></code>, <code><span class="fuchsia">ContactUs</span></code></p>
 </div>
 <div class="paragraph">
 <p><em>* Official SE-EDU projects only</em></p>
@@ -1928,7 +1927,7 @@ One of: <code>UserGuide</code>, <code>DeveloperGuide</code>, <code>LearningOutco
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>not set</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>no-site-header</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">no-site-header</span></code></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Set this attribute to remove the site navigation bar.</p>
 </div></div></td>
@@ -1940,12 +1939,12 @@ One of: <code>UserGuide</code>, <code>DeveloperGuide</code>, <code>LearningOutco
 <div class="sect2">
 <h3 id="site-template"><a class="link" href="#site-template">5.6. Site Template</a></h3>
 <div class="paragraph">
-<p>The files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/stylesheets"><code>docs/stylesheets</code></a> are the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS stylesheets</a> of the site.
+<p>The files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/stylesheets"><code><span class="blue">docs/stylesheets</span></code></a> are the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><span class="blue">CSS stylesheets</span></a> of the site.
 You can modify them to change some properties of the site&#8217;s design.</p>
 </div>
 <div class="paragraph">
-<p>The files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/templates"><code>docs/templates</code></a> controls the rendering of <code>.adoc</code> files into HTML5.
-These template files are written in a mixture of <a href="https://www.ruby-lang.org">Ruby</a> and <a href="http://slim-lang.com">Slim</a>.</p>
+<p>The files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/templates"><code><span class="blue">docs/templates</span></code></a> controls the rendering of <code><span class="fuchsia">.adoc</span></code> files into HTML5.
+These template files are written in a mixture of <a href="https://www.ruby-lang.org"><span class="blue">Ruby</span></a> and <a href="http://slim-lang.com"><span class="blue">Slim</span></a>.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1955,7 +1954,7 @@ These template files are written in a mixture of <a href="https://www.ruby-lang.
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Modifying the template files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/templates"><code>docs/templates</code></a> requires some knowledge and experience with Ruby and Asciidoctor&#8217;s API.
+<p>Modifying the template files in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/docs/templates"><code><span class="blue">docs/templates</span></code></a> requires some knowledge and experience with Ruby and Asciidoctor&#8217;s API.
 You should only modify them if you need greater control over the site&#8217;s layout than what stylesheets can provide.</p>
 </div>
 </td>
@@ -1991,10 +1990,10 @@ The most reliable way to run tests is the 3rd one. The first two methods might f
 <div class="ulist">
 <ul>
 <li>
-<p>To run all tests, right-click on the <code>src/test/java</code> folder and choose <code>Run 'All Tests'</code></p>
+<p>To run all tests, right-click on the <code><span class="fuchsia">src/test/java</code></span> folder and choose <code><span class="fuchsia">Run 'All Tests'</span></code></p>
 </li>
 <li>
-<p>To run a subset of tests, you can right-click on a test package, test class, or a test and choose <code>Run 'ABC'</code></p>
+<p>To run a subset of tests, you can right-click on a test package, test class, or a test and choose <code><span class="fuchsia">Run 'ABC'</span></code></p>
 </li>
 </ul>
 </div>
@@ -2004,7 +2003,7 @@ The most reliable way to run tests is the 3rd one. The first two methods might f
 <div class="ulist">
 <ul>
 <li>
-<p>Open a console and run the command <code>gradlew clean allTests</code> (Mac/Linux: <code>./gradlew clean allTests</code>)</p>
+<p>Open a console and run the command <code><span class="fuchsia">gradlew clean allTests</span></code> (Mac/Linux: <code><span class="fuchsia">./gradlew clean allTests</span></code>)</p>
 </li>
 </ul>
 </div>
@@ -2015,7 +2014,7 @@ The most reliable way to run tests is the 3rd one. The first two methods might f
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-See <a href="UsingGradle.html">UsingGradle.adoc</a> for more info on how to run tests using Gradle.
+See <a href="UsingGradle.html"><span class="blue">UsingGradle.adoc</span></a> for more info on how to run tests using Gradle.
 </td>
 </tr>
 </table>
@@ -2024,10 +2023,10 @@ See <a href="UsingGradle.html">UsingGradle.adoc</a> for more info on how to run 
 <p><strong>Method 3: Using Gradle (headless)</strong></p>
 </div>
 <div class="paragraph">
-<p>Thanks to the <a href="https://github.com/TestFX/TestFX">TestFX</a> library we use, our GUI tests can be run in the <em>headless</em> mode. In the headless mode, GUI tests do not show up on the screen. That means the developer can do other things on the Computer while the tests are running.</p>
+<p>Thanks to the <a href="https://github.com/TestFX/TestFX"><span class="blue">TestFX</span></a> library we use, our GUI tests can be run in the <em>headless</em> mode. In the headless mode, GUI tests do not show up on the screen. That means the developer can do other things on the Computer while the tests are running.</p>
 </div>
 <div class="paragraph">
-<p>To run tests in headless mode, open a console and run the command <code>gradlew clean headless allTests</code> (Mac/Linux: <code>./gradlew clean headless allTests</code>)</p>
+<p>To run tests in headless mode, open a console and run the command <code><span class="fuchsia">gradlew clean headless allTests</span></code> (Mac/Linux: <code>./<span class="fuchsia">gradlew clean headless allTests</span></code>)</p>
 </div>
 </div>
 <div class="sect2">
@@ -2042,10 +2041,10 @@ See <a href="UsingGradle.html">UsingGradle.adoc</a> for more info on how to run 
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p><em>System Tests</em> that test the entire App by simulating user actions on the GUI. These are in the <code>systemtests</code> package.</p>
+<p><em>System Tests</em> that test the entire App by simulating user actions on the GUI. These are in the <code><span class="fuchsia">systemtests</span></code> package.</p>
 </li>
 <li>
-<p><em>Unit tests</em> that test the individual components. These are in <code>seedu.finance.ui</code> package.</p>
+<p><em>Unit tests</em> that test the individual components. These are in <code><span class="fuchsia">seedu.finance.ui</span></code> package.</p>
 </li>
 </ol>
 </div>
@@ -2056,15 +2055,15 @@ See <a href="UsingGradle.html">UsingGradle.adoc</a> for more info on how to run 
 <ol class="loweralpha" type="a">
 <li>
 <p><em>Unit tests</em> targeting the lowest level methods/classes.<br>
-e.g. <code>seedu.finance.commons.StringUtilTest</code></p>
+<span class="navy">e.g.</span> <code><span class="fuchsia">seedu.finance.commons.StringUtilTest</span></code></p>
 </li>
 <li>
 <p><em>Integration tests</em> that are checking the integration of multiple code units (those code units are assumed to be working).<br>
-e.g. <code>seedu.finance.storage.StorageManagerTest</code></p>
+<span class="navy">e.g.</span> <code><span class="fuchsia">seedu.finance.storage.StorageManagerTest</span></code></p>
 </li>
 <li>
 <p>Hybrids of unit and integration tests. These test are checking multiple code units as well as how the are connected together.<br>
-e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
+<span class="navy">e.g.</span> <code><span class="fuchsia">seedu.finance.logic.LogicManagerTest</span></code></p>
 </li>
 </ol>
 </div>
@@ -2075,15 +2074,15 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="sect2">
 <h3 id="troubleshooting-testing"><a class="link" href="#troubleshooting-testing">6.3. Troubleshooting Testing</a></h3>
 <div class="paragraph">
-<p><strong>Problem: <code>HelpWindowTest</code> fails with a <code>NullPointerException</code>.</strong></p>
+<p><strong>Problem: <code><span class="fuchsia">HelpWindowTest</span></code> fails with a <code><span class="fuchsia">NullPointerException</span></code>.</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Reason: One of its dependencies, <code>HelpWindow.html</code> in <code>src/main/resources/docs</code> is missing.</p>
+<p>Reason: One of its dependencies, <code><span class="fuchsia">HelpWindow.html</span></code> in <code><span class="fuchsia">src/main/resources/docs</span></code> is missing.</p>
 </li>
 <li>
-<p>Solution: Execute Gradle task <code>processResources</code>.</p>
+<p>Solution: Execute Gradle task <code><span class="fuchsia">processResources</span></code>.</p>
 </li>
 </ul>
 </div>
@@ -2096,25 +2095,25 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="sect2">
 <h3 id="build-automation"><a class="link" href="#build-automation">7.1. Build Automation</a></h3>
 <div class="paragraph">
-<p>See <a href="UsingGradle.html">UsingGradle.adoc</a> to learn how to use Gradle for build automation.</p>
+<p>See <a href="UsingGradle.html"><span class="blue">UsingGradle.adoc</span></a> to learn how to use Gradle for build automation.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="continuous-integration"><a class="link" href="#continuous-integration">7.2. Continuous Integration</a></h3>
 <div class="paragraph">
-<p>We use <a href="https://travis-ci.org/">Travis CI</a> and <a href="https://www.appveyor.com/">AppVeyor</a> to perform <em>Continuous Integration</em> on our projects. See <a href="UsingTravis.html">UsingTravis.adoc</a> and <a href="UsingAppVeyor.html">UsingAppVeyor.adoc</a> for more details.</p>
+<p>We use <a href="https://travis-ci.org"><span class="blue">Travis CI</span></a> and <a href="https://www.appveyor.com"><span class="blue">AppVeyor</span></a> to perform <em>Continuous Integration</em> on our projects. See <a href="UsingTravis.html"><span class="blue">UsingTravis.adoc</span></a> and <a href="UsingAppVeyor.html"><span class="blue">UsingAppVeyor.adoc</span></a> for more details.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="coverage-reporting"><a class="link" href="#coverage-reporting">7.3. Coverage Reporting</a></h3>
 <div class="paragraph">
-<p>We use <a href="https://coveralls.io/">Coveralls</a> to track the code coverage of our projects. See <a href="UsingCoveralls.html">UsingCoveralls.adoc</a> for more details.</p>
+<p>We use <a href="https://coveralls.io"><span class="blue">Coveralls</span></a> to track the code coverage of our projects. See <a href="UsingCoveralls.html"><span class="blue">UsingCoveralls.adoc</span></a> for more details.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="documentation-previews"><a class="link" href="#documentation-previews">7.4. Documentation Previews</a></h3>
 <div class="paragraph">
-<p>When a pull request has changes to asciidoc files, you can use <a href="https://www.netlify.com/">Netlify</a> to see a preview of how the HTML version of those asciidoc files will look like when the pull request is merged. See <a href="UsingNetlify.html">UsingNetlify.adoc</a> for more details.</p>
+<p>When a pull request has changes to asciidoc files, you can use <a href="https://www.netlify.com"><span class="blue">Netlify</span></a> to see a preview of how the HTML version of those asciidoc files will look like when the pull request is merged. See <a href="UsingNetlify.html"><span class="blue">UsingNetlify.adoc</span></a> for more details.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2125,16 +2124,16 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Update the version number in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/address/MainApp.java"><code>MainApp.java</code></a>.</p>
+<p>Update the version number in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/tree/master/src/main/java/seedu/address/MainApp.java"><code><span class="blue">MainApp.java</span></code></a>.</p>
 </li>
 <li>
-<p>Generate a JAR file <a href="UsingGradle.html#creating-the-jar-file">using Gradle</a>.</p>
+<p>Generate a JAR file <a href="UsingGradle.html#creating-the-jar-file"><span class="blue">using Gradle</span></a>.</p>
 </li>
 <li>
-<p>Tag the repo with the version number. e.g. <code>v0.1</code></p>
+<p>Tag the repo with the version number. <span class="navy">e.g.</span> <code><span class="fuchsia">v0.1</span></code></p>
 </li>
 <li>
-<p><a href="https://help.github.com/articles/creating-releases/">Create a new release using GitHub</a> and upload the JAR file you created.</p>
+<p><a href="https://help.github.com/articles/creating-releases"><span class="blue">Create a new release using GitHub</span></a> and upload the JAR file you created.</p>
 </li>
 </ol>
 </div>
@@ -2142,7 +2141,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="sect2">
 <h3 id="managing-dependencies"><a class="link" href="#managing-dependencies">7.6. Managing Dependencies</a></h3>
 <div class="paragraph">
-<p>A project often depends on third-party libraries. For example, <em>In-Credit-Ble</em> depends on the <a href="https://github.com/FasterXML/jackson">Jackson library</a> for JSON parsing. Managing these <em>dependencies</em> can be automated using Gradle. For example, Gradle can download the dependencies automatically, which is better than these alternatives:</p>
+<p>A project often depends on third-party libraries. For example, <em>In-Credit-Ble</em> depends on the <a href="https://github.com/FasterXML/jackson"><span class="blue">Jackson library</span></a> for JSON parsing. Managing these <em>dependencies</em> can be automated using Gradle. For example, Gradle can download the dependencies automatically, which is better than these alternatives:</p>
 </div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
@@ -2301,7 +2300,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <h2 id="use-cases"><a class="link" href="#use-cases">Appendix C: Use Cases</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>(For all use cases below, the <strong>System</strong> is <code>In-Credit-Ble</code> and the <strong>User</strong> is the <code>user</code>, unless specified otherwise)</p>
+<p>(For all use cases below, the <strong>System</strong> is <code><span class="fuchsia">In-Credit-Ble</span></code> and the <strong>User</strong> is the <code><span class="fuchsia">user</span></code>, unless specified otherwise)</p>
 </div>
 <h3 id="use-case-setting-a-budget-for-the-month" class="discrete">Use case: Setting a budget for the month</h3>
 <div class="paragraph">
@@ -2652,7 +2651,7 @@ e.g. <code>seedu.finance.logic.LogicManagerTest</code></p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Should work on any <a href="#mainstream-os">mainstream OS</a> as long as it has Java <code>9</code> or higher installed.</p>
+<p>Should work on any <a href="#mainstream-os">mainstream OS</a> as long as it has Java <code><span class="fuchsia">9</span></code> or higher installed.</p>
 </li>
 <li>
 <p>Should work on both 32-bit and 64-bit environments.</p>
@@ -2703,7 +2702,7 @@ category tag (if specified)</p>
 <h2 id="product-survey"><a class="link" href="#product-survey">Appendix F: Product Survey</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Monefy - Money Manager</strong></p>
+<p><strong><span class="fuchsia">Monefy - Money Manager</span></strong></p>
 </div>
 <div class="paragraph">
 <p>Author: Aimbity AS</p>
@@ -2744,7 +2743,7 @@ category tag (if specified)</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Money Lover: Expense Tracker &amp; Budget Planner</strong></p>
+<p><strong><span class="fuchsia">Money Lover: Expense Tracker &amp; Budget Planner</span></strong></p>
 </div>
 <div class="paragraph">
 <p>Author: Finsify</p>
@@ -2788,7 +2787,7 @@ category tag (if specified)</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Seedly - Personal Finance App</strong></p>
+<p><strong><span class="fuchsia">Seedly - Personal Finance App</span></strong></p>
 </div>
 <div class="paragraph">
 <p>Author: Seedly Pte Ltd</p>
@@ -2866,11 +2865,11 @@ These instructions only provide a starting point for testers to work on; testers
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Download the JAR file and copy into an empty folder</p>
+<p>Download the <span class="fuchsia">JAR</span> file and copy into an empty folder</p>
 </li>
 <li>
-<p>Double-click the JAR file<br>
-Expected: Shows the GUI with a set of sample records. The window size may not be optimum.</p>
+<p>Double-click the <span class="fuchsia">JAR</span> file<br>
+Expected: Shows the <span class="fuchsia">GUI</span> with a set of sample records. The window size may not be optimum.</p>
 </li>
 </ol>
 </div>
@@ -2883,7 +2882,7 @@ Expected: Shows the GUI with a set of sample records. The window size may not be
 <p>Resize the window to an optimum size. Move the window to a different location. Close the window.</p>
 </li>
 <li>
-<p>Re-launch the application by double-clicking the JAR file.<br>
+<p>Re-launch the application by double-clicking the <span class="fuchsia">JAR</span> file.<br>
 Expected: The most recent window size and location is retained.</p>
 </li>
 </ol>
@@ -2901,27 +2900,27 @@ Expected: The most recent window size and location is retained.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Test case: <code>set $/500</code><br>
+<p>Test case: <code><span class="fuchsia">set $/500</span></code><br>
 Expected: The budget is set to $500. The Budget Panel and Browser Panel are updated accordingly.</p>
 </li>
 <li>
-<p>Test case: <code>set $/500.50</code><br>
+<p>Test case: <code><span class="fuchsia">set $/500.50</span></code><br>
 Expected: The budget is changed to $500.50. The Budget Panel and Browser Panel are updated accordingly.</p>
 </li>
 <li>
-<p>Test case: <code>set 500</code><br>
+<p>Test case: <code><span class="fuchsia">set 500</span></code><br>
 Expected: The budget is not changed. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
-<p>Test case: <code>set $/$500</code><br>
+<p>Test case: <code><span class="fuchsia">set $/$500</span></code><br>
 Expected: The budget is not changed. Error details shown in status message about amount.</p>
 </li>
 <li>
-<p>Test case: <code>set $/-1</code><br>
+<p>Test case: <code><span class="fuchsia">set $/-1</span></code><br>
 Expected: Similar to previous</p>
 </li>
 <li>
-<p>Test case: <code>set $/0</code><br>
+<p>Test case: <code><span class="fuchsia">set $/0</span></code><br>
 Expected: Similar to previous</p>
 </li>
 </ol>
@@ -2939,30 +2938,30 @@ Expected: Similar to previous</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Test case: <code>allocate $/50 c/Shopping</code>, then <code>show</code><br>
-Expected: Category Budget is allocated in Shopping category. Result Display shows current spending over budget
+<p>Test case: <code><span class="fuchsia">allocate $/50 c/Shopping</span></code>, then <code><span class="fuchsia">show</span></code><br>
+Expected: Category Budget is allocated in <code><span class="fuchsia">Shopping</span></code> category. Result Display shows current spending over budget
 for allocated category budgets</p>
 </li>
 <li>
-<p>Test case: <code>allo $/30 c/Transport</code>, then <code>show</code><br>
-Expected: Category Budget is allocated in <code>Transport</code> category. Result Display shows current spending over budget
+<p>Test case: <code><span class="fuchsia">allo $/30 c/Transport</span></code>, then <code><span class="fuchsia">show</span></code><br>
+Expected: Category Budget is allocated in <code><span class="fuchsia">Transport</span></code> category. Result Display shows current spending over budget
 for allocated category budgets</p>
 </li>
 <li>
-<p>Test case: <code>allocate $/30 c/Books c/Movies</code>, then <code>show</code><br>
-Expected: Category Budget allocated in <code>Movies</code> category. Result Display current spending over budget
+<p>Test case: <code><span class="fuchsia">allocate $/30 c/Books c/Movies</span></code>, then <code><span class="fuchsia">show</span></code><br>
+Expected: Category Budget allocated in <code><span class="fuchsia">Movies</span></code> category. Result Display current spending over budget
 for allocated category budgets</p>
 </li>
 <li>
-<p>Test case: <code>allocate $/$30 c/Holiday</code><br>
+<p>Test case: <code><span class="fuchsia">allocate $/$30 c/Holiday</span></code><br>
 Expected: Category Budget not allocated. Error details shown in status message.</p>
 </li>
 <li>
-<p>Test case: <code>allocate $/30 c/Holiday In Melbourne</code><br>
+<p>Test case: <code><span class="fuchsia">allocate $/30 c/Holiday In Melbourne</span></code><br>
 Expected: Category Budget not allocated. Error details shown in status message.</p>
 </li>
 <li>
-<p>Test case: <code>allocate $/600 c/School</code><br>
+<p>Test case: <code><span class="fuchsia">allocate $/600 c/School</span></code><br>
 Expected: Category Budget not allocated. Category Budget more than Total budget. Error details in status message.</p>
 </li>
 </ol>
@@ -2970,16 +2969,16 @@ Expected: Category Budget not allocated. Category Budget more than Total budget.
 </li>
 <li>
 <p>Allocating category budget (previously had spending in the category)<br>
-Assume that <code>Food</code> category has $16.50 spent so far</p>
+Assume that <code><span class="fuchsia">Food</span></code> category has $16.50 spent so far</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Test case: <code>allocate $/17 c/Food</code>
+<p>Test case: <code><span class="fuchsia">allocate $/17 c/Food</span></code><br>
 Expected: Category Budget allocated in Food category. Result Display shows current spending over budget for allocated
 category budgets</p>
 </li>
 <li>
-<p>Test case: <code>allocate $/10 c/Food</code>
+<p>Test case: <code><span class="fuchsia">allocate $/10 c/Food</span></code><br>
 Expected: Category Budget not allocated. Current Spending in category more than user input for category budget.
 Error details shown in status message.</p>
 </li>
@@ -2998,30 +2997,30 @@ Error details shown in status message.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food d/1/4/2019 r/Tasty</code><br>
+<p>Test case: <code><span class="fuchsia">spend n/Chicken Rice $/5.50 c/Food d/1/4/2019 r/Tasty</span></code><br>
 Expected: Entry is added to the back of the list. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</code><br>
+<p>Test case: <code><span class="fuchsia">spend n/Tshirt $/10.00 d/31/03/2019 c/Food c/Clothes</span></code><br>
 Expected: Entry is added to the back of the list. Category recorded down is Clothes. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>spend n/Chicken Rice $/5.50 c/Food</code><br>
+<p>Test case: <code><span class="fuchsia">spend n/Chicken Rice $/5.50 c/Food</span></code><br>
 Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded.
 Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>add n/Chicken Rice $/5.50 c/Food</code><br>
+<p>Test case: <code><span class="fuchsia">add n/Chicken Rice $/5.50 c/Food</span></code><br>
 Expected: Entry is added to the back of the list. Since date is not supplied, today’s date will be recorded.
 Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>spend n/Chicken Rice $/5.50</code><br>
+<p>Test case: <code><span class="fuchsia">spend n/Chicken Rice $/5.50</span></code><br>
 Expected: No entry is added. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
-<p>Other incorrect spend commands to try: <code>spend n/Chicken Rice c/Food</code>, <code>spend $.5.50 c/Food</code>, <code>spend n/Chicken Rice $/5.5 c/Food</code>,
-<code>spend n/Chicken Rice $/5.50 c/Food d/12/12/2045</code>, <code>spend n/Chicken Rice $/$5.50 c/Food</code><br>
+<p>Other incorrect spend commands to try: <code><span class="fuchsia">spend n/Chicken Rice c/Food</span></code>, <code><span class="fuchsia">spend $.5.50 c/Food</span></code>, <code><span class="fuchsia">spend n/Chicken Rice $/5.5 c/Food</span></code>,
+<code><span class="fuchsia">spend n/Chicken Rice $/5.50 c/Food d/12/12/2045</span></code>, <code><span class="fuchsia">spend n/Chicken Rice $/$5.50 c/Food</span></code><br>
 Expected: Similar to previous</p>
 </li>
 </ol>
@@ -3039,31 +3038,31 @@ Expected: Similar to previous</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Prerequisites: List all entries using the <code>list</code> command. The list must have some entries in it.</p>
+<p>Prerequisites: List all entries using the <code><span class="fuchsia">list</span></code> command. The list must have some entries in it.</p>
 </li>
 <li>
 <p>Editing one parameter of an entry.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>edit 1 n/test</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 n/test</span></code><br>
 Expected: The name of the first entry is being changed to test. Time stamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 d/01/02/2003</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 d/01/02/2003</span></code><br>
 Expected: The date of the first entry is being changed to 01/02/2003. Time stamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 $/100</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 $/100</span></code><br>
 Expected: The amount spent of the first entry is changed to $100. The budget shown in the budget panel and the
 browser panel is updated. Time stamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 c/Test.</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 c/Test</span></code><br>
 Expected: The category of the first entry is changed to Test. Time stamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 r/Testing testing</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 r/Testing testing</span></code><br>
 Expected: The description of the first entry is changed to "Testing testing". Time stamp in the status bar is updated.</p>
 </li>
 </ol>
@@ -3074,20 +3073,20 @@ Expected: The description of the first entry is changed to "Testing testing". Ti
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>edit 1 n/test1 $/123</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 n/test1 $/123</span></code><br>
 Expected: The first entry is being changed based on the command. The budget shown in the budget panel and the
 browser panel is updated. Time stamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 n/test2 $/1234 d/01/01/2001</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 n/test2 $/1234 d/01/01/2001</span></code><br>
 Expected: Similar to previous.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 n/test3 $/12345 d/01/01/2002 c/Test1</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 n/test3 $/12345 d/01/01/2002 c/Test1</span></code><br>
 Expected: Similar to previous.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 n/test4 $/123456 d/01/01/2003 c/Test2 r/Testing test</code><br>
+<p>Test case: <code><span class="fuchsia">edit 1 n/test4 $/123456 d/01/01/2003 c/Test2 r/Testing test</span></code><br>
 Expected: Similar to previous.</p>
 </li>
 </ol>
@@ -3101,7 +3100,7 @@ Expected: Similar to previous.</p>
 <p>Prerequisites: The first entry of the list must have a description.</p>
 </li>
 <li>
-<p>Test case: <code>edit 1 r/</code>
+<p>Test case: <code><span class="fuchsia">edit 1 r/</span></code><br>
 Expected: The description for the first entry is removed.</p>
 </li>
 </ol>
@@ -3112,7 +3111,7 @@ Expected: The description for the first entry is removed.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>edit 0 n/test</code>
+<p>Test case: <code><span class="fuchsia">edit 0 n/test</span></code><br>
 Expected: No entry is edited. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 </ol>
@@ -3123,12 +3122,12 @@ Expected: No entry is edited. Error details shown in the status message. Status 
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>edit 1 $/test</code>
+<p>Test case: <code><span class="fuchsia">edit 1 $/test</span></code><br>
 Expected: No entry is added. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
-<p>Other incorrect edit commands to try: <code>edit 1 d/01/01/2045</code>, <code>edit 1 $/$100</code>,
-<code>edit 1 r/12345678901234567890123456789012345678901</code>.</p>
+<p>Other incorrect edit commands to try: <code><span class="fuchsia">edit 1 d/01/01/2045</span></code>, <code><span class="fuchsia">edit 1 $/$100</span></code>,
+<code><span class="fuchsia">edit 1 r/12345678901234567890123456789012345678901</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -3148,18 +3147,18 @@ Expected: No entry is added. Error details shown in the status message. Status b
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Prerequisites: List all entries using the <code>list</code> command. Multiple entries in the list.</p>
+<p>Prerequisites: List all entries using the <code><span class="fuchsia">list</span></code> command. Multiple entries in the list.</p>
 </li>
 <li>
-<p>Test case: <code>delete 1</code><br>
+<p>Test case: <code><span class="fuchsia">delete 1</span></code><br>
 Expected: First entry is deleted from the list. Details of the deleted entry shown in the status message. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>delete 0</code><br>
+<p>Test case: <code><span class="fuchsia">delete 0</span></code><br>
 Expected: No entry is deleted. Error details shown in the status message. Status bar remains the same.</p>
 </li>
 <li>
-<p>Other incorrect delete commands to try: <code>delete</code>, <code>delete x</code> (where x is larger than the list size), <code>delete three</code><br>
+<p>Other incorrect delete commands to try: <code><span class="fuchsia">delete</span></code>, <code><span class="fuchsia">delete x</span></code> (where x is larger than the list size), <code><span class="fuchsia">delete three</span></code><br>
 Expected: Similar to previous.</p>
 </li>
 </ol>
@@ -3179,12 +3178,12 @@ Expected: Similar to previous.</p>
 <td class="content">
 In order for the expected results of the test to be accurate, please input the following commands below to set up your
 finance tracker.<br>
-1. <code>clear</code><br>
-2. <code>spend n/Chicken Rice $/5.50 c/Food d/1/4/2019</code><br>
-3. <code>spend n/Chicken Rice $/5.50 c/Food d/2/4/2019</code><br>
-4. <code>spend n/Cupcakes $/2.50 c/Food d/2/4/2019</code><br>
-5. <code>spend n/Tshirt $/15 c/Clothes d/1/4/2019</code><br>
-6. <code>spend n/Jeans $/40 c/Clothes d/2/4/2019</code>
+1. <code><span class="fuchsia">clear</span></code><br>
+2. <code><span class="fuchsia">spend n/Chicken Rice $/5.50 c/Food d/1/4/2019</span></code><br>
+3. <code><span class="fuchsia">spend n/Chicken Rice $/5.50 c/Food d/2/4/2019</span></code><br>
+4. <code><span class="fuchsia">spend n/Cupcakes $/2.50 c/Food d/2/4/2019</span></code><br>
+5. <code><span class="fuchsia">spend n/Tshirt $/15 c/Clothes d/1/4/2019</span></code><br>
+6. <code><span class="fuchsia">spend n/Jeans $/40 c/Clothes d/2/4/2019</span></code>
 </td>
 </tr>
 </table>
@@ -3197,19 +3196,19 @@ finance tracker.<br>
 <ol class="loweralpha" type="a">
 <li>
 <p>Prerequisites: There must already be entries that are shown in the record list panel. Please set up the finance
-tracker as shown in the NOTE above.</p>
+tracker as shown in the <span class="fuchsia">NOTE</span> above.</p>
 </li>
 <li>
 <p>Search by name</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>search -name chicken rice</code><br>
+<p>Test case: <code><span class="fuchsia">search -name chicken rice</span></code><br>
 Expected: 2 records are shown in the records list panel. The result display shows that the total spent on the
 searched records is $11.00.</p>
 </li>
 <li>
-<p>Test case: <code>search -name chicken</code><br>
+<p>Test case: <code><span class="fuchsia">search -name chicken</span></code><br>
 Expected: Same as previous.</p>
 </li>
 </ol>
@@ -3220,7 +3219,7 @@ Expected: Same as previous.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>search -cat clothes</code><br>
+<p>Test case: <code><span class="fuchsia">search -cat clothes</span></code><br>
 Expected: 2 records are shown in the records list panel. The result display shows that the total spent on the
 searched records is $55.00.</p>
 </li>
@@ -3232,12 +3231,12 @@ searched records is $55.00.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>search -date 2/4/2019</code><br>
+<p>Test case: <code><span class="fuchsia">search -date 2/4/2019</span></code><br>
 Expected: 3 records are shown in the records list panel. The result display shows that the total spent on the
 searched records is $48.00.</p>
 </li>
 <li>
-<p>Test case: <code>search -date 5/4/2019</code><br>
+<p>Test case: <code><span class="fuchsia">search -date 5/4/2019</span></code><br>
 Expected: 0 records are shown in the records list panel. The result display shows that the total spent on the
 searched records is $0.00.</p>
 </li>
@@ -3249,12 +3248,12 @@ searched records is $0.00.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>No matches in the keywords: <code>search -date 5/4/2019</code><br>
+<p>No matches in the keywords: <code><span class="fuchsia">search -date 5/4/2019</span></code><br>
 Expected: 0 records are shown in the records list panel. The result display shows that the total spent on the
 searched records is $0.00.</p>
 </li>
 <li>
-<p>No parameters inputted after the search flag: <code>search -date</code><br>
+<p>No parameters inputted after the search flag: <code><span class="fuchsia">search -date</span></code><br>
 Expected: Same as previous.</p>
 </li>
 </ol>
@@ -3265,11 +3264,11 @@ Expected: Same as previous.</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
-<p>Test case: <code>search -cat -date</code>
+<p>Test case: <code><span class="fuchsia">search -cat -date</span></code>
 Expected: Error message is shown. The records list panel remains the same.</p>
 </li>
 <li>
-<p>Other incorrect sort commands to try: <code>search -food</code>, <code>search -cat -food</code>, <code>search -cat -date -name</code>.</p>
+<p>Other incorrect search commands to try: <code><span class="fuchsia">search -food</span></code>, <code><span class="fuchsia">search -cat -food</span></code>, <code><span class="fuchsia">search -cat -date -name</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -3292,23 +3291,23 @@ Expected: Error message is shown. The records list panel remains the same.</p>
 <p>Prerequisites: List must have some entries in it.</p>
 </li>
 <li>
-<p>Test case: <code>sort -name</code><br>
+<p>Test case: <code><span class="fuchsia">sort -name</span></code><br>
 Expected: List is sorted by name in lexicographical order. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>sort -name -desc</code><br>
+<p>Test case: <code><span class="fuchsia">sort -name -desc</span></code><br>
 Expected: List is sorted by name in reverse lexicographical order. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>sort -name -asc</code><br>
+<p>Test case: <code><span class="fuchsia">sort -name -asc</span></code><br>
 Expected: List is sorted by name in lexicographical order. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>sort -asc -name</code><br>
+<p>Test case: <code><span class="fuchsia">sort -asc -name</span></code><br>
 Expected: List will not be sorted. Error message is shown. Status bar remains the same.</p>
 </li>
 <li>
-<p>Other incorrect sort commands to try: <code>sort -desc -name</code>, <code>sort -name -inc</code>, <code>sort -name -asc a-z</code><br>
+<p>Other incorrect sort commands to try: <code><span class="fuchsia">sort -desc -name</span></code>, <code><span class="fuchsia">sort -name -inc</span></code>, <code><span class="fuchsia">sort -name -asc a-z</span></code><br>
 Expected: Similar to previous.</p>
 </li>
 </ol>
@@ -3322,23 +3321,23 @@ Expected: Similar to previous.</p>
 <p>Prerequisites: List must have some entries in it.</p>
 </li>
 <li>
-<p>Test case: <code>sort -amount</code><br>
+<p>Test case: <code><span class="fuchsia">sort -amount</span></code><br>
 Expected: List is sorted by amount in descending order. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>sort -amount -asc</code><br>
+<p>Test case: <code><span class="fuchsia">sort -amount -asc</span></code><br>
 Expected: List is sorted by amount in ascending order. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>sort -amount -desc</code><br>
+<p>Test case: <code><span class="fuchsia">sort -amount -desc</span></code><br>
 Expected: List is sorted by amount in descending order. Timestamp in the status bar is updated.</p>
 </li>
 <li>
-<p>Test case: <code>sort -asc -amount</code><br>
+<p>Test case: <code><span class="fuchsia">sort -asc -amount</span></code><br>
 Expected: List will not be sorted. Error message is shown. Status bar remains the same.</p>
 </li>
 <li>
-<p>Other incorrect sort commands to try: <code>sort -desc -amount</code>, <code>sort -amount -inc</code>, <code>sort -name -amount</code><br>
+<p>Other incorrect sort commands to try: <code><span class="fuchsia">sort -desc -amount</span></code>, <code><span class="fuchsia">sort -amount -inc</span></code>, <code><span class="fuchsia">sort -name -amount</span></code><br>
 Expected: Similar to previous.</p>
 </li>
 </ol>
@@ -3356,8 +3355,8 @@ Expected: Similar to previous.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-In order to test this command, please take note the name of the json file you are currently on. The name of the file can
-be seen at the right side of the status bar. By default, the json file is "finance.json".
+In order to test this command, please take note the name of the <span class="fuchsia">json</span> file you are currently on. The name of the file can
+be seen at the right side of the status bar. By default, the json file is "<span class="fuchsia">finance.json</span>".
 </td>
 </tr>
 </table>
@@ -3369,9 +3368,9 @@ be seen at the right side of the status bar. By default, the json file is "finan
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Test case: <code>setfile f/testfile</code>
+<p>Test case: <code><span class="fuchsia">setfile f/testfile</span></code><br>
 Expected: A new finance tracker file will be created with no records in the records list and the budget will be shown
-as $0.00. You can type in the command <code>setfile f/finance</code>(or the name of the previous file) to retrieve the original
+as $0.00. You can type in the command <code><span class="fuchsia">setfile f/finance</span></code> (or the name of the previous file) to retrieve the original
 finance tracker that you were previously on.</p>
 </li>
 </ol>
@@ -3380,22 +3379,5 @@ finance tracker that you were previously on.</p>
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="saving-data"><a class="link" href="#saving-data">G.10. Saving data</a></h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Dealing with missing/corrupted data files</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p><em>{explain how to simulate a missing/corrupted file and the expected behavior}</em></p>
-</li>
-</ol>
 </div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:06:31 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:57:36 UTC</div></div></div></body></html>

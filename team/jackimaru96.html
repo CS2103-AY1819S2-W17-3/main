@@ -328,8 +328,8 @@ To see the rest of the contributions I made to the User Guide, click the below l
 <h2 id="graphical-user-interface-introduction"><a class="link" href="#graphical-user-interface-introduction">Graphical User Interface Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This section will explain to you the Graphical User Interface (GUI) of <em>In-Credit-Ble</em> Finance Tracker.
-The theme of the application has been set to <code>Light</code>, which is different from the start up theme <code>Dark</code>.</p>
+<p><span class="blue">This section will explain to you the Graphical User Interface (GUI) of <em>In-Credit-Ble</em> Finance Tracker.</span>
+The theme of the application has been set to <code><span class="fuchsia">Light</span></code>, which is different from the start up theme <code><span class="fuchsia">Dark</span></code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -357,13 +357,13 @@ as denoted by the different coloured boxes above. The elements will be explained
 This panel is scrollable to view all your expense records.</p>
 </div>
 <div class="paragraph">
-<p>To find specific records based on <code>name</code>, <code>category</code>, <code>amount</code> or <code>date</code>, use the <code>search</code> command.
+<p>To find specific records based on <code><span class="fuchsia">name</span></code>, <code><span class="fuchsia">category</span></code> or <code><span class="fuchsia">date</span></code>, use the <code><span class="fuchsia">search</span></code> command.
 To list all your expense records again after searching for particular records,
-use the command <code>list</code></p>
+use the command <code><span class="fuchsia">list</span></code>.</p>
 </div>
 <div class="paragraph">
 <p>Each record is tagged with an <strong>index number</strong> before the record name.
-The index is used in command such as <code>delete</code>, <code>edit</code> and <code>select</code></p>
+The index is used in commands such as <code><span class="fuchsia">delete</span></code>, <code><span class="fuchsia">edit</span></code> and <code><span class="fuchsia">select</span></code>.</p>
 </div>
 <hr>
 </div>
@@ -395,34 +395,34 @@ To see the full sections, click the below link.<br></p>
 </div>
 <hr>
 <div class="sect3">
-<h4 id="allocating-budget-based-on-categories-code-allocate-code"><a class="link" href="#allocating-budget-based-on-categories-code-allocate-code">Allocating budget based on categories: <code>allocate</code></a></h4>
+<h4 id="allocating-budget-based-on-categories-code-span-class-fuchsia-allocate-span-code"><a class="link" href="#allocating-budget-based-on-categories-code-span-class-fuchsia-allocate-span-code">Allocating budget based on categories: <code><span class="fuchsia">allocate</span></code></a></h4>
 <div class="paragraph">
-<p>You can use this command to set a budget for a category in <em>In-Credit-Ble</em> Finance Tracker.<br></p>
+<p><span class="navy">You can use this command to set a budget for a category in <em>In-Credit-Ble</em> Finance Tracker.</span><br></p>
 </div>
 <div class="paragraph">
-<p><strong>Alias</strong>: <code>allo</code></p>
+<p><strong>Alias</strong>: <code><span class="fuchsia">allo</span></code></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>allocate $/AMOUNT c/CATEGORY</code></p>
+<p><strong>Format</strong>: <code><span class="fuchsia">allocate $/AMOUNT c/CATEGORY</span></code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Examples</strong>:</p>
+<p><strong><span class="navy">Examples</span></strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>allocate $/50 c/Dining</code></p>
+<p><code><span class="fuchsia">allocate $/50 c/Dining</span></code></p>
 </li>
 <li>
-<p><code>allocate $/100 c/CloThEs</code></p>
+<p><code><span class="fuchsia">allocate $/100 c/CloThEs</span></code></p>
 </li>
 <li>
-<p><code>allocate $/100.10 c/FOOD</code></p>
+<p><code><span class="fuchsia">allocate $/100.10 c/FOOD</span></code></p>
 </li>
 <li>
-<p><code>allo $/123.10 c/GiRLfrIEND</code></p>
+<p><code><span class="fuchsia">allo $/123.10 c/GiRLfrIEND</span></code></p>
 </li>
 </ul>
 </div>
@@ -441,31 +441,31 @@ To see the full sections, click the below link.<br></p>
 <p>Amount entered cannot be larger than 100000000.</p>
 </li>
 <li>
-<p>If you provide multiple categories (e.g. <code>allocate $/50.00 c/Food c/Clothes</code>),
+<p>If you provide multiple categories (<span class="navy">e.g.</span> <code><span class="fuchsia">allocate $/50.00 c/Food c/Clothes</span></code>),
 only the last category you provided will be taken (in the previous e.g., the command will
-set budget for <code>Clothes</code> category. Your last category must be of correct format (see below)</p>
+set budget for <code><span class="fuchsia">Clothes</span></code> category. Your last category must be of the correct format (see below).</p>
 </li>
 <li>
-<p>Category names are case-insensitive. (e.g. <code>CLotHes</code>, <code>clothes</code> and <code>CLOTHES</code> refer to <code>Clothes</code>)</p>
+<p>Category names are case-insensitive. (<span class="navy">e.g.</span> <code><span class="fuchsia">CLotHes</span></code>, <code><span class="fuchsia">clothes</span></code> and <code><span class="fuchsia">CLOTHES</span></code> refer to <code><span class="fuchsia">Clothes</span></code>).</p>
 </li>
 <li>
 <p>If a budget was previously set for the category, the old category budget will be replaced
-by the new <code>allocate</code> command</p>
+by the new <code><span class="fuchsia">allocate</span></code> command.</p>
 </li>
 <li>
 <p>The category budget that you allocate should be more than current spending in that category as it would not make
 sense to set a budget that is below the amount that you have already spent on that category.</p>
 <div class="paragraph">
-<p>For example, if you have spent $50.50 on the cateogry <code>Food</code>, you will receive an error message when you try to
-<code>allocate</code> $40.00 to the category <code>Food</code>.</p>
+<p>For example, if you have spent $50.50 on the cateogry <code><span class="fuchsia">Food</span></code>, you will receive an error message when you try to
+<code><span class="fuchsia">allocate</span></code> $40.00 to the category <code><span class="fuchsia">Food</span></code>.</p>
 </div>
 </li>
 <li>
 <p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
-and cannot contain special characters such as <code>:&lt;&gt;;\/|?~^%$#@</code></p>
+and cannot contain special characters such as <code><strong>:&lt;&gt;;\/|?~^%$@#</strong></code></p>
 </li>
 <li>
-<p>For you to see the category budgets and the current spending in each of the allocated category budget, use the <code>show</code>
+<p>For you to see the category budgets and the current spending in each of the allocated category budget, use the <code><span class="fuchsia">show</span></code>
 command shown in the next command</p>
 </li>
 </ul>
@@ -530,10 +530,10 @@ allocate a portion of the total budget to different categories.
 The current spending will increase when records are added.</p>
 </div>
 <div class="paragraph">
-<p>This implementation is under <code>Logic</code>, <code>Model</code>, <code>Storage</code> and <code>UI</code> Component.</p>
+<p>This implementation is under <code><span class="fuchsia">Logic</span></code>, <code><span class="fuchsia">Model</span></code>, <code><span class="fuchsia">Storage</span></code> and <code><span class="fuchsia">UI</span></code> Component.</p>
 </div>
 <div class="paragraph">
-<p>The classes associated with Budget is shown in the class diagram below:</p>
+<p>The classes associated with <code><span class="fuchsia">Budget</span></code> are shown in the class diagram below:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -542,12 +542,12 @@ The current spending will increase when records are added.</p>
 <div class="title">Figure 3. Class Diagram for Budget</div>
 </div>
 <div class="paragraph">
-<p>The above diagram shows the structure of the classes associated with <code>Budget</code>.
-<code>TotalBudget</code> and <code>CategoryBudget</code> are sub-classes of <code>Budget</code> and <code>TotalBudget</code> can contain
-any number of <code>CategoryBudget</code>.</p>
+<p>The above diagram shows the structure of the classes associated with <code><span class="fuchsia">Budget</span></code>.
+<code><span class="fuchsia">TotalBudget</span></code> and <code><span class="fuchsia">CategoryBudget</span></code> are sub-classes of <code><span class="fuchsia">Budget</span></code> and <code><span class="fuchsia">TotalBudget</span></code> can contain
+any number of <code><span class="fuchsia">CategoryBudget</span></code>.</p>
 </div>
 <div class="paragraph">
-<p>As seen in the class diagram, the <code>CategoryBudget</code> in <code>TotalBudget</code> is kept in a <code>HashSet</code>.</p>
+<p>As seen in the class diagram, the <code><span class="fuchsia">CategoryBudget</span></code> in <code><span class="fuchsia">TotalBudget</span></code> is kept in a <code><span class="fuchsia">HashSet</span></code>.</p>
 </div>
 <hr>
 </div>
@@ -571,51 +571,51 @@ executes when a user sets a category budget.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User enters command <code>allocate $/10 c/Food</code>. The command is received by <code>FinanceBookParser</code></p>
+<p>User enters command <code><span class="fuchsia">allocate $/10 c/Food</span></code>. The command is received by <code><span class="fuchsia">FinanceTrackerParser</span></code></p>
 </li>
 <li>
-<p>FinanceTrackerParser will then create a <code>AllocateCommandParser</code> Object
-and calls <code>AllocateCommandParser#parse()</code> method</p>
+<p><code><span class="fuchsia">FinanceTrackerParser</span></code> will then create a <code><span class="fuchsia">AllocateCommandParser</span></code> Object
+and calls <code><span class="fuchsia">AllocateCommandParser#parse()</span></code> method</p>
 </li>
 <li>
-<p><code>AllocateCommandParser#parse()</code> method calls <code>ArgumentTokenizer#tokenize()</code> method to tokenize
-the user input String into arguments and prefixes in an <code>ArgumentMultimap</code> Object.</p>
+<p><code><span class="fuchsia">AllocateCommandParser#parse()</span></code> method calls <code><span class="fuchsia">ArgumentTokenizer#tokenize()</span></code> method to tokenize
+the user input String into arguments and prefixes in an <code><span class="fuchsia">ArgumentMultimap</span></code> Object.</p>
 </li>
 <li>
-<p><code>AllocateCommandParser#parse()</code> method then calls another method within the same class
-<code>AllocateCommandParser#arePrefixesPresent()</code> to check if there are any missing prefixes.
-If there are missing prefixes, <code>ParseException</code> will be thrown</p>
+<p><code><span class="fuchsia">AllocateCommandParser#parse()</span></code> method then calls another method within the same class
+<code><span class="fuchsia">AllocateCommandParser#arePrefixesPresent()</span></code> to check if there are any missing prefixes.
+If there are missing prefixes, <code><span class="fuchsia">ParseException</span></code> will be thrown</p>
 </li>
 <li>
-<p>If no exceptions are thrown from the step 4, a new AllocateCommand object is created
+<p>If no exceptions are thrown from the step 4, a new <code><span class="fuchsia">AllocateCommand</span></code> object is created
 with the given arguments.</p>
 </li>
 <li>
-<p>Control is returned to LogicManager which then calls <code>AllocateCommand#execute()</code> method.</p>
+<p>Control is returned to <code><span class="fuchsia">LogicManager</span></code> which then calls <code><span class="fuchsia">AllocateCommand#execute()</span></code> method.</p>
 </li>
 <li>
-<p><code>AllocateCommand#execute()</code> calls <code>ModelManager#addCategoryBudget()</code> method and control
-is transferred to <code>ModelManager</code> which is in the <code>Model</code> Component.</p>
+<p><code><span class="fuchsia">AllocateCommand#execute()</span></code> calls <code><span class="fuchsia">ModelManager#addCategoryBudget()</span></code> method and control
+is transferred to <code><span class="fuchsia">ModelManager</span></code> which is in the <code><span class="fuchsia">Model</span></code> Component.</p>
 </li>
 <li>
-<p><code>ModelManager#addCategoryBudget()</code> then calls <code>FinanceTracker#addCategoryBudget()</code> which then
-calls <code>TotalBudget#setNewCategoryBudget()</code></p>
+<p><code><span class="fuchsia">ModelManager#addCategoryBudget()</span></code> then calls <code><span class="fuchsia">FinanceTracker#addCategoryBudget()</span></code> which then
+calls <code><span class="fuchsia">TotalBudget#setNewCategoryBudget()</span></code>.</p>
 </li>
 <li>
-<p><code>TotalBudget#setNewCategoryBudget()</code> takes into account if there are any previous budget
+<p><code><span class="fuchsia">TotalBudget#setNewCategoryBudget()</span></code> takes into account if there are any previous budget
 allocated to a category and if so, adds the expenses to the new budget assigned to the category</p>
 </li>
 </ol>
 </div>
-<div class="sect4">
-<h5 id="design-consideration"><a class="link" href="#design-consideration">Design consideration</a></h5>
-<div class="paragraph">
-<p>Aspect: allocating Category Budget</p>
 </div>
+<div class="sect3">
+<h4 id="design-consideration"><a class="link" href="#design-consideration">Design consideration</a></h4>
+<div class="sect4">
+<h5 id="aspect-allocating-category-budget"><a class="link" href="#aspect-allocating-category-budget">Aspect: allocating Category Budget</a></h5>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice)</strong>: Allocating Category Budget is done with only one command <code>allocate</code></p>
+<p><strong>Alternative 1 (current choice)</strong>: Allocating Category Budget is done with only one command <code><span class="fuchsia">allocate</span></code></p>
 <div class="ulist">
 <ul>
 <li>
@@ -630,7 +630,7 @@ allocated to the same category, it should be reflected accordingly.</p>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2</strong>: Have two other commands <code>increaseCatBudget</code> and <code>decreaseCatBudget</code> to allow user
+<p><strong>Alternative 2</strong>: Have two other commands <code><span class="fuchsia">increaseCatBudget</span></code> and <code><span class="fuchsia">decreaseCatBudget</span></code> to allow user
 to control the budget of the category</p>
 <div class="ulist">
 <ul>
@@ -650,4 +650,4 @@ if the category was not previously allocated with a budget</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:06:31 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:57:36 UTC</div></div></div></body></html>

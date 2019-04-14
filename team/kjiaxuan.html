@@ -155,13 +155,13 @@ becomes more user-friendly and convenient to use.<br>
 <p>These are additions I made to <em>In-Credit-Ble</em>'s User Guide for the <code>reverse</code> and <code>sort</code> features.</p>
 </div>
 <div class="sect3">
-<h4 id="sorting-the-entries-according-to-name-amount-date-category-code-sort-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-sort-code">Sorting the entries according to name/amount/date/category: <code>sort</code></a></h4>
+<h4 id="sorting-the-entries-according-to-name-amount-date-category-code-span-class-fuchsia-sort-span-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-span-class-fuchsia-sort-span-code">Sorting the entries according to name/amount/date/category: <code><span class="fuchsia">sort</span></code></a></h4>
 <div class="paragraph">
-<p>You can choose to sort the list of entries by name, amount, date or category.<br>
-<code>Sort</code> has effect on the entire list of entries (instead of a filtered list).</p>
+<p><span class="navy">You can choose to sort the list of entries by name, amount, date or category.</span><br>
+<code><span class="fuchsia">Sort</span></code> has effect on the entire list of entries (instead of a filtered list).</p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>sort FLAG [ORDER]</code></p>
+<p><strong>Format</strong>: <code><span class="fuchsia">sort FLAG [ORDER]</span></code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -173,29 +173,29 @@ becomes more user-friendly and convenient to use.<br>
 <div class="ulist">
 <ul>
 <li>
-<p><code>FLAG</code> here refers to either <code>-name</code>, <code>-amount</code>, <code>-date</code> or <code>-cat</code>.</p>
+<p><code><span class="fuchsia">FLAG</span></code> here refers to either <code><span class="fuchsia">-name</span></code>, <code><span class="fuchsia">-amount</span></code>, <code><span class="fuchsia">-date</span></code> or <code><span class="fuchsia">-cat</span></code>.</p>
 </li>
 <li>
 <p>Only one flag should be provided.</p>
 </li>
 <li>
-<p><code>[ORDER]</code> refers to either <code>-asc</code> or <code>-desc</code>.</p>
+<p><code><span class="fuchsia">[ORDER]</span></code> refers to either <code><span class="fuchsia">-asc</span></code> or <code><span class="fuchsia">-desc</span></code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>-asc</code> for ascending order.</p>
+<p><code><span class="fuchsia">-asc</span></code> for ascending order.</p>
 </li>
 <li>
-<p><code>-desc</code> for descending order.</p>
+<p><code><span class="fuchsia">-desc</span></code> for descending order.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><code>[ORDER]</code> is optional. If not supplied, default ordering is implied.</p>
+<p><code><span class="fuchsia">[ORDER]</span></code> is optional. If not supplied, default ordering is implied.</p>
 </li>
 <li>
-<p>Order of parameters supplied matters. (FLAG must be before ORDER)</p>
+<p>Order of parameters supplied matters. (<code><span class="fuchsia">FLAG</span></code> must be before <code><span class="fuchsia">ORDER</span></code>)</p>
 </li>
 </ul>
 </div>
@@ -206,24 +206,24 @@ becomes more user-friendly and convenient to use.<br>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong>Examples (default ordering)</strong>:</p>
+<p><strong><span class="navy">Examples</span> (default ordering)</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>sort -name</code>:<br>
+<p><code><span class="fuchsia">sort -name</span></code>:<br>
 Sorts the list of records by name in lexicographical order (ascending order)</p>
 </li>
 <li>
-<p><code>sort -amount</code>:<br>
+<p><code><span class="fuchsia">sort -amount</span></code>:<br>
 Sorts the list of records by amount from largest to smallest (descending order)</p>
 </li>
 <li>
-<p><code>sort -date</code>:<br>
+<p><code><span class="fuchsia">sort -date</span></code>:<br>
 Sorts the list of records by date with the latest at the top (descending order)</p>
 </li>
 <li>
-<p><code>sort -cat</code>:<br>
+<p><code><span class="fuchsia">sort -cat</span></code>:<br>
 Sorts the list of records by category in lexicographical order (ascending order)</p>
 </li>
 </ul>
@@ -232,15 +232,15 @@ Sorts the list of records by category in lexicographical order (ascending order)
 <div class="content">
 <img src="../images/sortExamples.png" alt="sortExamples" width="900">
 </div>
-<div class="title">Figure 1. Examples of <code>sort</code> command (default ordering)</div>
+<div class="title">Figure 1. Examples of <code><span class="fuchsia">sort</span></code> command (default ordering)</div>
 </div>
 <div class="paragraph">
-<p><strong>More examples</strong>:</p>
+<p><strong><span class="navy">More examples</span></strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>sort -name -desc</code>:<br>
+<p><code><span class="fuchsia">sort -name -desc</span></code>:<br>
 Sorts list of records by name in reverse lexicographical order.</p>
 </li>
 </ul>
@@ -260,9 +260,9 @@ Sorts list of records by name in reverse lexicographical order.</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-To sort any list conveniently in the reverse order, use the <code>reverse</code> command!<br>
-<code>sort -name</code><br>
-<code>reverse</code><br>
+To sort any list conveniently in the reverse order, use the <code><span class="fuchsia">reverse</span></code> command!<br>
+<code><span class="fuchsia">sort -name</span></code><br>
+<code><span class="fuchsia">reverse</span></code><br>
 List will be sorted by name in reverse lexicographical order.
 </td>
 </tr>
@@ -270,16 +270,16 @@ List will be sorted by name in reverse lexicographical order.
 </div>
 </div>
 <div class="sect3">
-<h4 id="reversing-the-entries-code-reverse-code"><a class="link" href="#reversing-the-entries-code-reverse-code">Reversing the entries: <code>reverse</code></a></h4>
+<h4 id="reversing-the-entries-code-span-class-fuchsia-reverse-span-code"><a class="link" href="#reversing-the-entries-code-span-class-fuchsia-reverse-span-code">Reversing the entries: <code><span class="fuchsia">reverse</span></code></a></h4>
 <div class="paragraph">
-<p>You can also reverse the order of the list of entries in the records.<br>
-<code>Reverse</code> has effect on the entire list of entries (instead of a filtered list).</p>
+<p><span class="navy">You can also reverse the order of the list of entries in the records.</span><br>
+<code><span class="fuchsia">Reverse</span></code> has effect on the entire list of entries (instead of a filtered list).</p>
 </div>
 <div class="paragraph">
-<p><strong>Alias</strong>: <code>rev</code></p>
+<p><strong>Alias</strong>: <code><span class="fuchsia">rev</span></code></p>
 </div>
 <div class="paragraph">
-<p><strong>Format</strong>: <code>reverse</code></p>
+<p><strong>Format</strong>: <code><span class="fuchsia">reverse</span></code></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -306,7 +306,7 @@ The sort mechanism allows users to view their expense records in a different way
 <div class="sect3">
 <h4 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h4>
 <div class="paragraph">
-<p>The sort command uses comparators that implement <code>java.util.Comparator</code> interface to provide the comparison functions.</p>
+<p>The sort command uses comparators that implement <code><span class="fuchsia">java.util.Comparator</span></code> interface to provide the comparison functions.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <caption class="title">Table 1. Sort commands (default ordering)</caption>
@@ -324,23 +324,23 @@ The sort mechanism allows users to view their expense records in a different way
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name</code>, <code>sort -name -asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordNameComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -name</span></code>, <code><span class="fuchsia">sort -name -asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordNameComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -amount</code>, <code>sort -amount -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordAmountComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -amount</span></code>, <code><span class="fuchsia">sort -amount -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordAmountComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Descending order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -date</code>, <code>sort -date -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordDateComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -date</span></code>, <code><span class="fuchsia">sort -date -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordDateComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse chronological order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -cat</code>, <code>sort -cat -asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordCategoryComparator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -cat</span></code>, <code><span class="fuchsia">sort -cat -asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordCategoryComparator</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lexicographical order</p></td>
 </tr>
 </tbody>
@@ -361,43 +361,43 @@ The sort mechanism allows users to view their expense records in a different way
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -name -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordNameComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -name -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordNameComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse lexicographical order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -amount - asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordAmountComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -amount - asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordAmountComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ascending order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -date - asc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordDateComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -date - asc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordDateComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Chronological order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort -cat -desc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RecordCategoryComparator#reversed()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">sort -cat -desc</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">RecordCategoryComparator#reversed()</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reverse lexicographical order</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Here is the list of operations involved in the execution of command, <code>sort -name</code>.</p>
+<p>Here is the list of operations involved in the execution of command, <code><span class="fuchsia">sort -name</span></code>.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"sort -name"</em>)</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"sort -name"</em>)</span></code> calls <code><span class="fuchsia">FinanceTrackerParser#parseCommand(<em>"sort -name"</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTracker#parseCommand(<em>"sort -name"</em>)</code> creates a new <code>SortCommandParser</code> object and calls <code>SortCommandParser#parse(<em>" -name"</em>)</code>.</p>
+<p><code><span class="fuchsia">FinanceTracker#parseCommand(<em>"sort -name"</em>)</span></code> creates a new <code><span class="fuchsia">SortCommandParser</span></code> object and calls <code><span class="fuchsia">SortCommandParser#parse(<em>" -name"</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>SortCommandParser#parse()</code> creates a new <code>RecordNameComparator()</code> object, <em>comparator</em> and passes it as a parameter into the <code>SortCommand</code> constructor.</p>
+<p><code><span class="fuchsia">SortCommandParser#parse()</span></code> creates a new <code><span class="fuchsia">RecordNameComparator()</span></code> object, <em>comparator</em> and passes it as a parameter into the <code><span class="fuchsia">SortCommand</span></code> constructor.</p>
 </li>
 <li>
-<p>The <code>SortCommand</code> object, <em>s</em>, is then passed back to the <code>SortCommandParser</code>, <code>FinanceTrackerParser</code>, and finally back to the <code>LogicManager</code>.</p>
+<p>The <code><span class="fuchsia">SortCommand</span></code> object, <em>s</em>, is then passed back to the <code><span class="fuchsia">SortCommandParser</span></code>, <code><span class="fuchsia">FinanceTrackerParser</span></code>, and finally back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="../images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
@@ -406,22 +406,22 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </li>
 <li>
-<p><code>LogicManager#execute(<em>"sort -name"</em>)</code> then continues to call <code>SortCommand#execute()</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"sort -name"</em>)</span></code> then continues to call <code><span class="fuchsia">SortCommand#execute()</span></code>.</p>
 </li>
 <li>
-<p><code>SortCommand#execute()</code> calls <code>Model#SortFilteredRecordList(<em>comparator</em>)</code>.</p>
+<p><code><span class="fuchsia">SortCommand#execute()</span></code> calls <code><span class="fuchsia">Model#SortFilteredRecordList(<em>comparator</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>Model#SortFilteredRecordList(<em>comparator</em>)</code> calls <code>FinanceTracker#sortRecordList(<em>comparator</em>)</code>.</p>
+<p><code><span class="fuchsia">Model#SortFilteredRecordList(<em>comparator</em>)</span></code> calls <code><span class="fuchsia">FinanceTracker#sortRecordList(<em>comparator</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTracker#sortRecordList(<em>comparator</em>)</code> calls <code>UniqueRecordList#sortList(<em>comparator</em>)</code>.</p>
+<p><code><span class="fuchsia">FinanceTracker#sortRecordList(<em>comparator</em>)</span></code> calls <code><span class="fuchsia">UniqueRecordList#sortList(<em>comparator</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>UniqueRecordList#sortList(<em>comparator</em>)</code> then uses <code>FXCollection</code>’s static method <code>sort()</code>  to sort the records.</p>
+<p><code><span class="fuchsia">UniqueRecordList#sortList(<em>comparator</em>)</span></code> then uses <code><span class="fuchsia">FXCollection</span></code>’s static method <code><span class="fuchsia">sort()</span></code>  to sort the records.</p>
 </li>
 <li>
-<p><code>SortCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+<p><code><span class="fuchsia">SortCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -439,7 +439,7 @@ The sort mechanism allows users to view their expense records in a different way
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Use the <code>Comparator</code> interface.</p>
+<p><strong>Alternative 1 (current choice):</strong> Use the <code><span class="fuchsia">Comparator</span></code> interface.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -449,17 +449,17 @@ The sort mechanism allows users to view their expense records in a different way
 <p>Pros 2: Allows an alternative ordering to be applied, does not have to be the natural ordering. Therefore, dates can be sorted in reverse chronological order, and amount in descending order.</p>
 </li>
 <li>
-<p>Cons: A new class that implements the interface <code>Comparator</code> needs to be created.</p>
+<p>Cons: A new class that implements the interface <code><span class="fuchsia">Comparator</span></code> needs to be created.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Use the <code>Comparable</code> interface.</p>
+<p><strong>Alternative 2:</strong> Use the <code><span class="fuchsia">Comparable</span></code> interface.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Type-safe with compiler as <code>Comparable#compareTo()</code> only accepts object of type <code>T</code>, instead of <code>java.lang.Object</code>.</p>
+<p>Pros: Type-safe with compiler as <code><span class="fuchsia">Comparable#compareTo()</span></code> only accepts object of type <code><span class="fuchsia">T</span></code>, instead of <code><span class="fuchsia">java.lang.Object</span></code>.</p>
 </li>
 <li>
 <p>Cons 1: There can only be one form or way of sorting the records.</p>
@@ -474,12 +474,12 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </div>
 <div class="sect4">
-<h5 id="aspect-how-sort-is-executed-when-code-order-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-e-g-code-sort-name-desc-code"><a class="link" href="#aspect-how-sort-is-executed-when-code-order-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-e-g-code-sort-name-desc-code">Aspect: How sort is executed when <code>[ORDER]</code> argument is supplied and specified order is opposite to that of default. (E.g. <code>sort -name -desc</code>)</a></h5>
+<h5 id="aspect-how-sort-is-executed-when-code-span-class-fuchsia-order-span-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-span-class-navy-e-g-span-code-span-class-fuchsia-sort-name-desc-span-code"><a class="link" href="#aspect-how-sort-is-executed-when-code-span-class-fuchsia-order-span-code-argument-is-supplied-and-specified-order-is-opposite-to-that-of-default-span-class-navy-e-g-span-code-span-class-fuchsia-sort-name-desc-span-code">Aspect: How sort is executed when <code><span class="fuchsia">[ORDER]</span></code> argument is supplied and specified order is opposite to that of default. (<span class="navy">E.g.</span> <code><span class="fuchsia">sort -name -desc</span></code>)</a></h5>
 <div class="ulist">
 <ul>
 <li>
 <p><strong>Alternative 1 (current choice):</strong> A new comparator that imposes the reverse ordering of one of the four defined comparator classes is created.<br>
-(<strong>E.g.</strong> To sort the list by name in reverse lexicographical order, a new comparator, <code>RecordNameComparator#reversed()</code> is created.)</p>
+(<strong><span class="navy">E.g.</span></strong> To sort the list by name in reverse lexicographical order, a new comparator, <code><span class="fuchsia">RecordNameComparator#reversed()</span></code> is created.)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -492,15 +492,15 @@ The sort mechanism allows users to view their expense records in a different way
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Reverse the list after sorting it using one of the four defined comparator classes.
-(<strong>E.g.</strong> Sort list using <code>RecordNameComparator</code>. Then use the <code>reverse</code> command to reverse the list.)</p>
+<p><strong>Alternative 2:</strong> Reverse the list after sorting it using one of the four defined comparator classes.<br>
+(<strong><span class="navy">E.g.</span></strong> Sort list using <code><span class="fuchsia">RecordNameComparator</span></code>. Then use the <code><span class="fuchsia">reverse</span></code> command to reverse the list.)</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: We can reuse what is already in the codebase (<code>reverse</code> command).</p>
+<p>Pros: We can reuse what is already in the codebase (<code><span class="fuchsia">reverse</span></code> command).</p>
 </li>
 <li>
-<p>Cons: Harder to implement, need to execute two commands internally when one command is entered in the <code>CommandBox</code>.</p>
+<p>Cons: Harder to implement, need to execute two commands internally when one command is entered in the <code><span class="fuchsia">CommandBox</span></code>.</p>
 </li>
 </ul>
 </div>
@@ -525,31 +525,31 @@ The reverse command provides a convenient way for users to sort their entries in
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>LogicManager#execute(<em>"reverse"</em>)</code> calls <code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"reverse"</em>)</span></code> calls <code><span class="fuchsia">FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</code> creates a <code>ReverseCommand</code> object, <em>r</em>.</p>
+<p><code><span class="fuchsia">FinanceTrackerParser#parseCommand(<em>"reverse"</em>)</span></code> creates a <code><span class="fuchsia">ReverseCommand</span></code> object, <em>r</em>.</p>
 </li>
 <li>
-<p><em>r</em> is passed back to the <code>FinanceTrackerParser</code>, and then back to the <code>LogicManager</code>.</p>
+<p><em>r</em> is passed back to the <code><span class="fuchsia">FinanceTrackerParser</span></code>, and then back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 <li>
-<p><code>LogicManager#execute(<em>"reverse"</em>)</code> then moves on to call <code>ReverseCommand#execute()</code>.</p>
+<p><code><span class="fuchsia">LogicManager#execute(<em>"reverse"</em>)</span></code> then moves on to call <code><span class="fuchsia">ReverseCommand#execute()</span></code>.</p>
 </li>
 <li>
-<p><code>ReverseCommand#execute()</code> calls <code>Model#reverseFilteredRecordList()</code>.</p>
+<p><code><span class="fuchsia">ReverseCommand#execute()</span></code> calls <code><span class="fuchsia">Model#reverseFilteredRecordList()</span></code>.</p>
 </li>
 <li>
-<p><code>Model#reverseFilteredRecordList()</code> calls <code>FinanceTracker#reverseRecordList()</code>.</p>
+<p><code><span class="fuchsia">Model#reverseFilteredRecordList()</span></code> calls <code><span class="fuchsia">FinanceTracker#reverseRecordList()</span></code>.</p>
 </li>
 <li>
-<p><code>FinanceTracker#reverseRecordList()</code> calls <code>UniqueRecordList#reverseList()</code>.</p>
+<p><code><span class="fuchsia">FinanceTracker#reverseRecordList()</span></code> calls <code><span class="fuchsia">UniqueRecordList#reverseList()</span></code>.</p>
 </li>
 <li>
-<p><code>UniqueRecordList#reverseList()</code> uses <code>FXCollection</code>’s static method <code>reverse()</code> to reverse the list of records.</p>
+<p><code><span class="fuchsia">UniqueRecordList#reverseList()</span></code> uses <code><span class="fuchsia">FXCollection</span></code>’s static method <code><span class="fuchsia">reverse()</span></code> to reverse the list of records.</p>
 </li>
 <li>
-<p><code>ReverseCommand#execute()</code> then creates a <code>CommandResult</code> object and returns it back to the <code>LogicManager</code>.</p>
+<p><code><span class="fuchsia">ReverseCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
 </div>
@@ -562,4 +562,4 @@ The reverse command provides a convenient way for users to sort their entries in
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:06:31 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:57:36 UTC</div></div></div></body></html>
