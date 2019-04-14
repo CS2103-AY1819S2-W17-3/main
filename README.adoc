@@ -1,35 +1,36 @@
-= The Infinity Machine
+= In-Credit-ble
+
+image:https://api.codacy.com/project/badge/Grade/4d568ca364964a75bb4567f42c2e712d[link="https://app.codacy.com/app/Jackimaru96/main?utm_source=github.com&utm_medium=referral&utm_content=CS2103-AY1819S2-W17-3/main&utm_campaign=Badge_Grade_Dashboard"]
 ifdef::env-github,env-browser[:relfileprefix: docs/]
 
-https://travis-ci.com/CS2103-AY1819S2-W13-3/main[image:https://travis-ci.com/CS2103-AY1819S2-W13-3/main.svg?branch=master[Build Status]]
-https://ci.appveyor.com/project/damithc/addressbook-level4[image:https://ci.appveyor.com/api/projects/status/3boko2x2vr5cc3w2?svg=true[Build status]]
-https://coveralls.io/github/CS2103-AY1819S2-W13-3/main[image:https://coveralls.io/repos/github/CS2103-AY1819S2-W13-3/main/badge.svg?branch=master[Coverage Status]]
-https://www.codacy.com/app/CS2103-AY1819S2-W13-3/main?utm_source=github.com&utm_medium=referral&utm_content=CS2103-AY1819S2-W13-3/main&utm_campaign=Badge_Grade[image:https://travis-ci.com/CS2103-AY1819S2-W13-3/main.svg?branch=master[Codacy Badge]]
+https://travis-ci.org/CS2103-AY1819S2-W17-3/main[image:https://travis-ci.org/CS2103-AY1819S2-W17-3/main.svg?branch=master[Build Status]]
+https://app.netlify.com/sites/increditble/deploys[image:https://api.netlify.com/api/v1/badges/d34bd9d2-f71e-47d5-ae0d-b4a0a68773a4/deploy-status[Netlify Status]]
+https://coveralls.io/github/CS2103-AY1819S2-W17-3/main?branch=master[image:https://coveralls.io/repos/github/CS2103-AY1819S2-W17-3/main/badge.png?branch=master[Coverage Status]]
 
 ifdef::env-github[]
 image::docs/images/Ui.png[width="600"]
+
+image::docs/images/Ui_2.png[width="600"]
 endif::[]
 
 ifndef::env-github[]
 image::images/Ui.png[width="600"]
+image::images/Ui_2.png[width="600"]
 endif::[]
 
-== What is it about?
-Have you ever faced the problem of not having a place to store all the information you search online or the notes you take?
-Well,  we have! Therefore, through our application, The Infinity Machine, we have created a platform where the storing and
-retrieving of textual information such as research materials can be done efficiently. It also allows you to apply custom
-made tags and descriptions for easy categorization, search and retrieval.
-Other useful functionalities implemented are:
-- Bibliography generator
-- Panic/unpanic mode
-- Restore command
-- History command
-- Greet command and many more!
+"Where did all the money in my wallet go!"
 
-== Target Users
-Tech-savvy university students or researchers who love to use the Command line Interface and wish to organize and tag
-research information or any other data that they may wish to store for a long time, frequently performing basic operations
-such as adding, editing, deleting and searching an entry.
+Is the above statement something that you asked yourself on a daily basis? Do you have so many micro-transactions that you lose track of all your expenditure? _In-Credit-Ble_ is here to help you out!
+
+_In-Credit-Ble_'s key features:
+
+* Intuitive and easy to use user interface allowing you to add new records fast.
+* Easily record the transaction to track where all your transactions.
+* Overall view of on your financial transaction through aster plot chart which shows how much of your budget you have spent.
+
+Sold yet? Find out more through the <<UserGuide#, User Guide>>!
+
+_In-CreditBle_ is an open source project that welcomes contribution from the community! If you would like to make any changes, head over to the <<DeveloperGuide#, Developer Guide>> to get started
 
 == Site Map
 
@@ -40,9 +41,7 @@ such as adding, editing, deleting and searching an entry.
 
 == Acknowledgements
 
-* AddressBook-Level4 project created by SE-EDU initiative at https://github.com/se-edu/
-* Some parts of this sample application were inspired by the excellent http://code.makery.ch/library/javafx-8-tutorial/[Java FX tutorial] by
-_Marco Jakob_.
+* This application was inspired by AddressBook-Level4 project created by SE-EDU initiative at https://github.com/se-edu/.
 * Libraries used: https://github.com/TestFX/TestFX[TextFX], https://github.com/FasterXML/jackson[Jackson], https://github.com/google/guava[Guava], https://github.com/junit-team/junit5[JUnit5]
 
 == Licence : link:LICENSE[MIT]
