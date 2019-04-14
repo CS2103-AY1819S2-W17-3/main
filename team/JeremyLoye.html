@@ -423,56 +423,59 @@ to write technical documentation that is comprehensive and easy to understand fo
 <div class="sect3">
 <h4 id="setting-a-budget"><a class="link" href="#setting-a-budget">Setting a Budget</a></h4>
 <div class="paragraph">
-<p>This feature allows the particular user to set a budget for the FinanceTracker. The user
-may only set the budget once and increase or decrease it later.</p>
+<p>This feature allows the user to set a budget for the FinanceTracker. The budget can be changed by setting
+the budget again.</p>
 </div>
 <div class="paragraph">
 <p>Given below is a sequence diagram and step by step explanation of how Finance Tracker
-creates a budget when the user sets a budget.</p>
+creates a budget when the user uses the <code>set</code> command to set a budget.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/SetCommandSequenceDiagram.png" alt="SetCommandSequenceDiagram" width="800">
+<img src="../images/SetSequenceDiagram.jpg" alt="SetSequenceDiagram" width="800">
 </div>
 <div class="title">Figure 1. Sequence diagram of user setting a budget</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The user enters a Set command (e.g. set $/120). The command is received by MainWindow and
-the method <code>LogicManager#execute()</code> is called. The argument of the command ($/120) is passed to
-<code>FinanceTrackerParser#parseCommand</code> method to handle.</p>
+<p>The user enters a Set command (e.g. set $/120). The command passed down and received by the <code>LogicManager</code>.</p>
 </li>
 <li>
-<p>The <code>FinanceTrackerParser#parseCommand</code> creates a <code>SetCommandParser</code> object and passes the command
-arguments into <code>SetCommandParser#parse()</code> method. The argument is checked to be in the correct format
-by <code>ParserUtil.parseAmount()</code> before <code>SetCommandParser#parse()</code> creates a <code>SetCommand</code> with the argument
-parsed into an amount passed in.</p>
+<p>The <code>LogicManger</code> calls the <code>FinanceTrackerParser#ParseCommand()</code> method which creates a <code>SetCommandParser</code>
+object. The <code>FinanceTrackerParser#ParseCommand()</code> method then calls the <code>SetCommandParser#parse()</code> method,
+passing in the amount argument entered by the user ("120" in example).</p>
 </li>
 <li>
-<p>The <code>SetCommand</code> object is passed back to <code>LogicManager#execute()</code> and it calls the <code>SetCommand#execute()</code>
-to excute the logic to create the budget. The method creates a <code>Budget</code> object with the amount and passes
-the budget object into the <code>Model</code> by calling <code>ModelManager#addBudget()</code>.</p>
+<p><code>SetCommandParser#parse()</code> calls <code>ParserUtil#ParseAmount()</code> to handle the parsing of the amount. The method
+checks if the argument is a valid amount value and throws an exception if it is not. If there are no exceptions,
+<code>ParserUtil#ParseAmount()</code> returns the processed amount string. <code>SetCommandParser#parse()</code> then creates a
+<code>SetCommand</code> with the processed amount ("120" in example) and the new <code>SetCommand</code> gets passed back to the
+<code>LogicManager</code>.</p>
 </li>
 <li>
-<p><code>ModelManager#addBudget()</code> calls <code>FinanceTracker#addBudget()</code> to set the Budget of the FinanceTracker for
-the current user of the app. <code>FinanceTracker#addBudget()</code> uses the <code>Budget#set()</code> method to set the Budget of
-the app using the amount put in the inital command before returning to the <code>SetCommand#execute()</code> in the <code>Logic</code>
-of the app.</p>
+<p>Now that the command is processed, <code>LogicManager#execute()</code> calls <code>SetCommand#execute()</code> to execute the command.
+<code>SetCommand#execute()</code> creates a new <code>Budget</code> object initialised with the amount (budget of 120 created in example).
+The <code>Budget</code> object (labelled p) is then passed to the <code>ModelManager</code> by the <code>ModelManager#addBudget()</code> method.</p>
 </li>
 <li>
-<p><code>SetCommand#execute()</code> now creates a <code>CommandResult</code> object to convey a message to be pushed to the UI and user.
-The <code>commandresult</code> object created is passed back to <code>LogicManager#execute()</code> and then back to <code>MainWindow#executeCommand()</code>.</p>
+<p><code>ModelManager#addBudget()</code> calls <code>FinanceTracker#addBudget()</code> to update the budget of the current instance of the
+Finance Tracker. <code>FinanceTracker#addBudget()</code> updates the <code>TotalBudget</code> object field (labelled q) in <code>FinanceTracker</code>
+by calling <code>TotalBudget#updateBudget()</code> and passing the <code>Budget p</code> and the records stored in the <code>FinanceTracker</code>.</p>
 </li>
 <li>
-<p><code>MainWindow#executeCommand()</code> checks whether there is a need to update the budget in the UI by calling <code>commandResult#isChangeBudget()</code>
-and getting a <code>true</code> boolean return from the method for the set command. The <code>#handleChangeBudget()</code> within <code>MainWindow</code> is called
-since <code>MainWindow#executeCommand()</code> notes that budget is changed.</p>
+<p><code>TotalBudget#updateBudget()</code> first gets the budget data (totalBudget, currentBudget) from <code>Budget p</code> and sets it using
+<code>TotalBudget#set()</code> (total budget of app is now 120 in example). It then updates the current budget and spending based on
+the records that was stored and passed in by the <code>FinanceTracker</code>.</p>
 </li>
 <li>
-<p><code>MainWindow#handleChangeBudget()</code> calls <code>LogicManager#getBudget()</code> to get the current budget of the FinanceTracker. The budget is then
-passed as argument into the <code>BrowserPanel#updateBudget()</code> method which will reflect the budget set by the command in the UI. The current budget
-will be the same as the total budget when it is set.</p>
+<p>Once <code>TotalBudget q</code> has finished updating, control is passed all the way back to <code>SetCommand#execute()</code> which will create
+a <code>CommandResult</code> (labelled result). The result is passed back to <code>LogicManager#execute</code> and all the way to the user to show
+that the budget has been set (Budget set to 120 in example).</p>
+</li>
+<li>
+<p>Although not shown in the diagram, the UI is then updated with the new budget. The UI update of budget data will be
+covered in <a href="#Updating the UI with Budget Data">[Updating the UI with Budget Data]</a>.</p>
 </li>
 </ol>
 </div>
@@ -480,38 +483,103 @@ will be the same as the total budget when it is set.</p>
 <div class="sect3">
 <h4 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h4>
 <div class="paragraph">
-<p>The logic for keeping track of budgets can be implemented in different ways for individual categories.</p>
+<p>Aspect: Updating budget data after Record updates</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Solution 1</strong>: Keep a list of expenditure for individual categories and budget allocations in one Budget class.</p>
+<p><strong>Solution 1</strong>: Maintaining one updateBudget method to update current expenditure and budget left based on
+iterating through changed record list.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easier to maintain one Budget object.</p>
+<p>Pros: Easier to implement and manage a single method.</p>
 </li>
 <li>
-<p>Cons: Iterating through the list could be slow if there are a lot of categories. Lists could be confusing to maintain.</p>
+<p>Cons: Updates for even single addition/edit/deletion of record could be slow if record list gets too large.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Solution 2</strong>: Create Budget classes to keep track of expenditure and budget for individual categories.</p>
+<p><strong>Solution 2</strong>: Maintain individual methods for each update of budget data (add/edit/remove records) (Current Implementation)</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: More human readable to maintain Budget classes with names of categories.</p>
+<p>Pros: App would run updates faster with more targeted methods.</p>
 </li>
 <li>
-<p>Cons: Budget classes for individual categories need to be iterated through to get totals leading to slow UI updates each time values are changed.</p>
+<p>Cons: More code and test cases to be written to implement and maintain several methods for updating budget.
+==== Updating the UI with Budget Data
+Previous sections have covered how the budget of the Finance Tracker is updated within the App. This section aims
+to give a overview of the logic for updating the User Interface of the App to reflect the budget updates to the
+user.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>To explain the update, an Activity Diagram accompanied with a step-by-step walk-through is proved. The Activity Diagram is modelled after <code>MainWindow#execute()</code> which calls the appropriate
+methods to update the budget UI.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/BudgetUpdateUiActivityDiagram.jpg" alt="BudgetUpdateUiActivityDiagram">
+</div>
+<div class="title">Figure 2. Activity diagram of the UI being updated after budget data changes</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The command is first executed by the <code>LogicManager</code>. The execution of commands will update the budget data
+in the Finance Tracker as specified in previous sections. The success message of the command is then displayed to the user
+(Result of command that user typed).</p>
+</li>
+<li>
+<p>There is then a conditional check on whether the command has changed the budget data (Based on CommandResult
+passed back from command execution). For brevity and based on the scope of the section, the other conditional checks
+for the command will be excluded.
+List of Commands that change budget: <code>spend</code>, <code>edit</code>, <code>delete</code>, <code>set</code>, <code>allocate</code>, <code>clear</code>, <code>setfile</code>, <code>undo</code>, <code>redo</code></p>
+</li>
+<li>
+<p>When it has been determined that the command has altered budget data, 3 components of the UI need to be updated before
+continuing. If you are unfamiliar with the components of the UI, refer to the
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#graphical-user-interface-introduction">Graphical User Interface</a> section of our User Guide.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>BudgetPanel</strong>:
+The BudgetPanel consists of 2 sections, the Budget Bar and the text below the bar. The bar and text is updated with
+data retrieved from the <code>Logic</code> component of the App, with the changes to Budget Bar being animated. The colour of
+the bar is then set based on the difference in current spending and total budget set (Red: Budget Exceeded, Yellow: Spending is
+&gt;= 80% of budget, Green: Spending is &lt;80% of budget).</p>
+</li>
+<li>
+<p><strong>Browser Panel</strong>:
+The BrowserPanel only contains text and is updated similar to the text in the BudgetPanel.</p>
+</li>
+<li>
+<p><strong>Summary Panel</strong>:
+The SummaryPanel consists of a pie chart. If the updated budget data shows no expense recorded within the specified time period,
+text explaining that there is no recorded expenses is shown to the user instead. Else, the summary data is updated and the pie
+chart is edited to reflect changes in the expenditures. Refer to <a href="#Summary">[Summary]</a> for a more detailed explanation of the implementation
+of the feature.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>After the UI is updated, there is another check to see if the command given was <code>summary</code>. If it was, the current Panel being
+displayed (BrowserPanel or SummaryPanel) is swapped to the other panel. Again, refer to the Summary section below for more implementation
+details.</p>
+</li>
+<li>
+<p>The method ends by returning the CommandResult that was returned from the execution of command to the MainApp.</p>
+</li>
+</ol>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 05:42:31 UTC</div></div></div></body></html>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 07:21:23 UTC</div></div></div></body></html>
