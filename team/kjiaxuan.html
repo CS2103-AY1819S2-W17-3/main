@@ -21,7 +21,7 @@ With <em>In-Credit-Ble</em>, you can set budgets, allocate budgets to categories
 All of <em>In-Credit-Ble</em>’s functions can be accomplished using the keyboard.</p>
 </div>
 <div class="paragraph">
-<p>In this project, I mainly worked on implementing <em>In-Credit-Ble</em>’s <code>sort</code> and <code>reverse</code> features.
+<p>In this project, I mainly worked on implementing <em>In-Credit-Ble</em>’s <code><span class="fuchsia">sort</span></code> and <code><span class="fuchsia">reverse</span></code> features.
 The following sections explain these enhancements in more detail, and also show the relevant sections I have added to <em>In-Credit-Ble</em>’s user and developer guide on these features.</p>
 </div>
 <div class="paragraph">
@@ -34,16 +34,16 @@ The following sections explain these enhancements in more detail, and also show 
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Words in <code>UPPER_CASE</code> are parameters to be supplied by the user (e.g. <code>sort -NAME</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">-NAME</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Words in <code><span class="fuchsia">UPPER_CASE</span></code> are parameters to be supplied by the user (<span class="navy">e.g.</span> <code><span class="fuchsia">sort -NAME</span></code>)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[ORDER]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">[ORDER]</span></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Words in square brackets are optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SortCommandParser#parse()</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>parse()</code> method in <code>SortCommandParser</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">SortCommandParser#parse()</span></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">parse()</span></code> method in <code><span class="fuchsia">SortCommandParser</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,29 +58,29 @@ The following sections explain these enhancements in more detail, and also show 
 <div class="sect2">
 <h3 id="enhancement-added"><a class="link" href="#enhancement-added">Enhancement added</a></h3>
 <div class="paragraph">
-<p>I added a <code>sort</code> command and a <code>reverse</code> command in <em>In-Credit-Ble</em>.</p>
+<p>I added a <code><span class="fuchsia">sort</span></code> command and a <code><span class="fuchsia">reverse</span></code> command in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><strong>What they do</strong>:<br>
-The <code>reverse</code> command allows users to reverse the list of entries displayed on the graphic user interface.
-The <code>sort</code> command allows users to sort the entries by name, amount, date and category, in both ascending order and descending order.</p>
+The <code><span class="fuchsia">reverse</span></code> command allows users to reverse the list of entries displayed on the graphic user interface.
+The <code><span class="fuchsia">sort</span></code> command allows users to sort the entries by name, amount, date and category, in both ascending order and descending order.</p>
 </li>
 <li>
 <p><strong>Justification</strong>:<br>
-Without the <code>sort</code> command, entries will be displayed in an order where the most recently entered entry is at the bottom of the list.
+Without the <code><span class="fuchsia">sort</span></code> command, entries will be displayed in an order where the most recently entered entry is at the bottom of the list.
 However, this may not be very helpful and user-friendly to the user. A user may want to sort the entries by amount,
 so that he/she can find out what he/she has been spending the most on. A user may also want to sort entries by name, date and category to make the list more organised.<br>
-The <code>reverse</code> command will allow the user to reverse the list as a user may want to view the entries in the opposite order.
+The <code><span class="fuchsia">reverse</span></code> command will allow the user to reverse the list as a user may want to view the entries in the opposite order.
 For example, after sorting the entries by amount in descending order, a user may want the entries to be sorted by amount in ascending order next,
-and this can be achieved conveniently using the <code>reverse</code> command.</p>
+and this can be achieved conveniently using the <code><span class="fuchsia">reverse</span></code> command.</p>
 </li>
 <li>
 <p><strong>Highlights</strong>:<br>
-These enhancements work with existing commands such as <code>edit</code> and <code>delete</code>. When a list is sorted,
-it may be easier to find an entry (<em>In-Credit-Ble</em> has a <code>search</code> function too!).
-These enhancements are also compatible with <em>In-Credit-Ble</em>’s <code>undo</code> and <code>redo</code> functions.</p>
+These enhancements work with existing commands such as <code><span class="fuchsia">edit</span></code> and <code><span class="fuchsia">delete</span></code>. When a list is sorted,
+it may be easier to find an entry (<em>In-Credit-Ble</em> has a <code><span class="fuchsia">search</span></code> function too!).
+These enhancements are also compatible with <em>In-Credit-Ble</em>’s <code><span class="fuchsia">undo</span></code> and <code><span class="fuchsia">redo</span></code> functions.</p>
 </li>
 </ul>
 </div>
@@ -107,7 +107,7 @@ becomes more user-friendly and convenient to use.<br>
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/71">#71</a>)</p>
 </li>
 <li>
-<p>Imported DateTimeFormatter and LocalDate into the project to make management of dates easier.<br>
+<p>Imported <span class="fuchsia">DateTimeFormatter</span> and <span class="fuchsia">LocalDate</span> into the project to make management of dates easier.<br>
 (Pull Requests: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/90">#90</a>)</p>
 </li>
 <li>
@@ -125,7 +125,8 @@ becomes more user-friendly and convenient to use.<br>
 <p>Updated and formatted parts of User Guide and Developer Guide.<br>
 (Pull Requests: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/88">#88</a>,
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/106">#106</a>,
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/110">#110</a>)</p>
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/110">#110</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/229">#229</a>)</p>
 </li>
 </ul>
 </div>
@@ -138,7 +139,8 @@ becomes more user-friendly and convenient to use.<br>
 <p>PRs reviewed: <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/63">#63</a>,
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/64">#64</a>,
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/99">#99</a>,
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/121">#121</a></p>
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/121">#121</a>,
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/191">#191</a></p>
 </li>
 </ul>
 </div>
@@ -152,7 +154,7 @@ becomes more user-friendly and convenient to use.<br>
 <h2 id="contributions-to-the-user-guide"><a class="link" href="#contributions-to-the-user-guide">Contributions to the User Guide</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>These are additions I made to <em>In-Credit-Ble</em>'s User Guide for the <code>reverse</code> and <code>sort</code> features.</p>
+<p>These are additions I made to <em>In-Credit-Ble</em>'s User Guide for the <code><span class="fuchsia">reverse</span></code> and <code><span class="fuchsia">sort</span></code> features.</p>
 </div>
 <div class="sect3">
 <h4 id="sorting-the-entries-according-to-name-amount-date-category-code-span-class-fuchsia-sort-span-code"><a class="link" href="#sorting-the-entries-according-to-name-amount-date-category-code-span-class-fuchsia-sort-span-code">Sorting the entries according to name/amount/date/category: <code><span class="fuchsia">sort</span></code></a></h4>
@@ -294,7 +296,7 @@ List will be sorted by name in reverse lexicographical order.
 <h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>These are additions I made to <em>In-Credit-Ble</em>'s Developer Guide for the <code>reverse</code> and <code>sort</code> features.</p>
+<p>These are additions I made to <em>In-Credit-Ble</em>'s Developer Guide for the <code><span class="fuchsia">reverse</span></code> and <code><span class="fuchsia">sort</span></code> features.</p>
 </div>
 <div class="sect2">
 <h3 id="sort-feature"><a class="link" href="#sort-feature">Sort feature</a></h3>
@@ -562,4 +564,4 @@ The reverse command provides a convenient way for users to sort their entries in
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 04:43:19 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 04:54:19 UTC</div></div></div></body></html>
