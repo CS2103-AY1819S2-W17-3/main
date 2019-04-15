@@ -14,10 +14,10 @@
 </div>
 </div>
 <div class="paragraph">
-<p>This page aims to showcase my contributions to the project
+<p><span class="blue">This page aims to showcase my contributions to the project
 <strong>In-Credit-Ble</strong> under module <em>CS2103T</em>. I will be giving you an introduction to <strong>In-Credit-Ble</strong>,
 followed by summarising my contributions. Lastly, I will be showing you the relevant sections of User Guide (UG) and
-Development Guide (DG) that I documented.</p>
+Development Guide (DG) that I documented.</span></p>
 </div>
 <div class="paragraph">
 <p>This project was developed with the following utilities:</p>
@@ -67,7 +67,7 @@ Development Guide (DG) that I documented.</p>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> is a desktop Finance Tracker tailored to help users manage their finances
 and keep track of their budget in an <strong>easy and efficient</strong> manner. It is designed for those who
-prefer to work with a Command Line Interface (CLI), especially for those who prefer to type over
+prefer to work with a Command Line Interface (CLI), especially for <strong>students</strong> who prefer to type over
 using their mouse.</p>
 </div>
 <div class="paragraph">
@@ -89,8 +89,8 @@ and minor features implemented for <em>In-Credit-Ble</em>.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This section will give you a brief overview of my contributions to the project.<br></p>
-<p class="tableblock">This section will be split into <strong>Major Enhancement</strong>, <strong>Minor Enhancements</strong> and <strong>Notable Contributions</strong> sub-sections.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">This section will give you a brief overview of my contributions to the project.</span><br></p>
+<p class="tableblock">This section will be split into <strong>Major Enhancement</strong>, <strong>Minor Enhancements</strong> and <strong>Notable Contributions</strong> sub-sections.#</p></td>
 </tr>
 </tbody>
 </table>
@@ -107,10 +107,11 @@ and minor features implemented for <em>In-Credit-Ble</em>.</p>
 <p>It would help you greatly to head on to our
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc">Developer Guide</a>
 and <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc">User Guide</a>
-to find out more about our application before reading on about my contributions to the project.</p>
+to find out more about our application including the list of features before reading on
+about my contributions to the project.</p>
 </li>
 <li>
-<p>If you would like to download our application, head on to the <code>Quick Start</code> section
+<p>If you would like to download our application, head on to the <span class="navy"><strong>Quick Start</strong></span> section
 of our User Guide for more information on how to do so.</p>
 </li>
 </ul>
@@ -122,30 +123,30 @@ of our User Guide for more information on how to do so.</p>
 <div class="sect2">
 <h3 id="features-contributed-to-project"><a class="link" href="#features-contributed-to-project">Features Contributed to Project</a></h3>
 <div class="sect3">
-<h4 id="major-enhancement-added-code-categorybudget-code"><a class="link" href="#major-enhancement-added-code-categorybudget-code">Major enhancement: added <code>CategoryBudget</code></a></h4>
+<h4 id="major-enhancement-added-code-span-class-fuchsia-categorybudget-span-code"><a class="link" href="#major-enhancement-added-code-span-class-fuchsia-categorybudget-span-code">Major enhancement: added <code><span class="fuchsia">CategoryBudget</span></code></a></h4>
 <div class="ulist">
 <ul>
 <li>
-<p><strong><em>What it does</em></strong>: Allows user to set a budget for categories so as to keep track
-of the expenses for each category (such as <code>Food</code>, <code>Travel</code>, <code>Clothes</code>).</p>
+<p><span class="red"><strong><em>What it does</em></strong>:</span> Allows user to set a budget for categories so as to keep track
+of the expenses for each category (such as <code><span class="fuchsia">Food</span></code>, <code><span class="fuchsia">Travel</span></code>, <code><span class="fuchsia">Clothes</span></code>).</p>
 </li>
 <li>
-<p><strong><em>Justification</em></strong>: This feature improves the product significantly and enhances user
+<p><span class="red"><strong><em>Justification</em></strong>:</span> This feature improves the product significantly and enhances user
 ability to manage their expenses according to categories. It allows users to categorise
 their spending to know which area he/she should
 start spending less. It also requires
-integration of the <code>Logic</code>, <code>Model</code> and <code>UI</code> components of the project.</p>
+integration of the <code><span class="fuchsia">Logic</span></code>, <code><span class="fuchsia">Model</span></code> and <code><span class="fuchsia">UI</span></code> components of the project.</p>
 </li>
 <li>
-<p><strong><em>Highlights of feature:</em></strong></p>
+<p><span class="red"><strong><em>Highlights of feature:</em></strong></span></p>
 <div class="ulist">
 <ul>
 <li>
-<p>This enhancement can be triggered using the <code>allocate</code> command. Each of the category
-budget is stored in the <code>TotalBudget</code> class which is implemented in the <code>Model</code> component.</p>
+<p>This enhancement can be triggered using the <code><span class="fuchsia">allocate</span></code> command. Each of the category
+budget is stored in the <code><span class="fuchsia">TotalBudget</span></code> class which is implemented in the <code><span class="fuchsia">Model</span></code> component.</p>
 </li>
 <li>
-<p>Each category budget can be shown to the user in the Result Display when the user executes the <code>show</code>
+<p>Each category budget can be shown to the user in the Result Display when the user executes the <code><span class="fuchsia">show</span></code>
 command. It shows the current spending over the the total budget allocated for each individual category.</p>
 </li>
 </ul>
@@ -159,24 +160,24 @@ command. It shows the current spending over the the total budget allocated for e
 <div class="ulist">
 <ul>
 <li>
-<p>Changing Theme of Application</p>
+<p><span class="teal"><strong>Changing Theme of Application</strong></span></p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong><em>What it does</em>:</strong> Allows user to change the colour theme of the application to pre-set themes
-such as <code>Dark</code>, <code>Light</code>, <code>Blue</code>, <code>Pink</code>.</p>
+<p><span class="red"><strong><em>What it does</em>:</strong></span> Allows user to change the colour theme of the application to pre-set themes
+such as <code><span class="fuchsia">Dark</span></code>, <code><span class="fuchsia">Light</span></code>, <code><span class="fuchsia">Blue</span></code>, <code><span class="fuchsia">Pink</span></code>.</p>
 </li>
 <li>
-<p><strong><em>Justification</em>:</strong> This feature allows the user to have minor customisation of their In-Credit-Ble
+<p><span class="red"><strong><em>Justification</em>:</strong></span> This feature allows the user to have minor customisation of their In-Credit-Ble
 Finance Tracker Application</p>
 </li>
 <li>
-<p><strong><em>Highlights of feature:</em></strong></p>
+<p><span class="red"><strong><em>Highlights of feature:</em></strong></span></p>
 <div class="ulist">
 <ul>
 <li>
-<p>This feature can be triggered using the <code>theme</code> command. Triggering this command will result in
-the <code>UI</code> component changing its stylesheet to fit the pre-set themes indicated by the user.</p>
+<p>This feature can be triggered using the <code><span class="fuchsia">theme</span></code> command. Triggering this command will result in
+the <code><span class="fuchsia">UI</span></code> component changing its stylesheet to fit the pre-set themes indicated by the user.</p>
 </li>
 </ul>
 </div>
@@ -185,23 +186,24 @@ the <code>UI</code> component changing its stylesheet to fit the pre-set themes 
 </div>
 </li>
 <li>
-<p><code>BudgetPanel</code> of UI</p>
+<p><code><span class="fuchsia">BudgetPanel</span></code> <span class="teal"><strong>of UI</strong></span></p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong><em>What it does</em></strong>: Allows user to see the total spending against total budget so far in a visual progress bar.
+<p><span class="red"><strong><em>What it does</em></strong>:</span> Allows user to see the total spending against total budget so far in a visual progress bar.
 Depending on how close the total spending is to the total budget, the colour of the bar will change accordingly.</p>
 </li>
 <li>
-<p><strong><em>Justification</em></strong>: This feature will allows users to have a visual view of their total spending against their set
+<p><span class="red"><strong><em>Justification</em></strong>:</span> This feature will allows users to have a visual view of their total spending against their set
 budget</p>
 </li>
 <li>
-<p><strong><em>Highlights of feature:</em></strong></p>
+<p><span class="red"><strong><em>Highlights of feature:</em></strong></span></p>
 <div class="ulist">
 <ul>
 <li>
-<p>This feature will be updated every time a user <code>spends</code>, <code>edit</code> the amount in the records, or <code>delete</code> a record</p>
+<p>This feature will be updated every time a user <code><span class="fuchsia">spends</span></code>, <code><span class="fuchsia">edit</span></code> the amount in the records, or
+<code><span class="fuchsia">delete</span></code> a record</p>
 </li>
 </ul>
 </div>
@@ -220,16 +222,41 @@ budget</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Project Management</strong></p>
+<p><span class="teal"><strong>Project Management/Team Tasks</strong></span></p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Manging Issue Tracker</strong></p>
+<p><span class="red"><strong>Manging Issue Tracker</strong></span></p>
 <div class="ulist">
 <ul>
 <li>
 <p>To see the issue trackers I managed, click
 <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues?q=is%3Aissue+author%3AJackimaru96+is%3Aclosed">here!</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="red"><strong>Set up and managed GitHub milestones and projects</strong></span></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <a href="https://github.com/CS2103-AY1819S2-W17-3/main/milestones?state=closed">here</a> to view the Milestones
+and <a href="https://github.com/CS2103-AY1819S2-W17-3/main/projects?query=is%3Aclosed">here</a> to view the Project I managed</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="red"><strong>Changed product icon</strong></span></p>
+</li>
+<li>
+<p><span class="red"><strong>Added Graphical User Interface Introduction section to User Guide</strong></span></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#graphical-user-interface-introduction">here</a>
+to look at the GUI Introduction section.</p>
 </li>
 </ul>
 </div>
@@ -245,7 +272,7 @@ budget</p>
 <div class="ulist">
 <ul>
 <li>
-<p>PR Reviews:</p>
+<p><span class="teal"><strong>PR Reviews:</strong></span></p>
 <div class="ulist">
 <ul>
 <li>
@@ -256,7 +283,7 @@ click <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pulls?q=is%3Apr+rev
 </div>
 </li>
 <li>
-<p>Forum Participation:</p>
+<p><span class="teal"><strong>Forum Participation:</strong></span></p>
 <div class="ulist">
 <ul>
 <li>
@@ -289,10 +316,10 @@ click <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pulls?q=is%3Apr+rev
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The next section will include my contribution to the User Guide. It showcases my ability
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">The next section will include my contribution to the User Guide. It showcases my ability
 in documenting a reader-friendly User Guide that is designed for the new users of <em>In-Credit-Ble</em>.
 It is important to be able to write a user-friendly guide that will allow new users to quickly grasp
-how to use our application.<br></p></td>
+how to use our application.</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -306,11 +333,11 @@ how to use our application.<br></p></td>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>To allow users to get started with our application with ease, I&#8217;ve created the <code>Quick Start</code> and
-<code>Graphical User Interface Introduction</code> (GUI) sections.</p>
+<p>To allow users to get started with our application with ease, I&#8217;ve created the <strong>Quick Start</strong> and
+<strong>Graphical User Interface Introduction (GUI)</strong> sections.</p>
 </div>
 <div class="paragraph">
-<p>Due to page limit constraints, I will only be listing a part of the <code>Graphical User Interface Introduction</code>.
+<p>Due to page limit constraints, I will only be listing a part of the <strong>Graphical User Interface Introduction</strong>.
 To see the rest of the contributions I made to the User Guide, click the below links.</p>
 </div>
 <div class="paragraph">
@@ -341,12 +368,8 @@ The theme of the application has been set to <code><span class="fuchsia">Light</
 <div class="title">Figure 1. Graphical User Interface (Upon using <code>summary</code> command)</div>
 </div>
 <div class="paragraph">
-<p><br>
-There are a total of 7 elements in the Graphical User Interface in <em>In-Credit-Ble</em> Finance Tracker
+<p>There are a total of 7 elements in the Graphical User Interface in <em>In-Credit-Ble</em> Finance Tracker
 as denoted by the different coloured boxes above. The elements will be explained below.</p>
-</div>
-<div class="paragraph">
-<p><br></p>
 </div>
 <div class="sect2">
 <h3 id="records-list-panel"><a class="link" href="#records-list-panel">Records List Panel</a></h3>
@@ -379,31 +402,22 @@ The index is used in commands such as <code><span class="fuchsia">delete</span><
 <hr>
 </div>
 <div class="sect2">
-<h3 id="code-allocate-code-code-show-code-and-code-theme-code-commands"><a class="link" href="#code-allocate-code-code-show-code-and-code-theme-code-commands"><code>Allocate</code>, <code>Show</code> and <code>Theme</code> Commands</a></h3>
-<div class="admonitionblock note">
-<table>
+<h3 id="code-span-class-fuchsia-allocate-span-code-code-span-class-fuchsia-show-span-code-and-code-span-class-fuchsia-theme-span-code-commands"><a class="link" href="#code-span-class-fuchsia-allocate-span-code-code-span-class-fuchsia-show-span-code-and-code-span-class-fuchsia-theme-span-code-commands"><code><span class="fuchsia">Allocate</span></code>, <code><span class="fuchsia">Show</span></code> and <code><span class="fuchsia">Theme</span></code> Commands</a></h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The following sections extracted from the User Guide are the instructions to users on how to use the features that I have
-implemented for this project. It includes the <code>allocate</code>, <code>show</code> and <code>theme</code> commands.
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">The following sections extracted from the User Guide are the instructions to users on how to use the features that I have
+implemented for this project.</span> It includes the <code><span class="fuchsia">allocate</span></code>, <code><span class="fuchsia">show</span></code> and <code><span class="fuchsia">theme</span></code> commands.
 These three sections show my ability to describe the feature in simple terms that new users are able to comprehend.</p>
-</div>
-<div class="paragraph">
-<p>Due to page limit constraints, I will only be listing the major portion of my contribution.
+<p class="tableblock">Due to page limit constraints, I will only be listing the major portion of my contribution.
 To see the full sections, click the below link.<br></p>
-</div>
-<div class="paragraph">
-<p>1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#showing-allocated-budget-and-spending-in-categories-show"><code>show</code> command</a><br>
-2) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#changing-theme-of-application-theme"><code>theme</code> command</a></p>
-</div>
-</td>
+<p class="tableblock">1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#changing-theme-of-application-theme"><code>theme</code> command</a></p></td>
 </tr>
+</tbody>
 </table>
-</div>
 <hr>
 <div class="sect3">
 <h4 id="allocating-budget-based-on-categories-code-span-class-fuchsia-allocate-span-code"><a class="link" href="#allocating-budget-based-on-categories-code-span-class-fuchsia-allocate-span-code">Allocating budget based on categories: <code><span class="fuchsia">allocate</span></code></a></h4>
@@ -509,6 +523,95 @@ shown in Result Display if you attempt to do so.</p>
 </table>
 </div>
 </div>
+<div class="sect3">
+<h4 id="showing-allocated-budget-and-spending-in-categories-code-span-class-fuchsia-show-span-code"><a class="link" href="#showing-allocated-budget-and-spending-in-categories-code-span-class-fuchsia-show-span-code">Showing allocated budget and spending in categories: <code><span class="fuchsia">show</span></code></a></h4>
+<div class="paragraph">
+<p><span class="navy">You can use this command to see your current spending and the category budget allocated in
+<em>In-Credit-Ble</em> Finance Tracker.</span><br></p>
+</div>
+<div class="paragraph">
+<p><strong>Alias</strong>: <code><span class="fuchsia">showCatBudget</span></code></p>
+</div>
+<div class="paragraph">
+<p><strong>Format</strong>: <code><span class="fuchsia">show</span></code>, <code><span class="fuchsia">showCatBudget</span></code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong><span class="navy">Example</span></strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The following example will show you an example of what will be listed given the following budget allocation
+and expenditure in the following categories:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code><span class="fuchsia">set $/500</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">allocate $/100 c/CloThEs</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">allocate $/100.10 c/FOOD</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">allo $/123.10 c/GiRLfrIEND</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">spend n/Buffet $/50.00 c/Food</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">spend n/Versace Jacket $/95.00 c/Clothes</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">spend n/Girlfriend gift $/99.99 c/Girlfriend</span></code></p>
+</li>
+<li>
+<p><code><span class="fuchsia">show</span></code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The following will be displayed on the <strong>Result Display</strong><br>
+<em>(See Graphical User Interface Introduction (GUI) if you are
+unsure of the elements of the GUI):</em></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/show_example.png" alt="show example" width="300">
+</div>
+<div class="title">Figure 3. Example of <code><span class="fuchsia">show</span></code> command</div>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The category budgets will be shown with the latest allocated category budget in the Result Display</p>
+</li>
+<li>
+<p>If there are no category budgets allocated yet, the result display will display a message
+to let you know so</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -521,15 +624,15 @@ shown in Result Display if you attempt to do so.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The following section will include the sections of my contribution to the Developer Guide.
-It showcases my ability to write technical documentation and illustrates the technical depth of my code contributions.
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">The following section will include the sections of my contribution to the Developer Guide.
+It showcases my ability to write technical documentation and illustrates the technical depth of my code contributions.</span>
 This is important in real-world software engineering projects where we are expected to work in teams. Being able to
 document the Developer Guide well will allow colleagues or other developers to understand our implementation better.<br></p>
 <p class="tableblock">Due to page limit constraints, I will only be listing the major portion of my contribution.
 (Class Diagram + Sequence Diagram)
 To see the rest of the contributions I made to the DG, click the below link.<br></p>
-<p class="tableblock">1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#budget-management"><code>show</code> implementation</a><br>
-2)<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#theme"><code>theme</code> implementation</a></p></td>
+<p class="tableblock">1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#budget-management"><code><span class="fuchsia">show</span></code> implementation</a><br>
+2)<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#theme"><code><span class="fuchsia">theme</span></code> implementation</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -550,7 +653,7 @@ The current spending will increase when records are added.</p>
 <div class="content">
 <img src="../images/budget_classdiagram.png" alt="budget classdiagram" width="600">
 </div>
-<div class="title">Figure 3. Class Diagram for Budget</div>
+<div class="title">Figure 4. Class Diagram for Budget</div>
 </div>
 <div class="paragraph">
 <p>The above diagram shows the structure of the classes associated with <code><span class="fuchsia">Budget</span></code>.
@@ -577,7 +680,7 @@ executes when a user sets a category budget.</p>
 <div class="content">
 <img src="../images/AllocateSequenceDiagram.png" alt="AllocateSequenceDiagram" width="800">
 </div>
-<div class="title">Figure 4. Sequence diagram of user setting a category budget</div>
+<div class="title">Figure 5. Sequence diagram of user setting a category budget</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -664,4 +767,4 @@ if the category was not previously allocated with a budget</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 09:32:16 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 10:33:14 UTC</div></div></div></body></html>
