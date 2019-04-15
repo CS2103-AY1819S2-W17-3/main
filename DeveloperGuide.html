@@ -574,7 +574,7 @@ that the UI automatically updates when the data in the list change.</p>
 <div class="sect2">
 <h3 id="Design-Commons"><a class="link" href="#Design-Commons">3.6. Common classes</a></h3>
 <div class="paragraph">
-<p>Classes used by multiple components are in the <code><span class="fuchsia">seedu.financetracker.commons</span></code> package.</p>
+<p>Classes used by multiple components are in the <code><span class="fuchsia">seedu.finance.commons</span></code> package.</p>
 </div>
 </div>
 </div>
@@ -1627,12 +1627,8 @@ details.</p>
 <h4 id="design-consideration-4"><a class="link" href="#design-consideration-4">4.6.2. Design Consideration</a></h4>
 <div class="sect4">
 <h5 id="aspect-representation-for-summary-of-expenditure"><a class="link" href="#aspect-representation-for-summary-of-expenditure">Aspect: Representation for Summary of Expenditure</a></h5>
-<div class="ulist">
-<ul>
-<li>
+<div class="paragraph">
 <p><strong>Alternative 1 (current choice)</strong>: Represent summary of expenses using a pie chart</p>
-</li>
-</ul>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1647,22 +1643,18 @@ details.</p>
 </li>
 <li>
 <p>Cons: If there are too many categories, the labels may not show up as it will clash with the other labels. The data presented may also become too cluttered as well.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 2 (planned for <code><span class="green">[v2.0]</span></code>)</strong>: Represent summary of expenses using an Aster Plot graph</p>
-</li>
-</ul>
-</div>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>In <code><span class="green">v2.0</span></code> of <em>In-Credit-Ble</em>, the summary feature intends to use a <span class="fuchsia">D3.js Aster Plot</span> graph to display the summary of expenditures instead of the current pie chart. This will help contribute to the aesthetics and user-friendliness of displaying the data in <em>In-Credit-Ble</em>.</p>
+<p><strong>Alternative 2 (planned for <code><span class="yellow">[v2.0]</span></code>)</strong>: Represent summary of expenses using an Aster Plot graph</p>
+</div>
+<div class="paragraph">
+<p>In <code><span class="yellow">v2.0</span></code> of <em>In-Credit-Ble</em>, the summary feature intends to use a <span class="fuchsia">D3.js Aster Plot</span> graph to display the summary of expenditures instead of the current pie chart. This will help contribute to the aesthetics and user-friendliness of displaying the data in <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/asterPlot.png" alt="asterPlot" width="400">
+<img src="images/asterPlot.png" alt="asterPlot" width="200">
 </div>
 <div class="title">Figure 20. Example of Aster Plot Graph</div>
 </div>
@@ -2042,7 +2034,7 @@ See <a href="UsingGradle.html"><span class="blue">UsingGradle.adoc</span></a> fo
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p><em>System Tests</em> that test the entire App by simulating user actions on the GUI. These are in the <code><span class="fuchsia">systemtests</span></code> package.</p>
+<p><em>System Tests</em> that test the entire application by simulating user actions on the GUI. These are in the <code><span class="fuchsia">systemtests</span></code> package.</p>
 </li>
 <li>
 <p><em>Unit tests</em> that test the individual components. These are in <code><span class="fuchsia">seedu.finance.ui</span></code> package.</p>
@@ -2178,12 +2170,12 @@ See <a href="UsingGradle.html"><span class="blue">UsingGradle.adoc</span></a> fo
 <p>prefers typing over mouse input</p>
 </li>
 <li>
-<p>is reasonably comfortable using CLI apps</p>
+<p>is reasonably comfortable using CLI applications</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Value proposition</strong>: Manage expenses faster than a typical mouse/GUI driven app</p>
+<p><strong>Value proposition</strong>: Manage expenses faster than a typical mouse/GUI driven application</p>
 </div>
 </div>
 </div>
@@ -2193,12 +2185,12 @@ See <a href="UsingGradle.html"><span class="blue">UsingGradle.adoc</span></a> fo
 <div class="paragraph">
 <p>Priorities: High (must have) - <code>* * *</code>, Medium (nice to have) - <code>* *</code>, Low (unlikely to have) - <code>*</code></p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 59%;">
+<table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 23%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
 <col style="width: 25%;">
-<col style="width: 30%;">
+<col style="width: 35%;">
 </colgroup>
 <thead>
 <tr>
@@ -2261,7 +2253,7 @@ See <a href="UsingGradle.html"><span class="blue">UsingGradle.adoc</span></a> fo
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">save my data</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">refer to it when I use the app next time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">refer to it when I use the application next time</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
@@ -3446,4 +3438,4 @@ finance tracker that you were previously on.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 07:31:36 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 09:20:52 UTC</div></div></div></body></html>
