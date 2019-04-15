@@ -47,10 +47,6 @@ The following sections explain these enhancements in more detail, and also show 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p><br>
-<br></p>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -58,9 +54,6 @@ The following sections explain these enhancements in more detail, and also show 
 <div class="sectionbody">
 <div class="paragraph">
 <p>This section contains a description of some enhancements I made, and a summary of my contributions.</p>
-</div>
-<div class="paragraph">
-<p><br></p>
 </div>
 <div class="sect2">
 <h3 id="enhancement-added"><a class="link" href="#enhancement-added">Enhancement added</a></h3>
@@ -91,17 +84,11 @@ These enhancements are also compatible with <em>In-Credit-Ble</em>’s <code><sp
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><br></p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="code-contributed"><a class="link" href="#code-contributed">Code contributed</a></h3>
 <div class="paragraph">
 <p>Click <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=kjiaxuan">here</a> to see the code I contributed to the <em>In-Credit-Ble</em> project!</p>
-</div>
-<div class="paragraph">
-<p><br></p>
 </div>
 </div>
 <div class="sect2">
@@ -144,6 +131,13 @@ becomes more user-friendly and convenient to use.<br>
 </ul>
 </div>
 </li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Community:</p>
 <div class="ulist">
@@ -161,8 +155,7 @@ becomes more user-friendly and convenient to use.<br>
 </ul>
 </div>
 <div class="paragraph">
-<p><br>
-<br></p>
+<p><br></p>
 </div>
 </div>
 </div>
@@ -225,7 +218,7 @@ becomes more user-friendly and convenient to use.<br>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p><strong><span class="navy">Examples</span> (default ordering)</strong>:</p>
+<p><strong><span class="navy">Examples</span> (default ordering)</strong> (See Figure 17 below):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -251,10 +244,11 @@ Sorts the list of records by category in lexicographical order (ascending order)
 <div class="content">
 <img src="../images/sortExamples.png" alt="sortExamples" width="900">
 </div>
-<div class="title">Figure 1. Examples of <code><span class="fuchsia">sort</span></code> command (default ordering)</div>
+<div class="title">Figure 1. Examples of <code><span class="fuchsia">sort</span></code> command (sorted by name, amount, date and category respectively, default ordering)</div>
 </div>
 <div class="paragraph">
-<p><strong><span class="navy">More examples</span></strong>:</p>
+<p><br>
+<strong><span class="navy">More examples</span></strong>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -269,6 +263,9 @@ Sorts list of records by name in reverse lexicographical order.</p>
 <img src="../images/sortNameDescExample.png" alt="sortNameDescExample" width="300">
 </div>
 <div class="title">Figure 2. Name sorted in descending order</div>
+</div>
+<div class="paragraph">
+<p><br></p>
 </div>
 </div>
 </div>
@@ -292,6 +289,7 @@ List will be sorted by name in reverse lexicographical order.
 <h4 id="reversing-the-entries-code-span-class-fuchsia-reverse-span-code"><a class="link" href="#reversing-the-entries-code-span-class-fuchsia-reverse-span-code">Reversing the entries: <code><span class="fuchsia">reverse</span></code></a></h4>
 <div class="paragraph">
 <p><span class="navy">You can also reverse the order of the list of entries in the records.</span><br>
+See Figure 19 below for an example.<br>
 <code><span class="fuchsia">Reverse</span></code> has effect on the entire list of entries (instead of a filtered list).</p>
 </div>
 <div class="paragraph">
@@ -307,9 +305,9 @@ List will be sorted by name in reverse lexicographical order.
 <div class="title">Figure 3. Name sorted in descending order</div>
 </div>
 <div class="paragraph">
-<p><br>
-<br></p>
+<p><br></p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -412,7 +410,14 @@ The sort mechanism allows users to view their expense records in a different way
 </tbody>
 </table>
 <div class="paragraph">
-<p>Here is the list of operations involved in the execution of command, <code><span class="fuchsia">sort -name</span></code>.</p>
+<p>Here is the list of operations involved in the execution of command, <code><span class="fuchsia">sort -name</span></code>.<br>
+See Figure 10 for steps 1 to 4, and Figure 11 for steps 5 to 10.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
+</div>
+<div class="title">Figure 4. Sequence Diagram of Sort Command I</div>
 </div>
 <div class="olist arabic text-left">
 <ol class="arabic">
@@ -429,9 +434,9 @@ The sort mechanism allows users to view their expense records in a different way
 <p>The <code><span class="fuchsia">SortCommand</span></code> object, <em>s</em>, is then passed back to the <code><span class="fuchsia">SortCommandParser</span></code>, <code><span class="fuchsia">FinanceTrackerParser</span></code>, and finally back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 <div class="imageblock">
 <div class="content">
-<img src="../images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
+<img src="../images/SortSequenceDiagram2.png" alt="SortSequenceDiagram2" width="800">
 </div>
-<div class="title">Figure 4. Sequence Diagram of Sort Command I</div>
+<div class="title">Figure 5. Sequence Diagram of Sort Command II</div>
 </div>
 </li>
 <li>
@@ -453,12 +458,6 @@ The sort mechanism allows users to view their expense records in a different way
 <p><code><span class="fuchsia">SortCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/SortSequenceDiagram2.png" alt="SortSequenceDiagram2" width="800">
-</div>
-<div class="title">Figure 5. Sequence Diagram of Sort Command II</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -555,6 +554,12 @@ The reverse command provides a convenient way for users to sort their entries in
 <div class="paragraph">
 <p>This is how the reverse command is implemented:</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/ReverseSequenceDiagram.png" alt="ReverseSequenceDiagram" width="800">
+</div>
+<div class="title">Figure 6. Sequence Diagram of Reverse Command</div>
+</div>
 <div class="olist arabic text-left">
 <ol class="arabic">
 <li>
@@ -586,13 +591,7 @@ The reverse command provides a convenient way for users to sort their entries in
 </li>
 </ol>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/ReverseSequenceDiagram.png" alt="ReverseSequenceDiagram" width="800">
-</div>
-<div class="title">Figure 6. Sequence Diagram of Reverse Command</div>
 </div>
 </div>
 </div>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 13:02:48 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 13:42:15 UTC</div></div></div></body></html>

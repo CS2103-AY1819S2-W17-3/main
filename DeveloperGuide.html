@@ -827,7 +827,7 @@ each tag. Will take up more space if there is many different tags.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>We have implemented <strong>Alternative 1</strong> as we want the search function to be more dynamic and more generic to accept
+<p>We have implemented <strong>Alternative 1</strong> as we want the search function to be more dynamic and more generic to
 accept different kind of search in the future implementation. If we were to choose <strong>Alternative 2</strong>, the search
 conditions will only be restricted to category and date where it is likely for different records to have the same
 value (eg. same date or same category). However, it is not feasible to create a different list for every single name
@@ -932,7 +932,14 @@ The sort mechanism allows users to view their expense records in a different way
 </tbody>
 </table>
 <div class="paragraph">
-<p>Here is the list of operations involved in the execution of command, <code><span class="fuchsia">sort -name</span></code>.</p>
+<p>Here is the list of operations involved in the execution of command, <code><span class="fuchsia">sort -name</span></code>.<br>
+See Figure 10 for steps 1 to 4, and Figure 11 for steps 5 to 10.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
+</div>
+<div class="title">Figure 10. Sequence Diagram of Sort Command I</div>
 </div>
 <div class="olist arabic text-left">
 <ol class="arabic">
@@ -949,9 +956,9 @@ The sort mechanism allows users to view their expense records in a different way
 <p>The <code><span class="fuchsia">SortCommand</span></code> object, <em>s</em>, is then passed back to the <code><span class="fuchsia">SortCommandParser</span></code>, <code><span class="fuchsia">FinanceTrackerParser</span></code>, and finally back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/SortSequenceDiagram1.png" alt="SortSequenceDiagram1" width="800">
+<img src="images/SortSequenceDiagram2.png" alt="SortSequenceDiagram2" width="800">
 </div>
-<div class="title">Figure 10. Sequence Diagram of Sort Command I</div>
+<div class="title">Figure 11. Sequence Diagram of Sort Command II</div>
 </div>
 </li>
 <li>
@@ -973,12 +980,6 @@ The sort mechanism allows users to view their expense records in a different way
 <p><code><span class="fuchsia">SortCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/SortSequenceDiagram2.png" alt="SortSequenceDiagram2" width="800">
-</div>
-<div class="title">Figure 11. Sequence Diagram of Sort Command II</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1079,6 +1080,12 @@ The reverse command provides a convenient way for users to sort their entries in
 <div class="paragraph">
 <p>This is how the reverse command is implemented:</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ReverseSequenceDiagram.png" alt="ReverseSequenceDiagram" width="800">
+</div>
+<div class="title">Figure 12. Sequence Diagram of Reverse Command</div>
+</div>
 <div class="olist arabic text-left">
 <ol class="arabic">
 <li>
@@ -1109,12 +1116,6 @@ The reverse command provides a convenient way for users to sort their entries in
 <p><code><span class="fuchsia">ReverseCommand#execute()</span></code> then creates a <code><span class="fuchsia">CommandResult</span></code> object and returns it back to the <code><span class="fuchsia">LogicManager</span></code>.</p>
 </li>
 </ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ReverseSequenceDiagram.png" alt="ReverseSequenceDiagram" width="800">
-</div>
-<div class="title">Figure 12. Sequence Diagram of Reverse Command</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -3840,4 +3841,4 @@ finance tracker that you were previously on.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 13:02:48 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 13:42:15 UTC</div></div></div></body></html>
