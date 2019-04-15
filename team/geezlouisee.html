@@ -171,7 +171,9 @@ Entering the <code><span class="fuchsia">summary</span></code> command in the co
 <div class="title">Figure 1. Summary panel is displayed when user enters the  <code><span class="fuchsia">summary</span></code> command</div>
 </div>
 <div class="paragraph">
-<p>You can also specify a report period by stating the number of days or months via the <code><span class="fuchsia">PERIOD_AMOUNT</span></code> and <code><span class="fuchsia">PERIOD</span></code> parameters. However, these parameters are optional.</p>
+<p>You can also specify a report period by stating the number of days or months via the <code><span class="fuchsia">PERIOD_AMOUNT</span></code> and <code><span class="fuchsia">PERIOD</span></code> parameters.
+<code>PERIOD_AMOUNT</code> refers to a positive integer, whereas <code>PERIOD</code> refers to a "day" or "month", represented as "d" and "m" respectively.
+However, these parameters are optional.</p>
 </div>
 <div class="paragraph">
 <p>To exit the summary view mode, simply type <code><span class="fuchsia">summary</span></code> in the command box again.
@@ -261,7 +263,14 @@ Your personal data will be encrypted and stored in your own account that can als
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This section contains excerpts from our In-Credit-Ble Developer Guide, showing additions that I have made for the <code>summary</code> feature and appendices A and B.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This section contains excerpts from our In-Credit-Ble Developer Guide, showing additions that I have made for the <code>summary</code> feature, Manual Testing and appendices A, B and C.</em></p>
+<p class="tableblock">  <em>While the whole group was involved in the discussion and formulation of our Product Scope, User Stories and Use Cases, I was the one who collated it at the end, streamlined redundancies and standardised the format and grammar.</em></p>
+<p class="tableblock">  <em>Due to page limit constraints, I will only be listing the major portion of my contribution.</em>
+  <em>To see the rest of the contributions I made to the Developer Guide, click the below link.</em><br></p>
+<p class="tableblock">  1) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#obtaining-a-summary-of-entries">Contributions to manual testing</a><br>
+  2) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#GetStartedProgramming">Appendix A</a><br>
+  3) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#user-stories">Appendix B</a><br>
+  4) <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#use-cases">Appendix C</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -423,158 +432,8 @@ Your personal data will be encrypted and stored in your own account that can als
 </li>
 </ul>
 </div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>While the whole group was involved in the discussion and formulation of our Product Scope and User Stories, I was the one who collated it at the end, streamlined redundancies and standardised the format and grammar.</em></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="product-scope"><a class="link" href="#product-scope">Appendix A: Product Scope</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Target user profile</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>has a need to manage a significant amount of expenses/finances</p>
-</li>
-<li>
-<p>has a need to be more aware of his/her spending habits/patterns</p>
-</li>
-<li>
-<p>can type fast</p>
-</li>
-<li>
-<p>prefers typing over mouse input</p>
-</li>
-<li>
-<p>is reasonably comfortable using CLI apps</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Value proposition</strong>: Manage expenses faster than a typical mouse/GUI driven app</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="user-stories"><a class="link" href="#user-stories">Appendix B: User Stories</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Priorities: High (must have) - <code>* * *</code>, Medium (nice to have) - <code>* *</code>, Low (unlikely to have) - <code>*</code></p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 59%;">
-<colgroup>
-<col style="width: 22%;">
-<col style="width: 23%;">
-<col style="width: 25%;">
-<col style="width: 30%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Priority</th>
-<th class="tableblock halign-left valign-top">As a &#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">I want to &#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">So that I can&#8230;&#8203;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">new user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">see usage instructions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">refer to it when I forget how to use the application</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">have a record of my recent expenses (day, week, month, category)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">be more aware of where I am spending my money</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">add a new entry</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">delete an entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">remove an entry that is no longer needed anymore</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">categorise my expenses</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">be aware of what I am spending most of my money on</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">be able to set a budget (a total for the month and for which category)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">be more thrifty in terms of my expenditure</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">summarise my daily spending in a pictorial form</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">easily see how on track I am in adhering to my budget</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locate a specific entry easily</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">recall how much I spent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">save my data</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">refer to it when I use the app next time</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sort my expenses in terms of amount</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">be aware of what costs the most</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">set daily budgets</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">limit the amount I spend each day</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analyse my spending habits/patterns</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">derive a savings plan and better plan my expenses</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spendthrift user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">receive tips to be a better saver</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">be more aware of different ways to keep within my budget</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IT savvy user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">categorise my expenses based on the different methods of payment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">automatically track my cashless expenditures as well as credit card transactions</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:57:36 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 04:43:19 UTC</div></div></div></body></html>

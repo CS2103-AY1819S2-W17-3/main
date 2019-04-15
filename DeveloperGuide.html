@@ -84,7 +84,9 @@
 <li><a href="#deleting-an-entry">G.6. Deleting an entry</a></li>
 <li><a href="#searching-an-entry">G.7. Searching an entry</a></li>
 <li><a href="#sorting-the-entries">G.8. Sorting the entries</a></li>
-<li><a href="#changing-the-finance-tracker-data-storage-location">G.9. Changing the Finance Tracker data storage location</a></li>
+<li><a href="#obtaining-a-summary-of-entries">G.9. Obtaining a summary of entries</a></li>
+<li><a href="#saving-data">G.10. Saving data</a></li>
+<li><a href="#changing-the-finance-tracker-data-storage-location">G.11. Changing the Finance Tracker data storage location</a></li>
 </ul>
 </li>
 </ul>
@@ -3347,7 +3349,89 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="changing-the-finance-tracker-data-storage-location"><a class="link" href="#changing-the-finance-tracker-data-storage-location">G.9. Changing the Finance Tracker data storage location</a></h3>
+<h3 id="obtaining-a-summary-of-entries"><a class="link" href="#obtaining-a-summary-of-entries">G.9. Obtaining a summary of entries</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Entering <code>summary</code> command when <em>In-Credit-Ble</em> is empty</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: No existing entries in <em>In-Credit-Ble</em></p>
+</li>
+<li>
+<p>Test case: <code>summary</code><br>
+Expected: Error message is shown.</p>
+</li>
+<li>
+<p>Test case: <code>summary #/6 p/d</code><br>
+Expected: Error message is shown.</p>
+</li>
+<li>
+<p>Test case: <code>summary #/10 p/m</code><br>
+Expected: Error message is shown.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Entering <code>summary</code> command when there are entries listed in the records list panel.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Prerequisites: There is at least one entry that exists in the specified report period.</p>
+</li>
+<li>
+<p>Test case: <code>summary</code><br>
+Expected: Entries that have been entered in <em>In-Credit-Ble</em> in the past 7 days will be displayed in the pie chart.
+          A success message will also be displayed in the result box.</p>
+</li>
+<li>
+<p>Test case: <code>summary #/9 p/d</code><br>
+Expected: Entries that have been entered in <em>In-Credit-Ble</em> in the past 9 days will be displayed in the pie chart.
+          A success message will also be displayed in the result box.</p>
+</li>
+<li>
+<p>Test case: <code>summary #/5 p/m</code><br>
+Expected: Entries that have been entered in <em>In-Credit-Ble</em> in the past 5 months will be displayed in the pie chart.
+          A success message will also be displayed in the result box.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>On the other hand, if there are no existing entries in the specified report period (but <em>In-Credit-Ble</em> has other existing entries):</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Test case: <code>summary #/9 p/m</code><br>
+Expected: Error message is shown.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="saving-data"><a class="link" href="#saving-data">G.10. Saving data</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Dealing with missing/corrupted data files</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><em>{explain how to simulate a missing/corrupted file and the expected behavior}</em></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="changing-the-finance-tracker-data-storage-location"><a class="link" href="#changing-the-finance-tracker-data-storage-location">G.11. Changing the Finance Tracker data storage location</a></h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -3380,4 +3464,4 @@ finance tracker that you were previously on.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-14 19:57:36 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 04:43:19 UTC</div></div></div></body></html>
