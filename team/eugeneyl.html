@@ -77,8 +77,8 @@ spending for a particular category, date or item.</p>
 </div>
 <div class="paragraph">
 <p><strong>Highlights</strong>: This enhancement can be triggered using the 'search' command. This feature is also expandable in
-filtering out different kind of records by adding additional predicates in which the user can search with.
-(Searching based on amount).</p>
+filtering out different kind of records by adding additional predicates in which the user can search with
+(eg. Searching based on amount).</p>
 </div>
 </div>
 <div class="sect3">
@@ -101,7 +101,7 @@ unnecessary information shown on the record card in <em>In-Credit-Ble</em> so th
 easier.</p>
 </li>
 <li>
-<p>Highlights*: This enhancement can be triggered using the <code>edit</code> command. In order to make changes to the description,
+<p><strong>Highlights</strong>: This enhancement can be triggered using the <code>edit</code> command. In order to make changes to the description,
 the user can add the necessary changes after the description prefix(<code>r/</code>). If the user wants to remove the description,
 he/ she can input the description prefix with nothing after it.</p>
 </li>
@@ -122,9 +122,8 @@ having this function allow the user to key in one less parameter when recording 
 it easier and enticing to record his/ her transactions.</p>
 </li>
 <li>
-<p>Highlights*: This enhancement can be triggered using the <code>spend</code> command. If the user did not include any date, by
-default the local current date will be taken.
-**</p>
+<p><strong>Highlights</strong>: This enhancement can be triggered using the <code>spend</code> command. Having this functionality will make
+addition of entries easier and more accurate.</p>
 </li>
 </ul>
 </div>
@@ -215,14 +214,14 @@ application. (Pull request <a href="https://github.com/CS2103-AY1819S2-W17-3/mai
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>This next section will include my contribution to the User Guide. This showcases my ability in documenting a
-reader-friendly User Guide that is designed for new users of _In-Credit-Ble</em> to understand the different functionality
-available in our application._</p></td>
+reader-friendly User Guide that is designed for new users of In-Credit-Ble to understand the different functionality
+available in our application.</em></p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>I documented the <code>edit</code> and <code>search</code> command in the user guide. These portions highlights the functions,
-usage and other relevant information about the 2 commands and it is explained in ways that a new user will be able to
+<p>I documented the <code>edit</code> and <code>search</code> command in the user guide. These portions highlight the functions,
+usage and other relevant information about the 2 commands and is explained in ways that a new user will be able to
 grasps.</p>
 </div>
 <div class="sect2">
@@ -425,8 +424,8 @@ Index refers to the index number shown in the list.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This last section will include my contribution to the Developer Guide. It showcases my ability in writing a technical
-documentation and also demonstrate the technical depth of my code contribution.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This last section will include my contribution to the Developer Guide. It showcases my ability in writing technical
+documentation and also demonstrates the technical depth of my code contribution.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -482,12 +481,14 @@ please visit the links below.</p>
 <li>
 <p>In addition, the <code><span class="fuchsia">CommandResult</span></code> object can also instruct the <code><span class="fuchsia">Ui</span></code> to perform certain actions, such as displaying
 help to the user.</p>
-<div id="Design-Model" class="paragraph">
-<p>=== Model component
-<br></p>
-</div>
 </li>
 </ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Design-Model"><a class="link" href="#Design-Model">Model component</a></h3>
+<div class="paragraph">
+<p><br></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -551,8 +552,8 @@ or date.</p>
 <div class="sect3">
 <h4 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h4>
 <div class="paragraph">
-<p>The search command uses predicates that implement <code><span class="fuchsia">java.util.Predicate</span></code> interface which will be used to filter the records
-that are inputted into the finance tracker. Each of these predicates contains a <code><span class="fuchsia">List&lt;String&gt;</span></code> of keywords and a <code><span class="fuchsia">test()</span></code>
+<p>The search command uses predicates that implement the <code><span class="fuchsia">java.util.Predicate</span></code> interface. These predicates are
+ used to filter the records that are inputted into the finance tracker. Each of these predicates contain a <code><span class="fuchsia">List&lt;String&gt;</span></code> of keywords and a <code><span class="fuchsia">test()</span></code>
 command that is used to test if a record satisfy the conditions set in the predicate. These predicates are found in the <code><span class="fuchsia">Model</span></code> component.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
@@ -568,15 +569,15 @@ command that is used to test if a record satisfy the conditions set in the predi
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">CategoryContainsKeywordsPredicate</span></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records by a given category</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filters out records by a given category</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">DateContainsKeywordsPredicate</span></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records by a given date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filters out records by a given date</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><span class="fuchsia">NameContainsKeywordPredicate</span></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Filter out records with names that matches a keyword</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filters out records with names that matches a keyword</p></td>
 </tr>
 </tbody>
 </table>
@@ -654,13 +655,13 @@ and returned to <code><span class="fuchsia">Logic Manager</span></code>.</p>
 <p>Pros: Easy to implement without changing original architecture.</p>
 </li>
 <li>
-<p>Cons: Slow. Tend to take a long time to search through large number of records.</p>
+<p>Cons: Slow. Tends to take a long time to search through large number of records.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2</strong> : Each time a new category/date is called when making a record, create a new list. Each of these list
+<p><strong>Alternative 2</strong> : Each time a new category/date is called when making a record, create a new list. Each of these lists
 will hold all the records that correspond to these category or dates.</p>
 <div class="ulist">
 <ul>
@@ -686,4 +687,4 @@ that is inputted into the finance tracker.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 11:31:56 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 11:45:02 UTC</div></div></div></body></html>
