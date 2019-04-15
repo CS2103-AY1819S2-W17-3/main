@@ -90,11 +90,15 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p><br>
-<span class="blue">Welcome to the <em>In-Credit-Ble</em> User Guide!</span> <em>In-Credit-Ble</em> is your all-in-one application in managing and tracking your
-personal finances. Our user-friendly interface will make it easy for you to see how much you can safely spend within your budget and be more aware
-of your spending habits. If you are a <strong>fast typer</strong>, <strong>prefer to type</strong> over using your mouse and <strong>like to get things done
-efficiently</strong>, then this is the product just for you! <em>In-Credit-Ble</em> is designed for <strong>students</strong> who prefer to work with a
-<strong>Command Line Interface (CLI)</strong>.</p>
+<span class="blue">Welcome to the <em>In-Credit-Ble</em> User Guide!</span> <em>In-Credit-Ble</em> is a desktop application designed to help university
+students who have difficulty managing their finances due to their many daily transactions. It is also important for these
+students to manage their finances due to their inflexibility to spend frivolously as they lack a formal income.</p>
+</div>
+<div class="paragraph">
+<p><em>In-Credit-Ble</em> provides you with features such as having a budget bar to show how much you have spent compared to a budget
+that you have previously set, and showing of a summary of your transactions in a pie chart. Our user-friendly interface
+will make it easier for you to see how much you can safely spend within your budget and be more aware of your spending habits.
+If you are an individual who prefers to type using a Command Line Interface(CLI), then <em>In-Credit-Ble</em> is the application for you!</p>
 </div>
 <div class="paragraph">
 <p>This user guide shows you how to get started using <em>In-Credit-Ble</em>. It also provides in-depth documentation on the
@@ -128,9 +132,25 @@ Java Development Kit
 </li>
 <li>
 <p>Double-click the file to start the application. The GUI should appear in a few seconds as shown below.
-   The <em>In-Credit-Ble</em> finance tracker is loaded with example expense records and budget is still not set.
-<br>
-<br></p>
+The <em>In-Credit-Ble</em> finance tracker is loaded with example expense records and budget is still not set.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use the <strong><code><span class="fuchsia">clear</span></code></strong> command to remove all the example expenses to start a new Finance Tracker with no entries.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="images/startUI.png" alt="startUI">
@@ -140,7 +160,8 @@ Java Development Kit
 <div class="paragraph">
 <p><br></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Type the command in the command box and press <kbd>Enter</kbd> to execute it.<br>
 <span class="navy">e.g.</span> typing <strong><code><span class="fuchsia">help</span></code></strong> and pressing <kbd>Enter</kbd> will open the help window and show the list of commands.</p>
@@ -150,19 +171,16 @@ Java Development Kit
 <div class="ulist">
 <ul>
 <li>
-<p><strong><code><span class="fuchsia">help</span></code></strong> : opens the <em>In-Credit-Ble</em> user guide</p>
+<p><strong><code><span class="fuchsia">help</span></code></strong> : opens the <em>In-Credit-Ble</em> user guide.</p>
 </li>
 <li>
-<p><strong><code><span class="fuchsia">clear</span></code></strong> : clears the existing Finance Tracker to start a Finance Tracker with no expense records</p>
+<p><strong><code><span class="fuchsia">set</span></code></strong> : sets the total budget for Finance Tracker.</p>
 </li>
 <li>
-<p><strong><code><span class="fuchsia">set</span></code></strong> : sets the total budget for Finance Tracker</p>
+<p><strong><code><span class="fuchsia">allocate</span></code></strong> : allocates budget to a certain category (within the total budget).</p>
 </li>
 <li>
-<p><strong><code><span class="fuchsia">allocate</span></code></strong> : allocates budget to a certain category (within the total budget)</p>
-</li>
-<li>
-<p><strong><code><span class="fuchsia">spend</span></code></strong> : adds an expense record to the Finance Tracker</p>
+<p><strong><code><span class="fuchsia">spend</span></code></strong> : adds an expense record to the Finance Tracker.</p>
 </li>
 </ul>
 </div>
@@ -190,18 +208,18 @@ The theme of the application has been set to <code><span class="fuchsia">Light</
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/GUI_Diagram2.png" alt="GUI Diagram2" width="600">
+<img src="images/GUI_Diagram.png" alt="GUI Diagram" width="600">
 </div>
-<div class="title">Figure 2. Graphical User Interface (Upon using <code>summary</code> command)</div>
+<div class="title">Figure 2. Graphical User Interface (When starting up)</div>
 </div>
 <div class="paragraph">
 <p><br></p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/GUI_Diagram.png" alt="GUI Diagram" width="600">
+<img src="images/GUI_Diagram2.png" alt="GUI Diagram2" width="600">
 </div>
-<div class="title">Figure 3. Graphical User Interface (When starting up)</div>
+<div class="title">Figure 3. Graphical User Interface (Upon using <code>summary</code> command)</div>
 </div>
 <div class="paragraph">
 <p><br>
@@ -232,13 +250,13 @@ This element is denoted by the <span class="fuchsia">pink</span> box.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Exit the program under <b class="button">File</b> tab</p>
+<p>Exit the program under <b class="button">File</b> tab.</p>
 </li>
 <li>
-<p>Open the <em>Help</em> page to view commands available under <b class="button">Help</b> tab</p>
+<p>Open the <em>Help</em> page to view commands available under <b class="button">Help</b> tab.</p>
 </li>
 <li>
-<p>Change the colour theme of the application under <b class="button">Theme</b> tab</p>
+<p>Change the colour theme of the application under <b class="button">Theme</b> tab.</p>
 </li>
 </ul>
 </div>
@@ -262,7 +280,7 @@ This element is denoted by the <span class="yellow">yellow</span> box.</p>
 This panel is scrollable to view all your expense records.</p>
 </div>
 <div class="paragraph">
-<p>To find specific records based on <code><span class="fuchsia">name</span></code>, <code><span class="fuchsia">category</span></code> or <code><span class="fuchsia">date</span></code>, use the <code><span class="fuchsia">search</span></code> command.
+<p>To find specific entries based on <code><span class="fuchsia">name</span></code>, <code><span class="fuchsia">category</span></code> or <code><span class="fuchsia">date</span></code>, use the <code><span class="fuchsia">search</span></code> command.
 To list all your expense records again after searching for particular records,
 use the command <code><span class="fuchsia">list</span></code>.</p>
 </div>
@@ -283,7 +301,7 @@ The index is used in commands such as <code><span class="fuchsia">delete</span><
 <div class="content">
 <img src="images/BudgetPanel.png" alt="BudgetPanel" width="250">
 </div>
-<div class="title">Figure 6. Budget Panel: Shows your total spending against your total budget so far</div>
+<div class="title">Figure 6. Budget Panel: Shows your total spending against the total budget that you set</div>
 </div>
 <div class="paragraph">
 <p><br>
@@ -303,10 +321,10 @@ the budget panel will change colour according to how close you are to your budge
 <div class="ulist">
 <ul>
 <li>
-<p><code><span class="fuchsia">set</span></code> command to see how to set a budget in the finance tracker</p>
+<p><code><span class="fuchsia">set</span></code> command to see how to set a budget in the finance tracker.</p>
 </li>
 <li>
-<p><code><span class="fuchsia">spend</span></code> command to see how to add expense records into the finance tracker</p>
+<p><code><span class="fuchsia">spend</span></code> command to see how to add expense records into the finance tracker.</p>
 </li>
 </ul>
 </div>
@@ -317,7 +335,7 @@ the budget panel will change colour according to how close you are to your budge
 <div class="content">
 <img src="images/BudgetPanel_Orange.png" alt="BudgetPanel Orange" width="250">
 </div>
-<div class="title">Figure 7. Budget progress bar turns orange to give warning</div>
+<div class="title">Figure 7. Budget progress bar turns orange to give a warning that you have almost reached your budget</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -326,7 +344,7 @@ the budget panel will change colour according to how close you are to your budge
 <div class="content">
 <img src="images/BudgetPanel_red.png" alt="BudgetPanel red" width="250">
 </div>
-<div class="title">Figure 8. Budget progress bar turns red to give warning</div>
+<div class="title">Figure 8. Budget progress bar turns red to give a warning that you have exceeded your budget.</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -358,14 +376,15 @@ as shown in Figure 7.</p>
 <div class="content">
 <img src="images/browserpanel.png" alt="browserpanel" width="250">
 </div>
-<div class="title">Figure 9. Browser Panel: Shows the budget left, current spending and total budget</div>
+<div class="title">Figure 9. Browser Panel: Shows the budget left, total budget and your current spending.</div>
 </div>
 <div class="paragraph">
 <p><br>
 This element is denoted by the <span class="maroon">brown</span> box in Figure 2.</p>
 </div>
 <div class="paragraph">
-<p>The browser panel gives you a numerical summary of your total budget.
+<p>The browser panel gives you a numerical summary of your total budget. The current budget shows how much more you can
+spend before you hit the budget that you have set.
 <br></p>
 </div>
 <div class="admonitionblock note">
@@ -377,7 +396,7 @@ This element is denoted by the <span class="maroon">brown</span> box in Figure 2
 <td class="content">
 <div class="paragraph">
 <p>The current budget will show a negative number should you exceed your budget to let you know
-the amount you exceeded the budget set for yourself.</p>
+the amount you have exceeded the budget that you set for yourself.</p>
 </div>
 </td>
 </tr>
@@ -404,7 +423,7 @@ the amount you exceeded the budget set for yourself.</p>
 This element is denoted by the <span class="red">red</span> box in Figure 3.</p>
 </div>
 <div class="paragraph">
-<p>The summary panel gives you a nice illustrated summary of your current spending so far in
+<p>The summary panel gives you a visualisation of the summary of your current spending so far in
 different categories. To change the browser panel to summary panel, use the <code><span class="fuchsia">summary</span></code> command.
 To change back to the browser panel, simply enter the <code><span class="fuchsia">summary</span></code> command once again.</p>
 </div>
@@ -498,7 +517,7 @@ step-by-step instructions on how to use the different commands.</p>
 <li>
 <p>If you provide more than the number of specified parameters
 (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/500 $/400</span></code> or <code><span class="fuchsia">spend n/Chicken n/Duck $/10 $/20 c/Food c/Lunch</span></code>), the latest parameter is taken
-(<span class="navy">e.g.</span> Budget is set to $400, Record added is Name: Duck, Amount: $20, Category: Lunch)</p>
+(<span class="navy">e.g.</span> Budget is set to $400, Record added is Name: Duck, Amount: $20, Category: Lunch).</p>
 </li>
 </ul>
 </div>
@@ -662,7 +681,7 @@ budgets are going to exceed it.</p>
 <p>Amount entered cannot be larger than 100,000,000.</p>
 </li>
 <li>
-<p>Category name can only be one word (no spaces allowed)</p>
+<p>Category name can only be one word (no spaces allowed).</p>
 </li>
 <li>
 <p>If you provide multiple categories (<span class="navy">e.g.</span> <code><span class="fuchsia">allocate $/50.00 c/Food c/Clothes</span></code>),
@@ -686,11 +705,11 @@ sense to set a budget that is below the amount that you have already spent on th
 </li>
 <li>
 <p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
-and cannot contain special characters such as <code><strong>:&lt;&gt;;\/|?~^%$@#</strong></code></p>
+and cannot contain special characters such as <code><strong>:&lt;&gt;;\/|?~^%$@#</strong></code>.</p>
 </li>
 <li>
 <p>For you to see the category budgets and the current spending in each of the allocated category budget, use the <code><span class="fuchsia">show</span></code>
-command shown in the next command</p>
+command shown in the next section.</p>
 </li>
 </ul>
 </div>
@@ -710,7 +729,7 @@ command shown in the next command</p>
 how much you have exceeded your budget allocated in that category so that you will be able to better plan your
 expenditure in the future.<br>
 (For e.g. if you allocated $50.00 to <code>Clothes</code> and have yet to spend anything in the
-category, you can still spend more than $50.00 after setting the category budget)<br></p>
+category, you can still spend more than $50.00 after setting the category budget.)<br></p>
 </div>
 <div class="paragraph">
 <p>However, if you have already spent an amount in the category, but have yet to set a budget for the category, it would
@@ -802,11 +821,11 @@ unsure of the elements of the GUI):</em></p>
 <div class="ulist">
 <ul>
 <li>
-<p>The category budgets will be shown with the latest allocated category budget in the Result Display</p>
+<p>The category budgets will be shown with the latest allocated category budget in the Result Display.</p>
 </li>
 <li>
 <p>If there are no category budgets allocated yet, the result display will display a message
-to let you know so</p>
+to let you know.</p>
 </li>
 </ul>
 </div>
@@ -867,11 +886,11 @@ add expense for <code><span class="fuchsia">Clothes</span></code> category).</p>
 <li>
 <p>Category names are case-insensitive. (<span class="navy">e.g.</span> <code><span class="fuchsia">CLotHes</span></code>, <code><span class="fuchsia">clothes</span></code> and <code><span class="fuchsia">CLOTHES</span></code> refer to the same
 category and will be shown with the first character in uppercase and the rest of the characters
-in lowercase. In the above example, it will be shown as <code><span class="fuchsia">Clothes</span></code>)</p>
+in lowercase. In the above example, it will be shown as <code><span class="fuchsia">Clothes</span></code>.)</p>
 </li>
 <li>
 <p>Category name supplied must be <a href="https://en.wikipedia.org/wiki/Alphanumeric">alphanumeric</a>
-and cannot contain special characters such as <code><strong>:&lt;&gt;;\/|?~^%$#@</strong></code></p>
+and cannot contain special characters such as <code><strong>:&lt;&gt;;\/|?~^%$#@</strong></code>.</p>
 </li>
 <li>
 <p>Date cannot be a date in the future. Addition of future expenses are not allowed.</p>
@@ -1203,7 +1222,7 @@ command.
 <p>Only one flag should be provided.</p>
 </li>
 <li>
-<p>If you do not input parameters after the flag, the search result will return with empty list</p>
+<p>If you do not input parameters after the flag, the search result will return with empty list.</p>
 </li>
 </ul>
 </div>
@@ -1274,19 +1293,19 @@ command.
 <ul>
 <li>
 <p><code><span class="fuchsia">sort -name</span></code>:<br>
-Sorts the list of records by name in lexicographical order (ascending order)</p>
+Sorts the list of records by name in lexicographical order. (ascending order)</p>
 </li>
 <li>
 <p><code><span class="fuchsia">sort -amount</span></code>:<br>
-Sorts the list of records by amount from largest to smallest (descending order)</p>
+Sorts the list of records by amount from largest to smallest.(descending order)</p>
 </li>
 <li>
 <p><code><span class="fuchsia">sort -date</span></code>:<br>
-Sorts the list of records by date with the latest at the top (descending order)</p>
+Sorts the list of records by date with the latest at the top. (descending order)</p>
 </li>
 <li>
 <p><code><span class="fuchsia">sort -cat</span></code>:<br>
-Sorts the list of records by category in lexicographical order (ascending order)</p>
+Sorts the list of records by category in lexicographical order. (ascending order)</p>
 </li>
 </ul>
 </div>
@@ -1327,9 +1346,9 @@ Sorts list of records by name in reverse lexicographical order.</p>
 </td>
 <td class="content">
 To sort any list conveniently in the reverse order, use the <code><span class="fuchsia">reverse</span></code> command!<br>
-<code><span class="fuchsia">sort -name</span></code><br>
-<code><span class="fuchsia">reverse</span></code><br>
-List will be sorted by name in reverse lexicographical order.
+(eg. <code><span class="fuchsia">sort -name</span></code>,<br>
+<code><span class="fuchsia">reverse</span></code>,<br>
+List will be sorted by name in reverse lexicographical order.)
 </td>
 </tr>
 </table>
@@ -1437,15 +1456,15 @@ Your screen should change back to the browser view mode as shown in the diagram 
 <ul>
 <li>
 <p><code><span class="fuchsia">summary</span></code>:<br>
-Shows summary of expenses in the past 7 days</p>
+Shows summary of expenses in the past 7 days.</p>
 </li>
 <li>
 <p><code><span class="fuchsia">summary #/3 p/d</span></code>:<br>
-Shows summary of expenses in the past 3 days</p>
+Shows summary of expenses in the past 3 days.</p>
 </li>
 <li>
 <p><code><span class="fuchsia">summary #/7 p/m</span></code>:<br>
-Shows summary of expenses in the past 7 months</p>
+Shows summary of expenses in the past 7 months.</p>
 </li>
 </ul>
 </div>
@@ -1474,7 +1493,7 @@ or profiles.<br></p>
 </div>
 <div class="paragraph">
 <p>In addition, one user can also have multiple files for a recurring period (weeks, months etc.)
-for the user the manage their budget based on a time period his/her liking.</p>
+for the user to manage their budget based on a time period of his/ her liking.</p>
 </div>
 <div class="paragraph">
 <p><strong>Format</strong>: <code><span class="fuchsia">setfile f/FILENAME</span></code></p>
@@ -1708,7 +1727,7 @@ The <code><span class="fuchsia">redo</span></code> command fails as there are no
 <p>Valid themes include: <code><span class="fuchsia">Dark</span></code>, <code><span class="fuchsia">Light</span></code>, <code><span class="fuchsia">Blue</span></code>, <code><span class="fuchsia">Pink</span></code></p>
 </li>
 <li>
-<p>The theme name is case-insensitive (<code><span class="fuchsia">BlUE</span></code>, <code><span class="fuchsia">BLUE</span></code>, <code><span class="fuchsia">blue</span></code> or <code><span class="fuchsia">blUE</span></code> etc. all refer
+<p>The theme name is case-insensitive. (<code><span class="fuchsia">BlUE</span></code>, <code><span class="fuchsia">BLUE</span></code>, <code><span class="fuchsia">blue</span></code> or <code><span class="fuchsia">blUE</span></code> etc. all refer
 to <code><span class="fuchsia">Blue</span></code>)</p>
 </li>
 <li>
@@ -1753,7 +1772,7 @@ the menu bar.</p>
 <div class="sect3">
 <h4 id="clearing-all-entries-code-span-class-fuchsia-clear-span-code"><a class="link" href="#clearing-all-entries-code-span-class-fuchsia-clear-span-code">4.4.7. Clearing all entries : <code><span class="fuchsia">clear</span></code></a></h4>
 <div class="paragraph">
-<p><span class="navy">You can delete all existing entries in the records and reset your budget to $0.00.</span></p>
+<p><span class="navy">You can delete all existing entries in the records and reset your budget (both total and category) to $0.00.</span></p>
 </div>
 <div class="paragraph">
 <p><strong>Alias</strong>: <code><span class="fuchsia">c</span></code>, <code><span class="fuchsia">clr</span></code></p>
@@ -1801,7 +1820,7 @@ the data. There is no need for you to save manually.</p>
 <h4 id="login-feature-code-span-class-yellow-coming-in-v2-0-span-code"><a class="link" href="#login-feature-code-span-class-yellow-coming-in-v2-0-span-code">4.5.1. Login Feature <code><span class="yellow">[coming in v2.0]</span></code></a></h4>
 <div class="paragraph">
 <p><em>In-Credit-Ble</em> will implement a login feature so that your data and personal finance records will remain safe and secure.
-Your personal data will be encrypted and stored in your own account that can also be secured with a password.</p>
+Your personal data will be encrypted and stored in your own account that can be secured with a password.</p>
 </div>
 <div class="paragraph">
 <p>With this feature, multiple users will be able to use <em>In-Credit-Ble</em> on the same computer without being able to access or modify each other&#8217;s data.</p>
@@ -1835,8 +1854,8 @@ It also allows users to easily perceive whether their spending is within their b
 Panel</strong> in v2.0 of <em>In-Credit-Ble</em>.</p>
 </div>
 <div class="paragraph">
-<p>We aim to include icons for the categories which will fill up in colour from the bottom according to how close
-the current spending is to the allocated budget in the category.</p>
+<p>We will have separate budget bars (similar to the one in Figure 6) within this panel for each category which will fill
+up as the user enters more entries for the corresponding category.</p>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1845,7 +1864,7 @@ the current spending is to the allocated budget in the category.</p>
 <div class="sect3">
 <h4 id="separate-expenditures-based-on-methods-of-payment-cash-visa-dbs-paylah-code-span-class-yellow-coming-in-v2-0-span-code"><a class="link" href="#separate-expenditures-based-on-methods-of-payment-cash-visa-dbs-paylah-code-span-class-yellow-coming-in-v2-0-span-code">4.5.4. Separate expenditures based on methods of payment (Cash, Visa, DBS PayLah) <code><span class="yellow">[coming in v2.0]</span></code></a></h4>
 <div class="paragraph">
-<p><em>In-Credit-Ble</em> will link up with secure methods of payment to allow tracking of your cashless transactions.
+<p><em>In-Credit-Ble</em> will collaborate with secure methods of payment to allow tracking of your cashless transactions.
 These include, but not limited to, payment services such as DBS PayLah, Visa/MasterCard, Amex and Paypal.</p>
 </div>
 <div class="paragraph">
@@ -1860,7 +1879,7 @@ and recorded as entries in <em>In-Credit-Ble</em>.</p>
 <h4 id="establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-span-class-yellow-coming-in-v2-0-span-code"><a class="link" href="#establish-saving-patterns-based-on-record-and-derive-projected-savings-expenses-in-a-time-span-code-span-class-yellow-coming-in-v2-0-span-code">4.5.5. Establish saving patterns based on record and derive projected savings/expenses in a time span <code><span class="yellow">[coming in v2.0]</span></code></a></h4>
 <div class="paragraph">
 <p>Your monthly finance records will be archived at the end of the month. This information will be used to derive
-the projected savings and expenses of future months, based on analysing your typical spending patterns.</p>
+the projected savings and expenses of future months, based on analysing your spending patterns.</p>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1941,7 +1960,7 @@ You will need to calculate and enter your input based on your local currency.</p
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Set Budget</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set budget</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>set $/AMOUNT</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>set $/500</code></p></td>
@@ -1994,7 +2013,8 @@ You will need to calculate and enter your input based on your local currency.</p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Edit an entry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY] [r/DESCRIPTION]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit INDEX [n/NAME] [$/AMOUNT] [d/DATE] [c/CATEGORY] [r/DESCRIPTION]</code><br>
+*At least one of the optional parameters must be entered.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>e</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit 1 n/burger c/Food</code></p></td>
 </tr>
@@ -2071,7 +2091,7 @@ Shows summary for past 5 days</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>*Valid flags: <code>-name</code>&#8594; Name; <code>-cat</code> &#8594; Category; <code>-date</code> &#8594; Date; <code>-amount</code> (only for <code>sort</code> command) &#8594; Amount;</p>
+<p>*Valid flags: <code>-name</code>&#8594; Name; <code>-cat</code> &#8594; Category; <code>-date</code> &#8594; Date; <code>-amount</code> &#8594; Amount (only for <code>sort</code> command);</p>
 </div>
 <div class="paragraph">
 <p>**Valid orders: <code>-asc</code> &#8594; ascending order; <code>-desc</code> &#8594; descending order
@@ -2126,7 +2146,7 @@ Shows summary for past 5 days</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Change colour theme of application</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>theme COLOURTHEME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>theme COLOURTHEME*</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>colour</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>theme light</code></p></td>
 </tr>
@@ -2151,7 +2171,8 @@ Shows summary for past 5 days</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p><br></p>
+<p>*Valid colour themes: <code>light</code>, <code>dark</code>, <code>pink</code>, <code>blue</code>;
+<br></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2175,8 +2196,8 @@ Shows summary for past 5 days</p></td>
 </dd>
 <dt class="hdlist1">Entry</dt>
 <dd>
-<p>A listed item/activity tracked by the application.  It generally consists of the name, amount and date along with a
-compulsory category tag</p>
+<p>A listed item/activity tracked by the application.  It generally consists of the name, amount, date, category and with an
+optional description field.</p>
 </dd>
 <dt class="hdlist1">Records</dt>
 <dd>
@@ -2185,4 +2206,4 @@ compulsory category tag</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 14:11:27 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 14:23:44 UTC</div></div></div></body></html>
