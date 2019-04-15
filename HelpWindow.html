@@ -14,11 +14,12 @@
 <li><a href="#graphical-user-interface-introduction">3. Graphical User Interface Introduction</a>
 <ul class="sectlevel2">
 <li><a href="#menu-bar">3.1. Menu Bar</a></li>
-<li><a href="#budget-panel">3.2. Budget Panel</a></li>
-<li><a href="#browser-panel">3.3. Browser Panel</a></li>
-<li><a href="#summary-panel">3.4. Summary Panel</a></li>
-<li><a href="#command-box-and-result-display">3.5. Command Box and Result Display</a></li>
-<li><a href="#status-footer-bar">3.6. Status Footer Bar</a></li>
+<li><a href="#records-list-panel">3.2. Records List Panel</a></li>
+<li><a href="#budget-panel">3.3. Budget Panel</a></li>
+<li><a href="#browser-panel">3.4. Browser Panel</a></li>
+<li><a href="#summary-panel">3.5. Summary Panel</a></li>
+<li><a href="#command-box-and-result-display">3.6. Command Box and Result Display</a></li>
+<li><a href="#status-footer-bar">3.7. Status Footer Bar</a></li>
 </ul>
 </li>
 <li><a href="#Features">4. Features</a>
@@ -261,9 +262,13 @@ This element is denoted by the <span class="fuchsia">pink</span> box.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><br>
-=== Records List Panel
-<br></p>
+<p><br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="records-list-panel"><a class="link" href="#records-list-panel">3.2. Records List Panel</a></h3>
+<div class="paragraph">
+<p><br></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -293,7 +298,7 @@ The index is used in commands such as <code><span class="fuchsia">delete</span><
 </div>
 </div>
 <div class="sect2">
-<h3 id="budget-panel"><a class="link" href="#budget-panel">3.2. Budget Panel</a></h3>
+<h3 id="budget-panel"><a class="link" href="#budget-panel">3.3. Budget Panel</a></h3>
 <div class="paragraph">
 <p><br></p>
 </div>
@@ -368,7 +373,7 @@ as shown in Figure 7.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="browser-panel"><a class="link" href="#browser-panel">3.3. Browser Panel</a></h3>
+<h3 id="browser-panel"><a class="link" href="#browser-panel">3.4. Browser Panel</a></h3>
 <div class="paragraph">
 <p><br></p>
 </div>
@@ -408,7 +413,7 @@ the amount you have exceeded the budget that you set for yourself.</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="summary-panel"><a class="link" href="#summary-panel">3.4. Summary Panel</a></h3>
+<h3 id="summary-panel"><a class="link" href="#summary-panel">3.5. Summary Panel</a></h3>
 <div class="paragraph">
 <p><br></p>
 </div>
@@ -432,7 +437,7 @@ To change back to the browser panel, simply enter the <code><span class="fuchsia
 </div>
 </div>
 <div class="sect2">
-<h3 id="command-box-and-result-display"><a class="link" href="#command-box-and-result-display">3.5. Command Box and Result Display</a></h3>
+<h3 id="command-box-and-result-display"><a class="link" href="#command-box-and-result-display">3.6. Command Box and Result Display</a></h3>
 <div class="paragraph">
 <p><br></p>
 </div>
@@ -460,7 +465,7 @@ This is where the allocated category budgets will be shown when <code><span clas
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="status-footer-bar"><a class="link" href="#status-footer-bar">3.6. Status Footer Bar</a></h3>
+<h3 id="status-footer-bar"><a class="link" href="#status-footer-bar">3.7. Status Footer Bar</a></h3>
 <div class="paragraph">
 <p><br></p>
 </div>
@@ -582,7 +587,7 @@ amount (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/1a $/10
 by the <code><span class="fuchsia">set</span></code> command.</p>
 </li>
 <li>
-<p>The budget you set and current spending will be displayed in the <a href="#budget-panel">Section 3.2, &#8220;Budget Panel&#8221;</a>.</p>
+<p>The budget you set and current spending will be displayed in the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#budget-panel">Budget Panel</a>.</p>
 </li>
 <li>
 <p>You can only work with one budget for each instance of Finance Tracker. You are able
@@ -590,7 +595,7 @@ to adjust this budget using the <code><span class="fuchsia">set</span></code> co
 </li>
 <li>
 <p>If you want to have a new budget for a different month, you can use the <code><span class="fuchsia">setfile</span></code> command
-detailed in <a href="#changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code">Section 4.4.1, &#8220;Changing FinanceTracker data storage location: <code><span class="fuchsia">setfile</span></code>&#8221;</a>.</p>
+detailed in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#changing-financetracker-data-storage-location-setfile">Changing FinanceTracker data storage location: <code>setfile</code></a>.</p>
 </li>
 <li>
 <p>The rationale is to keep the
@@ -1488,7 +1493,7 @@ Shows summary of expenses in the past 7 months.</p>
 <h4 id="changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code"><a class="link" href="#changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code">4.4.1. Changing FinanceTracker data storage location: <code><span class="fuchsia">setfile</span></code></a></h4>
 <div class="paragraph">
 <p><span class="navy">You can change the file used to store the data of the application.</span> Essentially,
-you can maintain multiple sets of expenditure and budget data for multiple users
+you can maintain multiple sets of expenditure and budget data for different users
 or profiles.<br></p>
 </div>
 <div class="paragraph">
@@ -1542,11 +1547,21 @@ Only the last filename needs to be a valid filename
 (<span class="navy">e.g.</span> <code><span class="fuchsia">setfile f/$file f/file</span></code> works while <code><span class="fuchsia">set f/file f/$file</span></code> does not).</p>
 </li>
 <li>
-<p>If the file specified by the filename does not already exist, a new blank file
+<p>If the file specified by the filename is the same as the current file, nothing will happen as the same file
+will be loaded. Refer to Figuere 22 if you are unsure of what your current file is.</p>
+</li>
+<li>
+<p>If the file specified by the filename does not already exist or is corrupted, a new blank file
 will be created with no data in the Finance Tracker. Otherwise, the data stored
-in the file will be loaded into the Finance Tracker.</p>
+in the file will be loaded into the Finance Tracker. The example below illustrates this.</p>
 </li>
 </ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/setFileExample.png" alt="setFileExample" width="800">
+</div>
+<div class="title">Figure 22. Example of what happens when a existing file is loaded and when a new file is created.</div>
 </div>
 </td>
 </tr>
@@ -1743,7 +1758,7 @@ the menu bar.</p>
 <div class="content">
 <img src="images/themeMenuBar.png" alt="themeMenuBar">
 </div>
-<div class="title">Figure 22. Menu Bar with Theme tab</div>
+<div class="title">Figure 23. Menu Bar with Theme tab</div>
 </div>
 </td>
 </tr>
@@ -1839,7 +1854,7 @@ Aster Plot chart instead, as shown in the diagram below.</p>
 <div class="content">
 <img src="images/asterPlot.png" alt="asterPlot" width="200">
 </div>
-<div class="title">Figure 23. Example of Aster Plot Graph</div>
+<div class="title">Figure 24. Example of Aster Plot Graph</div>
 </div>
 <div class="paragraph">
 <p>This will make it more effective in showing the user what is the remaining budget amount for each category.
@@ -2206,4 +2221,4 @@ optional description field.</p>
 </dl>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 14:23:44 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 15:22:34 UTC</div></div></div></body></html>

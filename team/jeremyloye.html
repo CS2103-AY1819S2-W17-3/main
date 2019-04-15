@@ -8,7 +8,7 @@
 <div class="content">
 <div class="imageblock" style="float: left">
 <div class="content">
-<a class="image" href="https://github.com/JeremyLoye"><img src="../images/jeremyloye.png" alt="120" width="120"></a>
+<img src="../images/jeremyloye.png" alt="121" width="90">
 </div>
 </div>
 </div>
@@ -191,17 +191,7 @@ is reloaded or the data file is changed, the user budget data remains and is loa
 <li>
 <p>Managed issue trackers:
 To view the full list of issues I have managed, click
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+author%3AJeremyLoye">this</a>.
-(For individual issues:
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/38">#38</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/40">#40</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/42">#42</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/44">#44</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/45">#45</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/86">#86</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/126">#126</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues/203">#203</a>
-)</p>
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+author%3AJeremyLoye">this</a>.</p>
 </li>
 </ul>
 </div>
@@ -216,16 +206,7 @@ To view the full list of issues I have managed, click
 <li>
 <p>PRs Reviews:
 To view the full list of reviews that I made, click
-<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pulls?q=is%3Apr+is%3Aclosed+reviewed-by%3AJeremyLoye">this</a>.
-(For individual reviews:
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/90">#90</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/92">#92</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/93">#93</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/104">#104</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/107">#107</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/183">#183</a>,
- <a href="https://github.com/CS2103-AY1819S2-W17-3/main/pull/185">#185</a>
-)</p>
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/pulls?q=is%3Apr+is%3Aclosed+reviewed-by%3AJeremyLoye">this</a>.</p>
 </li>
 </ul>
 </div>
@@ -297,7 +278,7 @@ amount (<span class="navy">e.g.</span> <code><span class="fuchsia">set $/1a $/10
 by the <code><span class="fuchsia">set</span></code> command.</p>
 </li>
 <li>
-<p>The budget you set and current spending will be displayed in the <a href="#Budget Panel">[Budget Panel]</a>.</p>
+<p>The budget you set and current spending will be displayed in the <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#budget-panel">Budget Panel</a>.</p>
 </li>
 <li>
 <p>You can only work with one budget for each instance of Finance Tracker. You are able
@@ -305,7 +286,7 @@ to adjust this budget using the <code><span class="fuchsia">set</span></code> co
 </li>
 <li>
 <p>If you want to have a new budget for a different month, you can use the <code><span class="fuchsia">setfile</span></code> command
-detailed in <a href="#changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code">Changing FinanceTracker data storage location: <code><span class="fuchsia">setfile</span></code></a>.</p>
+detailed in <a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/UserGuide.adoc#changing-financetracker-data-storage-location-setfile">Changing FinanceTracker data storage location: <code>setfile</code></a>.</p>
 </li>
 <li>
 <p>The rationale is to keep the
@@ -350,7 +331,7 @@ budgets are going to exceed it.</p>
 <h4 id="changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code"><a class="link" href="#changing-financetracker-data-storage-location-code-span-class-fuchsia-setfile-span-code">Changing FinanceTracker data storage location: <code><span class="fuchsia">setfile</span></code></a></h4>
 <div class="paragraph">
 <p><span class="navy">You can change the file used to store the data of the application.</span> Essentially,
-you can maintain multiple sets of expenditure and budget data for multiple users
+you can maintain multiple sets of expenditure and budget data for different users
 or profiles.<br></p>
 </div>
 <div class="paragraph">
@@ -404,15 +385,28 @@ Only the last filename needs to be a valid filename
 (<span class="navy">e.g.</span> <code><span class="fuchsia">setfile f/$file f/file</span></code> works while <code><span class="fuchsia">set f/file f/$file</span></code> does not).</p>
 </li>
 <li>
-<p>If the file specified by the filename does not already exist, a new blank file
+<p>If the file specified by the filename is the same as the current file, nothing will happen as the same file
+will be loaded. Refer to Figuere 22 if you are unsure of what your current file is.</p>
+</li>
+<li>
+<p>If the file specified by the filename does not already exist or is corrupted, a new blank file
 will be created with no data in the Finance Tracker. Otherwise, the data stored
-in the file will be loaded into the Finance Tracker.</p>
+in the file will be loaded into the Finance Tracker. The example below illustrates this.</p>
 </li>
 </ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/setFileExample.png" alt="setFileExample" width="800">
+</div>
+<div class="title">Figure 1. Example of what happens when a existing file is loaded and when a new file is created.</div>
 </div>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p><br></p>
 </div>
 </div>
 </div>
@@ -429,7 +423,9 @@ in the file will be loaded into the Finance Tracker.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">This final section will include the sections of my contribution to the Developer Guide.
 The Developer Guide is a document used to specify the design and implementation of our project for new developers
 to understand our codebase. Through my contributions to the Developer Guide, I hope to illustrate my capacity
-to write technical documentation that is comprehensive and easy to understand for new developers.</p></td>
+to write technical documentation that is comprehensive and easy to understand for new developers.</p>
+<p class="tableblock">Due to page constraints, the following is not listed in this document:
+<a href="https://github.com/CS2103-AY1819S2-W17-3/main/blob/master/docs/DeveloperGuide.adoc#changing-the-finance-tracker-data-storage-location"><code>setFile</code> Manual Testing</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -445,9 +441,9 @@ creates a budget when the user uses the <code><span class="fuchsia">set</span></
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/SetSequenceDiagram.jpg" alt="SetSequenceDiagram" width="800">
+<img src="../images/SetSequenceDiagram.png" alt="SetSequenceDiagram" width="800">
 </div>
-<div class="title">Figure 1. Sequence diagram of user setting a budget</div>
+<div class="title">Figure 2. Sequence diagram of user setting a budget</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -477,9 +473,26 @@ Finance Tracker. <code><span class="fuchsia">FinanceTracker#addBudget()</span></
 by calling <code><span class="fuchsia">TotalBudget#updateBudget()</span></code> and passing the <code><span class="fuchsia">Budget p</span></code> and the records stored in the <code><span class="fuchsia">FinanceTracker</span></code>.</p>
 </li>
 <li>
-<p><code><span class="fuchsia">TotalBudget#updateBudget()</span></code> first gets the budget data (totalBudget, currentBudget) from <code><span class="fuchsia">Budget p</span></code> and sets it using
+<p><code><span class="fuchsia">TotalBudget#updateBudget()</span></code> first checks whether the new budget set is more than or equal to the sum of the category budgets and throws an
+ exception if it is not. It then gets the budget data (<code><span class="fuchsia">totalBudget</span></code>, <code><span class="fuchsia">currentBudget</span></code>) from <code><span class="fuchsia">Budget p</span></code> and sets it using
 <code><span class="fuchsia">TotalBudget#set()</span></code> (total budget of app is now 120 in example). It then updates the current budget and spending based on
-the records that was stored and passed in by the <code><span class="fuchsia">FinanceTracker</span></code>.</p>
+the records that was stored and passed in by the <code><span class="fuchsia">FinanceTracker</span></code>. This is shown in the code snippet below:</p>
+<div class="literalblock">
+<div class="content">
+<pre>public void updateBudget(Budget budget, ObservableList&lt;Record&gt; records) throws
+            CategoryBudgetExceedTotalBudgetException {
+        Double totalCategoryBudget = 0.0;
+        for (CategoryBudget cb: this.categoryBudgets) {
+            totalCategoryBudget += cb.getTotalBudget();
+        }
+        if (budget.getTotalBudget() &lt; totalCategoryBudget) {
+            throw new CategoryBudgetExceedTotalBudgetException(budget, totalCategoryBudget);
+        }
+        set(budget.getTotalBudget(), budget.getCurrentBudget());
+        updateBudget(records);
+    }</pre>
+</div>
+</div>
 </li>
 <li>
 <p>Once <code><span class="fuchsia">TotalBudget q</span></code> has finished updating, control is passed all the way back to <code><span class="fuchsia">SetCommand#execute()</span></code> which will create
@@ -488,7 +501,7 @@ that the budget has been set (Budget set to 120 in example).</p>
 </li>
 <li>
 <p>Although not shown in the diagram, the UI is then updated with the new budget. The UI update of budget data will be
-covered in <span class="underline blue"><a href="#Updating the UI with Budget Data">[Updating the UI with Budget Data]</a></span>.</p>
+covered in <span class="underline blue"><a href="#updating-the-ui-with-budget-data">Updating the UI with Budget Data</a></span>.</p>
 </li>
 </ol>
 </div>
@@ -503,7 +516,7 @@ covered in <span class="underline blue"><a href="#Updating the UI with Budget Da
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Solution 1</strong>: Maintaining one updateBudget method to update current expenditure and budget left based on
+<p><strong>Solution 1</strong>: Maintaining one <code>updateBudget</code> method to update current expenditure and budget left based on
 iterating through changed record list.</p>
 <div class="ulist">
 <ul>
@@ -524,16 +537,21 @@ iterating through changed record list.</p>
 <p>Pros: App would run updates faster with more targeted methods.</p>
 </li>
 <li>
-<p>Cons: More code and test cases to be written to implement and maintain several methods for updating budget.
-==== Updating the UI with Budget Data
-Previous sections have covered how the budget of the Finance Tracker is updated within the App. This section aims
-to give a overview of the logic for updating the User Interface of the App to reflect the budget updates to the
-user.</p>
+<p>Cons: More code and test cases to be written to implement and maintain several methods for updating budget.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="updating-the-ui-with-budget-data"><a class="link" href="#updating-the-ui-with-budget-data">Updating the UI with Budget Data</a></h4>
+<div class="paragraph">
+<p>Previous sections have covered how the budget of the Finance Tracker is updated within the App. This section aims
+to give a overview of the logic for updating the User Interface of the App to reflect the budget updates to the
+user.</p>
 </div>
 <div class="paragraph">
 <p>To explain the update, an Activity Diagram accompanied with a step-by-step walk-through is proved. The Activity Diagram is modelled after <code><span class="fuchsia">MainWindow#execute()</span></code> which calls the appropriate
@@ -543,7 +561,7 @@ methods to update the budget UI.</p>
 <div class="content">
 <img src="../images/BudgetUiUpdateActivityDiagram.png" alt="BudgetUiUpdateActivityDiagram">
 </div>
-<div class="title">Figure 2. Activity diagram of the UI being updated after budget data changes</div>
+<div class="title">Figure 3. Activity diagram of the UI being updated after budget data changes</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -597,5 +615,4 @@ details.</p>
 </div>
 </div>
 </div>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 14:23:45 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-04-15 15:22:34 UTC</div></div></div></body></html>
